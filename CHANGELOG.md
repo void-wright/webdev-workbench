@@ -8,19 +8,23 @@ GitHub release, and `VERSION` holds the current number.
 
 ## Unreleased
 
+Nothing yet.
+
+## 1.0.1 (2026-10-30)
+
+Cleanup after the first public release.
+
 - **Removed** the `webgl-constellations` and `webgl-cosmic-art-direction` skills. Both were written
   for one particular site's look rather than for web work in general. The WebGL craft cluster is now
   a router plus five skills, and the package carries 18 skills (the README's prose, tables and
   diagram all say 18).
+- **Changed** the agent wording to say exactly what is known, in a new README section, "Which agents
+  it runs on": setup is written for Claude Code; Codex works (Voidloom's Codex hook, one command plus a
+  trust step); Antigravity has been used as a called agent, not yet as the setup tool; Kimi Code reads
+  `AGENTS.md`; other routes such as a local model through Ollama are not yet tested. You start your agent
+  in the package folder, or point it at the folder.
 - **Fixed** the README's sequence diagram, which failed to render on GitHub (a semicolon in a note
   ended the statement early).
-- **Changed** the README and START HERE to name the tool generically: the workbench runs through any AI coding
-  agent (Claude Code, Codex, Antigravity, Kimi Code, or a local model through a tool such as Ollama), and you can
-  start the agent in the package folder or point it at the folder.
-- **Changed** the agent wording again to say exactly what is known: setup is written for Claude Code; Codex works
-  (Voidloom's Codex hook, one command plus a trust step); Antigravity has been used as a called agent, not yet as the
-  setup tool; Kimi Code reads `AGENTS.md`; other routes such as Ollama are not yet tested. A new README section,
-  "Which agents it runs on", holds the details.
 
 ## 1.0.0 (2026-10-30)
 
