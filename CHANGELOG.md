@@ -10,7 +10,8 @@ GitHub release, and `VERSION` holds the current number.
 
 - **Removed** the `webgl-constellations` and `webgl-cosmic-art-direction` skills. Both were written
   for one particular site's look rather than for web work in general. The WebGL craft cluster is now
-  a router plus five skills, and the package carries 18 skills.
+  a router plus five skills, and the package carries 18 skills (the README's prose, tables and
+  diagram all say 18).
 - **Fixed** the README's sequence diagram, which failed to render on GitHub (a semicolon in a note
   ended the statement early).
 - **Changed** the README and START HERE to name the tool generically: the workbench runs through any AI coding

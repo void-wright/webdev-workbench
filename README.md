@@ -77,7 +77,7 @@ flowchart TB
 
     subgraph kit["This workbench"]
         pack["02 Memory pack<br/>1,666 web-craft memories"]
-        skills["03 Skills (20)<br/>WebGL, scroll journeys, AEO,<br/>Astro, web apps, resource hubs"]
+        skills["03 Skills (18)<br/>WebGL, scroll journeys, AEO,<br/>Astro, web apps, resource hubs"]
         reason["04 Reasoning<br/>Inner Council + planning cognition"]
         autos["05 Automation harnesses (3)<br/>first build, site care, resource hub"]
         agents["Review-loop agents<br/>generator, reviewer, curator"]
