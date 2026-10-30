@@ -4,7 +4,7 @@ Every file in this package, its size and sha256, derived at assembly time (never
 
 - Memory pack: see `02_memory/PACK_MANIFEST.md` (its first lines):
   > **Web-dev workbench pre-seed pack (a free Voidwright release)** · **Version 1.0.0** · **Entries: 1666** · common tag `webdev-pack` · generated 2026-10-29 · sha256 `0525906c89fd43a6de586eeff2c4bf6719791d5c4ad1c17a0b19716a32570af1`
-- Files: 217 (plus this MANIFEST.md); total 5,579,400 bytes
+- Files: 217 (plus this MANIFEST.md); total 5,580,953 bytes
 
 | top-level | files |
 |---|---|
@@ -23,11 +23,11 @@ To verify every file on your machine, run `python3 verify_manifest.py` from the 
 
 | path | bytes | sha256 |
 |---|---|---|
-| `00_START_HERE.md` | 6726 | `c7f28ea8b206e28c1dd301eb4fb3f03b86bdc94407e5cb6f23e92d2bb1256cc1` |
-| `CHANGELOG.md` | 2273 | `4dffbf8cc87f1a24ef303a707d07922f349e0e1b76b33413691ff0e4af4e12ed` |
+| `00_START_HERE.md` | 6741 | `9caa966d83c2b403a66ee347345d2bd5012211f935b0d960c0c7c88500805ef7` |
+| `CHANGELOG.md` | 2666 | `75539f47f66f833699caf09b744f0589c9f4dab72f483ae7c809a799369bf03f` |
 | `LICENSE` | 11362 | `73c162a8c72b5ed4f6279a8608ac42a195221bdbcb8a886b6651317f2941e126` |
 | `NOTICE` | 1699 | `29a50eb0bf049c85d3cb80aac100808c020fa52fe7ec06ef7bffdaf0bda75b4f` |
-| `README.md` | 15512 | `6ea8a18ebb4ca54da526a4586419e96ce2f2e5329d8d383a74bffa09fe63c58e` |
+| `README.md` | 16657 | `68b0b143c3ee69b36df3b227f887d530d8c97eee9812ceb9eec23d3ccb9635d8` |
 | `SETUP_GUIDE.md` | 63180 | `01c6330c3a8d6609a859467c0750016569dfa46076204f90e13c849327a0af7c` |
 | `VERSION` | 6 | `59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03` |
 | `verify_manifest.py` | 3886 | `5667d80fce4591f27c146b4c474dd61bcb53c84be4270dfb84b950188ea709a5` |

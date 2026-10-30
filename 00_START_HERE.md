@@ -3,7 +3,7 @@
 *A free release by Voidwright.*
 
 **To the person.** This package turns your computer into a web-development workbench for your **AI coding agent**
-(Claude Code, Codex, Antigravity, Kimi Code, or a local model run through a tool such as Ollama):
+(setup is written for Claude Code, and Codex works too; the README's "Which agents it runs on" has the details):
 - **Voidloom**, a memory brain for coding agents. It remembers what you and your agent learn, so later sessions can recall it.
   It is downloaded from its public repository during setup (it is not inside this package).
 - **A memory pack of web craft**, loaded into that brain, so your agent starts out knowing how modern sites are built,

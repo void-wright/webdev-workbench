@@ -13,7 +13,8 @@ makes AI control practical: every page, component, style token and route is plai
 AI can read, change, test and deploy, with no database-driven admin screen standing between it and the site. Pages
 ship as fast static HTML, and content can come from a headless content store when the site needs one.
 
-It runs through whichever **AI coding agent** you already use: Claude Code, Codex, Antigravity, Kimi Code, or a local model run through a tool such as Ollama. Setup installs [Voidloom](https://github.com/void-wright/voidloom), a local memory brain for
+It works through an **AI coding agent**. Setup is written for Claude Code, Codex works too, and everything else is plain
+files any agent can read ([which agents it runs on](#which-agents-it-runs-on)). Setup installs [Voidloom](https://github.com/void-wright/voidloom), a local memory brain for
 AI agents, and loads it with **1,666 memories of web craft**. On top of that sit **18 skills**, **three website
 automation harnesses** that grade every build with an independent reviewer, a set of **reasoning aids**, small **web tools**,
 and **plain step-by-step guides** for GitHub, Cloudflare and Vercel.
@@ -197,14 +198,14 @@ map that tells the agent which memories to recall at the start of a job.
 
 ## Install
 
-**You need:** an AI coding agent (Claude Code, Codex, Antigravity, Kimi Code, or a local model run through a tool such as Ollama), git, and Python 3. It runs on Linux and macOS; on Windows, it runs inside WSL2 Ubuntu.
+**You need:** an AI coding agent (setup is written for Claude Code; see [which agents it runs on](#which-agents-it-runs-on)), git, and Python 3. It runs on Linux and macOS; on Windows, it runs inside WSL2 Ubuntu.
 Plan for about **6 GB** of free disk on a Mac or a CPU-only machine (about **12 GB** with an NVIDIA GPU, **1 GB**
 for the keyword-only brain), and about an hour of your attention.
 
 ```bash
 git clone https://github.com/void-wright/webdev-workbench.git ~/webdev-workbench-package
 cd ~/webdev-workbench-package
-claude        # or codex, agy, kimi, or your local agent's command
+claude        # setup is written for Claude Code; see "Which agents it runs on" below
 ```
 
 Then say:
@@ -227,6 +228,23 @@ later. It then:
 
 Every change is recorded, and `bin/install_skills.sh --uninstall` puts back what the skill installer changed
 (preview it with `--uninstall --dry-run`). Voidloom has its own uninstaller.
+
+### Which agents it runs on
+
+- **Claude Code.** Setup is written for Claude Code, and parts of it have been run with it. The persona forge, the
+  inner council and the three reviewer agents are Claude Code features.
+- **Codex.** Codex works too: Voidloom hooks natively into Codex, and Voidwright has used these systems there, with
+  the hook giving Codex the memory brain. This package's setup wires only Claude Code's hook, so on Codex you turn on
+  Voidloom's Codex hook yourself with one command, then trust the hook once inside Codex:
+
+  ```bash
+  voidloom hooks install --platform codex --yes   # then, inside Codex: /hooks
+  ```
+- **Antigravity.** Antigravity has been used as an agent the system calls on (Voidloom's overnight thinker can run
+  through it, on Linux or WSL), but not yet as the tool you drive setup from.
+- **Kimi Code.** Kimi Code reads Voidloom's instructions from an `AGENTS.md` file.
+- **Anything else.** The skills, guides and memory pack are plain files any AI coding agent can read. Other routes,
+  such as a local model through Ollama, are not yet tested.
 
 ---
 

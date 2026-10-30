@@ -17,6 +17,10 @@ GitHub release, and `VERSION` holds the current number.
 - **Changed** the README and START HERE to name the tool generically: the workbench runs through any AI coding
   agent (Claude Code, Codex, Antigravity, Kimi Code, or a local model through a tool such as Ollama), and you can
   start the agent in the package folder or point it at the folder.
+- **Changed** the agent wording again to say exactly what is known: setup is written for Claude Code; Codex works
+  (Voidloom's Codex hook, one command plus a trust step); Antigravity has been used as a called agent, not yet as the
+  setup tool; Kimi Code reads `AGENTS.md`; other routes such as Ollama are not yet tested. A new README section,
+  "Which agents it runs on", holds the details.
 
 ## 1.0.0 (2026-10-30)
 
