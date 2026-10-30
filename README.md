@@ -13,13 +13,14 @@ makes AI control practical: every page, component, style token and route is plai
 AI can read, change, test and deploy, with no database-driven admin screen standing between it and the site. Pages
 ship as fast static HTML, and content can come from a headless content store when the site needs one.
 
-It runs on Claude Code. Setup installs [Voidloom](https://github.com/void-wright/voidloom), a local memory brain for
+It runs through whichever **AI coding agent** you already use: Claude Code, Codex, Antigravity, Kimi Code, or a local model run through a tool such as Ollama. Setup installs [Voidloom](https://github.com/void-wright/voidloom), a local memory brain for
 AI agents, and loads it with **1,666 memories of web craft**. On top of that sit **18 skills**, **three website
 automation harnesses** that grade every build with an independent reviewer, a set of **reasoning aids**, small **web tools**,
 and **plain step-by-step guides** for GitHub, Cloudflare and Vercel.
 
-Claude does the setup itself. You open Claude Code in this folder, say one sentence, answer one round of questions,
-and do the few steps that are yours alone: passwords, browser sign-ins and spending limits.
+Your agent does the setup itself. You start it in this folder (or start it anywhere and point it at the folder), say
+one sentence, answer one round of questions, and do the few steps that are yours alone: passwords, browser sign-ins and
+spending limits.
 
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](./LICENSE)
 [![Built on Voidloom](https://img.shields.io/badge/built%20on-Voidloom-6f42c1.svg)](https://github.com/void-wright/voidloom)
@@ -46,7 +47,7 @@ Putting the AI at the center instead leads to seven working principles.
 - **It remembers.** The memory brain recalls past fixes, decisions and preferences by meaning at the start of every
   session, so a lesson learned on one page is applied on the next.
 - **It stays on your side.** The brain is one file in your home folder. Keys live in your own key file, never in a
-  repository or a chat. **No keys are required at all:** every paid service has a manual route where Claude writes the
+  repository or a chat. **No keys are required at all:** every paid service has a manual route where the agent writes the
   settings into a handoff file and you complete the step on the vendor's website.
 
 ### What piloting a site looks like
@@ -64,10 +65,10 @@ You describe the change. The AI recalls what it knows, does the work, checks it 
 
 ```mermaid
 flowchart TB
-    you(["You"]) <--> cc["Claude Code session"]
+    you(["You"]) <--> cc["AI coding agent session"]
 
     subgraph brain["Voidloom memory brain (cloned from its own repo)"]
-        hook["Session-start hook<br/>hands Claude its relevant memories"]
+        hook["Session-start hook<br/>hands the agent its relevant memories"]
         db[("One SQLite file<br/>your memories + the web-craft pack")]
         organs["Optional overnight routines<br/>consolidate, link, find gaps"]
         hook --- db
@@ -101,7 +102,7 @@ flowchart TB
 **The memory brain** is Voidloom: a command-line tool, a session-start hook and one SQLite file. Setup clones it from
 its public repository at a pinned commit and installs it. It is not copied into this repo.
 
-**The skills** are knowledge Claude reaches for while it works. **The automation harnesses** wrap the model for whole jobs:
+**The skills** are knowledge the agent reaches for while it works. **The automation harnesses** wrap the model for whole jobs:
 each one gives it a persona, a step-by-step guide, a skillbook of hard-won rules, a memory map and a review loop, so a
 complete job runs from start to finish. **The reasoning aids** help with weighty decisions.
 **The tools and guides** are what the harnesses use to reach your own accounts.
@@ -133,7 +134,7 @@ harnesses can find it later.
 sequenceDiagram
     participant S as Setup (once)
     participant B as Voidloom brain
-    participant C as Claude Code
+    participant C as Coding agent
     participant N as Overnight (optional)
     S->>B: install Voidloom, load the 1,666-memory pack
     S->>B: recall battery (276 test phrases) proves recall works
@@ -151,7 +152,7 @@ sequenceDiagram
 | Folder | What it holds |
 |---|---|
 | `00_START_HERE.md` | The two-minute overview for the person installing it |
-| `SETUP_GUIDE.md` | The guide Claude follows to install everything, phase by phase (P0 to P8) |
+| `SETUP_GUIDE.md` | The guide the agent follows to install everything, phase by phase (P0 to P8) |
 | `02_memory/` | The web-craft memory pack, its manifest and the recall battery |
 | `03_skills/` | 18 skills (listed below) |
 | `04_reasoning/` | The four Inner Council voices, the planning-cognition skill and the `/inner-council` command |
@@ -182,7 +183,7 @@ sequenceDiagram
 | `resource-hub-maintenance` | Dr. Wren Alcott | Running a content library on Astro and Sanity: adding, gating and organizing resources |
 
 Each harness has a `comprehensive_guide.md`, a `skillbook.md` of hard-won rules, a `personality.json` and a memory
-map that tells Claude which memories to recall at the start of a job.
+map that tells the agent which memories to recall at the start of a job.
 
 ### Reasoning aids
 
@@ -196,21 +197,21 @@ map that tells Claude which memories to recall at the start of a job.
 
 ## Install
 
-**You need:** Claude Code, git, and Python 3. It runs on Linux and macOS; on Windows, it runs inside WSL2 Ubuntu.
+**You need:** an AI coding agent (Claude Code, Codex, Antigravity, Kimi Code, or a local model run through a tool such as Ollama), git, and Python 3. It runs on Linux and macOS; on Windows, it runs inside WSL2 Ubuntu.
 Plan for about **6 GB** of free disk on a Mac or a CPU-only machine (about **12 GB** with an NVIDIA GPU, **1 GB**
 for the keyword-only brain), and about an hour of your attention.
 
 ```bash
 git clone https://github.com/void-wright/webdev-workbench.git ~/webdev-workbench-package
 cd ~/webdev-workbench-package
-claude
+claude        # or codex, agy, kimi, or your local agent's command
 ```
 
 Then say:
 
 > "Read 00_START_HERE.md and SETUP_GUIDE.md, then take it from here."
 
-Claude detects your computer and asks **everything in one message** before it installs anything: which processor the
+The agent detects your computer and asks **everything in one message** before it installs anything: which processor the
 brain may use, whether it should think overnight and with which model, how its monthly self-review is approved,
 whether to run nightly routines, whether to wire the session hook, and whether to set up GitHub and a host now or
 later. It then:
@@ -235,7 +236,7 @@ The current version is in [`VERSION`](./VERSION), and every release is listed in
 [`CHANGELOG.md`](./CHANGELOG.md) and tagged in git (`v1.0.0`, and so on). To install a specific release, clone it
 by tag: `git clone --branch v1.0.0 https://github.com/void-wright/webdev-workbench.git ~/webdev-workbench-package`.
 
-To update an existing install, ask Claude to do it, or run these from the package folder:
+To update an existing install, ask your agent to do it, or run these from the package folder:
 
 ```bash
 git pull                                   # fetch the latest release

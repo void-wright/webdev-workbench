@@ -13,6 +13,9 @@ GitHub release, and `VERSION` holds the current number.
   a router plus five skills, and the package carries 18 skills.
 - **Fixed** the README's sequence diagram, which failed to render on GitHub (a semicolon in a note
   ended the statement early).
+- **Changed** the README and START HERE to name the tool generically: the workbench runs through any AI coding
+  agent (Claude Code, Codex, Antigravity, Kimi Code, or a local model through a tool such as Ollama), and you can
+  start the agent in the package folder or point it at the folder.
 
 ## 1.0.0 (2026-10-30)
 
