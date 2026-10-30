@@ -1,30 +1,30 @@
 # Webdev Workbench
 
-**An AI-native website, built and run from your favourite LLM.**
+**An AI-native website, built and run from your favorite LLM.**
 
 Most websites are built for people to click through. AI usually arrives afterwards: bolted on through plugins and
 admin panels, or reading from the outside a site that was built for humans. Webdev Workbench turns that around. The AI builds the whole
-site with itself at the centre, so it holds every lever: the code, the pages, the content, the deploys and the
+site with itself at the center, so it holds every lever: the code, the pages, the content, the deploys and the
 infrastructure. You build, change, redesign and grow the site by talking to it in the terminal. The AI carries out
 the work as the site's own operator.
 
 It runs on Claude Code. Setup installs [Voidloom](https://github.com/void-wright/voidloom), a local memory brain for
 AI agents, and loads it with **1,666 memories of web craft**. On top of that sit **20 skills**, **three website
-automations** that grade every build with an independent reviewer, a set of **reasoning aids**, small **web tools**,
+automation harnesses** that grade every build with an independent reviewer, a set of **reasoning aids**, small **web tools**,
 and **plain step-by-step guides** for GitHub, Cloudflare and Vercel.
 
 Claude does the setup itself. You open Claude Code in this folder, say one sentence, answer one round of questions,
 and do the few steps that are yours alone: passwords, browser sign-ins and spending limits.
 
-[![Licence: Apache-2.0](https://img.shields.io/badge/licence-Apache--2.0-blue.svg)](./LICENSE)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](./LICENSE)
 [![Built on Voidloom](https://img.shields.io/badge/built%20on-Voidloom-6f42c1.svg)](https://github.com/void-wright/voidloom)
 
 ---
 
-## The idea: AI at the centre
+## The idea: AI at the center
 
 A conventional site gives an AI assistant a narrow window: paste this into the editor, click that in the dashboard.
-Putting the AI at the centre instead leads to seven working principles.
+Putting the AI at the center instead leads to seven working principles.
 
 - **The AI is the operator.** Every part of the site is something it can read and change from the terminal: Astro
   pages and components, design tokens, the content store, the deploy pipeline, DNS and security headers. The few
@@ -34,9 +34,9 @@ Putting the AI at the centre instead leads to seven working principles.
   rest alone.
 - **Content goes live from the console.** Approved pages, posts and resources are assembled, deployed to a preview,
   checked in a real browser and promoted to production in one continuous run, without a manual upload step.
-- **The site is written for other AIs to read.** Answer-engine optimisation, structured data and agent-readable files
+- **The site is written for other AIs to read.** Answer-engine optimization, structured data and agent-readable files
   such as `llms.txt` are part of the build, so AI search and AI agents can find, quote and use the site.
-- **Nothing ships unreviewed.** Each automation runs a generator, an independent reviewer and a curator. A build is
+- **Nothing ships unreviewed.** Each automation harness runs a generator, an independent reviewer and a curator. A build is
   done only when it clears a hard threshold of 9.8 out of 10.
 - **It remembers.** The memory brain recalls past fixes, decisions and preferences by meaning at the start of every
   session, so a lesson learned on one page is applied on the next.
@@ -73,7 +73,7 @@ flowchart TB
         pack["02 Memory pack<br/>1,666 web-craft memories"]
         skills["03 Skills (20)<br/>WebGL, scroll journeys, AEO,<br/>Astro, web apps, resource hubs"]
         reason["04 Reasoning<br/>Inner Council + planning cognition"]
-        autos["05 Automations (3)<br/>first build, site care, resource hub"]
+        autos["05 Automation harnesses (3)<br/>first build, site care, resource hub"]
         agents["Review-loop agents<br/>generator, reviewer, curator"]
         tools["06-07 Web and nexus tools"]
         guides["09 Guides<br/>GitHub, Cloudflare, Vercel"]
@@ -96,15 +96,16 @@ flowchart TB
 **The memory brain** is Voidloom: a command-line tool, a session-start hook and one SQLite file. Setup clones it from
 its public repository at a pinned commit and installs it. It is not copied into this repo.
 
-**The skills** are knowledge Claude reaches for while it works. **The automations** are longer, persona-led workflows
-for whole jobs, each with its own guide, skillbook and memory map. **The reasoning aids** help with weighty decisions.
-**The tools and guides** are what the automations use to reach your own accounts.
+**The skills** are knowledge Claude reaches for while it works. **The automation harnesses** wrap the model for whole jobs:
+each one gives it a persona, a step-by-step guide, a skillbook of hard-won rules, a memory map and a review loop, so a
+complete job runs from start to finish. **The reasoning aids** help with weighty decisions.
+**The tools and guides** are what the harnesses use to reach your own accounts.
 
 ### What happens on a site job
 
 ```mermaid
 flowchart LR
-    ask["You: 'build me a site'<br/>or 'fix this page'"] --> route{"Which automation?"}
+    ask["You: 'build me a site'<br/>or 'fix this page'"] --> route{"Which harness?"}
     route -- "new site" --> backus["First build<br/>(Backus)"]
     route -- "live site care" --> cassian["Website maintenance<br/>(Cassian)"]
     route -- "resource library" --> wren["Resource hub<br/>(Wren)"]
@@ -118,8 +119,8 @@ flowchart LR
     ship --> store["Store what was learned<br/>back into the brain"]
 ```
 
-The three automations hand work to each other: the first build registers every new site so the maintenance
-automations can find it later.
+The three harnesses hand work to each other: the first build registers every new site so the maintenance
+harnesses can find it later.
 
 ### The memory lifecycle
 
@@ -149,7 +150,7 @@ sequenceDiagram
 | `02_memory/` | The web-craft memory pack, its manifest and the recall battery |
 | `03_skills/` | 20 skills (listed below) |
 | `04_reasoning/` | The four Inner Council voices, the planning-cognition skill and the `/inner-council` command |
-| `05_automations/` | The three website automations and the three review-loop agents |
+| `05_automations/` | The three website automation harnesses and the three review-loop agents |
 | `06_web_tools/` | Helpers for Cloudflare APIs, safe deploys, build and preview watchers, form checks |
 | `07_nexus_tools/` | Keeps index memories in your brain in step with the tags they point to |
 | `08_claude_md/` | The short block setup adds to your `~/.claude/CLAUDE.md` |
@@ -162,20 +163,20 @@ sequenceDiagram
 |---|---|
 | **WebGL craft** (a router plus seven) | `webgl-craft` (start here), `webgl-renderer-and-budget`, `webgl-hardening-and-testing`, `webgl-interaction`, `webgl-light-and-color`, `webgl-constellations`, `webgl-cosmic-art-direction`, `webgl-handoff-and-porting` |
 | **Pages and apps** | `astro-website-page-creation`, `web-app-building`, `prototype-website-generation`, `scroll-journey` |
-| **Search and discovery** | `aeo-optimization` (answer-engine optimisation), `agent-readiness-frontier` (agent-readable sites) |
+| **Search and discovery** | `aeo-optimization` (answer-engine optimization), `agent-readiness-frontier` (agent-readable sites) |
 | **Resource libraries** | `resource-hub-resource-page-builder`, `resource-slug-design-canonical` |
 | **Design** | `corporate-graphic-design` |
-| **Reasoning layers for the automations** | `design-architect-thinking`, `website-maintenance-thinking`, `resource-hub-thinking` |
+| **Reasoning layers for the harnesses** | `design-architect-thinking`, `website-maintenance-thinking`, `resource-hub-thinking` |
 
-### Automations
+### Automation harnesses
 
-| Automation | Persona | Use it for |
+| Harness | Persona | Use it for |
 |---|---|---|
 | `client-site-first-build` | Dr. Merry Backus | A first build of a website, a resource hub or both, from a design handoff to a private preview |
 | `website-maintenance` | Dr. Cassian Holt | Looking after a live site: edits, new pages, fixes, security, preview to production |
-| `resource-hub-maintenance` | Dr. Wren Alcott | Running a content library on Astro and Sanity: adding, gating and organising resources |
+| `resource-hub-maintenance` | Dr. Wren Alcott | Running a content library on Astro and Sanity: adding, gating and organizing resources |
 
-Each automation has a `comprehensive_guide.md`, a `skillbook.md` of hard-won rules, a `personality.json` and a memory
+Each harness has a `comprehensive_guide.md`, a `skillbook.md` of hard-won rules, a `personality.json` and a memory
 map that tells Claude which memories to recall at the start of a job.
 
 ### Reasoning aids
@@ -212,7 +213,7 @@ later. It then:
 1. installs the prerequisites that are missing (P1);
 2. clones and installs Voidloom at its pinned commit, and checks the brain works (P2);
 3. loads the memory pack, adds vectors and runs the 276-phrase recall battery (P3);
-4. places the skills, reasoning aids, automations and tools, after showing you a dry run (P4);
+4. places the skills, reasoning aids, automation harnesses and tools, after showing you a dry run (P4);
 5. helps you design your own assistant persona with `/persona-forge` (P5);
 6. sets up GitHub and Cloudflare or Vercel, if you asked for it (P6);
 7. builds a one-page site for an invented bakery, to prove the whole chain works (P7);
@@ -242,14 +243,14 @@ blind reviewers each re-derived the evidence. The memory pack's recall was teste
 test phrases returned the right memory in the top five.
 
 The two knowledge skills built from public articles (`aeo-optimization`, `corporate-graphic-design`) keep their own
-synthesised guidance and a list of their sources with links. The articles themselves are not redistributed.
+synthesized guidance and a list of their sources with links. The articles themselves are not redistributed.
 
 ---
 
-## Licence
+## License
 
 [Apache-2.0](./LICENSE). See [`NOTICE`](./NOTICE) for third-party credits: the scroll-journey skill adapts an
-MIT-licensed method from SenseNova, and Voidloom is installed from its own repository under its own Apache-2.0 licence.
+MIT-licensed method from SenseNova, and Voidloom is installed from its own repository under its own Apache-2.0 license.
 
 A free release by [Voidwright](https://github.com/void-wright), which builds the dependable foundations that let any
-LLM stay at the centre and operate local, self-contained infrastructure on its own. Built by Andrew Grainger.
+LLM stay at the center and operate local, self-contained infrastructure on its own. Built by Andrew Grainger.

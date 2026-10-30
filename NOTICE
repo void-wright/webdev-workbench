@@ -18,15 +18,15 @@ Third-party material
 
 - 03_skills/scroll-journey adapts the method of the skill "sn-motion-html" from
   OpenSenseNova/SenseNova-Skills (MIT License, Copyright (c) 2026 SenseNova).
-  The upstream licence is kept unchanged at 03_skills/scroll-journey/LICENSE and
+  The upstream license is kept unchanged at 03_skills/scroll-journey/LICENSE and
   the changes are described in 03_skills/scroll-journey/VENDOR_NOTE.md.
 
 - 03_skills/aeo-optimization and 03_skills/corporate-graphic-design were built
   from public articles. The articles themselves are not redistributed: each
   skill ships a list of its sources (title, link and a one-line summary in our
-  own words) beside its own synthesised guidance. All rights in the linked
+  own words) beside its own synthesized guidance. All rights in the linked
   articles remain with their authors.
 
-- 03_skills/webgl-craft/references/10-licence-ledger.md records the licences of
+- 03_skills/webgl-craft/references/10-licence-ledger.md records the licenses of
   the libraries and techniques the WebGL skills discuss. None of those
   libraries ship in this repository.
