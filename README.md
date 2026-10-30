@@ -1,12 +1,17 @@
-# Webdev Workbench
+# Voidwright's webdev workbench
 
 **An AI-native website, built and run from your favorite LLM.**
 
 Most websites are built for people to click through. AI usually arrives afterwards: bolted on through plugins and
-admin panels, or reading from the outside a site that was built for humans. Webdev Workbench turns that around. The AI builds the whole
+admin panels, or reading from the outside a site that was built for humans. Voidwright's webdev workbench turns that around. The AI builds the whole
 site with itself at the center, so it holds every lever: the code, the pages, the content, the deploys and the
 infrastructure. You build, change, redesign and grow the site by talking to it in the terminal. The AI carries out
 the work as the site's own operator.
+
+**Every site is built on [Astro](https://astro.build),** the modern static-first web framework. That choice is what
+makes AI control practical: every page, component, style token and route is plain code in a git repository, which the
+AI can read, change, test and deploy, with no database-driven admin screen standing between it and the site. Pages
+ship as fast static HTML, and content can come from a headless content store when the site needs one.
 
 It runs on Claude Code. Setup installs [Voidloom](https://github.com/void-wright/voidloom), a local memory brain for
 AI agents, and loads it with **1,666 memories of web craft**. On top of that sit **20 skills**, **three website

@@ -29,7 +29,7 @@ def verify(folder):
             if got != want:
                 print("MISMATCH", path); bad += 1
     for root, dirs, files in os.walk("."):
-        dirs[:] = [d for d in dirs if d != "__pycache__"]
+        dirs[:] = [d for d in dirs if d not in ("__pycache__", ".git")]
         for f in files:
             rel = os.path.relpath(os.path.join(root, f), ".")
             if rel in listed or rel == "MANIFEST.md" or f.endswith((".pyc", ".pyo")):
