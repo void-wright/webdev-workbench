@@ -141,7 +141,7 @@ sequenceDiagram
     C->>B: recall by meaning while working
     C->>B: store new lessons, decisions, fixes
     N->>B: consolidate, link related memories, propose improvements
-    Note over B: you approve proposals; nothing changes silently
+    Note over B: you approve proposals, and nothing changes silently
 ```
 
 ---
