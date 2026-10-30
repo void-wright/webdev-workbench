@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+# wrangler-safe: run Cloudflare's wrangler against YOUR account only, with your token from ~/.config/webtools/keys.env.
+#
+#   bash wrangler-safe <wrangler arguments...>      (run it from your site's repository folder)
+#
+# What it adds to plain wrangler:
+#   1. Every CLOUDFLARE_* and CF_* variable inherited from your shell is dropped first, so a variable left over
+#      from another account or project cannot redirect a deploy.
+#   2. CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID are taken from your key file (parsed, never sourced or printed).
+#   3. If wrangler.jsonc, wrangler.json or wrangler.toml in this folder pins an account_id that differs from
+#      CLOUDFLARE_ACCOUNT_ID, it refuses (exit 65).
+#   4. If dist/.preview-build exists, it refuses `deploy` (unless --dry-run is given), so a preview build is never
+#      deployed to production. Make your preview build write that file to use this guard; it is harmless otherwise.
+# It uses the project's own wrangler (node_modules/.bin/wrangler) when present, otherwise `npx --yes wrangler@4`.
+# Exit codes: 64 usage, 65 refused, 66 key file problem, otherwise wrangler's own exit code.
+set -euo pipefail
+WT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+. "$WT_DIR/webtools-lib.sh"
+
+[ "$#" -ge 1 ] || { sed -n '2,17p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; exit 64; }
+wt_check_keyfile
+wt_require CLOUDFLARE_API_TOKEN tok
+wt_require CLOUDFLARE_ACCOUNT_ID acct
+wt_scrub_env
+
+for f in wrangler.jsonc wrangler.json wrangler.toml; do
+  [ -f "$f" ] || continue
+  pin="$(grep -oE 'account_id"?[[:space:]]*[:=][[:space:]]*"[0-9a-f]{32}"' "$f" | grep -oE '[0-9a-f]{32}' | head -n 1 || true)"
+  if [ -n "$pin" ] && [ "$pin" != "$acct" ]; then
+    wt_die 65 "REFUSING: $f pins account ...$(wt_tail4 "$pin"), but your key file is for account ...$(wt_tail4 "$acct")."
+  fi
+  break
+done
+
+if [ "$1" = "deploy" ] && [ -e ./dist/.preview-build ]; then
+  dry=0
+  for a in "$@"; do [ "$a" = "--dry-run" ] && dry=1; done
+  [ "$dry" = 1 ] || wt_die 65 "REFUSING: dist/ is a preview build (dist/.preview-build exists). Rebuild for production first."
+fi
+
+echo "[wrangler-safe] account ...$(wt_tail4 "$acct")" >&2
+export CLOUDFLARE_API_TOKEN="$tok" CLOUDFLARE_ACCOUNT_ID="$acct"
+unset tok
+if [ -x ./node_modules/.bin/wrangler ]; then
+  exec ./node_modules/.bin/wrangler "$@"
+else
+  exec npx --yes wrangler@4 "$@"
+fi

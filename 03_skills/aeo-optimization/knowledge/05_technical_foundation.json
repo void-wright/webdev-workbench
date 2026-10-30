@@ -1,0 +1,406 @@
+{
+  "metadata": {
+    "category": "05_technical_foundation",
+    "category_name": "Technical Foundation and Implementation",
+    "description": "Schema markup, crawlability, JavaScript rendering, Core Web Vitals, web crawler intelligence",
+    "url_count": 0,
+    "source_sections": [
+      "technical_foundation"
+    ],
+    "sources_file": "knowledge/sources.json",
+    "per_source_detail": "The per-source detail gathered while building this skill is not redistributed; this list links to the originals."
+  },
+  "source_document_content": {
+    "technical_foundation": {
+      "schema_markup": {
+        "definition": "Structured data code (typically JSON-LD format) that explicitly tells search engines and AI systems what content represents",
+        "formats": [
+          "JSON-LD (recommended)",
+          "Microdata",
+          "RDFa"
+        ],
+        "priority_schemas_for_aeo": [
+          {
+            "schema_type": "FAQPage",
+            "use_case": "Question-answer pairs, FAQ sections",
+            "aeo_importance": "Extremely high - directly feeds featured snippets and AI answers",
+            "implementation": "Each Q&A pair defined with mainEntity property",
+            "source": "AI-Era_SEO_AEO_Documentation_Guide.md"
+          },
+          {
+            "schema_type": "HowTo",
+            "use_case": "Step-by-step instructions and guides",
+            "aeo_importance": "Very high - structured steps ideal for AI extraction",
+            "implementation": "Define each step with text, image, and optional supply/tool lists",
+            "source": "AI-Era_SEO_AEO_Documentation_Guide.md"
+          },
+          {
+            "schema_type": "Article",
+            "use_case": "Blog posts, news articles, long-form content",
+            "aeo_importance": "High - establishes content type and authorship",
+            "key_properties": [
+              "headline",
+              "author",
+              "datePublished",
+              "dateModified",
+              "publisher"
+            ],
+            "source": "AI-Era_SEO_AEO_Documentation_Guide.md"
+          },
+          {
+            "schema_type": "Product",
+            "use_case": "E-commerce product pages",
+            "aeo_importance": "High for product queries",
+            "key_properties": [
+              "name",
+              "description",
+              "image",
+              "offers (price, availability)",
+              "aggregateRating",
+              "review"
+            ],
+            "source": "AI-Era_SEO_AEO_Documentation_Guide.md"
+          },
+          {
+            "schema_type": "Organization",
+            "use_case": "Site-wide organization information",
+            "aeo_importance": "Medium-high - establishes entity for Knowledge Graph",
+            "key_properties": [
+              "name",
+              "url",
+              "logo",
+              "sameAs (social profiles)",
+              "contactPoint"
+            ],
+            "source": "AI-Era_SEO_AEO_Documentation_Guide.md"
+          },
+          {
+            "schema_type": "Person",
+            "use_case": "Author bios, expert profiles",
+            "aeo_importance": "Medium-high - supports E-E-A-T signals",
+            "key_properties": [
+              "name",
+              "jobTitle",
+              "affiliation",
+              "sameAs (social profiles)"
+            ],
+            "source": "AI-Era_SEO_AEO_Documentation_Guide.md"
+          },
+          {
+            "schema_type": "QAPage",
+            "use_case": "Individual question-answer pages",
+            "aeo_importance": "High - similar to FAQPage for specific Q&A content",
+            "structure": "Main question with acceptedAnswer and suggestedAnswer properties"
+          },
+          {
+            "schema_type": "BreadcrumbList",
+            "use_case": "Site navigation hierarchy",
+            "aeo_importance": "Medium - helps AI understand content relationships",
+            "implementation": "Define navigation path from homepage to current page"
+          }
+        ],
+        "validation_tools": [
+          "Google Rich Results Test - https://search.google.com/test/rich-results",
+          "Schema.org Validator",
+          "Merkle's Schema Markup Generator"
+        ],
+        "source_for_validation": "https://insidea.com/blog/seo/aeo/overcoming-challenges-in-aeo-implementation/"
+      },
+      "crawlability_fundamentals": {
+        "definition": "The degree to which AI crawlers and search engine bots can access, navigate, and understand website content",
+        "critical_factors": [
+          {
+            "factor": "robots.txt Configuration",
+            "purpose": "Control which bots can access which parts of site",
+            "aeo_best_practice": "Allowlist AI bots explicitly to ensure content access",
+            "recommended_allowlist": [
+              "ChatGPT-User (OpenAI web browsing)",
+              "OAI-SearchBot (OpenAI search bot)",
+              "GPTBot (OpenAI training crawler)",
+              "Claude-Web (Anthropic web access)",
+              "ClaudeBot (Anthropic crawler)",
+              "PerplexityBot (Perplexity search)",
+              "GoogleOther (Google AI services)",
+              "Google-Extended (Google AI training)"
+            ],
+            "source": "AI-Era_SEO_AEO_Documentation_Guide.md"
+          },
+          {
+            "factor": "XML Sitemaps",
+            "purpose": "Provide comprehensive list of site URLs for efficient crawling",
+            "best_practices": [
+              "Include all important pages",
+              "Update automatically when new content published",
+              "Submit to Google Search Console and Bing Webmaster Tools",
+              "Use multiple sitemaps for large sites (max 50,000 URLs per sitemap)",
+              "Include lastmod dates for content freshness signals"
+            ]
+          },
+          {
+            "factor": "Internal Linking Architecture",
+            "purpose": "Help crawlers discover all content and understand relationships",
+            "best_practices": [
+              "All important pages within 3 clicks from homepage",
+              "Use descriptive anchor text for internal links",
+              "Create topic cluster internal linking (hub to spokes)",
+              "Avoid orphaned pages with no internal links",
+              "Implement breadcrumb navigation"
+            ]
+          },
+          {
+            "factor": "URL Structure",
+            "purpose": "Clear, logical URLs aid crawler understanding",
+            "best_practices": [
+              "Use descriptive, keyword-rich URLs",
+              "Implement hierarchical structure (domain.com/category/subcategory/page)",
+              "Avoid excessive parameters and session IDs",
+              "Use hyphens (not underscores) to separate words",
+              "Keep URLs concise (under 100 characters when possible)"
+            ]
+          }
+        ]
+      },
+      "javascript_and_rendering": {
+        "challenge": "Content loaded dynamically via JavaScript in Single Page Applications (SPAs) is often invisible to basic AI crawlers",
+        "impact": "If AI bots can't see content in initial HTML, it won't appear in answer engines",
+        "sources": [
+          "https://aeoradar.com/technical-aeo-challenges/",
+          "Web crawler intelligence synthesis"
+        ],
+        "solutions": [
+          {
+            "solution": "Server-Side Rendering (SSR)",
+            "description": "Generate HTML on server before sending to browser",
+            "frameworks": [
+              "Next.js (React)",
+              "Nuxt.js (Vue)",
+              "Angular Universal"
+            ],
+            "benefit": "Content immediately visible in HTML source for all crawlers",
+            "implementation_complexity": "Medium-high - requires framework support"
+          },
+          {
+            "solution": "Static Site Generation (SSG)",
+            "description": "Pre-build all pages as static HTML at build time",
+            "tools": [
+              "Gatsby",
+              "Hugo",
+              "Jekyll",
+              "11ty"
+            ],
+            "benefit": "Optimal performance and crawlability",
+            "limitation": "Best for content that doesn't change frequently"
+          },
+          {
+            "solution": "Dynamic Rendering",
+            "description": "Serve static HTML to bots, full JavaScript to users",
+            "implementation": "Detect user-agent and serve appropriate version",
+            "benefit": "Maintains rich user experience while ensuring bot access",
+            "caution": "Google discourages but allows if done properly"
+          },
+          {
+            "solution": "Progressive Enhancement",
+            "description": "Embed critical content in HTML, enhance with JavaScript",
+            "implementation": "Start with semantic HTML, layer JavaScript functionality on top",
+            "benefit": "Works for all users and crawlers regardless of JavaScript support"
+          }
+        ]
+      },
+      "page_experience_core_web_vitals": {
+        "definition": "User experience metrics that influence both SEO rankings and crawler efficiency",
+        "components": [
+          {
+            "metric": "Largest Contentful Paint (LCP)",
+            "measures": "Loading performance - time until largest content element visible",
+            "target": "Under 2.5 seconds",
+            "aeo_impact": "Slow loading may cause crawlers to timeout before rendering content"
+          },
+          {
+            "metric": "First Input Delay (FID) / Interaction to Next Paint (INP)",
+            "measures": "Interactivity - responsiveness to user interactions",
+            "target": "Under 100ms (FID) or under 200ms (INP)",
+            "aeo_impact": "Less direct impact but contributes to overall page quality signals"
+          },
+          {
+            "metric": "Cumulative Layout Shift (CLS)",
+            "measures": "Visual stability - unexpected layout movements",
+            "target": "Under 0.1",
+            "aeo_impact": "Stability helps accurate content extraction"
+          }
+        ],
+        "optimization_tactics": [
+          "Optimize images (WebP format, proper sizing, lazy loading)",
+          "Minimize JavaScript execution time",
+          "Use Content Delivery Network (CDN)",
+          "Implement browser caching",
+          "Reduce server response time (TTFB under 600ms)",
+          "Eliminate render-blocking resources"
+        ],
+        "measurement_tools": [
+          "Google PageSpeed Insights",
+          "Lighthouse",
+          "WebPageTest"
+        ],
+        "source": "https://www.semrush.com/blog/ai-overviews/"
+      },
+      "mobile_optimization": {
+        "importance": "Mobile-first indexing means Google primarily uses mobile version for ranking and AI answer selection",
+        "requirements": [
+          "Responsive design that adapts to all screen sizes",
+          "Touch-friendly interface with adequate button/link spacing",
+          "Readable font sizes without zooming (minimum 16px)",
+          "Fast mobile load times (target under 3 seconds)",
+          "No intrusive interstitials or pop-ups on mobile",
+          "Simplified navigation for small screens"
+        ],
+        "testing": "Use Google Mobile-Friendly Test and Search Console Mobile Usability report",
+        "aeo_impact": "Many AI queries originate from mobile devices; poor mobile experience reduces citation likelihood"
+      },
+      "security_https": {
+        "requirement": "HTTPS (SSL/TLS encryption) is mandatory for modern SEO and AEO",
+        "impacts": [
+          "Google ranking factor",
+          "Browser security warnings deter users",
+          "Required for many modern web features",
+          "Trust signal for E-E-A-T"
+        ],
+        "implementation": "Obtain SSL certificate, configure server, update all internal links to HTTPS, set up 301 redirects from HTTP"
+      },
+      "web_crawler_intelligence_integration": {
+        "modern_crawler_capabilities": {
+          "javascript_rendering": "Modern crawlers like Firecrawl can render JavaScript and SPAs, but basic bots cannot",
+          "anti_blocking": "Advanced crawlers use stealth mode and proxy rotation to avoid detection",
+          "content_extraction_formats": [
+            "Markdown - Clean, structured text (preferred by many AI systems)",
+            "HTML - Full markup with structure",
+            "JSON - Structured data extraction",
+            "Screenshots - Visual content capture"
+          ],
+          "actions_before_scraping": "Can click elements, scroll, fill forms before capturing content",
+          "source": "Synthesis of the public Firecrawl documentation"
+        },
+        "scrapy_framework_insights": {
+          "asynchronous_processing": "High-performance crawling through async requests",
+          "selector_strategies": [
+            "CSS selectors - Simple, readable syntax for element selection",
+            "XPath - Powerful querying for complex extraction patterns"
+          ],
+          "spider_architecture": "Different spider types for different content structures (recursive crawling, XML feeds, CSV, sitemaps)",
+          "middleware_system": "Request/response interception for custom processing",
+          "robots_txt_compliance": "Built-in respect for crawl rules and delays",
+          "source": "Synthesis of the public Scrapy documentation"
+        },
+        "crawler_friendly_design_principles": [
+          {
+            "principle": "Server-Side Rendering Priority",
+            "rationale": "SSR ensures all content visible in initial HTML, accessible to all crawlers regardless of JavaScript capability",
+            "implementation": "Use Next.js, Nuxt.js, or similar SSR frameworks for dynamic content"
+          },
+          {
+            "principle": "Clean HTML Semantic Structure",
+            "rationale": "Semantic HTML (header, nav, main, article, section, footer) helps crawlers understand content hierarchy",
+            "implementation": "Use HTML5 semantic elements, proper heading hierarchy (H1-H6), meaningful class names"
+          },
+          {
+            "principle": "Schema Markup for Structured Extraction",
+            "rationale": "JSON-LD structured data explicitly defines content meaning for crawlers",
+            "implementation": "Implement comprehensive schema types relevant to content (Article, Product, FAQPage, HowTo, Organization)"
+          },
+          {
+            "principle": "Static Content for Critical Pages",
+            "rationale": "Static HTML guarantees universal accessibility",
+            "implementation": "Use Static Site Generation (SSG) for important landing pages, product pages, and content hubs"
+          },
+          {
+            "principle": "Fast Page Load Times",
+            "rationale": "Crawlers have timeout limits; slow pages may not fully render",
+            "implementation": "Optimize images, minimize JavaScript, use CDN, improve server response times"
+          },
+          {
+            "principle": "Accessible Content (No Auth Walls)",
+            "rationale": "Content behind login barriers is invisible to public crawlers",
+            "implementation": "Create public summaries or previews of gated content, use schema to indicate free vs. paid content"
+          },
+          {
+            "principle": "Crawler-Friendly URLs and Sitemaps",
+            "rationale": "Clear URL patterns and comprehensive sitemaps enable complete site discovery",
+            "implementation": "Logical URL hierarchy, XML sitemaps with all important pages, pattern-based URL structure"
+          },
+          {
+            "principle": "Robots.txt AI Bot Allowlist",
+            "rationale": "Explicitly permit AI crawlers to ensure content access",
+            "implementation": "Allow ChatGPT-User, GPTBot, Claude-Web, PerplexityBot, GoogleOther, Google-Extended in robots.txt"
+          }
+        ],
+        "content_extraction_optimization": [
+          {
+            "technique": "Markdown-Friendly Formatting",
+            "description": "Structure content in a way that converts cleanly to Markdown",
+            "best_practices": [
+              "Use clear heading hierarchy (H1, H2, H3)",
+              "Employ bulleted and numbered lists liberally",
+              "Use emphasis (bold, italic) sparingly and meaningfully",
+              "Structure tables with proper thead and tbody elements"
+            ],
+            "rationale": "Many AI systems prefer Markdown for clean text extraction"
+          },
+          {
+            "technique": "CSS Selector-Friendly Markup",
+            "description": "Use semantic, consistent class and ID naming",
+            "best_practices": [
+              "Consistent class naming conventions (e.g., BEM methodology)",
+              "Meaningful, descriptive class names (avoid generic 'div1', 'content-box')",
+              "Use data attributes for semantic metadata",
+              "Avoid deeply nested element structures"
+            ],
+            "rationale": "Easier for scrapers to target and extract specific content sections"
+          },
+          {
+            "technique": "Minimal Obfuscation",
+            "description": "Avoid unnecessarily complex or obfuscated markup",
+            "best_practices": [
+              "Keep JavaScript bundles readable (avoid excessive minification for critical content)",
+              "Use standard HTML elements over custom web components when possible",
+              "Avoid canvas or WebAssembly for text content",
+              "Provide text alternatives for visual content"
+            ],
+            "rationale": "Complex rendering chains reduce crawler success rate"
+          }
+        ],
+        "technical_challenges_and_solutions": [
+          {
+            "challenge": "Dynamically Generated Content (JavaScript SPAs)",
+            "crawler_limitation": "Basic bots see empty initial HTML",
+            "solution": "Server-Side Rendering or Static Site Generation",
+            "source": "https://aeoradar.com/technical-aeo-challenges/"
+          },
+          {
+            "challenge": "Authentication-Required Content",
+            "crawler_limitation": "Login walls block all bots",
+            "solution": "Create public preview pages, use schema to indicate locked content, externalize key context",
+            "source": "https://aeoradar.com/technical-aeo-challenges/"
+          },
+          {
+            "challenge": "Complex Forms and Interactivity",
+            "crawler_limitation": "CAPTCHAs and multi-step flows prevent bot interaction",
+            "solution": "Create static result pages, use schema markup for form-generated data, externalize form logic",
+            "source": "https://aeoradar.com/technical-aeo-challenges/"
+          },
+          {
+            "challenge": "Canvas Element Content",
+            "crawler_limitation": "Text/graphics drawn on canvas invisible to bots",
+            "solution": "Provide fallback text content, use ARIA labels, parallel textual content",
+            "source": "https://aeoradar.com/technical-aeo-challenges/"
+          },
+          {
+            "challenge": "WebAssembly (Wasm) Content",
+            "crawler_limitation": "Wasm code doesn't reflect in DOM",
+            "solution": "Implement DOM reflection, use hidden elements with text content, create JSON-LD schemas",
+            "source": "https://aeoradar.com/technical-aeo-challenges/"
+          }
+        ]
+      }
+    }
+  },
+  "sources": []
+}

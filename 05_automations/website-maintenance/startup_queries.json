@@ -1,0 +1,22 @@
+[
+  "set up preview secrets before a Worker preview exists and recreate a stale preview",
+  "branch created from main fails preview build because Wrangler preview configuration is missing",
+  "watch a build by commit and retry using its UUID when the build is not visible",
+  "verify a deployment using its product page probe, build marker, and binding names",
+  "simulate CI from a clean clone and check the Workers build command, readlink output, Node symlinks, and npm",
+  "verify preview protection with a Cloudflare Access service token: 302 without a token and 200 with a valid token",
+  "verify Cloudflare preview host overrides and the X-Robots-Tag noindex header on workers.dev",
+  "pin account_id in Wrangler and verify that deployment credentials target the same account",
+  "automate the production configuration changes required for cutover in the main build",
+  "check that a push to main produces a preview before production promotion",
+  "check every privacy page sentence against the code using a true, false, or unverifiable truth table",
+  "Lighthouse produced zero reports but the median calculation reported success: zero inputs must fail",
+  "preserve the test command exit status when piping axe output through tail",
+  "identify the build each validation log assessed and print the served tree hash first",
+  "code inspection scores can plateau: run Lighthouse and axe, and continue when the ACE score remains below 9.8",
+  "an independent reviewer scores without making fixes; passing automated checks is a precondition, not the final verdict",
+  "use the renderer decision tree and select the first suitable option, preferring HTML, SVG, and CSS for meaningful content",
+  "check the brightest background pixel beneath each line of text and record the contrast lesson during ACE curation",
+  "check dependency versions against npm releases during maintenance and resolve required upgrades before further changes",
+  "document any Wrangler upgrade hold with its reason and a review date"
+]

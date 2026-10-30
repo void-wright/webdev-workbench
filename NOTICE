@@ -1,0 +1,32 @@
+Webdev Workbench, a Voidwright extension for Claude Code and Voidloom
+Copyright 2026 Andrew Grainger d/b/a Voidwright
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this software except in compliance with the License. A copy of the License is
+in the LICENSE file and at http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, either express or implied. See the License for the
+specific language governing permissions and limitations under the License.
+
+Third-party material
+--------------------
+
+- Voidloom (https://github.com/void-wright/voidloom, Apache-2.0) is not included.
+  Setup clones it from its own repository at a pinned commit.
+
+- 03_skills/scroll-journey adapts the method of the skill "sn-motion-html" from
+  OpenSenseNova/SenseNova-Skills (MIT License, Copyright (c) 2026 SenseNova).
+  The upstream licence is kept unchanged at 03_skills/scroll-journey/LICENSE and
+  the changes are described in 03_skills/scroll-journey/VENDOR_NOTE.md.
+
+- 03_skills/aeo-optimization and 03_skills/corporate-graphic-design were built
+  from public articles. The articles themselves are not redistributed: each
+  skill ships a list of its sources (title, link and a one-line summary in our
+  own words) beside its own synthesised guidance. All rights in the linked
+  articles remain with their authors.
+
+- 03_skills/webgl-craft/references/10-licence-ledger.md records the licences of
+  the libraries and techniques the WebGL skills discuss. None of those
+  libraries ship in this repository.

@@ -1,0 +1,189 @@
+{
+  "metadata": {
+    "category": "04_content_optimization",
+    "category_name": "Content Optimization Tactics",
+    "description": "Answer-first principle, structural elements, language tactics, content types for AEO",
+    "url_count": 8,
+    "source_sections": [
+      "content_optimization"
+    ],
+    "sources_file": "knowledge/sources.json",
+    "per_source_detail": "The per-source detail gathered while building this skill is not redistributed; this list links to the originals."
+  },
+  "source_document_content": {
+    "content_optimization": {
+      "answer_first_principle": {
+        "definition": "Positioning the direct, complete answer to a query at the very beginning of content, typically within the first 40-60 words",
+        "rationale": "AI systems prioritize content that provides immediate, extractable answers for featured snippets and direct response generation",
+        "implementation_structure": [
+          "First 40-60 words: Direct, complete answer to primary query",
+          "Following 100-200 words: Essential context and key supporting details",
+          "Remaining content: Comprehensive exploration, examples, and related subtopics"
+        ],
+        "formatting_guidelines": {
+          "clarity": "Use simple, declarative sentences",
+          "completeness": "Answer must be self-contained and understandable without additional context",
+          "specificity": "Include specific details, numbers, and actionable information",
+          "scanability": "Use paragraph breaks after answer-first section for visual distinction"
+        },
+        "source": "AI-Era_SEO_AEO_Documentation_Guide.md"
+      },
+      "structural_elements": {
+        "hierarchical_headings": {
+          "purpose": "Create clear content structure for AI parsing and human readability",
+          "best_practices": [
+            "Single H1 per page containing primary keyword and query",
+            "H2 tags for major section breaks (introduce new subtopics)",
+            "H3 tags for subsection details within H2 sections",
+            "Use descriptive, question-based headings when appropriate",
+            "Maintain logical hierarchy without skipping levels (no H1 to H3 jumps)"
+          ],
+          "aeo_impact": "Headings serve as content extractors for AI, marking discrete answer segments",
+          "source": "AI-Era_SEO_AEO_Documentation_Guide.md"
+        },
+        "modular_content_design": {
+          "definition": "Structuring content as self-contained, reusable modules that can be extracted and repurposed independently",
+          "implementation": [
+            "Create distinct sections that answer specific questions completely",
+            "Use clear transitions between modules",
+            "Ensure each module can stand alone without requiring full page context",
+            "Format modules consistently (introduction, answer, supporting detail, transition)"
+          ],
+          "benefits": [
+            "Easier AI extraction for featured snippets",
+            "Content reusability across multiple platforms",
+            "Improved user experience with scannable sections",
+            "Flexibility for content updates without full page rewrites"
+          ]
+        },
+        "scannable_formatting": {
+          "techniques": [
+            "Short paragraphs (2-4 sentences maximum)",
+            "Bulleted and numbered lists for sequential or grouped information",
+            "Bold text for key terms and important concepts (use sparingly)",
+            "Tables for comparative data and structured information",
+            "Blockquotes for emphasis and expert citations",
+            "White space between sections for visual breathing room"
+          ],
+          "purpose": "Facilitate rapid content comprehension for both human readers and AI parsers",
+          "source": "https://insidea.com/blog/seo/aeo/overcoming-challenges-in-aeo-implementation/"
+        }
+      },
+      "language_tactics": {
+        "conversational_tone": {
+          "definition": "Natural, accessible language that mirrors how people speak and ask questions",
+          "implementation": [
+            "Use contractions (e.g., 'don't' instead of 'do not')",
+            "Write in second person ('you') to address reader directly",
+            "Employ active voice over passive voice",
+            "Ask rhetorical questions to introduce topics",
+            "Use everyday vocabulary unless technical precision requires jargon"
+          ],
+          "voice_search_optimization": "Conversational language aligns with how users phrase voice queries to AI assistants",
+          "source": "https://insidea.com/blog/seo/aeo/overcoming-challenges-in-aeo-implementation/"
+        },
+        "question_based_content": {
+          "approach": "Structure content explicitly around questions users are asking",
+          "tools_for_research": [
+            "AnswerThePublic - Visualizes common question patterns",
+            "Google 'People Also Ask' boxes",
+            "Semrush Keyword Magic Tool - Question-based keyword filters",
+            "Reddit, Quora - Real user questions in communities",
+            "Customer support inquiries and FAQs"
+          ],
+          "implementation": [
+            "Use questions as H2 or H3 headings",
+            "Follow each question heading with immediate, direct answer",
+            "Create comprehensive FAQ sections",
+            "Address related questions throughout content"
+          ],
+          "source": "https://www.creaitor.ai/blog/aeo-answer-engine-optimization"
+        },
+        "long_tail_keywords": {
+          "definition": "Specific, detailed keyword phrases (typically 4+ words) with lower search volume but higher intent and specificity",
+          "aeo_advantage": [
+            "Long-tail queries more likely to trigger AI Overviews",
+            "Match conversational voice and ChatGPT queries",
+            "Easier to rank for and dominate with comprehensive answer",
+            "Higher conversion intent from specificity"
+          ],
+          "strategy": "Target 70% long-tail keywords vs. 30% head terms in content strategy",
+          "source": "https://www.semrush.com/blog/ai-overviews/"
+        },
+        "clear_definitions": {
+          "purpose": "Immediately define technical terms and jargon to maintain clarity",
+          "implementation": "When introducing specialized term, provide definition in same sentence or immediately following",
+          "example": "'We use schema markup—structured data code that helps search engines understand content—throughout our pages.'",
+          "source": "https://insidea.com/blog/seo/aeo/overcoming-challenges-in-aeo-implementation/"
+        }
+      },
+      "content_types_for_aeo": {
+        "faq_pages": {
+          "format": "Question-and-answer pairs addressing common user queries",
+          "optimization": [
+            "Each Q&A pair in its own section",
+            "Direct, concise answers (50-100 words ideal)",
+            "Use FAQPage schema markup for every FAQ",
+            "Order questions from most common to least common",
+            "Include both basic and advanced questions"
+          ],
+          "aeo_value": "Extremely high AI extraction rate for FAQPage schema content",
+          "source": "AI-Era_SEO_AEO_Documentation_Guide.md"
+        },
+        "how_to_guides": {
+          "format": "Step-by-step instructional content",
+          "optimization": [
+            "Number each step clearly (Step 1, Step 2, etc.)",
+            "Include estimated time and required materials upfront",
+            "Use HowTo schema markup with individual steps defined",
+            "Add images or video for each major step",
+            "Provide expected outcome or success criteria"
+          ],
+          "aeo_value": "HowTo schema highly favored for AI featured snippets",
+          "source": "AI-Era_SEO_AEO_Documentation_Guide.md"
+        },
+        "definition_glossaries": {
+          "purpose": "Establish topical authority through comprehensive term definitions",
+          "structure": "Alphabetical or categorical organization with concise definitions (30-100 words each)",
+          "schema": "Use DefinedTerm schema for each glossary entry",
+          "strategic_value": "Captures wide range of long-tail queries and establishes subject expertise"
+        },
+        "comparison_content": {
+          "formats": [
+            "Product A vs. Product B articles",
+            "Comparison tables",
+            "Feature matrices"
+          ],
+          "optimization": [
+            "Use table format for direct comparisons",
+            "Implement Product schema for compared items",
+            "Include clear winner or recommendation when appropriate",
+            "Address specific comparison queries ('which is better for X?')"
+          ],
+          "aeo_value": "Comparison queries common in AI search, tables highly extractable"
+        },
+        "statistics_and_data_pages": {
+          "content": "Collections of industry statistics, data points, and research findings",
+          "optimization": [
+            "Cite all data sources clearly",
+            "Update regularly with latest data",
+            "Use table or list format for easy scanning",
+            "Include both raw numbers and context/interpretation"
+          ],
+          "aeo_advantage": "30-40% higher AI response visibility for content including quotes and statistics",
+          "source": "https://www.semrush.com/blog/generative-engine-optimization/"
+        }
+      }
+    }
+  },
+  "sources": [
+    22,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    38
+  ]
+}

@@ -1,0 +1,21 @@
+[
+  "resource hub stand-up decisions before building",
+  "resource hub data model with four document types",
+  "single atomic Sanity mutate POST when seeding documents",
+  "Sanity patch followed by git push can build with stale content",
+  "emit a page only for resources whose HTML body is non-empty",
+  "verify that changing a resource status to Published makes its page live",
+  "Sanity deploy hook rebuild",
+  "verify a Sanity project live and read-only before any write",
+  "clean environment allowlist, pinned account, negative test on the real path",
+  "prefer Workers with static assets plus Workers Builds over Pages",
+  "ACE loop quality bar 9.8 hard threshold",
+  "generator builds and an independent reviewer scores",
+  "identify the input source before choosing the build approach",
+  "never fix a one-page problem by editing shared site files",
+  "htmlContent htmlStyles htmlSchemas three layers must all be wired",
+  "a command piped to tail reports the pipeline's final command status unless pipefail is enabled",
+  "limit background agent concurrency to avoid exhausting session memory",
+  "Workers Builds API does not list Worker Previews builds",
+  "tag captured maintenance lessons with the automation name so later runs can retrieve and apply them"
+]

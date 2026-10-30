@@ -1,0 +1,322 @@
+[
+ {
+  "phrase": "ACE loop quality bar 9.8 hard threshold",
+  "row": "Any UI change to the hub (components, tokens, layout, copy)"
+ },
+ {
+  "phrase": "empirical Lighthouse and axe scans required to clear 9.8",
+  "row": "Reviewer about to score without running the page"
+ },
+ {
+  "phrase": "ACE loop recovery in a later pass is normal",
+  "row": "Planning how many passes a loop will take"
+ },
+ {
+  "phrase": "after every curation cycle store each reusable skill separately",
+  "row": "A curation cycle just closed"
+ },
+ {
+  "phrase": "the examinee may not modify the exam",
+  "row": "Generator disputes a check or changes the evaluation criteria mid-loop"
+ },
+ {
+  "phrase": "generator builds and an independent reviewer scores",
+  "row": "All automated checks pass, but independent review remains"
+ },
+ {
+  "phrase": "too many background agents can exhaust session resources",
+  "row": "Planning concurrent work or recovering from a session crash"
+ },
+ {
+  "phrase": "repeated verification without new evidence can stall a build",
+  "row": "A generator pass keeps running the same checks without making progress"
+ },
+ {
+  "phrase": "use a fresh reader for each review pass and record what they understood in structured fields",
+  "row": "Before shipping hub copy we wrote"
+ },
+ {
+  "phrase": "write one shared contract and include it in every subagent prompt",
+  "row": "Delegating loop roles to sub-agents"
+ },
+ {
+  "phrase": "map each resource to its own CMS page",
+  "row": "Building many resource pages at once"
+ },
+ {
+  "phrase": "one design loop for the shared template then per-resource content loops in batches",
+  "row": "A shared template plus many resources"
+ },
+ {
+  "phrase": "one approved template per page type proven on one real page",
+  "row": "Starting a new page type"
+ },
+ {
+  "phrase": "verify exact wording and keep decorative separators and site chrome outside the main content comparison",
+  "row": "Handed finished content with instructions to use its exact words"
+ },
+ {
+  "phrase": "distinguish supplied text to preserve verbatim from content we author",
+  "row": "Deciding whether to preserve supplied wording or write new copy"
+ },
+ {
+  "phrase": "treat supplied external HTML as content and rebuild it using the CMS page structure",
+  "row": "External HTML going into the CMS"
+ },
+ {
+  "phrase": "resolve conflicts between written specifications and the approved exemplar before building",
+  "row": "Spec prose disagrees with the approved exemplar"
+ },
+ {
+  "phrase": "port a finished external document into the site and verify content fidelity",
+  "row": "Porting a kitchen-equipment maker's finished spec sheet PDF into its resource library"
+ },
+ {
+  "phrase": "record a deviation before acting on your own reading of the rules",
+  "row": "About to push to main based on an interpretation that differs from the documented procedure"
+ },
+ {
+  "phrase": "prefix imported editorial CSS with a wrapper class using a real CSS parser",
+  "row": "Imported editorial CSS on a hub page"
+ },
+ {
+  "phrase": "a shared site CSS rule can accidentally match a page-specific class name",
+  "row": "A CTA looks fine but cannot be clicked"
+ },
+ {
+  "phrase": "keep a one-page fix local instead of changing shared site files",
+  "row": "A fix that only one page needs"
+ },
+ {
+  "phrase": "htmlContent htmlStyles htmlSchemas three layers must all be wired",
+  "row": "CMS page renders unstyled HTML or inactive scripts"
+ },
+ {
+  "phrase": "check prose-container styles when CMS body HTML is injected with set:html",
+  "row": "Links or images inside set:html look wrong"
+ },
+ {
+  "phrase": "shared classes in one global stylesheet, per-page CSS only for hand-authored pages",
+  "row": "Deciding where page CSS should live"
+ },
+ {
+  "phrase": "Astro scoped styles do not reach elements created by client script",
+  "row": "Script-created elements come out unstyled"
+ },
+ {
+  "phrase": "model resources, resource types, taxonomy terms and collections as separate document types",
+  "row": "Building collections that populate automatically from matching resources"
+ },
+ {
+  "phrase": "check Sanity architectural constraints and attribute limits before bulk operations",
+  "row": "Preparing a bulk CMS job"
+ },
+ {
+  "phrase": "single atomic Sanity mutate POST when seeding documents",
+  "row": "Seeding many documents"
+ },
+ {
+  "phrase": "GROQ patterns for a polymorphic hub",
+  "row": "Filtering resources by several taxonomies"
+ },
+ {
+  "phrase": "verify Sanity write permissions and fresh content reads before triggering a build",
+  "row": "A build reads stale content after a patch, or a write fails with a permission error"
+ },
+ {
+  "phrase": "Sanity rejects @-prefixed keys in JSON-LD",
+  "row": "Storing JSON-LD in a Sanity field"
+ },
+ {
+  "phrase": "adding a new resource type to a Sanity Astro resource hub",
+  "row": "Adding a new resource type"
+ },
+ {
+  "phrase": "seed realistic clearly marked placeholder documents for review",
+  "row": "Reviewing a bicycle-parts guide library before real content exists"
+ },
+ {
+  "phrase": "emit a page only for resources whose HTML body is non-empty",
+  "row": "Deciding which resources get their own page"
+ },
+ {
+  "phrase": "store lean body HTML, styles and JSON-LD on the resource document with one shared slug template",
+  "row": "Adding a garden-supply how-to article as a hub resource"
+ },
+ {
+  "phrase": "strip base64 data URI images from CMS HTML at ingest and upload by hash",
+  "row": "Imported HTML carries data-URI images"
+ },
+ {
+  "phrase": "design tool PDF exports can carry a generic Title that the browser shows as the tab name",
+  "row": "A PDF opens with a tab named 'Untitled'"
+ },
+ {
+  "phrase": "dry-run every bulk import, exclude placeholder bodies from publication and redeploy static pages after CMS-only edits",
+  "row": "Any bulk content operation"
+ },
+ {
+  "phrase": "use separate controls for listing visibility and publication status",
+  "row": "A page should be live by URL but absent from the listing, while staged content stays unpublished"
+ },
+ {
+  "phrase": "apply a reversible visibility flag in every listing query",
+  "row": "Temporarily removing a resource from listings"
+ },
+ {
+  "phrase": "statically generated detail routes only know slugs that existed at build time",
+  "row": "New CMS content returns 404 on its detail page"
+ },
+ {
+  "phrase": "connect Published status to live delivery through server rendering or a rebuild",
+  "row": "Making a CMS publish go live"
+ },
+ {
+  "phrase": "use per-resource previews, require review before merging to main and make re-imports idempotent",
+  "row": "Reviewing a ceramic studio's resource pages before release"
+ },
+ {
+  "phrase": "resolve links between sibling pages from their CMS patch data rather than directory names",
+  "row": "Linking between sibling pages in one batch"
+ },
+ {
+  "phrase": "set and verify HTML payload budgets for article pages with images",
+  "row": "Heavy article pages"
+ },
+ {
+  "phrase": "group library filters into accordion facets with matching counts",
+  "row": "Designing the filter sidebar for a regional bakery chain's resource library"
+ },
+ {
+  "phrase": "use a compact related-resources grid with a consistent card limit",
+  "row": "Building a related resources block"
+ },
+ {
+  "phrase": "keep side and bottom CTAs consistent, use one button and offer only services the business provides",
+  "row": "CTAs on resource pages"
+ },
+ {
+  "phrase": "a gated download thank-you page should confirm success before forwarding and provide a direct link",
+  "row": "Gating a download behind a form"
+ },
+ {
+  "phrase": "standalone indexable landing pages can sit outside the CMS listing",
+  "row": "A standalone landing page beside the hub"
+ },
+ {
+  "phrase": "use a case-sensitive text search on user-visible fields to verify brand spelling",
+  "row": "Brand name casing drifts in imported text"
+ },
+ {
+  "phrase": "page generator fetches the actual source before writing summaries",
+  "row": "Writing a page we author"
+ },
+ {
+  "phrase": "when a piece names a competitor acknowledge its real strengths",
+  "row": "Naming a competitor in an article"
+ },
+ {
+  "phrase": "use one approved visual reference for generated imagery",
+  "row": "Generating card or hero images"
+ },
+ {
+  "phrase": "grade text over painted art at the lowest-contrast pixels beneath the words",
+  "row": "Words over a hero, banner or spotlight image"
+ },
+ {
+  "phrase": "reduce distracting image detail beneath text, then test whether a scrim is needed",
+  "row": "Adding or removing a scrim"
+ },
+ {
+  "phrase": "art-directed image containers switch composition at the content breakpoint",
+  "row": "A banner that must work on phones"
+ },
+ {
+  "phrase": "capture viewports at named scroll positions instead of full-page screenshots",
+  "row": "Full-page screenshots look wrong with sticky layers"
+ },
+ {
+  "phrase": "budget first-screen space on small phones",
+  "row": "Keeping the headline visible in the first screen on phones"
+ },
+ {
+  "phrase": "link to the element the reader must see and give it scroll-margin-block",
+  "row": "A no-JS :target link"
+ },
+ {
+  "phrase": "use native buttons in figure legends and preserve valid list structure for axe checks",
+  "row": "Building an interactive legend or filter chips"
+ },
+ {
+  "phrase": "check WCAG 2.2.2 pause requirements for ambient header motion",
+  "row": "Ambient motion on a page"
+ },
+ {
+  "phrase": "assess browser storage by purpose and apply the site's consent requirements before saving optional preferences",
+  "row": "Using localStorage or sessionStorage to remember a choice"
+ },
+ {
+  "phrase": "solve figure layout at build time when positions do not depend on live input",
+  "row": "Interactive figures on a hub page"
+ },
+ {
+  "phrase": "preserve the check's exit status when showing only the end of its output",
+  "row": "Reading an automated check's exit status"
+ },
+ {
+  "phrase": "run the existing check on an intentionally broken example and compare the finding text",
+  "row": "Proving that a new validation rule detects its intended failure"
+ },
+ {
+  "phrase": "start each validation log with the hash of the served build",
+  "row": "Determining which build a validation log evaluated"
+ },
+ {
+  "phrase": "clean up temporary Chrome profile folders created by Lighthouse",
+  "row": "Lighthouse leaves temporary folders behind"
+ },
+ {
+  "phrase": "pgrep -f can match the shell running the check",
+  "row": "Waiting on a process to finish"
+ },
+ {
+  "phrase": "a command piped into tail can report tail's exit status instead of the command's",
+  "row": "A displayed success does not prove the underlying check passed"
+ },
+ {
+  "phrase": "use a clean environment allowlist, pin the account and test rejection of the wrong account through the actual command path",
+  "row": "Any Sanity or Cloudflare call when multiple accounts are configured"
+ },
+ {
+  "phrase": "use separate account-specific wrappers rather than relying on a flag",
+  "row": "An account switch depends on remembering a command-line option"
+ },
+ {
+  "phrase": "verify a Sanity project with a live read-only request before any write",
+  "row": "First contact with your Sanity project"
+ },
+ {
+  "phrase": "sync credentials in one direction without echoing secret values",
+  "row": "Moving keys into protected credential storage"
+ },
+ {
+  "phrase": "pin the Wrangler account, reject mismatches and build with a clean environment",
+  "row": "Wrangler might target the wrong account"
+ },
+ {
+  "phrase": "Workers Builds API does not list Worker Previews builds",
+  "row": "Checking whether a Cloudflare deploy watcher observed the intended build"
+ },
+ {
+  "phrase": "consider Workers with static assets and Workers Builds for the hub's Cloudflare hosting",
+  "row": "Choosing a hosting setup for the hub on Cloudflare"
+ },
+ {
+  "phrase": "review dependency updates during maintenance and establish a passing baseline before a redesign",
+  "row": "Keeping dependencies maintained without mixing upgrade failures into design work"
+ },
+ {
+  "phrase": "validate reusable notes when capturing them and tag them with the relevant automation",
+  "row": "Recording lessons during a long build"
+ }
+]

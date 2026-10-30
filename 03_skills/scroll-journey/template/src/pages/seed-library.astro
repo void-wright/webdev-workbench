@@ -1,0 +1,22 @@
+---
+// EXAMPLE PAGE: the light journey between two ordinary sections. Delete it once your own page uses the component.
+import ScrollJourney from '../components/ScrollJourney.astro';
+import { seedLibrary } from '../data/journeys/seed-library';
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How borrowing works | Example seed library</title>
+  </head>
+  <body style="margin:0;background:#fff;color:#1c1f24;font-family:system-ui,sans-serif">
+    <section style="min-height:70svh;display:grid;place-items:center;padding:2rem">
+      <h1>How borrowing works</h1>
+    </section>
+    <ScrollJourney journey={seedLibrary} />
+    <section id="visit" style="min-height:70svh;padding:2rem">
+      <h2>Visit</h2>
+      <p>Open Tuesday and Saturday mornings.</p>
+    </section>
+  </body>
+</html>

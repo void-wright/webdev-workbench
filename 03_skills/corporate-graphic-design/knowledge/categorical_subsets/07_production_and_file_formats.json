@@ -1,0 +1,42 @@
+{
+  "category_id": "07_production_and_file_formats",
+  "category_name": "07 Production And File Formats",
+  "description": "Vector vs raster, file formats (AI, EPS, SVG, JPG, PNG), pre-press checklist, CMYK print preparation",
+  "creation_date": "2025-11-10T22:34:15Z",
+  "total_sources": 16,
+  "sources": [
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104
+  ],
+  "sources_file": "knowledge/sources.json",
+  "per_source_detail": "The per-source detail gathered while building this skill is not redistributed; this list links to the originals.",
+  "synthesis": {
+    "from": "knowledge/complete_document_transcript.json",
+    "note": "The part of the research compilation that covers this category. Bracket-free numbers after a sentence are Works Cited numbers; look them up in knowledge/sources.json.",
+    "sections": [
+      {
+        "section": "section_8_production",
+        "title": "Professional Production: Delivering Flawless Files",
+        "line_range": [
+          303,
+          360
+        ],
+        "text": "## **Section 8: Professional Production: Delivering Flawless Files**\nA master-level design is useless if it is delivered as a broken or incorrect file. The final step of professional design is flawless technical production.\n### **8.1 The Critical Divide: Vector vs. Raster**\nThis is the single most important technical concept a designer must understand. All digital graphics are one of two types.\n* **Raster Graphics (Pixel-based):** Composed of a finite grid of colored pixels.89\n  * **Use Case:** Photography, complex digital images, and scanned documents.89\n  * **Formats:** JPG, PNG, TIFF, GIF.92\n  * **The Problem:** They are **resolution-dependent**. If a raster image (like a JPG logo) is enlarged, it *will* become blurry and pixelated.89\n* **Vector Graphics (Path-based):** Composed of mathematical equations that define lines, curves, and shapes.95\n  * **Use Case:** **Logos, icons, typography, and illustrations**.89\n  * **Formats:** AI (Adobe Illustrator), EPS, SVG, and some PDFs.92\n  * **The Power:** They are **resolution-independent**. A vector logo can be scaled from the size of a business card to the size of a billboard with *zero* loss of quality.89\n**The Master's Rule:** *All logos, icons, and type must be created and delivered in a vector format.* Sending a client a PNG of their logo is an amateur mistake that guarantees future production problems.99\n**Table 8.1: Vector vs. Raster Formats: A Master's Guide**\n| Feature | Vector | Raster |\n| :---- | :---- | :---- |\n| **Composition** | Mathematical paths 95 | Pixels 90 |\n| **Scalability** | **Infinite.** No quality loss 89 | **Limited.** Pixelates when enlarged 89 |\n| **Use Case** | **Logos, Icons, Typography** 91 | **Photography, Complex Images** 89 |\n| **Common Files** | .ai,.eps,.svg,.pdf 92 | .jpg,.png,.gif,.tiff 93 |\n| **Key Trait** | Resolution-Independent | Resolution-Dependent (e.g., 300 DPI) |\n### **8.2 The Definitive Pre-Press Checklist (For Print)**\nBefore sending *any* file to a professional printer, a \"pre-press\" check must be performed. Failure to do so is costly and unprofessional.\n1. **Proofread:** Read all text one final time. Check for typos, incorrect dates, or grammatical errors.100\n2. **Check Color Mode:** Ensure the *entire* document, including all placed images, is converted to **CMYK**, not RGB.100\n3. **Check Image Resolution:** Ensure all *raster* images (photos) are **300 DPI** (Dots Per Inch) at their final printed size.91 72 DPI images from a website will look pixelated.93\n4. **Set Bleeds:** For any design where ink prints to the edge of the page, the color or image must be extended 1/8 inch (3mm) *past* the final trim line. This \"bleed\" ensures that when the paper is cut, no ugly white slivers remain.100\n5. **Outline or Embed Fonts:** To prevent the printer's computer from substituting your chosen font, you must either:\n   * **Outline Fonts:** (In Adobe Illustrator) Convert all text to vector shapes. The text is no longer editable, but it is \"locked\".101\n   * **Embed Fonts:** When exporting a PDF, check the box to \"embed\" the font data inside the file.\n6. **Final File Format:** Export as a **High-Resolution PDF** (typically \"Press Quality\") with trim marks and bleeds included.93\n**Table 8.2: The Definitive Pre-Press Checklist**\n| Step | Action | Why It's Critical (The \"Amateur\" Mistake) |\n| :---- | :---- | :---- |\n| **1\\. Proofread** | Check all spelling, grammar, dates, numbers.100 | A typo in a printed headline instantly destroys \"Authority\" (Section 7). |\n| **2\\. Color Mode** | Convert document and all images to **CMYK**.103 | *Amateur Mistake:* Sending RGB files results in dull, dark, unexpected colors (the \"Gamut Problem\").19 |\n| **3\\. Resolution** | Confirm all raster images are **300 DPI**.100 | *Amateur Mistake:* Using 72 DPI web images results in blurry, pixelated photos in the final print. |\n| **4\\. Bleeds** | Extend backgrounds 1/8\" (3mm) past the trim line.103 | *Amateur Mistake:* No bleed creates ugly white slivers on the final, cut product. |\n| **5\\. Fonts** | **Outline all fonts** or Embed in the PDF.101 | *Amateur Mistake:* Not outlining fonts causes the printer's computer to *substitute* your design font with a default (like Courier). |\n| **6\\. Final File** | Export as **Press-Quality PDF**.100 | *Amateur Mistake:* Sending an editable.ai file is unprofessional and risks unintended edits by the printer. |\n### **8.3 Digital File Formats (For Web)**\n* **SVG (Scalable Vector Graphic):** The web standard for vector. Use for all logos, icons, and simple illustrations on websites.92\n* **PNG (Portable Network Graphic):** A raster format that supports **transparency**. Use for images or photos that need to be placed on a non-white background.92\n* **JPG (Joint Photographic Experts Group):** A raster format that uses \"lossy\" compression. It offers the smallest file size, making it ideal for photographs where transparency is not needed.93"
+      }
+    ]
+  }
+}

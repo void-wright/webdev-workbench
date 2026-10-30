@@ -1,0 +1,43 @@
+{
+  "category_id": "03_corporate_typography",
+  "category_name": "03 Corporate Typography",
+  "description": "Typeface classifications, font pairing, hierarchy, micro-typography (leading, tracking, kerning)",
+  "creation_date": "2025-11-10T22:34:15Z",
+  "total_sources": 17,
+  "sources": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52
+  ],
+  "sources_file": "knowledge/sources.json",
+  "per_source_detail": "The per-source detail gathered while building this skill is not redistributed; this list links to the originals.",
+  "synthesis": {
+    "from": "knowledge/complete_document_transcript.json",
+    "note": "The part of the research compilation that covers this category. Bracket-free numbers after a sentence are Works Cited numbers; look them up in knowledge/sources.json.",
+    "sections": [
+      {
+        "section": "section_4_typography",
+        "title": "Pillar II: Mastering Corporate Typography",
+        "line_range": [
+          124,
+          171
+        ],
+        "text": "## **Section 4: Pillar II: Mastering Corporate Typography**\nTypography is the \"voice\" of a document. In a corporate setting, its primary function is to convey authority, trustworthiness, and, above all, clarity.\n### **4.1 Typeface Classifications and Personality**\nDifferent font styles have distinct \"personalities\" and functions.36\n* **Serif:** Typefaces with small \"feet\" (serifs) on the ends of the strokes. Serifs convey tradition, authority, reliability, and sophistication.37 They are traditionally used for long blocks of body text in *print* (books, newspapers) as the serifs are thought to guide the eye.39 Examples include Times New Roman, Garamond, and Georgia.\n* **Sans-Serif:** From the French \"sans\" (without), these typefaces lack serifs. They convey modernity, simplicity, and approachability.37 Their clean lines make them easier to read on *digital screens* at small sizes.37 Examples include Arial, Helvetica, and Calibri.\n* **Script & Display:** Script fonts mimic handwriting for an elegant touch, while Display fonts are decorative and designed only for large headlines.38 Both should be used sparingly, if at all, in formal corporate documents.\nFor professional documents, a 12-point font size is often considered the minimum standard for readability, especially in legal or formal reports.37\n### **4.2 Advanced Font Pairing Techniques**\nPairing fonts is essential for creating hierarchy and visual interest. The most effective strategies are:\n1. **Pairing by Contrast (Serif \\+ Sans-Serif):** This is the most common and reliable method. The contrast between a modern Sans-Serif headline and a traditional Serif body text (or vice-versa) is dynamic and creates a clear hierarchy.40\n2. **Pairing by Cohesion (Font Super-Family):** A more sophisticated, modern technique. This involves using a single \"super-family\"—a typeface that comes in many weights and styles (e.g., Light, Regular, Bold, Italic, Condensed). The designer pairs different weights, such as Merriweather *Bold* for headlines and Merriweather *Regular* for body text.44 This creates a highly unified, minimalist, and professional aesthetic.\n### **4.3 Creating Flawless Typographic Hierarchy**\nThis is the methodology for using typography to execute the *principle* of Hierarchy (Section 1.2). A clear system must be established for all text elements.46\n* **Size:** The most obvious tool. Headlines are largest, followed by subheads, then body text.46\n* **Weight:** Use heavier weights (Bold, Black) for headlines to draw the eye, and lighter weights (Regular, Light) for body text.45\n* **Color & Style:** Color can be used to differentiate (e.g., a brand-blue header), but the hierarchy must work in black and white first.46 Italics should be used sparingly for emphasis, pull-quotes, or captions.47\n### **4.4 Micro-typography: The Secret to a Polished Look**\nMacro-typography is choosing the font; micro-typography is the meticulous, often invisible, refinement of the space *between* characters and lines.48 This is what separates amateur from master-level work.\n* **Leading (Line Spacing):** The vertical space between lines of text, measured from baseline to baseline.49 This is the *most critical* factor for readability. Text that is too tight is dense and intimidating; text that is too loose feels disconnected.51\n  * **The Rule:** Professional typography typically uses a leading value that is **120% to 145%** of the font size.51 For example, 12-point text would require 14.4-point to 17.4-point leading.\n* **Tracking (Letter Spacing):** The *uniform* adjustment of space across an entire *range* of text (a word, line, or paragraph).49 Tighter tracking is often used for headlines to make them feel compact, while slightly looser tracking can improve readability in some body text.51\n* **Kerning:** The adjustment of space between *specific pairs* of characters (e.g., manually tucking a 'V' closer to an 'A' in the word \"AV\").49 Bad kerning is a clear sign of amateur design, especially in logos and headlines.\nThe authoritative, professional \"look\" of a corporate document is a direct byproduct of *effortless readability*. This readability is achieved not just by choosing a \"good font,\" but by perfecting its micro-typography. A document with poor leading (e.g., 100%) creates cognitive strain and visual clutter.12 A reader who struggles to get through the text subconsciously transfers that feeling of \"difficulty\" and \"amateurism\" to the *content* and the *author*, diminishing their authority. Conversely, a document with generous leading (e.g., 140%) is effortless to read.51 The reader's brain, unburdened, perceives the design as \"clean,\" \"clear,\" and \"professional.\" This feeling of ease is transferred to the author, *building* the perception of authority.\n**Table 4.1: Typographic Hierarchy and Spacing Reference**\n| Element | Print Size (pt) | Web Size (px) | Weight (Example) | Leading Rule (Space Between Lines) |\n| :---- | :---- | :---- | :---- | :---- |\n| **Headline (H1)** | 38–60pt | 40–60px | Bold / Black | 100-120% of font size |\n| **Subhead (H2)** | 20–36pt | 24–36px | Bold / Semibold | 110-130% of font size |\n| **Body Text** | **10–14pt** (12pt is standard 40) | 16–20px | Regular | **120-145% of font size** |\n| **Caption/Footnote** | 6–8pt | 12–14px | Light / Italic | 120-145% of font size |"
+      }
+    ]
+  }
+}

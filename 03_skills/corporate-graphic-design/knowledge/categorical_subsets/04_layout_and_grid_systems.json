@@ -1,0 +1,37 @@
+{
+  "category_id": "04_layout_and_grid_systems",
+  "category_name": "04 Layout And Grid Systems",
+  "description": "Grid systems (manuscript, column, modular, baseline), layout best practices, reports, presentations",
+  "creation_date": "2025-11-10T22:34:15Z",
+  "total_sources": 11,
+  "sources": [
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63
+  ],
+  "sources_file": "knowledge/sources.json",
+  "per_source_detail": "The per-source detail gathered while building this skill is not redistributed; this list links to the originals.",
+  "synthesis": {
+    "from": "knowledge/complete_document_transcript.json",
+    "note": "The part of the research compilation that covers this category. Bracket-free numbers after a sentence are Works Cited numbers; look them up in knowledge/sources.json.",
+    "sections": [
+      {
+        "section": "section_5_layout",
+        "title": "Pillar III: Advanced Layout and Grid Systems",
+        "line_range": [
+          172,
+          208
+        ],
+        "text": "## **Section 5: Pillar III: Advanced Layout and Grid Systems**\nGrids are the invisible structural backbone of all professional design. They provide order, consistency, and efficiency, guiding the placement of every element on the page.53 A designer may choose to *intentionally* break a grid for emphasis, but they must first *have* a grid to break.53\n### **5.1 Choosing the Right Grid System for the Job**\nThe type of document dictates the type of grid required.\n* **Manuscript Grid:** The simplest grid, consisting of a single column for text, surrounded by margins.54 It is designed for a linear, text-heavy reading experience.\n  * **Corporate Use:** **White papers, annual reports, legal documents, and books**.55\n* **Column Grid:** The most common grid. It divides the page into multiple vertical columns (e.g., 2, 3, or a 12-column grid), which provides flexibility. Content can span one or multiple columns.54\n  * **Corporate Use:** **Newsletters, magazines, brochures, and complex proposals**.55\n* **Modular Grid:** A more complex grid that adds horizontal rows to the vertical columns, creating a matrix of \"modules\".54 This allows for precise control over the placement of many small, distinct elements.\n  * **Corporate Use:** **Dashboards, data-heavy infographics, product catalogs, and forms**.55\n* **Baseline Grid:** A grid of evenly spaced horizontal lines that governs the entire document. The purpose of a baseline grid is to ensure that the \"baseline\" (the invisible line text sits on) of *all text* aligns across the entire layout, regardless of column.57 This creates perfect **vertical rhythm** and is a hallmark of high-end, polished design.\n### **5.2 Layout Best Practices for Corporate Collateral**\n* **Reports and Proposals:** These documents must be designed for *scannability*. Stakeholders will not read a 50-page report cover-to-cover. The design must use strong typographic hierarchy (Section 4.3), pull-quotes, and informative data visualizations (charts, tables) to break up text and highlight key takeaways.8\n* **Presentations (Slides):** The golden rule is **\"one message per slide\"**.61 A presentation slide is a *visual aid* to reinforce the speaker's point; it is not a teleprompter or a document to be read.61 A master slide design features minimal text, large-font keywords, and high-quality visuals. Consistency is maintained by setting up \"Master Slides\" in the presentation software.63\nThe **Baseline Grid** is the ultimate tool for a polished look, as it synthesizes micro-typography (Section 4.4) with macro-layout (Section 5.1). A master designer's workflow is as follows:\n1. From Section 4.4, they determine the **Leading** for their body text (e.g., 12-point font with 140% leading \\= 16.8 points). They will round this to a clean number, like 17 points.\n2. In their layout software, they set the document's **Baseline Grid** *increment* to that exact value: 17 points.57\n3. They then \"snap\" all text elements—headlines, subheads, body text, and captions—to this 17-point grid.\n   The result is that text in Column 1 aligns perfectly on the horizontal axis with the text in Column 3, even if an image separates them. This eliminates the subtle visual chaos of misaligned text, creating a document that feels calm, orderly, and supremely professional.\n**Table 5.1: Corporate Grid System Selection Matrix**\n| Grid System | Definition | Best For (Corporate Use) |\n| :---- | :---- | :---- |\n| **Manuscript** | A single-column grid for linear text flow.54 | **Text-heavy reports, white papers, legal docs**.55 |\n| **Column** | Multiple vertical columns (e.g., 2, 3, 4-column).57 | **Newsletters, brochures, magazines, complex proposals**.55 |\n| **Modular** | Columns \\+ Rows, creating \"modules\".54 | **Dashboards, infographics, product catalogs, forms**.55 |\n| **Baseline** | Horizontal lines for vertical rhythm.57 | **All professional, multi-column print layouts.** Used *with* a Column grid. |"
+      }
+    ]
+  }
+}

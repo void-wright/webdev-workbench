@@ -1,0 +1,1720 @@
+[
+ {
+  "phrase": "evidence-based launch checklist covering operation and recovery for a new site",
+  "expect_anchor": "seed_webdev_site_maintenance_009",
+  "row": "Any first-build session",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "is 9.8 a hard bar or a target for the ACE loop",
+  "expect_anchor": "seed_webdev_ace_review_loops_055",
+  "row": "Deciding whether a loop is done",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "reject a review recommendation that contradicts the stated stopping condition",
+  "expect_anchor": "seed_webdev_ace_review_loops_056",
+  "row": "Reject review recommendations that contradict the stated stopping condition",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "ACE iterations plan for",
+  "expect_anchor": "seed_webdev_ace_review_loops_002",
+  "row": "Planning how many iterations a build needs",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "code-inspection scoring caps 9.8 Lighthouse and axe",
+  "expect_anchor": "seed_webdev_ci_testing_001",
+  "row": "Use browser measurements and accessibility scans before declaring a web review complete",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "ACE workspaces inside the website folder deployable standalone",
+  "expect_anchor": "seed_webdev_astro_build_012",
+  "row": "Choosing where to put the ACE workspace",
+  "automation": "client-site-first-build",
+  "phrase_need": "ACE workspaces inside the website folder"
+ },
+ {
+  "phrase": "every ACE iteration generator reflector and curator",
+  "expect_anchor": "seed_webdev_ace_review_loops_007",
+  "row": "Tempted to skip the curator this round",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "after the curator store every skillbook skill as its own memory",
+  "expect_anchor": "seed_webdev_ace_review_loops_054",
+  "row": "Curator finished; what to store",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "calm baseline emotion vectors desperate drives corner cutting reward composed",
+  "expect_anchor": "seed_webdev_calm_baseline_003",
+  "row": "Give creative agents room to explore without framing mistakes as existential failure",
+  "automation": "client-site-first-build",
+  "phrase_need": "calm baseline emotion vectors desperate drives corner cutting"
+ },
+ {
+  "phrase": "wrong Cloudflare account wrangler shell separation design allowlist binding",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_016",
+  "row": "Guard deployment accounts against inherited shell credentials",
+  "automation": "client-site-first-build",
+  "phrase_need": "wrong Cloudflare account wrangler shell separation design"
+ },
+ {
+  "phrase": "does wrangler deploy --dry-run prove the account",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_006",
+  "row": "Proving which account a deploy will hit",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "test deployment account isolation with an authenticated read-only command",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_009",
+  "row": "Running the wrong-account probe",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "secret sweep token fragments repos transcripts printing",
+  "expect_anchor": "seed_webdev_security_headers_012",
+  "row": "Secret sweeps must cover ignored files, history, transcripts and database storage",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "token probe enablement workers subdomain preflight readiness",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_012",
+  "row": "First look at a new API token",
+  "automation": "client-site-first-build",
+  "phrase_need": "token probe enablement workers subdomain"
+ },
+ {
+  "phrase": "create a scoped Cloudflare API token in a private window one account one zone repositories operations",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_001",
+  "row": "Creating a scoped Cloudflare token",
+  "automation": "client-site-first-build",
+  "phrase_need": "create a scoped Cloudflare API token in a private window one account one zone"
+ },
+ {
+  "phrase": "enforce the account check inside the deployment command itself",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_013",
+  "row": "Enforce account checks inside deployment commands and verify public reachability separately",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "new static site on Cloudflare prefer Workers with static assets over Pages",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_007",
+  "row": "Choosing Workers or Pages",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "static Astro on Cloudflare Workers scaffold with pinned deps nvmrc and wrangler.jsonc",
+  "expect_anchor": "seed_webdev_astro_build_006",
+  "row": "Scaffolding the Astro + Workers repo",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "register the workers subdomain before preview URLs connection prerequisites",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_027",
+  "row": "Registering the workers subdomain",
+  "automation": "client-site-first-build",
+  "phrase_need": "register the workers subdomain before preview URLs"
+ },
+ {
+  "phrase": "back up the parking DNS records then the custom domain Worker propagation operations",
+  "expect_anchor": "seed_webdev_dns_domains_001",
+  "row": "Domain parked, going live with a holding page",
+  "automation": "client-site-first-build",
+  "phrase_need": "back up the parking DNS records then the custom domain Worker"
+ },
+ {
+  "phrase": "GitHub and Cloudflare wired push to preview link push to main deploys end-to-end wiring",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_041",
+  "row": "Separate production and preview deployment paths and prove each independently",
+  "automation": "client-site-first-build",
+  "phrase_need": "GitHub and Cloudflare wired push to preview link push to main deploys"
+ },
+ {
+  "phrase": "dashboard click steps knows nothing what you should see novice prerequisites",
+  "expect_anchor": "seed_webdev_automation_method_035",
+  "row": "Writing a dashboard guide for a human",
+  "automation": "client-site-first-build",
+  "phrase_need": "dashboard click steps knows nothing what you should see"
+ },
+ {
+  "phrase": "runbook seed for a first build on Cloudflare Workers and GitHub",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_038",
+  "row": "Turning the build into a runbook",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "two preview pipelines on one Worker one fails every time",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_039",
+  "row": "Preview builds red in the dashboard while the API shows green",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "Workers Builds API does not list Worker Previews builds",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_040",
+  "row": "Watching preview builds by API",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "recipe for preview and main deployments on Cloudflare Workers",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_041",
+  "row": "Need the preview and main recipe",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "standing checks after every deploy clean clone dashboard 302 and 200",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_042",
+  "row": "The standing post-deploy checks",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "clean clone CI simulation with env -i and the nvm bin",
+  "expect_anchor": "seed_webdev_tooling_shell_024",
+  "row": "Before pushing, simulate the CI build",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "unticking Builds for Preview branches deleted the preview trigger",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_058",
+  "row": "Tempted to untick Builds for Preview branches",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "separate preview D1 database migrated through a throwaway config",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_047",
+  "row": "Setting up preview resources",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "base-config secrets before creation recreate a stale Preview spike",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_056",
+  "row": "Stale Preview after config change",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "judge a deploy by its product with a probe path marker and binding names telemetry establish",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_044",
+  "row": "Declaring a deploy done",
+  "automation": "client-site-first-build",
+  "phrase_need": "judge a deploy by its product with a probe path marker and binding names"
+ },
+ {
+  "phrase": "missing a previews block on a branch cut from main",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_018",
+  "row": "New branch cut from main fails its preview build",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "Cloudflare preview hosts override X-Robots-Tag noindex",
+  "expect_anchor": "seed_webdev_seo_aeo_028",
+  "row": "Preview host shows the wrong X-Robots-Tag",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "probe an Access protected host without printing the session cookie",
+  "expect_anchor": "seed_webdev_tooling_shell_049",
+  "row": "Probing an Access-protected host",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "Access service token passes the preview lock 302 without and 200 with",
+  "expect_anchor": "seed_webdev_ci_testing_045",
+  "row": "Service token for automation",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "rebuild indexing controls and noindex when changing hosting platforms",
+  "expect_anchor": "seed_webdev_seo_aeo_019",
+  "row": "Header posture on Workers",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "one D1 database form kind attribution join",
+  "expect_anchor": "seed_webdev_forms_email_022",
+  "row": "Designing the forms data home",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "D1 Time Travel Workers Free plan",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_014",
+  "row": "Backup horizon for form data",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "time to submit broken by clock skew measure fill time in the page",
+  "expect_anchor": "seed_webdev_forms_email_009",
+  "row": "Bot checks pass a fast bot",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "repeat sign-up indistinguishable from the first one",
+  "expect_anchor": "seed_webdev_forms_email_036",
+  "row": "Repeat sign-ups",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "never log a malformed request body",
+  "expect_anchor": "seed_webdev_forms_email_037",
+  "row": "Logging request bodies",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "build a guard from the definition of what it refuses and prove every spelling",
+  "expect_anchor": "seed_webdev_ci_testing_100",
+  "row": "Writing a build guard",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "check every privacy page sentence against the code as true false unverifiable",
+  "expect_anchor": "seed_webdev_site_maintenance_046",
+  "row": "Signing the privacy page",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "exact switches to turn on tracking or paid ads later consent-first introduce",
+  "expect_anchor": "seed_webdev_site_maintenance_043",
+  "row": "Site owner wants tracking later",
+  "automation": "client-site-first-build",
+  "phrase_need": "exact switches to turn on tracking or paid ads later"
+ },
+ {
+  "phrase": "storing anything on a visitor device needs consent ePrivacy",
+  "expect_anchor": "seed_webdev_security_headers_014",
+  "row": "Storing anything in the browser",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "contact form on a static site with a Worker API honeypot and shared field file",
+  "expect_anchor": "seed_webdev_forms_email_001",
+  "row": "Contact form on a static site",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "Turnstile widget token cf-turnstile-response verified",
+  "expect_anchor": "seed_webdev_forms_email_015",
+  "row": "Turnstile wiring",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "apply the production indexing posture from the build on the main branch at cutover",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_020",
+  "row": "Cutover on a Workers site",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "first production build refused because the main trigger had no build variable",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_060",
+  "row": "First production build refused",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "isitagentready production scan Level 5 inventories agent-readiness",
+  "expect_anchor": "seed_webdev_agent_readiness_008",
+  "row": "Treat agent-readiness scans as capability inventories rather than universal implementation requirements",
+  "automation": "client-site-first-build",
+  "phrase_need": "isitagentready production scan Level 5"
+ },
+ {
+  "phrase": "why does the isitagentready authMd check stay red on a public site",
+  "expect_anchor": "seed_webdev_agent_readiness_061",
+  "row": "Do not invent authentication infrastructure to satisfy a scanner",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "DNS-AID SVCB records for agents on a Cloudflare zone",
+  "expect_anchor": "seed_webdev_dns_domains_003",
+  "row": "DNS-AID records",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "DMARC reporting on a Cloudflare zone without a mailbox",
+  "expect_anchor": "seed_webdev_forms_email_044",
+  "row": "DMARC reports without a mailbox",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "add CAA records on a Cloudflare proxied zone renewal",
+  "expect_anchor": "seed_webdev_dns_domains_014",
+  "row": "CAA records",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "hold a wrangler upgrade days run both postures",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_061",
+  "row": "Assess deployment-tool advisories by exposure and validate upgrades in both build environments",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "npm audit before launch sharp override cold byte-identical build",
+  "expect_anchor": "seed_webdev_ci_testing_103",
+  "row": "npm audit before launch",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "decode the QR code and follow it end to end",
+  "expect_anchor": "seed_webdev_ci_testing_019",
+  "row": "Point printed QR codes at a short path with a temporary redirect and test the full path",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "master go-live checklist every box green before cutover",
+  "expect_anchor": "seed_webdev_site_maintenance_009",
+  "row": "Master go-live checklist",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "launch checklist domain registered to the client account registrar lock TTL",
+  "expect_anchor": "seed_webdev_dns_domains_004",
+  "row": "Domain and DNS section",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "launch checklist error tracking uptime alerting",
+  "expect_anchor": "seed_webdev_site_maintenance_010",
+  "row": "Monitoring before launch",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "launch checklist search console sitemap Bing webmaster",
+  "expect_anchor": "seed_webdev_seo_aeo_004",
+  "row": "Search Console at launch",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "launch checklist backup restore tested rollback RTO RPO",
+  "expect_anchor": "seed_webdev_site_maintenance_011",
+  "row": "Backups and rollback",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "launch checklist documentation handoff architecture overview editor guide",
+  "expect_anchor": "seed_webdev_site_maintenance_012",
+  "row": "Documentation handoff",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "launch checklist transactional email SPF DKIM DMARC deliverability",
+  "expect_anchor": "seed_webdev_forms_email_007",
+  "row": "Transactional email",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "launch checklist SEO AEO schemas sitemap robots gate indexability inventing",
+  "expect_anchor": "seed_webdev_seo_aeo_003",
+  "row": "Publish accurate discovery metadata and validate indexability without inventing capabilities",
+  "automation": "client-site-first-build",
+  "phrase_need": "launch checklist SEO AEO schemas sitemap robots gate"
+ },
+ {
+  "phrase": "production robots.txt content-signal AI bot allowlist",
+  "expect_anchor": "seed_webdev_seo_aeo_001",
+  "row": "Review crawler permissions deliberately when replacing preview robots rules",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "governance before production record did not run unfinished quality",
+  "expect_anchor": "seed_webdev_ci_testing_017",
+  "row": "Governance before production",
+  "automation": "client-site-first-build",
+  "phrase_need": "governance before production record did not run"
+ },
+ {
+  "phrase": "Astro static first with Tailwind v4 through the Vite plugin stack default",
+  "expect_anchor": "seed_webdev_css_design_system_010",
+  "row": "Starting the stack",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "render page standalone HTML first Astro components",
+  "expect_anchor": "seed_webdev_astro_build_010",
+  "row": "Building a page",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "Astro 6 removed output hybrid use server with prerender",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_025",
+  "row": "Astro 6 output hybrid error",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "turn a finished site into a reusable template with config constants",
+  "expect_anchor": "seed_webdev_astro_build_002",
+  "row": "Turning a site into a template",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "content security policy every external host the page loads",
+  "expect_anchor": "seed_webdev_security_headers_001",
+  "row": "CSP blocks fonts or CDNs",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "builder runs axe itself before an iteration to review",
+  "expect_anchor": "seed_webdev_ci_testing_001",
+  "row": "Self-check before review",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "interactive tool in the visitor browser with WASM no serverless function static-site browser-hosted",
+  "expect_anchor": "seed_webdev_astro_build_018",
+  "row": "Interactive calculator, no backend",
+  "automation": "client-site-first-build",
+  "phrase_need": "interactive tool in the visitor browser with WASM no serverless function"
+ },
+ {
+  "phrase": "deep link to a disclosure FAQ item shifts the layout on first navigation",
+  "expect_anchor": "seed_webdev_performance_025",
+  "row": "Fragment link should open a disclosure",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "schemas every indexable page structured-data consistently",
+  "expect_anchor": "seed_webdev_seo_aeo_009",
+  "row": "Schemas per page",
+  "automation": "client-site-first-build",
+  "phrase_need": "schemas every indexable page"
+ },
+ {
+  "phrase": "Cloudflare agent readiness framework isitagentready categories inventories agent-readiness",
+  "expect_anchor": "seed_webdev_agent_readiness_008",
+  "row": "Agent readiness overview",
+  "automation": "client-site-first-build",
+  "phrase_need": "Cloudflare agent readiness framework isitagentready categories"
+ },
+ {
+  "phrase": "agent ready baseline files for a static Astro site in public",
+  "expect_anchor": "seed_webdev_agent_readiness_005",
+  "row": "Agent-ready baseline files",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "oauth-protected-resource resource field must match the serving origin",
+  "expect_anchor": "seed_webdev_agent_readiness_002",
+  "row": "OAuth resource check fails",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "auth.md four file pattern public site no protected",
+  "expect_anchor": "seed_webdev_agent_readiness_014",
+  "row": "Publish truthful authentication metadata and keep signing keys private",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "api-catalog must use the RFC 9264 linkset format",
+  "expect_anchor": "seed_webdev_agent_readiness_029",
+  "row": "API catalog format",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "markdown negotiation Accept actually return markdown not just Link header",
+  "expect_anchor": "seed_webdev_agent_readiness_030",
+  "row": "Markdown negotiation",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "run a live agent readiness scan and require a passing score",
+  "expect_anchor": "seed_webdev_agent_readiness_011",
+  "row": "Live scan before calling it done",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "generate ai-catalog.json in the build never hand author it",
+  "expect_anchor": "seed_webdev_agent_readiness_033",
+  "row": "ai-catalog.json",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "rebuilding a site build the old URL inventory before mapping slugs tiers defined",
+  "expect_anchor": "seed_webdev_seo_aeo_012",
+  "row": "Porting an existing site",
+  "automation": "client-site-first-build",
+  "phrase_need": "rebuilding a site build the old URL inventory before mapping slugs"
+ },
+ {
+  "phrase": "set equality audit of crawled URLs extraction contract",
+  "expect_anchor": "seed_webdev_automation_method_056",
+  "row": "Crawled pages as a contract",
+  "automation": "client-site-first-build",
+  "phrase_need": "set equality audit of crawled URLs"
+ },
+ {
+  "phrase": "backlink discovery tiers sitemap Wayback Search Common Crawl",
+  "expect_anchor": "seed_webdev_seo_aeo_012",
+  "row": "Old-URL discovery tiers",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "flatten old htaccess redirect chains",
+  "expect_anchor": "seed_webdev_seo_aeo_014",
+  "row": "Include historical redirects in migration discovery and map old URLs directly to final destinations",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "verify asset migration with SHA-256 checksum manifests before retiring the old location",
+  "expect_anchor": "seed_webdev_site_maintenance_017",
+  "row": "Old CMS asset URLs",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "transcribe reverse-engineered captured pages expectations translating",
+  "expect_anchor": "seed_webdev_planning_reasoning_046",
+  "row": "Strict-fidelity rebuild",
+  "automation": "client-site-first-build",
+  "phrase_need": "transcribe reverse-engineered captured pages"
+ },
+ {
+  "phrase": "generator reflector curator as separate agents in sequence",
+  "expect_anchor": "seed_webdev_ace_review_loops_007",
+  "row": "Roles in the loop",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "at the iteration cap report unmet criteria instead of changing the checks to pass",
+  "expect_anchor": "seed_webdev_ace_review_loops_037",
+  "row": "Keeping the loop honest",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "independent reviewer scores and never fixes orchestrator never builds inline roles generation",
+  "expect_anchor": "seed_webdev_ace_review_loops_007",
+  "row": "Orchestrator doing generator work",
+  "automation": "client-site-first-build",
+  "phrase_need": "independent reviewer scores and never fixes orchestrator never builds inline"
+ },
+ {
+  "phrase": "visual diff gate against the canonical handoff when one exists expectations translating",
+  "expect_anchor": "seed_webdev_webgl_craft_061",
+  "row": "Canonical reference exists",
+  "automation": "client-site-first-build",
+  "phrase_need": "visual diff gate against the canonical handoff when one exists"
+ },
+ {
+  "phrase": "write down where house defaults do not apply before the build loop testable narrow",
+  "expect_anchor": "seed_webdev_typography_copy_040",
+  "row": "House defaults don't fit",
+  "automation": "client-site-first-build",
+  "phrase_need": "write down where house defaults do not apply before the build loop"
+ },
+ {
+  "phrase": "batch broad memory searches then retrieve full evidence for the strongest matches",
+  "expect_anchor": "seed_webdev_memory_practice_045",
+  "row": "Planning the build",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "content gate a floor for imperceptible harms and a lint for house style relevance citation",
+  "expect_anchor": "seed_webdev_ace_review_loops_065",
+  "row": "Designing a content gate",
+  "automation": "client-site-first-build",
+  "phrase_need": "content gate a floor for imperceptible harms and a lint for house style"
+ },
+ {
+  "phrase": "define a guard's forbidden class before writing individual test cases",
+  "expect_anchor": "seed_webdev_ci_testing_059",
+  "row": "Floor classes for leaks",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "positive control certified the defect",
+  "expect_anchor": "seed_webdev_ci_testing_072",
+  "row": "Positive control lies",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "cold reader belief test on the foundation",
+  "expect_anchor": "seed_webdev_typography_copy_078",
+  "row": "Cold-reader test",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "orchestrator wording most writer defects",
+  "expect_anchor": "seed_webdev_ace_review_loops_128",
+  "row": "Writer defects trace to briefs",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "fact digest one line per fact with status source and verified",
+  "expect_anchor": "seed_webdev_typography_copy_047",
+  "row": "Facts digest format",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "status lives in tense one status statement page",
+  "expect_anchor": "seed_webdev_typography_copy_059",
+  "row": "Status placement",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "FAQ answers that name products carry their own status word",
+  "expect_anchor": "seed_webdev_seo_aeo_023",
+  "row": "FAQ JSON-LD status",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "check a capability against the path that serves it with a tense per capability",
+  "expect_anchor": "seed_webdev_typography_copy_079",
+  "row": "Product claims vs code",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "fetch and check research claims contradicted provisional checked",
+  "expect_anchor": "seed_webdev_planning_reasoning_055",
+  "row": "Deep research claims",
+  "automation": "client-site-first-build",
+  "phrase_need": "fetch and check research claims contradicted"
+ },
+ {
+  "phrase": "amending a fact every writer round refresh dependent",
+  "expect_anchor": "seed_webdev_site_maintenance_077",
+  "row": "Amending a fact",
+  "automation": "client-site-first-build",
+  "phrase_need": "amending a fact every writer round"
+ },
+ {
+  "phrase": "register signed page strings with a dry run and refuse unknown keys",
+  "expect_anchor": "seed_webdev_site_maintenance_074",
+  "row": "Signed strings registry",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "bright artwork details interfering with label glyphs even when contrast passes",
+  "expect_anchor": "seed_webdev_typography_copy_163",
+  "row": "Words over a painting",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "find which compositing layer limits text contrast before changing the whole background",
+  "expect_anchor": "seed_webdev_accessibility_023",
+  "row": "Adding a scrim",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "make portrait art direction a reusable image component",
+  "expect_anchor": "seed_webdev_astro_build_025",
+  "row": "Art-directed image container",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "image prompt calibration pilot what the model did",
+  "expect_anchor": "seed_webdev_image_generation_014",
+  "row": "Image model paints layout words",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "animate pieces extracted from an illustration from recorded rest positions",
+  "expect_anchor": "seed_webdev_cosmic_art_direction_008",
+  "row": "Painting that moves",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "build-time figure layout solver from a spec of keys",
+  "expect_anchor": "seed_webdev_astro_build_022",
+  "row": "Data figure",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "confirm blank bands in full-page screenshots with scrolled viewport captures",
+  "expect_anchor": "seed_webdev_playwright_qa_034",
+  "row": "Sticky layer judged wrongly",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "first screen check at the visible viewport minus browser UI",
+  "expect_anchor": "seed_webdev_mobile_fit_017",
+  "row": "Headline in first screen on phones",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "pause stop hide WCAG 2.2.2 ambient motion",
+  "expect_anchor": "seed_webdev_accessibility_002",
+  "row": "Auto motion",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "renderer decision tree WebGL",
+  "expect_anchor": "seed_webdev_webgl_craft_057",
+  "row": "Choosing a renderer",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "when may a WebGL layer boot never during page load",
+  "expect_anchor": "seed_webdev_webgl_hardening_027",
+  "row": "When may the GPU layer start",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "layer stack static design aria-hidden canvas first frame truth reveal successful",
+  "expect_anchor": "seed_webdev_webgl_hardening_001",
+  "row": "Static design under the canvas",
+  "automation": "client-site-first-build",
+  "phrase_need": "layer stack static design aria-hidden canvas first frame truth"
+ },
+ {
+  "phrase": "slice WebGL boot so no task exceeds 50 ms",
+  "expect_anchor": "seed_webdev_webgl_hardening_038",
+  "row": "Boot jank on scroll",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "production CSP silently stopped small painted scenes data URLs blocked",
+  "expect_anchor": "seed_webdev_security_headers_006",
+  "row": "Animations broken in production only",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "motion gates under the production CSP dist headers injected",
+  "expect_anchor": "seed_webdev_security_headers_015",
+  "row": "Gates under production CSP",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "check the renderer is software or hardware before trusting a headless browser capture",
+  "expect_anchor": "seed_webdev_playwright_qa_002",
+  "row": "Device tier in headless",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "hour generator iteration caused by verification churn measured budget",
+  "expect_anchor": "seed_webdev_ci_testing_025",
+  "row": "Verification taking hours",
+  "automation": "client-site-first-build",
+  "phrase_need": "hour generator iteration caused by verification churn"
+ },
+ {
+  "phrase": "gate log names the build it graded with the served tree hash",
+  "expect_anchor": "seed_webdev_ci_testing_023",
+  "row": "Which build did a gate grade",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "Lighthouse produced zero reports and the script printed all pass",
+  "expect_anchor": "seed_webdev_ci_testing_095",
+  "row": "Lighthouse wrote nothing",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "prove a new gate rule by running the old gate code on the mutant",
+  "expect_anchor": "seed_webdev_ci_testing_087",
+  "row": "Mutant proof",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "cmd piped to tail returns the pipe exit status",
+  "expect_anchor": "seed_webdev_tooling_shell_025",
+  "row": "Pipes hide failures",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "session out of memory with too many background agents running at once",
+  "expect_anchor": "seed_webdev_automation_method_043",
+  "row": "Too many agents",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "session scratchpad shared by every subagent blinds multi-agent review",
+  "expect_anchor": "seed_webdev_ace_review_loops_089",
+  "row": "Shared scratchpad",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "owner approved the page design on the preview ship a credible first preview fast",
+  "expect_anchor": "seed_webdev_ace_review_loops_152",
+  "row": "Fast first preview",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "capture contract for a site run delineations and refreshes checkpoints reasons",
+  "expect_anchor": "seed_webdev_memory_practice_025",
+  "row": "Capture during the build",
+  "automation": "client-site-first-build",
+  "phrase_need": "capture contract for a site run delineations and refreshes"
+ },
+ {
+  "phrase": "flag the dual-layer memories for self-heal with all three automations encounter lessons",
+  "expect_anchor": "seed_webdev_memory_practice_036",
+  "row": "Flag bias",
+  "automation": "client-site-first-build",
+  "phrase_need": "flag the dual-layer memories for self-heal with all three automations"
+ },
+ {
+  "phrase": "empty body memory store bug assert minimum content length",
+  "expect_anchor": "seed_webdev_memory_practice_042",
+  "row": "Batch store from agent JSON",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "packaging a site project for another developer search phrases not IDs database-local portable",
+  "expect_anchor": "seed_webdev_memory_practice_023",
+  "row": "Packaging for another developer",
+  "automation": "client-site-first-build",
+  "phrase_need": "packaging a site project for another developer search phrases not IDs"
+ },
+ {
+  "phrase": "copy the brand bundle move it",
+  "expect_anchor": "seed_webdev_site_maintenance_018",
+  "row": "Brand bundle moved",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "keep one project tooling and keys separate from another project",
+  "expect_anchor": "seed_webdev_git_github_006",
+  "row": "Keep shared skill repositories separate from private project instructions",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "foreign document pages fidelity gate",
+  "expect_anchor": "seed_webdev_resource_hub_017",
+  "row": "A foreign document as a page",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "unlisted page with header-only noindex and out of the sitemap",
+  "expect_anchor": "seed_webdev_seo_aeo_006",
+  "row": "Make unlisted pages crawlable for noindex and keep access control separate",
+  "automation": "client-site-first-build"
+ },
+ {
+  "phrase": "ACE loop quality bar 9.8 hard threshold",
+  "expect_anchor": "seed_webdev_ace_review_loops_055",
+  "row": "Any UI change to the hub (components, tokens, layout, copy)",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "empirical Lighthouse and axe scans required to clear 9.8",
+  "expect_anchor": "seed_webdev_ci_testing_001",
+  "row": "Reflector about to score without running the page",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "budget review capacity for architecture, defect repair and integration polish",
+  "expect_anchor": "seed_webdev_ace_review_loops_002",
+  "row": "Planning how many iterations a loop will take",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "after every curator cycle store all skillbook skills as individual memories",
+  "expect_anchor": "seed_webdev_ace_review_loops_054",
+  "row": "Curator just closed a cycle",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "keep review thresholds stable and resolve contradictory rubric versions",
+  "expect_anchor": "seed_webdev_ace_review_loops_139",
+  "row": "Keep review thresholds stable and resolve contradictory rubric versions explicitly",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "generator builds an independent reviewer scores re-observation judgment",
+  "expect_anchor": "seed_webdev_ace_review_loops_067",
+  "row": "Separate computed review evidence from editorial judgment",
+  "automation": "resource-hub-maintenance",
+  "phrase_need": "generator builds an independent reviewer scores"
+ },
+ {
+  "phrase": "budget how many agents run at once for their child processes",
+  "expect_anchor": "seed_webdev_automation_method_043",
+  "row": "Budget concurrent agents for their child processes and checkpoint work incrementally",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "generator iteration running for hours because verification keeps churning",
+  "expect_anchor": "seed_webdev_ci_testing_025",
+  "row": "A generator iteration running for hours",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "cold readers one fresh agent per round with structured belief keys",
+  "expect_anchor": "seed_webdev_ace_review_loops_142",
+  "row": "Before shipping hub copy we wrote",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "write one shared contract and inject the discipline into every subagent prompt behavioral standards",
+  "expect_anchor": "seed_webdev_persona_forge_013",
+  "row": "Delegating loop roles to sub-agents",
+  "automation": "resource-hub-maintenance",
+  "phrase_need": "write one shared contract and inject the discipline into every subagent prompt"
+ },
+ {
+  "phrase": "build many CMS pages one per resource mapper",
+  "expect_anchor": "seed_webdev_resource_hub_010",
+  "row": "Building many resource pages at once",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "invest in templates and examples so review can focus on residual defects",
+  "expect_anchor": "seed_webdev_ace_review_loops_049",
+  "row": "A shared template plus many resources",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "one approved template per page type proven on one real page prototype components",
+  "expect_anchor": "seed_webdev_astro_build_010",
+  "row": "Starting a new page type",
+  "automation": "resource-hub-maintenance",
+  "phrase_need": "one approved template per page type proven on one real page"
+ },
+ {
+  "phrase": "verbatim fidelity gate design separator trap chrome outside main exempt supplied",
+  "expect_anchor": "seed_webdev_astro_build_026",
+  "row": "Exempt only supplied text from editorial rules while keeping the entire page under validation",
+  "automation": "resource-hub-maintenance",
+  "phrase_need": "verbatim fidelity gate design separator trap chrome outside main"
+ },
+ {
+  "phrase": "MODE A vs MODE B input source discrimination reconstruction select",
+  "expect_anchor": "seed_webdev_automation_method_057",
+  "row": "Deciding MODE A (verbatim) vs MODE B (we author)",
+  "automation": "resource-hub-maintenance",
+  "phrase_need": "MODE A vs MODE B input source discrimination"
+ },
+ {
+  "phrase": "treat handed external HTML as content and rebuild it canonically in the CMS placeholders imported",
+  "expect_anchor": "seed_webdev_resource_hub_020",
+  "row": "External HTML going into the CMS",
+  "automation": "resource-hub-maintenance",
+  "phrase_need": "treat handed external HTML as content and rebuild it canonically in the CMS"
+ },
+ {
+  "phrase": "spec prose disagrees with the locked exemplar artifact implementing reconcile",
+  "expect_anchor": "seed_webdev_planning_reasoning_070",
+  "row": "Spec prose disagrees with the approved exemplar",
+  "automation": "resource-hub-maintenance",
+  "phrase_need": "spec prose disagrees with the locked exemplar artifact"
+ },
+ {
+  "phrase": "convert an approved document into pages and verify textual fidelity",
+  "expect_anchor": "seed_webdev_resource_hub_017",
+  "row": "Convert approved documents through repeatable transformations and verify textual fidelity",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "Astro scoped styles do not reach elements created by client script",
+  "expect_anchor": "seed_webdev_astro_build_024",
+  "row": "Script-created elements come out unstyled",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "resource hub data model with four document types",
+  "expect_anchor": "seed_webdev_resource_hub_019",
+  "row": "Collections that fill themselves",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "content automation schema limits attribute paths and concurrent writes",
+  "expect_anchor": "seed_webdev_resource_hub_018",
+  "row": "Sanity limits before a bulk job",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "single atomic Sanity mutate POST when seeding documents",
+  "expect_anchor": "seed_webdev_resource_hub_021",
+  "row": "Seeding many documents",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "GROQ patterns for a polymorphic hub filter definition",
+  "expect_anchor": "seed_webdev_resource_hub_003",
+  "row": "Filtering resources by several taxonomies",
+  "automation": "resource-hub-maintenance",
+  "phrase_need": "GROQ patterns for a polymorphic hub"
+ },
+ {
+  "phrase": "Sanity patch followed by git push builds with stale content rebuilds freshness",
+  "expect_anchor": "seed_webdev_resource_hub_018",
+  "row": "Design content automation around schema limits, read freshness and controlled rebuilds",
+  "automation": "resource-hub-maintenance",
+  "phrase_need": "Sanity patch followed by git push builds with stale content"
+ },
+ {
+  "phrase": "Sanity rejects @-prefixed keys in JSON-LD",
+  "expect_anchor": "seed_webdev_seo_aeo_002",
+  "row": "Storing JSON-LD in a Sanity field",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "adding a new resource type to a Sanity Astro resource hub",
+  "expect_anchor": "seed_webdev_resource_hub_001",
+  "row": "Adding a new resource type",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "strip base64 data URI images from CMS HTML at ingest and upload by hash",
+  "expect_anchor": "seed_webdev_performance_001",
+  "row": "Imported HTML carries data-URI images",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "dry-run every bulk import no placeholders in bodies redeploy after CMS-only edits",
+  "expect_anchor": "seed_webdev_resource_hub_035",
+  "row": "Any bulk content op",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "hideFromListing for live but unlisted pages and publishedOnSite staging previously filters",
+  "expect_anchor": "seed_webdev_resource_hub_023",
+  "row": "A page live by URL but not in the listing",
+  "automation": "resource-hub-maintenance",
+  "phrase_need": "hideFromListing for live but unlisted pages and publishedOnSite staging"
+ },
+ {
+  "phrase": "cached versus uncached reads for content freshness and controlled rebuilds",
+  "expect_anchor": "seed_webdev_resource_hub_018",
+  "row": "New CMS content 404s on its detail page",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "editor flips status to Published and the page is live",
+  "expect_anchor": "seed_webdev_resource_hub_007",
+  "row": "Making a CMS publish go live",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "per-resource preview flag and a HALT gate before main with idempotent re-ingest",
+  "expect_anchor": "seed_webdev_resource_hub_026",
+  "row": "Use one idempotent ingestion pipeline to move approved Notion resources into Sanity",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "cross-blog slug resolution from sibling sanity-patch",
+  "expect_anchor": "seed_webdev_resource_hub_036",
+  "row": "Linking between sibling pages in one batch",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "HTML payload size governance for article pages with images",
+  "expect_anchor": "seed_webdev_performance_001",
+  "row": "Heavy article pages",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "library sidebar with four accordion facets",
+  "expect_anchor": "seed_webdev_resource_hub_003",
+  "row": "Filter sidebar and counts",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "mirrored side and bottom CTA with one button and no offers the business does not make",
+  "expect_anchor": "seed_webdev_forms_email_019",
+  "row": "CTAs on resource pages",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "case-sensitive grep on user-visible fields for brand mark casing styling machine",
+  "expect_anchor": "seed_webdev_typography_copy_033",
+  "row": "Brand name casing drifts in imported text",
+  "automation": "resource-hub-maintenance",
+  "phrase_need": "case-sensitive grep on user-visible fields for brand mark casing"
+ },
+ {
+  "phrase": "page generator fetches the actual source before writing summaries primary records",
+  "expect_anchor": "seed_webdev_ace_review_loops_101",
+  "row": "Writing a page we author",
+  "automation": "resource-hub-maintenance",
+  "phrase_need": "page generator fetches the actual source before writing summaries"
+ },
+ {
+  "phrase": "one locked style anchor for generated imagery written example",
+  "expect_anchor": "seed_webdev_image_generation_016",
+  "row": "Generating card or hero images",
+  "automation": "resource-hub-maintenance",
+  "phrase_need": "one locked style anchor for generated imagery"
+ },
+ {
+  "phrase": "grade text over painted art at the worst pixels under the words statistic relying",
+  "expect_anchor": "seed_webdev_accessibility_006",
+  "row": "Words over a hero, banner or spotlight image",
+  "automation": "resource-hub-maintenance",
+  "phrase_need": "grade text over painted art at the worst pixels under the words"
+ },
+ {
+  "phrase": "reassess text-protection overlays after repairing the background image",
+  "expect_anchor": "seed_webdev_cosmic_art_direction_004",
+  "row": "Adding or removing a scrim",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "art-directed image container switches composition at the content breakpoint",
+  "expect_anchor": "seed_webdev_layout_responsive_006",
+  "row": "A banner that must work on phones",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "capture viewports at named scroll positions instead of full-page screenshots",
+  "expect_anchor": "seed_webdev_playwright_qa_003",
+  "row": "Full-page screenshot looks wrong with sticky layers",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "first-screen budget on small phones",
+  "expect_anchor": "seed_webdev_mobile_fit_015",
+  "row": "'Headline in the first screen' on phones",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "link to the element the reader must see and give it scroll-margin-block",
+  "expect_anchor": "seed_webdev_accessibility_014",
+  "row": "A no-JS :target link",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "figure legend native buttons axe list violation",
+  "expect_anchor": "seed_webdev_accessibility_012",
+  "row": "Interactive legend or filter chips",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "WCAG 2.2.2 pause for ambient header motion",
+  "expect_anchor": "seed_webdev_accessibility_002",
+  "row": "Ambient motion on a page",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "localStorage and sessionStorage need consent unless strictly necessary",
+  "expect_anchor": "seed_webdev_security_headers_014",
+  "row": "Browser storage to remember a choice",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "build-time figure layout solver",
+  "expect_anchor": "seed_webdev_layout_responsive_016",
+  "row": "Interactive figures on a hub page",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "capture the test exit status before filtering its output",
+  "expect_anchor": "seed_webdev_tooling_shell_025",
+  "row": "Capture the test command's exit status before filtering its output",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "run the old gate on the new mutant and compare the finding text",
+  "expect_anchor": "seed_webdev_ci_testing_087",
+  "row": "Compare old and new checks on the same defect and inspect the actual diagnostic",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "gate log first line is the hash of the served tree",
+  "expect_anchor": "seed_webdev_ci_testing_023",
+  "row": "Bind verification logs to the exact build they tested",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "Lighthouse chrome-launcher TEMP folders",
+  "expect_anchor": "seed_webdev_tooling_shell_029",
+  "row": "Isolate Lighthouse temporary profiles when running through WSL",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "cmd tail returns the pipe exit status",
+  "expect_anchor": "seed_webdev_tooling_shell_011",
+  "row": "A check answers a nearby question",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "clean environment allowlist pinned account negative test on the real path binding credentials",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_005",
+  "row": "Isolate deployment credentials with an environment allowlist and explicit account binding",
+  "automation": "resource-hub-maintenance",
+  "phrase_need": "clean environment allowlist pinned account negative test on the real path"
+ },
+ {
+  "phrase": "separation by tool not by flag for a second account",
+  "expect_anchor": "seed_webdev_tooling_shell_015",
+  "row": "Separate projects through credentials and explicit targets rather than remembered flags",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "verify a Sanity project live and read-only before any write switches active",
+  "expect_anchor": "seed_webdev_tooling_shell_037",
+  "row": "First contact with your Sanity project",
+  "automation": "resource-hub-maintenance",
+  "phrase_need": "verify a Sanity project live and read-only before any write"
+ },
+ {
+  "phrase": "one-way key sync that never echoes a value",
+  "expect_anchor": "seed_webdev_tooling_shell_044",
+  "row": "Make credential synchronization atomic, repeatable and silent",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "wrangler account pin plus wrapper refusal and clean-environment builds",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_016",
+  "row": "Wrangler might hit the wrong account",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "Workers Builds API does not list Worker Previews builds",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_040",
+  "row": "A Cloudflare deploy watcher reports green",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "prefer Workers with static assets plus Workers Builds over Pages",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_007",
+  "row": "Hosting choice for the hub on Cloudflare",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "check dependency currency on every maintenance pass before a redesign",
+  "expect_anchor": "seed_webdev_site_maintenance_014",
+  "row": "Include dependency currency and migration assessment in website maintenance",
+  "automation": "resource-hub-maintenance"
+ },
+ {
+  "phrase": "self-heal flag memories at capture with the automation tag improve workflows",
+  "expect_anchor": "seed_webdev_memory_practice_036",
+  "row": "Tag lessons for every workflow that can encounter the failure",
+  "automation": "resource-hub-maintenance",
+  "phrase_need": "self-heal flag memories at capture with the automation tag"
+ },
+ {
+  "phrase": "worker previews setup secrets before a preview exists recreate a stale preview",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_056",
+  "row": "Any change to the Worker Previews setup, a preview secret, or a stale Preview",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "branch cut from main fails preview build wrangler configuration missing previews block",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_018",
+  "row": "A branch cut from main fails its preview build (\"missing a previews block\")",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "builds watch commit retry invisible uuid",
+  "expect_anchor": "seed_webdev_ci_testing_107",
+  "row": "Watching a main (production) build, or a retry of a failed one",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "judge a deploy by its product probe path build marker binding names on the tagged deployment dashboard success",
+  "expect_anchor": "seed_webdev_ci_testing_057",
+  "row": "Deciding a deploy is \"done\"",
+  "automation": "website-maintenance",
+  "phrase_need": "judge a deploy by its product probe path build marker binding names on the tagged deployment"
+ },
+ {
+  "phrase": "workers builds API does not list worker previews builds dashboard red api green",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_039",
+  "row": "The dashboard shows a red preview build while the API says green",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "clean clone CI simulation command workers build readlink node symlink npm",
+  "expect_anchor": "seed_webdev_tooling_shell_048",
+  "row": "Before any push: simulate the CI build locally",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "Access service token preview lock 302 without token 200 with token",
+  "expect_anchor": "seed_webdev_ci_testing_045",
+  "row": "Your previews sit behind Cloudflare Access: checking the lock",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "immutable preview links confuse review",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_019",
+  "row": "A reviewer says \"none of my changes are there\"",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "probe Access protected host without printing cookie",
+  "expect_anchor": "seed_webdev_tooling_shell_049",
+  "row": "Probing an Access-protected host from the terminal",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "cloudflare preview hosts override X-Robots-Tag workers dev noindex header verifier",
+  "expect_anchor": "seed_webdev_security_headers_005",
+  "row": "Header checks differ between preview and production",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "workers X-Robots-Tag header posture",
+  "expect_anchor": "seed_webdev_seo_aeo_018",
+  "row": "Indexing posture on a Workers site (noindex, robots)",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "run_worker_first excludes well-known 404 page without X-Robots-Tag known residual worker-added handler",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_062",
+  "row": "Check which handler actually serves each route before relying on Worker-added headers",
+  "automation": "website-maintenance",
+  "phrase_need": "run_worker_first excludes well-known 404 page without X-Robots-Tag known residual"
+ },
+ {
+  "phrase": "production change path without touching the preview working tree git worktree from origin main",
+  "expect_anchor": "seed_webdev_git_github_011",
+  "row": "Use an isolated worktree for production fixes beside ongoing development",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "pin account_id wrangler two locks reachability commands",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_016",
+  "row": "A plain build or wrangler call hits the wrong Cloudflare account",
+  "automation": "website-maintenance",
+  "phrase_need": "pin account_id wrangler two locks"
+ },
+ {
+  "phrase": "shell profile exports api tokens into every shell second account wrong account allowlist wrapper",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_016",
+  "row": "Your shell exports another account's token",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "D1 time travel 7 days on the free plan not 30 monthly export",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_014",
+  "row": "Planning backups of the forms database",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "check every privacy page sentence against the code true false unverifiable truth table",
+  "expect_anchor": "seed_webdev_site_maintenance_046",
+  "row": "Any change touching data practices or the privacy page",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "repeat sign-up indistinguishable from the first one deletion still reaches it",
+  "expect_anchor": "seed_webdev_forms_email_036",
+  "row": "Repeat sign-ups or duplicate form submissions",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "malformed request body is never logged map to 4xx log e.name only",
+  "expect_anchor": "seed_webdev_forms_email_037",
+  "row": "Error handling and logging in the form Worker",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "worker code writes error reports only enforced by a lint over the import closure",
+  "expect_anchor": "seed_webdev_ci_testing_056",
+  "row": "The privacy page says the server keeps only error reports",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "notify form optional question nullable additive migration applied local then remote",
+  "expect_anchor": "seed_webdev_forms_email_027",
+  "row": "Adding a field to a form",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "exact switches to turn on tracking paid ads cookie analytics later banner consent mode",
+  "expect_anchor": "seed_webdev_site_maintenance_043",
+  "row": "Turning on paid ads or cookie analytics later",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "signed consent change broke the consent record verify skipped consent version",
+  "expect_anchor": "seed_webdev_forms_email_038",
+  "row": "Changing consent wording or any signed string",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "storing anything on a visitor device needs consent unless strictly necessary ePrivacy PECR",
+  "expect_anchor": "seed_webdev_security_headers_014",
+  "row": "Adding browser storage (localStorage, sessionStorage)",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "production posture applied automatically by the build when promoting preview",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_020",
+  "row": "Promoting preview to production on a Workers site",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "update generated pages from canonical content through the normal preview release",
+  "expect_anchor": "seed_webdev_site_maintenance_083",
+  "row": "Release generated pages through the normal preview and deployment workflow",
+  "automation": "website-maintenance",
+  "phrase_need": "regenerate derived pages from canonical content"
+ },
+ {
+  "phrase": "push to main preview first signs platform-aware promotion",
+  "expect_anchor": "seed_webdev_site_maintenance_033",
+  "row": "Tempted to push to main because it is \"the production branch\"",
+  "automation": "website-maintenance",
+  "phrase_need": "push to main preview first signs"
+ },
+ {
+  "phrase": "end to end QR check",
+  "expect_anchor": "seed_webdev_ci_testing_019",
+  "row": "Point printed QR codes at a short path with a temporary redirect and test the full path",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "isitagentready level 5 agent-native production interoperability signals",
+  "expect_anchor": "seed_webdev_agent_readiness_011",
+  "row": "Re-scanning agent readiness after a change",
+  "automation": "website-maintenance",
+  "phrase_need": "isitagentready level 5 agent-native production"
+ },
+ {
+  "phrase": "DNS-AID SVCB records agents created via the cloudflare api DNSSEC",
+  "expect_anchor": "seed_webdev_dns_domains_003",
+  "row": "Adding agent discovery over DNS",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "wrangler audit hold dated upgrade advisories deployment-tool",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_061",
+  "row": "Upgrading wrangler or another deploy tool",
+  "automation": "website-maintenance",
+  "phrase_need": "wrangler audit hold dated upgrade"
+ },
+ {
+  "phrase": "unlisted page rules noindex header only no robots disallow referrer no-referrer",
+  "expect_anchor": "seed_webdev_seo_aeo_006",
+  "row": "Make unlisted pages crawlable for noindex and keep access control separate",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "outside collaborator branch protection access",
+  "expect_anchor": "seed_webdev_git_github_016",
+  "row": "Giving a collaborator access to your site",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "written flip list for every preview to production cutover site url noindex robots",
+  "expect_anchor": "seed_webdev_deploy_vercel_006",
+  "row": "Preview to production on any host: what must flip together",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "lighthouse produced zero reports median script printed all pass zero inputs is a fail",
+  "expect_anchor": "seed_webdev_ci_testing_095",
+  "row": "A gate printed PASS",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "define a guard's forbidden class before testing individual examples",
+  "expect_anchor": "seed_webdev_ci_testing_059",
+  "row": "Building a guard, lint or validator",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "test instruments axe opacity hack remote checking",
+  "expect_anchor": "seed_webdev_ci_testing_013",
+  "row": "Planting a mutant to prove a check",
+  "automation": "website-maintenance",
+  "phrase_need": "test instruments axe opacity hack"
+ },
+ {
+  "phrase": "a gate log names the build it graded print the served tree hash first",
+  "expect_anchor": "seed_webdev_ci_testing_023",
+  "row": "Filing a verification log",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "generator iteration verification churn rerun impact",
+  "expect_anchor": "seed_webdev_ci_testing_025",
+  "row": "Verification is taking hours",
+  "automation": "website-maintenance",
+  "phrase_need": "generator iteration verification churn"
+ },
+ {
+  "phrase": "pipe tail exit status axe battery",
+  "expect_anchor": "seed_webdev_tooling_shell_025",
+  "row": "Reading a command's exit code",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "first screen check on phones test the visible viewport minus browser UI sweep heights",
+  "expect_anchor": "seed_webdev_mobile_fit_017",
+  "row": "A \"headline in the first screen\" check on phones",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "sticky layer viewport captures scroll positions",
+  "expect_anchor": "seed_webdev_playwright_qa_003",
+  "row": "Judging a sticky or fixed layer from screenshots",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "browser measurements and accessibility scans before declaring a review complete",
+  "expect_anchor": "seed_webdev_ci_testing_001",
+  "row": "Scoring a pass that only inspected code",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "owner approved the page design iterations polish",
+  "expect_anchor": "seed_webdev_planning_reasoning_003",
+  "row": "Planning how many iterations to spend",
+  "automation": "website-maintenance",
+  "phrase_need": "owner approved the page design"
+ },
+ {
+  "phrase": "near regime accept on binary checks and two blind reviewers not on the scalar",
+  "expect_anchor": "seed_webdev_ace_review_loops_085",
+  "row": "Close to the threshold, the score barely moves",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "independent reviewer scores never fixes mechanical gate suite is a precondition not the verdict roles generation",
+  "expect_anchor": "seed_webdev_ace_review_loops_079",
+  "row": "The orchestrator wants to review instead of spawning a reflector",
+  "automation": "website-maintenance",
+  "phrase_need": "independent reviewer scores never fixes mechanical gate suite is a precondition not the verdict"
+ },
+ {
+  "phrase": "refresh a page when the product it describes has changed",
+  "expect_anchor": "seed_webdev_site_maintenance_072",
+  "row": "The product the page describes has changed",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "dominant source of writer defects was orchestrator wording not writer skill introducing supply",
+  "expect_anchor": "seed_webdev_ace_review_loops_128",
+  "row": "Writing a finding or a fix instruction for a writer",
+  "automation": "website-maintenance",
+  "phrase_need": "dominant source of writer defects was orchestrator wording not writer skill"
+ },
+ {
+  "phrase": "register approved copy through an atomic import that rejects unknown keys",
+  "expect_anchor": "seed_webdev_site_maintenance_074",
+  "row": "Merging signed strings into the registry",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "highlight checks on every text element with limits from its own colour",
+  "expect_anchor": "seed_webdev_accessibility_006",
+  "row": "Words over a painted or photographic image",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "judge a text overlay by its effect under the words and on surrounding artwork",
+  "expect_anchor": "seed_webdev_cosmic_art_direction_005",
+  "row": "Adding or changing a scrim",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "switch image composition at the layout breakpoint of the content",
+  "expect_anchor": "seed_webdev_layout_responsive_006",
+  "row": "Art-directed images and breakpoints",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "apply approved local edits to the master image before producing delivery files",
+  "expect_anchor": "seed_webdev_image_generation_030",
+  "row": "Editing an image file",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "stylesheet generated as a string is outside every css check assert the computed value",
+  "expect_anchor": "seed_webdev_css_design_system_017",
+  "row": "CSS generated as a string in a component",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "astro scoped styles do not reach elements created by client script global",
+  "expect_anchor": "seed_webdev_astro_build_024",
+  "row": "Styles do not apply to script-created elements in Astro",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "govern above the fold media LCP candidate budgets video poster",
+  "expect_anchor": "seed_webdev_performance_001",
+  "row": "Above-the-fold images, video or canvas",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "post launch polish loop one targeted fix hotfix commit make the container bigger first mechanism-based missing",
+  "expect_anchor": "seed_webdev_layout_responsive_010",
+  "row": "A layout looks \"pushed down\" after launch",
+  "automation": "website-maintenance",
+  "phrase_need": "post launch polish loop one targeted fix hotfix commit make the container bigger first"
+ },
+ {
+  "phrase": "ambient header motion WCAG 2.2.2 pause stop hide visible mechanism",
+  "expect_anchor": "seed_webdev_accessibility_002",
+  "row": "Ambient motion that runs more than 5 seconds",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "animation-play-state pause rule",
+  "expect_anchor": "seed_webdev_css_design_system_019",
+  "row": "A pause control that does not stop everything",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "addition drawn by a live layer starts at zero",
+  "expect_anchor": "seed_webdev_webgl_hardening_044",
+  "row": "A live layer over a static design",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "renderer decision tree first yes wins html svg css for meaning",
+  "expect_anchor": "seed_webdev_webgl_craft_050",
+  "row": "Choosing how to render something animated",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "when a gpu layer may start never during page load after load and idle",
+  "expect_anchor": "seed_webdev_webgl_hardening_027",
+  "row": "When a GPU layer may start",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "live layer that boots on scroll slice the boot so no task exceeds 50 ms",
+  "expect_anchor": "seed_webdev_webgl_hardening_038",
+  "row": "A scroll-started layer janks on boot",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "run every motion and frame-0 gate under the production CSP data url connect-src",
+  "expect_anchor": "seed_webdev_security_headers_015",
+  "row": "Animations work locally but break in production",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "local form test unexpectedly uses production validation because of the request host",
+  "expect_anchor": "seed_webdev_deploy_cloudflare_059",
+  "row": "Local form round trip fails only on success paths",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "lightweight version check that triggers focused migration research",
+  "expect_anchor": "seed_webdev_site_maintenance_015",
+  "row": "Starting maintenance: which version of everything",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "redesign of a live site pick the workflow by mechanical fit not by label",
+  "expect_anchor": "seed_webdev_site_maintenance_013",
+  "row": "A redesign feels like a first build",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "content security policy must enumerate every external host the page loads font stylesheet",
+  "expect_anchor": "seed_webdev_security_headers_001",
+  "row": "Tightening or extending the CSP",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "cloudflare web analytics beacon in the base layout before head cookieless",
+  "expect_anchor": "seed_webdev_site_maintenance_004",
+  "row": "Adding cookieless analytics on Cloudflare",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "shape for dashboard-only steps the site owner must do by hand what you should see novice prerequisites",
+  "expect_anchor": "seed_webdev_automation_method_035",
+  "row": "A dashboard step you must do by hand",
+  "automation": "website-maintenance",
+  "phrase_need": "shape for dashboard-only steps the site owner must do by hand what you should see"
+ },
+ {
+  "phrase": "run a real language runtime inside a static page for an interactive tool",
+  "expect_anchor": "seed_webdev_astro_build_018",
+  "row": "Someone asks for a calculator or interactive tool",
+  "automation": "website-maintenance"
+ },
+ {
+  "phrase": "in-browser compute astro set:html script inertness external script data attributes",
+  "expect_anchor": "seed_webdev_astro_build_019",
+  "row": "A widget works locally but is inert after the Astro build",
+  "automation": "website-maintenance"
+ }
+]

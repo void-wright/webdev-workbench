@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resource Hub: Content Type Implementation Patterns</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.55;
+    color: #1a1a1a;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .page-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 32px 32px;
+    border-bottom: 2px solid #1a1a1a;
+  }
+  h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+  .lede {
+    font-size: 18px;
+    color: rgb(85, 85, 85);
+    max-width: 820px;
+    margin: 0 0 12px;
+  }
+  .meta-line {
+    font-size: 13px;
+    color: rgb(136, 136, 136);
+    margin: 8px 0 0;
+  }
+  .panel {
+    max-width: 1200px;
+    margin: 32px auto;
+    padding: 28px 32px;
+    background: #fafafa;
+    border-left: 4px solid #1a1a1a;
+  }
+  .panel h2 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgb(85, 85, 85);
+  }
+  .panel p { margin: 0 0 12px; }
+  .panel p:last-child { margin-bottom: 0; }
+  .legend-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+  }
+  .legend-list li {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .badge-required { background: #e8f5e9; color: #2e7d32; }
+  .badge-optional { background: #fff3e0; color: #e65100; }
+  .badge-cta      { background: #e3f2fd; color: rgb(21, 101, 192); }
+  .badge-never    { background: #ffebee; color: #c62828; }
+
+  .pattern-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 56px 32px;
+    border-top: 1px solid #e0e0e0;
+  }
+  .pattern-section .pattern-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgb(136, 136, 136);
+    margin-bottom: 8px;
+  }
+  .pattern-section h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 12px;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+  .pattern-section .pattern-summary {
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+    margin: 0 0 32px;
+    max-width: 820px;
+  }
+  .pattern-grid {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  .wireframe {
+    border: 1.5px solid #1a1a1a;
+    background: white;
+    font-size: 13px;
+    box-shadow: 4px 4px 0 #f0f0f0;
+  }
+  .wf-row {
+    padding: 14px 16px;
+    border-bottom: 1px dashed #c8c8c8;
+  }
+  .wf-row:last-child { border-bottom: none; }
+  .wf-label {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgb(119, 119, 119);
+    margin-bottom: 5px;
+    display: block;
+  }
+  .wf-content {
+    font-weight: 500;
+    color: #1a1a1a;
+    line-height: 1.4;
+  }
+  .wf-required { background: #f1f8f3; }
+  .wf-required .wf-label { color: #2e7d32; }
+  .wf-optional { background: #fef5ec; }
+  .wf-optional .wf-label { color: #e65100; }
+  .wf-cta { background: #e8f0fa; }
+  .wf-cta .wf-label { color: rgb(21, 101, 192); }
+  .wf-never { background: #fbeded; color: rgb(119, 119, 119); }
+  .wf-never .wf-label { color: #c62828; }
+  .wf-never .wf-content { text-decoration: line-through; }
+
+  .annotations h3 {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 24px 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgb(85, 85, 85);
+  }
+  .annotations h3:first-child { margin-top: 0; }
+  .annotations ul {
+    margin: 0 0 8px;
+    padding-left: 20px;
+  }
+  .annotations li { margin-bottom: 6px; }
+  .annotations p { margin: 0 0 12px; }
+  .annotations p:last-child { margin-bottom: 0; }
+  .annotations .examples-block {
+    background: #fafafa;
+    padding: 14px 18px;
+    font-size: 14px;
+    border-left: 3px solid rgb(136, 136, 136);
+    margin-top: 20px;
+  }
+  .annotations .examples-block strong {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgb(85, 85, 85);
+    margin-bottom: 4px;
+  }
+  .annotations .anti-block {
+    background: #fbeded;
+    padding: 14px 18px;
+    font-size: 14px;
+    border-left: 3px solid #c62828;
+    margin-top: 16px;
+  }
+  .annotations .anti-block strong {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #c62828;
+    margin-bottom: 4px;
+  }
+  .tag-never, .tag-always {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    padding: 2px 6px;
+    border-radius: 2px;
+    margin-right: 6px;
+    vertical-align: 2px;
+  }
+  .tag-never { background: #ffebee; color: #c62828; }
+  .tag-always { background: #e8f5e9; color: #2e7d32; }
+
+  .form-placement {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 56px 32px;
+    border-top: 1px solid #e0e0e0;
+  }
+  .form-placement table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+    font-size: 14px;
+  }
+  .form-placement th, .form-placement td {
+    text-align: left;
+    padding: 14px 16px;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: top;
+  }
+  .form-placement th {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgb(85, 85, 85);
+    background: #fafafa;
+    border-bottom: 2px solid #1a1a1a;
+  }
+
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 32px 60px;
+    border-top: 2px solid #1a1a1a;
+    font-size: 13px;
+    color: rgb(119, 119, 119);
+  }
+  footer p { margin: 0 0 8px; }
+
+  @media print {
+    body { font-size: 11px; }
+    .pattern-section { page-break-before: always; padding: 28px 32px; }
+    .page-header, .panel { page-break-after: avoid; }
+    h1 { font-size: 28px; }
+    .pattern-section h2 { font-size: 22px; }
+    .wireframe { box-shadow: none; }
+  }
+  @media (max-width: 900px) {
+    .pattern-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <h1>Resource Hub: Content Type Implementation Patterns</h1>
+  <p class="lede">A page-layout reference for every content type in an open resource hub. Use this when building your hub: each content type has a specific structure, required elements, and CTA placement rules. The patterns make useful content easy to read and share while keeping a visible Side Door for buyers ready to talk.</p>
+  <p class="meta-line">Companion to <code>03_skills/resource-hub-resource-page-builder/SKILL.md</code>. Print-friendly. Brand-neutral; apply your site's visual system on top.</p>
+</header>
+
+<section class="panel">
+  <h2>Legend</h2>
+  <ul class="legend-list">
+    <li><span class="badge badge-required">Required</span> always present in this pattern</li>
+    <li><span class="badge badge-optional">Optional</span> include if you have it</li>
+    <li><span class="badge badge-cta">Side Door CTA</span> buyer enquiry; persistent or contextual</li>
+    <li><span class="badge badge-never">Never</span> blocks access or undermines trust</li>
+  </ul>
+</section>
+
+<section class="panel">
+  <h2>The framework in 60 seconds</h2>
+  <p>Readers arrive with different intentions. Some want to learn; others are ready to buy. A hub built entirely around gated downloads and sales forms can collect contact details while driving away readers who only need an answer. Design for learning and sharing, with a clear route to purchase or contact alongside the content.</p>
+  <p><strong>Three complementary layers:</strong></p>
+  <ul>
+    <li><strong>Front Door (Demand Creation)</strong>: open content people can share in planning meetings, community groups, social posts, email, and everyday conversations.</li>
+    <li><strong>Side Door (Demand Capture)</strong>: visible CTAs such as "Ask about equipment," "Find a stockist," or "Request a quote," never blocking content.</li>
+    <li><strong>Trust Infrastructure</strong>: sources, customer voices, clear pricing, and self-reported attribution.</li>
+  </ul>
+  <p>Two rules guide forms in these patterns: use a <strong>free-text</strong> "How did you hear about us?" field rather than a dropdown, and place <strong>no content gates</strong> on Front Door educational content.</p>
+</section>
+
+<!-- ============================== UNIVERSAL ============================== -->
+
+<section class="pattern-section">
+  <span class="pattern-tag">Universal</span>
+  <h2>Universal page structure</h2>
+  <p class="pattern-summary">Every page on the hub, regardless of content type, shares this skeleton. Patterns 1–9 modify the body region and its supporting details.</p>
+  <div class="pattern-grid">
+
+    <div class="wireframe">
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Persistent Side Door CTA · in site header</span>
+        <span class="wf-content">[Logo] [Nav] &nbsp;&nbsp; <strong>[Ask about equipment]</strong> button</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Title block</span>
+        <span class="wf-content">Page title · byline · date</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Above-fold summary</span>
+        <span class="wf-content">2–3 sentences: what this is, why it matters</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Body</span>
+        <span class="wf-content">Varies by content type → Patterns 1–9</span>
+      </div>
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Contextual Side Door CTA · end of body</span>
+        <span class="wf-content">"Planning your kitchen layout? [Ask about equipment]"</span>
+      </div>
+      <div class="wf-row wf-optional">
+        <span class="wf-label">Related content</span>
+        <span class="wf-content">3–4 cards keeping reader on hub</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Footer</span>
+        <span class="wf-content">Site nav · legal · optional signup with attribution</span>
+      </div>
+      <div class="wf-row wf-never">
+        <span class="wf-label">Anti-pattern</span>
+        <span class="wf-content">Popup that blocks content / email wall</span>
+      </div>
+    </div>
+
+    <div class="annotations">
+      <h3>Required on every page</h3>
+      <ul>
+        <li><span class="tag-always">Always</span>Persistent header CTA visible on scroll. Keep it available on narrow screens too.</li>
+        <li><span class="tag-always">Always</span>Title, byline, date. Readers want to know <em>who</em> said this and <em>when</em>.</li>
+        <li><span class="tag-always">Always</span>Above-fold summary in 2–3 sentences. Reuse its key message in social preview metadata and search descriptions.</li>
+        <li><span class="tag-always">Always</span>Free-text "How did you hear about us?" on every form, including newsletter, contact, quote, and booking forms. Not a dropdown.</li>
+        <li><span class="tag-always">Always</span>End-of-body contextual CTA using the same Side Door target with page-aware copy, except where a pattern makes it optional.</li>
+      </ul>
+
+      <h3>Never</h3>
+      <ul>
+        <li><span class="tag-never">Never</span>Popup that interrupts reading.</li>
+        <li><span class="tag-never">Never</span>Email wall / content gate on Front Door content.</li>
+        <li><span class="tag-never">Never</span>Dropdown for "How did you hear about us?" It limits answers to categories you already expected.</li>
+        <li><span class="tag-never">Never</span>Hidden header CTA. Buyers who are ready to act need to find the next step immediately.</li>
+      </ul>
+
+      <div class="examples-block">
+        <strong>Why this matters</strong>
+        Help readers who are <em>not yet buying</em>: they can learn, share, and remember you later. Keep a clear path for those ready to buy now. A page that demands an enquiry before offering value loses opportunities to earn trust.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PATTERN 1 ============================== -->
+
+<section class="pattern-section">
+  <span class="pattern-tag">Pattern 1</span>
+  <h2>Web-native long-form essay / cornerstone</h2>
+  <p class="pattern-summary">The page <em>is</em> the asset. No PDF, no embed, no download required. Use it for category explainers, practical viewpoints, and founder essays. A working range is 1,500–4,000 words, with length determined by the topic. A useful essay gives readers a link worth sharing.</p>
+  <div class="pattern-grid">
+
+    <div class="wireframe">
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Persistent CTA</span>
+        <span class="wf-content">"Find a stockist" in header</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Title (H1)</span>
+        <span class="wf-content">Prominent editorial title · 32–48px</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Byline · date · read-time</span>
+        <span class="wf-content">By [Author] · [Publication date] · [Estimated reading time]</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Above-fold summary</span>
+        <span class="wf-content">2–3 sentence dek</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Body · prose</span>
+        <span class="wf-content">H2 / H3 structure, pull quotes, occasional figures, citations</span>
+      </div>
+      <div class="wf-row wf-optional">
+        <span class="wf-label">Inline figures</span>
+        <span class="wf-content">Charts, diagrams, photos with captions</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Citations / references</span>
+        <span class="wf-content">Numbered list at the end of body</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Social share buttons</span>
+        <span class="wf-content">LinkedIn · X · Copy link</span>
+      </div>
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Contextual CTA · end of body</span>
+        <span class="wf-content">Topic-aware Side Door link</span>
+      </div>
+      <div class="wf-row wf-optional">
+        <span class="wf-label">Related essays</span>
+        <span class="wf-content">3–4 cards</span>
+      </div>
+    </div>
+
+    <div class="annotations">
+      <h3>What it is</h3>
+      <p>The cornerstone of the Front Door. A web-native essay is designed to be read on the page, shared as a link, and referenced in buying guides or project plans. No download is required because the page <em>is</em> the artifact.</p>
+
+      <h3>Required elements</h3>
+      <ul>
+        <li>Title in a readable headline font suited to your site, giving this pattern a clear editorial identity</li>
+        <li>Author byline with relevant experience so readers can assess the voice</li>
+        <li>Date, because advice can become outdated as products and practices change</li>
+        <li>2–3 sentence dek above the fold, with matching social preview metadata</li>
+        <li>H2 / H3 body structure for scan-readers</li>
+        <li>Citations as numbered references at the bottom of the body, supporting factual claims</li>
+        <li>Social share buttons such as LinkedIn, X, and Copy link to make sharing easy</li>
+      </ul>
+
+      <h3>Form placement</h3>
+      <ul>
+        <li><span class="badge badge-cta">Side Door CTA</span> persistent in header</li>
+        <li><span class="badge badge-cta">Side Door CTA</span> end-of-body, contextual ("Choosing parts for your next build? [Find a stockist]")</li>
+        <li><span class="badge badge-optional">Optional</span> sidebar "Subscribe to our guides" with an email field and free-text attribution</li>
+      </ul>
+
+      <h3>Open-access rules</h3>
+      <ul>
+        <li><span class="tag-never">Never</span> Gate this content with an email form to read.</li>
+        <li><span class="tag-never">Never</span> Truncate it with "click to read more"; keep the full essay on one page.</li>
+        <li><span class="tag-always">Always</span> Include a printable / readable view with no popup interruptions.</li>
+      </ul>
+
+      <h3>AEO / SEO checklist</h3>
+      <ul>
+        <li>Schema.org <code>Article</code> or <code>BlogPosting</code></li>
+        <li>Title tag around 50–60 chars; target topic + brand</li>
+        <li>Meta description around 140–160 chars summarizing the dek</li>
+        <li>Author block with bio + relevant experience to support reader trust</li>
+        <li>3+ useful internal links to related hub pages</li>
+        <li>State the thesis in the opening paragraph so readers and automated systems can identify the main point</li>
+      </ul>
+
+      <div class="examples-block">
+        <strong>Illustrative examples</strong>
+        An invented bicycle-parts company, Alderwheel Components, could publish an essay on choosing repairable parts for everyday commuting. An invented kitchen-equipment maker, Kettlebridge Works, could explain how kitchen layout affects access for cleaning. Both teach a decision rather than recite a product catalogue.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PATTERN 2 ============================== -->
+
+<section class="pattern-section">
+  <span class="pattern-tag">Pattern 2</span>
+  <h2>Blog post</h2>
+  <p class="pattern-summary">Shorter, more topical version of Pattern 1. A working range is 500–1,500 words. Publish on a sustainable cadence, such as weekly or biweekly. Include an author headshot and tags, and address timely questions in your field.</p>
+  <div class="pattern-grid">
+
+    <div class="wireframe">
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Persistent CTA</span>
+        <span class="wf-content">"Ask about supplies" / "Visit the shop" in header</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Title (H1)</span>
+        <span class="wf-content">Specific, topical, often question-form</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Author block</span>
+        <span class="wf-content">Headshot · name · role · date · tags</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Above-fold summary</span>
+        <span class="wf-content">2–3 concise sentences</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Body</span>
+        <span class="wf-content">500–1,500 words, conversational, links out generously</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Social share buttons</span>
+        <span class="wf-content">LinkedIn · X · Copy link</span>
+      </div>
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Contextual CTA</span>
+        <span class="wf-content">End of body, topic-aware</span>
+      </div>
+      <div class="wf-row wf-optional">
+        <span class="wf-label">Related posts</span>
+        <span class="wf-content">3 cards by tag</span>
+      </div>
+    </div>
+
+    <div class="annotations">
+      <h3>What it is</h3>
+      <p>Regular content that is shorter, more conversational, and responsive to current questions. Where Pattern 1 develops a broad argument, Pattern 2 covers a focused topic with a point of view. An invented garden-supply shop, Fernbasket Supply, might explain how to choose containers for a small patio.</p>
+
+      <h3>Required elements</h3>
+      <ul>
+        <li>Author headshot + role to identify the person behind the advice</li>
+        <li>Tags / categories to drive the related-posts feed</li>
+        <li>Conversational tone and useful links to other sources; a blog is not an island</li>
+      </ul>
+
+      <h3>Form placement</h3>
+      <ul>
+        <li><span class="badge badge-cta">Side Door CTA</span> persistent in header</li>
+        <li><span class="badge badge-cta">Side Door CTA</span> end-of-body</li>
+        <li><span class="badge badge-optional">Optional</span> "Subscribe to the blog" CTA in footer / sidebar, with email and free-text attribution fields</li>
+      </ul>
+
+      <h3>Open-access rules</h3>
+      <ul>
+        <li><span class="tag-never">Never</span> Gate the post.</li>
+        <li><span class="tag-never">Never</span> Use "Read more" pagination to drive page views.</li>
+        <li><span class="tag-always">Always</span> Allow direct links to subheadings using HTML IDs so readers can share specific sections.</li>
+      </ul>
+
+      <h3>AEO / SEO checklist</h3>
+      <ul>
+        <li>Schema.org <code>BlogPosting</code></li>
+        <li>Title tag around 50–60 chars; use a question when it matches the reader's intent</li>
+        <li>Meta description around 140–160 chars, describing the answer the post provides</li>
+        <li>Author with bio + relevant experience</li>
+        <li>Useful tag and category pages discoverable; canonical URL set</li>
+        <li>Answer the implied question in the first paragraph</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PATTERN 3 ============================== -->
+
+<section class="pattern-section">
+  <span class="pattern-tag">Pattern 3</span>
+  <h2>PDF asset with landing page (brochure / guide / datasheet / spec sheet)</h2>
+  <p class="pattern-summary">If you have a PDF, create a landing page for it. The PDF is supporting; the landing page is primary. The landing page provides search context and a useful link for private sharing; the PDF serves offline reading and printing.</p>
+  <div class="pattern-grid">
+
+    <div class="wireframe">
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Persistent CTA</span>
+        <span class="wf-content">"Discuss a commission" in header</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Title + subtitle</span>
+        <span class="wf-content">Reflects the PDF's title</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Above-fold summary · 2 paragraphs</span>
+        <span class="wf-content">Plain-language: what's inside, who it's for, what they'll learn</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">"What's inside" bullets · 5–7</span>
+        <span class="wf-content">The TOC reframed as benefits</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Embedded PDF viewer</span>
+        <span class="wf-content">PDF.js or native browser PDF embed</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Download button</span>
+        <span class="wf-content">[↓ Download PDF] · NO email gate</span>
+      </div>
+      <div class="wf-row wf-never">
+        <span class="wf-label">Never</span>
+        <span class="wf-content">Email gate on download</span>
+      </div>
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Contextual CTA</span>
+        <span class="wf-content">After the embed</span>
+      </div>
+      <div class="wf-row wf-optional">
+        <span class="wf-label">Related content</span>
+        <span class="wf-content">Other resources on the same topic</span>
+      </div>
+    </div>
+
+    <div class="annotations">
+      <h3>What it is</h3>
+      <p>You have a PDF brochure, guide, datasheet, or spec sheet. Give it a real page that introduces the asset, summarizes it, embeds it for inline reading, and offers an ungated download for offline use. An invented ceramic studio, Pebbleturn Studio, could use this pattern for its tableware dimensions and care guide.</p>
+
+      <h3>Why a landing page (not just a PDF link)</h3>
+      <ul>
+        <li><strong>SEO:</strong> PDFs can be indexed, but an HTML page gives you more control over navigation, structured content, and the reader's next step.</li>
+        <li><strong>Private sharing:</strong> a useful summary and preview metadata give context when the URL appears in social messages or email.</li>
+        <li><strong>Accessibility:</strong> accessible HTML gives essential information to readers on phones, screen readers, or devices that cannot open the PDF.</li>
+        <li><strong>Analytics:</strong> you can measure page visits and download actions separately, subject to your site's consent settings.</li>
+      </ul>
+
+      <h3>Required elements</h3>
+      <ul>
+        <li>Title and subtitle that match the PDF</li>
+        <li>2-paragraph above-fold summary in plain language, rather than a pasted introduction</li>
+        <li>5–7 "What's inside" bullets, restating the contents as reader benefits where the asset supports that detail</li>
+        <li>Embedded PDF viewer such as PDF.js or a native iframe, with a direct link as a fallback</li>
+        <li>Download button, clearly labeled and ungated</li>
+      </ul>
+
+      <h3>Form placement</h3>
+      <ul>
+        <li><span class="badge badge-cta">Side Door CTA</span> persistent header</li>
+        <li><span class="badge badge-cta">Side Door CTA</span> end of page, contextual</li>
+        <li><span class="badge badge-never">Never</span> A form between the user and the download button</li>
+      </ul>
+
+      <h3>Open-access rules</h3>
+      <ul>
+        <li><span class="tag-never">Never</span> Gate a public educational download just to collect email addresses. Keep account-specific documents, private order details, and event registration separate from the open resource library.</li>
+        <li><span class="tag-always">Always</span> If the PDF works as web content, <strong>rewrite it as a Pattern 1 web-native essay</strong> and retire it as the primary reading format. Retain a printable companion where useful.</li>
+        <li><span class="tag-always">Always</span> Add file size and page count next to the download button to set expectations.</li>
+      </ul>
+
+      <h3>AEO / SEO checklist</h3>
+      <ul>
+        <li>Schema.org <code>Article</code> when the landing page is an article; do not describe the entire page as only a PDF <code>MediaObject</code></li>
+        <li>Title tag matches the asset title</li>
+        <li>Meta description around 140–160 chars summarizing what's inside</li>
+        <li>"What's inside" bullets phrased as complete natural-language statements</li>
+        <li>Canonical URL on the landing page, with consistent canonical signals for equivalent PDF content where supported</li>
+        <li>Make the summary and bullets above the embed complete enough to help readers without opening the file</li>
+      </ul>
+
+      <div class="anti-block">
+        <strong>Anti-pattern · the email gate</strong>
+        "Enter your email to download." This adds friction to an otherwise useful public resource. A submitted address may mean only "I need the guide," not "I want to buy." Keep the download open and offer a separate, relevant enquiry link.
+      </div>
+
+      <div class="examples-block">
+        <strong>How to retire a PDF</strong>
+        Repeated requests for a PDF suggest that its content deserves a discoverable web page. Turn it into a Pattern 1 essay or guide, then keep the PDF as a printable companion if readers still need it.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PATTERN 4 ============================== -->
+
+<section class="pattern-section">
+  <span class="pattern-tag">Pattern 4</span>
+  <h2>Someone else wrote about you</h2>
+  <p class="pattern-summary">A local paper, a blog or a trade newsletter mentions your business. The article stays on their site. Your hub gets a short page (or just a card) that says in your own words what it covers and sends readers to the original.</p>
+  <div class="pattern-grid">
+
+    <div class="wireframe">
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Persistent CTA</span>
+        <span class="wf-content">"Plan a bakery order" in header</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Title</span>
+        <span class="wf-content">The article's own title, as a link to it</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Where it appeared · 1 line</span>
+        <span class="wf-content">"Featured in the Riverside Weekly, spring edition"</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Your summary · 2–4 sentences</span>
+        <span class="wf-content">What the piece is about, in your words</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Link out</span>
+        <span class="wf-content">[↗ Read it where it was published]</span>
+      </div>
+      <div class="wf-row wf-never">
+        <span class="wf-label">Never</span>
+        <span class="wf-content">A copy of the article or its PDF on your hub</span>
+      </div>
+      <div class="wf-row wf-optional">
+        <span class="wf-label">Related pages</span>
+        <span class="wf-content">2–3 of your own guides on the same topic</span>
+      </div>
+    </div>
+
+    <div class="annotations">
+      <h3>What it is</h3>
+      <p>A pointer to something another person published about you. For example, an invented regional bakery chain, Coppercrumb Bakery, might add a short page about a local paper's piece on its early-morning baking shift. The page exists so visitors who hear about the article can find it, and so the hub links to it from a place you control.</p>
+
+      <h3>Why NOT host a copy</h3>
+      <ul>
+        <li><strong>Rights.</strong> Being allowed to link to an article does not mean you may republish it.</li>
+        <li><strong>Accuracy.</strong> The writer keeps the original up to date, including any corrections.</li>
+        <li><strong>Trust.</strong> Readers can see the original words and judge them for themselves.</li>
+      </ul>
+
+      <h3>Required elements</h3>
+      <ul>
+        <li>The article's title, linked to the original</li>
+        <li>One plain line saying where it appeared</li>
+        <li>A short summary in your own words; quote a line only if the source allows it, and mark it as a quote</li>
+        <li>A clear link out to the original</li>
+      </ul>
+
+      <h3>Form placement</h3>
+      <ul>
+        <li><span class="badge badge-cta">Side Door CTA</span> persistent header</li>
+        <li><span class="badge badge-optional">Optional</span> contextual CTA at end of page ("Planning refreshments for a local event? [Plan a bakery order]")</li>
+        <li>No form on the page itself.</li>
+      </ul>
+
+      <h3>Open-access rules</h3>
+      <ul>
+        <li><span class="tag-never">Never</span> Copy the article's text or file onto your hub.</li>
+        <li><span class="tag-never">Never</span> Put your summary behind an email wall.</li>
+        <li><span class="tag-always">Always</span> Keep the writer's words and your own words clearly apart.</li>
+      </ul>
+
+      <h3>AEO / SEO checklist</h3>
+      <ul>
+        <li>The link to the original is a normal, visible text link</li>
+        <li>Your summary is in the page text, not in an image</li>
+        <li>The page's usual markup is enough; if you use <code>Article</code> for your summary, you are its author</li>
+        <li>Link to your own related guides so the page is not a dead end</li>
+      </ul>
+
+      <div class="examples-block">
+        <strong>When you have several</strong>
+        Put them on one "Written about us" page, newest first, one card each. Each card links straight to the original. A short list is fine; it does not need filters.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PATTERN 5 ============================== -->
+
+<section class="pattern-section">
+  <span class="pattern-tag">Pattern 5</span>
+  <h2>Video / webinar / conference talk recording</h2>
+  <p class="pattern-summary">Embed the player from the platform; the hub is the home, and YouTube/Vimeo/Wistia supplies the player. Include a reviewed transcript so the content is readable, accessible, and available as page text for search.</p>
+  <div class="pattern-grid">
+
+    <div class="wireframe">
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Persistent CTA</span>
+        <span class="wf-content">"Ask about equipment" in header</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Title · speaker · duration</span>
+        <span class="wf-content">"Planning a Compact Prep Area · [Product designer] · [Duration]"</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Embedded video player</span>
+        <span class="wf-content">YouTube / Vimeo / Wistia iframe (16:9)</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Summary · 2–3 sentences</span>
+        <span class="wf-content">What the video covers</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Key takeaways · bullets · 4–6</span>
+        <span class="wf-content">Skimmable for scan-readers</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Full transcript · collapsible</span>
+        <span class="wf-content">Speaker-attributed; search context + accessibility</span>
+      </div>
+      <div class="wf-row wf-optional">
+        <span class="wf-label">Speaker bio(s)</span>
+        <span class="wf-content">Photo · title · org · short bio</span>
+      </div>
+      <div class="wf-row wf-optional">
+        <span class="wf-label">Slide deck download</span>
+        <span class="wf-content">[↓ Slides PDF] · NO email gate</span>
+      </div>
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Contextual CTA</span>
+        <span class="wf-content">After takeaways</span>
+      </div>
+      <div class="wf-row wf-optional">
+        <span class="wf-label">Related videos</span>
+        <span class="wf-content">3 cards</span>
+      </div>
+    </div>
+
+    <div class="annotations">
+      <h3>What it is</h3>
+      <p>Any video asset: business explainer, product demo, webinar replay, conference talk recording, or customer interview. Use the same pattern for each: embed the player and surround it with text that makes the content discoverable and scannable.</p>
+
+      <h3>Why embed (not link to YouTube)</h3>
+      <ul>
+        <li>Keeps the viewer on your hub so they can navigate to other content after watching.</li>
+        <li>Gives the topic a dedicated page that can be discovered independently of the video platform.</li>
+        <li>Places the recording beside its summary, sources, transcript, and related resources.</li>
+      </ul>
+
+      <h3>Required elements</h3>
+      <ul>
+        <li>Title area that names the speaker and duration so people know what they're committing to</li>
+        <li>Responsive embedded player at 16:9 ratio when that matches the source video</li>
+        <li>2–3 sentence summary for readers who want the gist before watching</li>
+        <li>4–6 bulleted key takeaways</li>
+        <li><strong>Full transcript</strong>, speaker-attributed if multiple speakers and collapsible if very long; provide captions in the player as well</li>
+      </ul>
+
+      <h3>Webinar-specific additions</h3>
+      <ul>
+        <li>Presenter bio block with headshot</li>
+        <li>Slide deck download as an ungated PDF</li>
+        <li>Q&amp;A excerpts presented as useful standalone answers</li>
+        <li>Link to register for upcoming webinars</li>
+      </ul>
+
+      <h3>Conference talk-specific additions</h3>
+      <ul>
+        <li>Conference name + date + location ("Presented at [Event], [City], [Date]")</li>
+        <li>Link to conference site</li>
+        <li>Attribution to the organizer if applicable</li>
+      </ul>
+
+      <h3>Form placement</h3>
+      <ul>
+        <li><span class="badge badge-cta">Side Door CTA</span> persistent header</li>
+        <li><span class="badge badge-cta">Side Door CTA</span> after the takeaways block ("Planning a similar kitchen setup? [Ask about equipment]")</li>
+        <li><span class="badge badge-optional">Optional</span> "View upcoming webinars" CTA in sidebar</li>
+      </ul>
+
+      <h3>Open-access rules</h3>
+      <ul>
+        <li><span class="tag-never">Never</span> Skip the transcript. It provides a text alternative and makes the content easier to search and quote.</li>
+        <li><span class="tag-never">Never</span> Gate the recording. Webinar replays are Front Door content.</li>
+        <li><span class="tag-never">Never</span> Auto-play the video on page load. It interrupts readers and can add unnecessary loading work.</li>
+        <li><span class="tag-always">Always</span> When automatic captions or transcription are available, use them as a starting point and correct names, terminology, and speaker labels.</li>
+        <li><span class="tag-always">Always</span> If the video is on your YouTube channel, ensure the channel description links back to your hub.</li>
+      </ul>
+
+      <h3>AEO / SEO checklist</h3>
+      <ul>
+        <li>Schema.org <code>VideoObject</code> with accurate <code>transcript</code>, <code>thumbnailUrl</code>, <code>uploadDate</code>, and <code>duration</code>; use <code>contentUrl</code> for the media file or <code>embedUrl</code> for a player as appropriate</li>
+        <li>Transcript ON THE PAGE; captions inside an external player do not provide equivalent text in your page's HTML</li>
+        <li>Chapter markers / timestamps with <code>Clip</code> schema where applicable</li>
+        <li>Named speakers with relevant experience identified accurately</li>
+        <li>Title tag: speaker + topic</li>
+        <li>Chapters provide direct references to specific moments in the video</li>
+      </ul>
+
+      <div class="examples-block">
+        <strong>The transcript is the asset</strong>
+        Some visitors will read the page without watching the recording. Give them a complete summary and a well-edited transcript. Use the recording as a source for a readable page with the same care you would give a Pattern 1 essay.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PATTERN 6 ============================== -->
+
+<section class="pattern-section">
+  <span class="pattern-tag">Pattern 6</span>
+  <h2>Podcast episode</h2>
+  <p class="pattern-summary">Embed the audio player. Add a transcript, episode notes, guest bio, and listen-on links to the platforms carrying the episode. Use the same logic as video: the page is the home, and the platform supplies the player.</p>
+  <div class="pattern-grid">
+
+    <div class="wireframe">
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Persistent CTA</span>
+        <span class="wf-content">"Find a stockist" in header</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Episode title · number · date</span>
+        <span class="wf-content">"Ep. [Number] · Choosing Parts for Everyday Riding · with [Guest]"</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Audio player</span>
+        <span class="wf-content">Spotify / Apple / native HTML5 embed</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Listen-on links</span>
+        <span class="wf-content">Available listening platforms · RSS</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Episode notes · 2–3 paragraphs</span>
+        <span class="wf-content">What the episode covers + key quotes</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Full transcript</span>
+        <span class="wf-content">Speaker-attributed</span>
+      </div>
+      <div class="wf-row wf-optional">
+        <span class="wf-label">Key timestamps · chapters</span>
+        <span class="wf-content">"[Timestamp]: How do you check parts compatibility?"</span>
+      </div>
+      <div class="wf-row wf-optional">
+        <span class="wf-label">Guest + host bios</span>
+        <span class="wf-content">Photo · org · related episodes</span>
+      </div>
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Contextual CTA</span>
+        <span class="wf-content">After the notes</span>
+      </div>
+    </div>
+
+    <div class="annotations">
+      <h3>What it is</h3>
+      <p>An episode of your own podcast or one you appeared on. Either way, the hub gets a page so you can provide context and a stable reference. Alderwheel Components, the invented bicycle-parts company, could host notes for a conversation with a bicycle shop mechanic.</p>
+
+      <h3>Required elements</h3>
+      <ul>
+        <li>Embedded audio player using the host's supported embed or native HTML audio when you have the file and permission</li>
+        <li>Listen-on links to the platforms that carry the episode, including RSS where available</li>
+        <li>Episode notes: 2–3 paragraphs of what's covered, with 1–2 accurate pull-quotes from the conversation</li>
+        <li>Full transcript with speaker attribution</li>
+      </ul>
+
+      <h3>Form placement</h3>
+      <ul>
+        <li><span class="badge badge-cta">Side Door CTA</span> persistent header</li>
+        <li><span class="badge badge-cta">Side Door CTA</span> after episode notes, contextual</li>
+        <li><span class="badge badge-optional">Optional</span> "Subscribe to the podcast" CTA with direct subscribe links per platform</li>
+      </ul>
+
+      <h3>Open-access rules</h3>
+      <ul>
+        <li><span class="tag-never">Never</span> Skip the transcript. It provides the same accessibility and text-discovery benefits as the video transcript.</li>
+        <li><span class="tag-always">Always</span> Provide chapters / timestamps for episodes longer than 20 minutes so listeners can find relevant sections.</li>
+        <li><span class="tag-always">Always</span> Prepare a short audiogram, such as a 30–60 second captioned clip, for promotion on an appropriate social channel.</li>
+      </ul>
+
+      <h3>AEO / SEO checklist</h3>
+      <ul>
+        <li>Schema.org <code>PodcastEpisode</code> with <code>partOfSeries</code> linking to the show</li>
+        <li>Full transcript on page</li>
+        <li>Episode number + season visible where the show uses them</li>
+        <li>Guest identity and relevant experience represented accurately</li>
+        <li>Chapters / timestamps</li>
+        <li>Transcripts and chapters make individual answers easier to locate and reference</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PATTERN 7 ============================== -->
+
+<section class="pattern-section">
+  <span class="pattern-tag">Pattern 7</span>
+  <h2>Customer case study / outcome story</h2>
+  <p class="pattern-summary">Web-native page. Named customer and organization, with permission. Measured results and the customer's own quote. A strong case study shows what happened and under what conditions; generic praise gives readers little to assess.</p>
+  <div class="pattern-grid">
+
+    <div class="wireframe">
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Persistent CTA</span>
+        <span class="wf-content">"Ask about supplies" in header</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Customer block</span>
+        <span class="wf-content">Photo · name · title · organization</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Headline · outcome-focused</span>
+        <span class="wf-content">"How [Community Garden] Simplified Its Seasonal Tool Setup"</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Problem framing</span>
+        <span class="wf-content">What they were trying to improve, in their words</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Approach</span>
+        <span class="wf-content">What they did, with practical specifics</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Quantified results</span>
+        <span class="wf-content">Setup time · replacement costs · comparison period</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Customer quote · pulled out</span>
+        <span class="wf-content">Named, in their voice, ideally specific</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">"What it means" · 1 paragraph</span>
+        <span class="wf-content">Implications for similar buyers</span>
+      </div>
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Contextual CTA</span>
+        <span class="wf-content">"Equipping a shared garden? [Ask about supplies]"</span>
+      </div>
+      <div class="wf-row wf-never">
+        <span class="wf-label">Never</span>
+        <span class="wf-content">"Our customers love us!" generic testimonials</span>
+      </div>
+    </div>
+
+    <div class="annotations">
+      <h3>What it is</h3>
+      <p>A real customer telling a specific story with verifiable results. Explain who they are, what they wanted to improve, what they did, what changed, and what the experience means for buyers in similar situations. Fernbasket Supply, the invented garden shop, could use this structure for a community garden customer story.</p>
+
+      <h3>Required elements</h3>
+      <ul>
+        <li><strong>Named customer</strong> with photo, title, and organization, where permission allows; identification helps readers assess the account</li>
+        <li>Outcome-focused headline describing what the customer accomplished</li>
+        <li>Problem framing in the customer's words, gathered through an interview</li>
+        <li>Quantified results such as time saved, costs changed, or repeat work avoided, with a baseline and comparison period</li>
+        <li>Pull-quote from the customer that is attributed and specific</li>
+        <li>"What it means for similar buyers" with the conditions and limitations preserved</li>
+        <li>Explicit permission from the customer and anyone authorized to approve publication for their organization</li>
+      </ul>
+
+      <h3>Form placement</h3>
+      <ul>
+        <li><span class="badge badge-cta">Side Door CTA</span> persistent header</li>
+        <li><span class="badge badge-cta">Side Door CTA</span> end-of-page, highly contextual ("Planning shared storage for garden tools? [Ask about supplies]")</li>
+      </ul>
+
+      <h3>Open-access rules</h3>
+      <ul>
+        <li><span class="tag-never">Never</span> Put vendor-written praise in a customer's mouth. Readers can question the whole story when a quote sounds like a sales script.</li>
+        <li><span class="tag-never">Never</span> Anonymize the customer without explaining why. If privacy requires it, label the story clearly, such as "Customer name withheld at their request."</li>
+        <li><span class="tag-always">Always</span> Show verified measurements where results are claimed. If they are unavailable, state that limitation rather than inventing precision.</li>
+        <li><span class="tag-always">Always</span> Use a real, approved quote from a customer interview. Preserve the customer's wording and meaning.</li>
+      </ul>
+
+      <h3>AEO / SEO checklist</h3>
+      <ul>
+        <li>Schema.org <code>Article</code> with <code>mentions</code> of the customer organization where public</li>
+        <li><strong>Quantified results in plain text on the page, not only inside images</strong>, so they remain accessible and readily extractable</li>
+        <li>Approved customer identities surfaced accurately in <code>Person</code> and <code>Organization</code> structured data</li>
+        <li>Internal links to related case studies</li>
+        <li>State who changed what, over which period, and how the result was measured; keep qualifications beside the number</li>
+      </ul>
+
+      <div class="anti-block">
+        <strong>Anti-pattern · the testimonial wall</strong>
+        A grid of customer logos with one-line praise can provide a quick introduction to customer relationships. It does not replace a case study that explains the problem, approach, and result. Use each for its own purpose.
+      </div>
+
+      <div class="examples-block">
+        <strong>Co-author when possible</strong>
+        Draft with the customer, invite their edits, and credit contributions accurately. Their review helps preserve the facts and voice. A story they recognize as their own is also easier for them to share with their network.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PATTERN 8 ============================== -->
+
+<section class="pattern-section">
+  <span class="pattern-tag">Pattern 8</span>
+  <h2>Practical guide / methodology / how-to page</h2>
+  <p class="pattern-summary">Web-native and step-based. Include materials, steps, considerations, and troubleshooting. Offer an optional downloadable PDF for use away from a screen. For a ceramic studio, this can also explain how to plan a commission or what to expect from a workshop.</p>
+  <div class="pattern-grid">
+
+    <div class="wireframe">
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Persistent CTA</span>
+        <span class="wf-content">"Ask the studio" in header</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Title · last updated date</span>
+        <span class="wf-content">"How to Plan a Custom Tableware Set · Updated [Date]"</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Overview + expected outcomes</span>
+        <span class="wf-content">"What you'll have ready after following this guide"</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Materials list</span>
+        <span class="wf-content">Required + recommended</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Step-by-step · numbered</span>
+        <span class="wf-content">Each step: action · why it matters · gotcha</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Considerations / troubleshooting</span>
+        <span class="wf-content">Edge cases, common errors, how to fix</span>
+      </div>
+      <div class="wf-row wf-optional">
+        <span class="wf-label">Downloadable PDF</span>
+        <span class="wf-content">Print-friendly format · ungated</span>
+      </div>
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Contextual CTA</span>
+        <span class="wf-content">"Need help choosing dimensions? [Ask the studio]"</span>
+      </div>
+      <div class="wf-row wf-optional">
+        <span class="wf-label">Related guides</span>
+        <span class="wf-content">3 cards</span>
+      </div>
+    </div>
+
+    <div class="annotations">
+      <h3>What it is</h3>
+      <p>A step-by-step guide that helps the reader complete a task. Pebbleturn Studio, the invented ceramic studio, could explain how to measure storage space, decide on serving pieces, and prepare a commission brief. Keep the guide practical, sequential, and easy to troubleshoot.</p>
+
+      <h3>Required elements</h3>
+      <ul>
+        <li>Prominent last-updated date so readers can assess whether the instructions are current</li>
+        <li>Expected outcome / "what you'll get" framing up front</li>
+        <li>Materials / requirements list before the steps</li>
+        <li>Numbered steps with one action per step</li>
+        <li>Per-step gotchas and explanations of why the action matters</li>
+        <li>Troubleshooting section at the end</li>
+      </ul>
+
+      <h3>Form placement</h3>
+      <ul>
+        <li><span class="badge badge-cta">Side Door CTA</span> persistent header; use help-oriented wording such as "Ask the studio" when the reader is mid-task</li>
+        <li><span class="badge badge-cta">Side Door CTA</span> end of page, problem-aware ("Unsure whether your measurements are complete? [Ask the studio]")</li>
+      </ul>
+
+      <h3>Open-access rules</h3>
+      <ul>
+        <li><span class="tag-never">Never</span> Gate the guide. Readers need immediate access while doing the task.</li>
+        <li><span class="tag-always">Always</span> Provide a print-friendly view with clear step numbers and no unnecessary site navigation.</li>
+        <li><span class="tag-always">Always</span> Date-stamp every guide with the last review date. Outdated instructions can cause wasted effort or incorrect results.</li>
+        <li><span class="tag-always">Always</span> Include a "what success looks like" image or output where relevant.</li>
+      </ul>
+
+      <h3>AEO / SEO checklist</h3>
+      <ul>
+        <li>Schema.org <code>HowTo</code> with accurate <code>step</code>, <code>tool</code>, <code>supply</code>, and <code>totalTime</code> where applicable</li>
+        <li>Numbered step-by-step format that is readable and machine-parseable</li>
+        <li>Materials list as structured <code>HowToSupply</code> where applicable</li>
+        <li>Time estimate visible and consistent with <code>totalTime</code></li>
+        <li>Structured procedures help describe the task; markup alone does not guarantee a search feature or ranking</li>
+      </ul>
+
+      <div class="examples-block">
+        <strong>Why how-to guides support discovery</strong>
+        People search for specific tasks and troubleshooting help. A clear page that answers those questions can introduce the business while helping someone finish useful work. Review it regularly so the advice remains dependable.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PATTERN 9 ============================== -->
+
+<section class="pattern-section">
+  <span class="pattern-tag">Pattern 9</span>
+  <h2>Topic / category / SEO-anchored page</h2>
+  <p class="pattern-summary">Essay-format page anchored to a search-relevant topic. A regional bakery chain might explain "How to Choose Bread for a Shared Lunch"; a garden shop might explain container materials. Build the page to answer a real question for readers who do not yet know your brand.</p>
+  <div class="pattern-grid">
+
+    <div class="wireframe">
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Persistent CTA</span>
+        <span class="wf-content">"Plan a bakery order" in header</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Title (H1) · target keyword</span>
+        <span class="wf-content">Topic name in plain language</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Schema.org structured data</span>
+        <span class="wf-content">Article / CollectionPage / other matching type</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Above-fold summary</span>
+        <span class="wf-content">2–3 sentences answering the implicit search query</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Body · H2 sections</span>
+        <span class="wf-content">"What it is" · "Available options" · "Tradeoffs" · "Common questions"</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Citations · numbered</span>
+        <span class="wf-content">Reliable sources supporting factual claims</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Cross-links to related topics</span>
+        <span class="wf-content">"See also: [bread storage], [serving ideas]"</span>
+      </div>
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Contextual CTA</span>
+        <span class="wf-content">Topic-specific ("Organizing a shared lunch? [Plan a bakery order]")</span>
+      </div>
+      <div class="wf-row wf-optional">
+        <span class="wf-label">Related topics hub</span>
+        <span class="wf-content">Cards by topic family</span>
+      </div>
+    </div>
+
+    <div class="annotations">
+      <h3>What it is</h3>
+      <p>A page built to serve readers searching for a topic rather than your brand. Product-category explainers, selection guides, and care overviews can each answer distinct questions. For Coppercrumb Bakery, the invented regional chain, a bread-selection guide could connect readers to relevant serving and storage articles.</p>
+
+      <h3>Why this pattern is leveraged</h3>
+      <ul>
+        <li>Each useful topic page provides another potential entry point from organic search</li>
+        <li>Relevant cross-links help readers and crawlers discover connected information</li>
+        <li>Topic pages also teach categories and choices before a reader is ready to buy</li>
+      </ul>
+
+      <h3>Required elements</h3>
+      <ul>
+        <li>Target topic expressed naturally in H1, URL slug, meta description, and the first 100 words</li>
+        <li>Schema.org structured data matching the actual page, such as <code>Article</code> for an explainer</li>
+        <li>Body organized around real reader questions such as "What is it?" "How do the options differ?" and "Which details affect my choice?"</li>
+        <li>Citations to reliable sources so readers can verify factual claims</li>
+        <li>Cross-links to 3–5 related topic pages where useful</li>
+      </ul>
+
+      <h3>Form placement</h3>
+      <ul>
+        <li><span class="badge badge-cta">Side Door CTA</span> persistent header</li>
+        <li><span class="badge badge-cta">Side Door CTA</span> end of body, highly topic-specific</li>
+      </ul>
+
+      <h3>Open-access rules</h3>
+      <ul>
+        <li><span class="tag-never">Never</span> Stuff keywords. Repetition that makes the writing awkward does not help the reader.</li>
+        <li><span class="tag-never">Never</span> Turn the page into a product pitch. Teach the topic and mention products only where they help explain a choice.</li>
+        <li><span class="tag-always">Always</span> Cite sources for factual claims and distinguish evidence from opinion.</li>
+        <li><span class="tag-always">Always</span> Review the page when products, source material, or practical advice changes.</li>
+      </ul>
+
+      <h3>AEO / SEO checklist</h3>
+      <ul>
+        <li>Schema.org <code>Article</code>, <code>CollectionPage</code>, or another type that accurately describes the page</li>
+        <li>Target topic in H1, URL slug, meta description, and first 100 words of body</li>
+        <li>FAQ block with <code>FAQPage</code> structured data if it matches the visible content; do not assume rich-result eligibility</li>
+        <li>5+ useful internal links when the topic and available library justify them</li>
+        <li>Citations to reliable primary sources where available</li>
+        <li>Answer the implied query directly in the opening; structure as Q&amp;A where natural</li>
+      </ul>
+
+      <div class="examples-block">
+        <strong>Build at scale</strong>
+        For a bakery resource library, create distinct pages about choosing, serving, storing, and ordering baked goods. Use a consistent structure and connect related topics. Expand only when each page answers a separate reader need and can be kept accurate.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SPECIAL CASE: PRESS RELEASES ============================== -->
+
+<section class="pattern-section">
+  <span class="pattern-tag">Special case</span>
+  <h2>Press releases: they live in the newsroom, not the hub</h2>
+  <p class="pattern-summary">Press releases are business announcements. The resource hub contains material people choose to read for practical help. Give those different audiences and tasks distinct places on the site.</p>
+  <div class="pattern-grid">
+
+    <div class="wireframe">
+      <div class="wf-row wf-required">
+        <span class="wf-label">Newsroom location</span>
+        <span class="wf-content">A dedicated news or press section on your domain</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Newsroom page</span>
+        <span class="wf-content">List of press releases · reverse chronological</span>
+      </div>
+      <div class="wf-row wf-required">
+        <span class="wf-label">Per-release page</span>
+        <span class="wf-content">Headline · date · body · contact · boilerplate</span>
+      </div>
+      <div class="wf-row wf-cta">
+        <span class="wf-label">Cross-link to hub</span>
+        <span class="wf-content">Releases that announce content link to the hub asset</span>
+      </div>
+      <div class="wf-row wf-never">
+        <span class="wf-label">Never</span>
+        <span class="wf-content">Press releases inside the hub</span>
+      </div>
+    </div>
+
+    <div class="annotations">
+      <h3>Why separate?</h3>
+      <ul>
+        <li><strong>Different audiences.</strong> Journalists look for announcements; customers and prospective buyers look for guidance.</li>
+        <li><strong>Different jobs.</strong> Press releases announce what's new; the hub explains topics and helps people make decisions.</li>
+        <li><strong>Different search intent.</strong> Company announcements answer different queries from practical guides. Separate navigation makes both easier to find.</li>
+      </ul>
+
+      <h3>How they connect</h3>
+      <ul>
+        <li>A press release about an article someone wrote about you → links to your short page that points to it (Pattern 4)</li>
+        <li>A press release announcing a new product → links to the product page and any relevant hub guide</li>
+        <li>A press release announcing an expansion → can link to a founder essay on the hub when it adds useful context (Pattern 1)</li>
+      </ul>
+
+      <h3>Open-access rules</h3>
+      <ul>
+        <li><span class="tag-never">Never</span> Label a press release as a guide or case study to place it in the hub. The label should match what the reader receives.</li>
+        <li><span class="tag-always">Always</span> Keep newsroom URLs stable so old releases remain available to people who reference them.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FORM PLACEMENT ============================== -->
+
+<section class="form-placement">
+  <h2>Form placement reference (across all patterns)</h2>
+  <p class="pattern-summary" style="max-width: 820px;">Side Door CTAs and forms appear in specific places without blocking content. The persistent header CTA provides a dependable route to an enquiry; other prompts respond to the page topic. Include free-text "How did you hear about us?" on each form.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Form / CTA type</th>
+        <th>Placement</th>
+        <th>When</th>
+        <th>Open-access rule</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Persistent Side Door CTA</strong><br><small>"Ask about equipment" / "Find a stockist" / "Plan an order"</small></td>
+        <td>Site header, every page</td>
+        <td>Always; stays visible on scroll and narrow screens</td>
+        <td>Buyers ready to act need to find the next step immediately.</td>
+      </tr>
+      <tr>
+        <td><strong>Contextual Side Door CTA</strong></td>
+        <td>End of page body, contextual copy</td>
+        <td>Always on long-form pages unless the pattern makes it optional</td>
+        <td>Topic-aware, such as "Planning a kitchen refit? Ask about equipment."</td>
+      </tr>
+      <tr>
+        <td><strong>Subscribe / newsletter</strong></td>
+        <td>Sidebar on essays + footer</td>
+        <td>Optional</td>
+        <td>Email field + free-text attribution. Avoid an upfront preference questionnaire.</td>
+      </tr>
+      <tr>
+        <td><strong>Workshop booking</strong></td>
+        <td>Workshop page + relevant how-to content</td>
+        <td>While workshop places are available</td>
+        <td>Time-bound and contextual; remove or update expired prompts</td>
+      </tr>
+      <tr>
+        <td><strong>Quote / project enquiry form</strong></td>
+        <td>Dedicated quote or contact page</td>
+        <td>Always</td>
+        <td>Minimal fields: name, organization if relevant, email, project details, and free-text attribution. State a response expectation you can meet.</td>
+      </tr>
+      <tr>
+        <td><strong>Inline form (rare)</strong></td>
+        <td>After cornerstone essays only</td>
+        <td>Optional</td>
+        <td>Never a content gate. Place it after the reader has received the content.</td>
+      </tr>
+      <tr>
+        <td><strong>Free-text attribution</strong><br><small>"How did you hear about us?"</small></td>
+        <td>Every form on the hub</td>
+        <td>Always</td>
+        <td>Include the field. <strong>Free text only, never a dropdown.</strong> Let people describe the source in their own words.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ============================== UNIVERSAL OPEN-ACCESS RULES ============================== -->
+
+<section class="form-placement" style="border-top: 1px solid #e0e0e0;">
+  <h2>Universal open-access rules across all patterns</h2>
+  <ul>
+    <li><span class="tag-never">Never</span> Gate Front Door content with an email wall.</li>
+    <li><span class="tag-never">Never</span> Use a popup that blocks content.</li>
+    <li><span class="tag-never">Never</span> Use a dropdown for "How did you hear about us?" It restricts the answers you can learn from.</li>
+    <li><span class="tag-never">Never</span> Auto-play video on page load.</li>
+    <li><span class="tag-never">Never</span> Republish someone else's PDF without permission or an appropriate license.</li>
+    <li><span class="tag-never">Never</span> Hide pricing on a page about cost; explain variable pricing and any limits on the information available.</li>
+    <li><span class="tag-always">Always</span> Show the persistent Side Door CTA in the header.</li>
+    <li><span class="tag-always">Always</span> Include free-text attribution on every form.</li>
+    <li><span class="tag-always">Always</span> Include a transcript for any video / audio asset.</li>
+    <li><span class="tag-always">Always</span> Include a 2–3 sentence summary above the fold, expanding it where a pattern calls for more context.</li>
+    <li><span class="tag-always">Always</span> Cite reliable sources for factual claims.</li>
+    <li><span class="tag-always">Always</span> Date-stamp content and show the last review date for how-to guides and topic pages.</li>
+  </ul>
+</section>
+
+<!-- ============================== UNIVERSAL AEO / SEO ============================== -->
+
+<section class="form-placement" style="border-top: 1px solid #e0e0e0;">
+  <h2>Universal AEO / SEO rules across all patterns</h2>
+  <p class="pattern-summary" style="max-width: 820px;">Open, evidence-rich content gives readers and automated discovery systems useful material to inspect. It does not guarantee rankings or citations. The rules below add the technical mechanics that make your content accessible, understandable, and easier to verify. Per-pattern checklists appear above; this section covers every page.</p>
+
+  <h3 style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; color: rgb(85, 85, 85); margin-top: 32px;">Technical foundation (every page)</h3>
+  <ul>
+    <li>HTTPS; good Core Web Vitals targets (LCP &lt; 2.5s, CLS &lt; 0.1, INP &lt; 200ms)</li>
+    <li>Mobile-first responsive design</li>
+    <li>A discoverable XML sitemap and appropriate crawler directives at the site root</li>
+    <li>Canonical URL on every page to identify the preferred version of duplicate content</li>
+    <li>Title tags around 50–60 chars; meta descriptions around 140–160 chars, with clarity taking priority over exact length</li>
+    <li>Open Graph + Twitter Card metadata so social previews have suitable titles, descriptions, and images</li>
+    <li><strong>Author E-E-A-T signals:</strong> real authors with bios, headshots, relevant experience, and links to their work. No fake author personas.</li>
+    <li>Published date AND last-reviewed date visible on every content page</li>
+    <li>3+ useful, semantically related internal links per page where the library supports them</li>
+  </ul>
+
+  <h3 style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; color: rgb(85, 85, 85); margin-top: 32px;">AEO-specific (LLM optimization: Google AI Overviews, ChatGPT, Perplexity, Claude)</h3>
+  <ul>
+    <li><strong>Answer the question / state the thesis in the opening paragraph</strong> so the main point is easy to identify</li>
+    <li>Use clear question-answer format where natural</li>
+    <li>Cite authoritative sources so factual claims can be checked</li>
+    <li>Quantify claims when you have reliable measurements, including context and limitations</li>
+    <li>Replace vague praise with concrete features, tradeoffs, and evidence</li>
+    <li>Date-stamp content visibly and review it when the underlying information changes</li>
+    <li>Author identity must be real and verifiable</li>
+    <li>Use accurate structured data matching the visible content to describe entities and relationships</li>
+    <li><strong>Surface quantified results in plain text on the page</strong>, not only in images or PDFs, so they remain accessible and easy to extract</li>
+  </ul>
+
+  <h3 style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; color: #c62828; margin-top: 32px;">Never (open access + AEO converge)</h3>
+  <ul>
+    <li><span class="tag-never">Never</span> Keyword stuff at the expense of readable answers</li>
+    <li><span class="tag-never">Never</span> Create doorway pages that repeat thin content merely to target similar queries</li>
+    <li><span class="tag-never">Never</span> Publish AI-generated thin content without knowledgeable review</li>
+    <li><span class="tag-never">Never</span> Invent author personas presented as real people</li>
+    <li><span class="tag-never">Never</span> Cloak content by showing crawlers materially different information from users</li>
+    <li><span class="tag-never">Never</span> Hide available pricing on a page whose purpose is to explain cost</li>
+    <li><span class="tag-never">Never</span> Bury key measurements inside PDFs only; state them with their context on the page</li>
+  </ul>
+
+  <div class="annotations" style="margin-top: 28px;">
+    <div class="examples-block">
+      <strong>Why open access and discoverability work together</strong>
+      Open pages are easier to share and available to permitted crawlers without a form submission. Clear sources help readers verify claims. Plain-text answers, meaningful headings, and accurate metadata make the same information easier for software to interpret. These practices serve people first while giving discovery systems accessible material to work with.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Companion reference for <code>03_skills/resource-hub-resource-page-builder/SKILL.md</code>. Brand-neutral; apply your site's visual system on top.</p>
+  <p>Voidwright resource-hub principles: useful open content, visible enquiry routes, verifiable sources, easy sharing, and free-text attribution. All named businesses in the examples are invented.</p>
+</footer>
+
+</body>
+</html>

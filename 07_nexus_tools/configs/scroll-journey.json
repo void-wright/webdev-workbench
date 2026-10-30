@@ -1,0 +1,11 @@
+{
+ "anchor": "scroll_journey_nexus",
+ "topic_tag": "scroll",
+ "title": "Scroll journey nexus",
+ "clusters": [
+  {"tag": "performance", "theme": "Main-thread cost, long tasks and frame budget while scrolling", "read_when": "a scroll scene stutters or a page feels heavy"},
+  {"tag": "accessibility", "theme": "Reduced motion, pause controls and readable text over moving scenes", "read_when": "motion is tied to scroll position"},
+  {"tag": "contrast", "theme": "Legibility of copy over imagery and video at every scroll position", "read_when": "text sits on top of a moving background"},
+  {"tag": "responsive-design", "theme": "Phone-first layout and viewport units for pinned scenes", "read_when": "a scene must work from 360 px wide upward"}
+ ]
+}

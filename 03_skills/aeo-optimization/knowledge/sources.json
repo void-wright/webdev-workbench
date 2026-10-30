@@ -1,0 +1,738 @@
+{
+  "about": "Sources behind the AEO skill. The per-source detail gathered while building this skill is not redistributed; this list links to the originals.",
+  "numbering": "n is the citation number in source_documents/AI-Era_SEO_AEO_Documentation_Guide.md (Works cited), so a citation such as [5] in the guide is entry n=5. Entry 68 was read during the build but is not cited by the guide. The build roadmap (knowledge/url_extraction_roadmap.json) numbers records 1-39 the same way; its records 40-67 were different pages, listed under roadmap_only.",
+  "summaries": "Each summary is our own one-sentence description of what the source covers. Figures and wording from the sources are not reproduced.",
+  "count": 68,
+  "sources": [
+    {
+      "n": 1,
+      "title": "aioseo.com",
+      "url": "https://aioseo.com/what-is-answer-engine-optimization/",
+      "type": "SEO Tool Provider Article (AIOSEO)",
+      "summary": "Explains what answer engine optimization is, how it differs from SEO, and which search features (snippets, voice results, AI Overviews) it aims at.",
+      "read_when_built": true
+    },
+    {
+      "n": 2,
+      "title": "What Is Answer Engine Optimization (AEO)? 6 Steps To Elevate Your Reach - Surfer SEO",
+      "url": "https://surferseo.com/blog/answer-engine-optimization/",
+      "type": "SEO Tool Provider Article (Surfer SEO)",
+      "summary": "A step-by-step guide to making content easier for AI search tools to retrieve and summarise, including structured data and answer-friendly formatting.",
+      "read_when_built": true
+    },
+    {
+      "n": 3,
+      "title": "Guide to Answer Engine Optimization (AEO) in the SEO World",
+      "url": "https://saastorm.io/blog/answer-engine-optimization/",
+      "type": "SaaS Marketing Agency Article",
+      "summary": "Introduces AEO inside a wider SEO programme and walks through an implementation process that covers featured snippets and voice search.",
+      "read_when_built": true
+    },
+    {
+      "n": 4,
+      "title": "How Integrating Answer Engine Optimization (AEO) Can Supercharge Your SEO Strategy",
+      "url": "https://builtin.com/articles/aeo-answer-engine-optimization",
+      "type": "Tech Industry Publication (Built In)",
+      "summary": "Argues that AEO complements SEO rather than replacing it, and describes how to structure content and markup to serve both.",
+      "read_when_built": true
+    },
+    {
+      "n": 5,
+      "title": "Top 9 Generative Engine Optimization Analytics Tools [2025] - Atomic AGI",
+      "url": "https://www.atomicagi.com/blog/best-geo-analytics-tools-2025",
+      "type": "GEO Analytics Platform Article (Atomic AGI)",
+      "summary": "Compares analytics tools that track brand visibility in generative search, with notes on their features, audiences and platform coverage.",
+      "read_when_built": true
+    },
+    {
+      "n": 6,
+      "title": "Generative Engine Optimization (GEO) & Answer Engine Optimization (AEO): What They Mean for Local Businesses Using Coworking Spaces | Office Evolution",
+      "url": "https://www.officeevolution.com/blog/generative-engine-optimization-geo-answer-engine-optimization-aeo-what-they-mean-for-local-businesses-using-coworking-spaces/",
+      "type": "Coworking Space Provider Blog (Office Evolution)",
+      "summary": "Discusses how GEO and AEO apply to local businesses, with an emphasis on FAQ content and local credibility signals.",
+      "read_when_built": true
+    },
+    {
+      "n": 7,
+      "title": "Generative engine optimization (GEO): How to outrank competitors in AI search - Zapier",
+      "url": "https://zapier.com/blog/generative-engine-optimization/",
+      "type": "Automation Platform Blog (Zapier)",
+      "summary": "Covers tactics for being cited by AI search tools ahead of competitors, including credibility signals and content structure.",
+      "read_when_built": true
+    },
+    {
+      "n": 8,
+      "title": "Answer Engine Optimization: AEO Strategies vs. Traditional SEO",
+      "url": "https://www.contractorgrowthnetwork.com/answer-engine-optimization/",
+      "type": "agency article",
+      "summary": "Compares AEO strategies with traditional SEO; the page could not be read when the skill was built.",
+      "read_when_built": false
+    },
+    {
+      "n": 9,
+      "title": "Be the First Answer: SEO, AEO, GEO for Lead Generation - Callbox",
+      "url": "https://www.callboxinc.com/lead-generation/be-the-first-answer-lead-generation/",
+      "type": "B2B Lead Generation Provider Article (Callbox)",
+      "summary": "Links SEO, AEO and GEO to B2B lead generation, presenting them as successive steps toward being the answer a buyer sees first.",
+      "read_when_built": true
+    },
+    {
+      "n": 10,
+      "title": "AEO vs. SEO: How Answer Engines Are Changing Digital Marketing",
+      "url": "https://www.seo.com/ai/aeo-vs-seo/",
+      "type": "article",
+      "summary": "Contrasts AEO with SEO and describes how answer engines are changing digital marketing; the page could not be read when the skill was built.",
+      "read_when_built": false
+    },
+    {
+      "n": 11,
+      "title": "AEO vs SEO: Key Differences & Digital Strategy for 2025 - Glorywebs",
+      "url": "https://www.glorywebs.com/blog/aeo-vs-seo",
+      "type": "Digital Marketing Agency Article (Glorywebs)",
+      "summary": "Sets out the differences between AEO and SEO and what they mean for planning a digital strategy, including which industries feel the change most.",
+      "read_when_built": true
+    },
+    {
+      "n": 12,
+      "title": "What Is Answer Engine Optimization? And How to Do It - Semrush",
+      "url": "https://www.semrush.com/blog/answer-engine-optimization/",
+      "type": "SEO Platform Article (Semrush)",
+      "summary": "Defines AEO and explains how to pursue it, covering brand mentions, content freshness and ways to measure AI visibility.",
+      "read_when_built": true,
+      "note": "Build records 12 and 44 were both this page."
+    },
+    {
+      "n": 13,
+      "title": "AEO vs SEO: The Ultimate Guide to Answer Engine Optimization vs Search Engine Optimization in 2025 - TripleDart",
+      "url": "https://www.tripledart.com/ai-seo/aeo-vs-seo",
+      "type": "B2B Marketing Agency Article (TripleDart)",
+      "summary": "A long comparison of AEO and SEO that introduces a hub-and-spoke content model and the parts of an AEO programme.",
+      "read_when_built": true
+    },
+    {
+      "n": 14,
+      "title": "Chunks, passages and micro-answer engine optimization wins in Google AI Mode",
+      "url": "https://searchengineland.com/chunks-passages-and-micro-answer-engine-optimization-wins-in-google-ai-mode-456850",
+      "type": "SEO Industry Publication (Search Engine Land)",
+      "summary": "Explains how Google AI Mode selects passages rather than whole pages, and what that means for writing short, self-contained answers.",
+      "read_when_built": true
+    },
+    {
+      "n": 15,
+      "title": "Answer engine optimization: 6 AI models you should optimize for",
+      "url": "https://searchengineland.com/answer-engine-optimization-ai-models-453509",
+      "type": "SEO Industry Publication (Search Engine Land)",
+      "summary": "Surveys the main AI search products, how each gathers and presents sources, and what to optimise for each one.",
+      "read_when_built": true
+    },
+    {
+      "n": 16,
+      "title": "ChatGPT Optimization: 2025 Guide - First Page Sage",
+      "url": "https://firstpagesage.com/seo-blog/chatgpt-optimization-guide/",
+      "type": "SEO Agency Article (First Page Sage)",
+      "summary": "Describes the factors the author believes shape ChatGPT recommendations and offers strategies for appearing in them.",
+      "read_when_built": true
+    },
+    {
+      "n": 17,
+      "title": "5 Ways to Optimize Content for Perplexity AI - Semrush",
+      "url": "https://www.semrush.com/blog/perplexity-ai-optimization/",
+      "type": "SEO Platform Article (Semrush)",
+      "summary": "Gives practical ways to optimise content for Perplexity, including topic choice, semantic coverage and references to trusted domains.",
+      "read_when_built": true
+    },
+    {
+      "n": 18,
+      "title": "AEO vs SEO: Navigating the Future of Search in the Age of AI | ResultFirst",
+      "url": "https://www.resultfirst.com/blog/ai-seo/aeo-vs-seo/",
+      "type": "Digital Marketing Agency Article (Result First)",
+      "summary": "Compares AEO and SEO and recommends a combined approach that serves featured snippets, voice search and zero-click results.",
+      "read_when_built": true
+    },
+    {
+      "n": 19,
+      "title": "The Truth About AEO Marketing & The Future of Search - Simply Be Found",
+      "url": "https://simplybefound.com/the-truth-about-aeo-marketing-the-future-of-search/",
+      "type": "Digital Marketing Company Article (Simply Be Found)",
+      "summary": "An opinion piece presenting AEO as the next stage of search and explaining why marketers should pay attention to it.",
+      "read_when_built": true
+    },
+    {
+      "n": 20,
+      "title": "AEO Unplugged: The Blueprint for Using AEO in Digital Marketing - Shyam Future Tech",
+      "url": "https://shyamfuture.com/aeo-unplugged-the-blueprint-for-using-aeo-in-digital-marketing/",
+      "type": "Digital Marketing Blog (Shyam Future)",
+      "summary": "A blueprint for applying AEO in digital marketing, listing core strategies and a selection of supporting tools.",
+      "read_when_built": true
+    },
+    {
+      "n": 21,
+      "title": "11 actionable tips for the Google AI Mode era - Search Engine Land",
+      "url": "https://searchengineland.com/google-ai-mode-actionable-tips-456897",
+      "type": "SEO Industry Publication (Search Engine Land)",
+      "summary": "Practical tips for the Google AI Mode era, such as building topical authority, optimising beyond Google and preparing for AI agents.",
+      "read_when_built": true
+    },
+    {
+      "n": 22,
+      "title": "What Is Answer Engine Optimization (AEO) and How to Implement It For Your Business?",
+      "url": "https://seoprofy.com/blog/answer-engine-optimization/",
+      "type": "SEO Agency Article (SeoProfy)",
+      "summary": "Defines AEO against SEO and GEO and lays out a step-by-step process for researching questions and publishing answers.",
+      "read_when_built": true
+    },
+    {
+      "n": 23,
+      "title": "How does AEO directly increase lead generation? - The Pedowitz Group",
+      "url": "https://www.pedowitzgroup.com/how-does-aeo-directly-increase-lead-generation",
+      "type": "B2B Marketing Agency Article (Pedowitz Group)",
+      "summary": "Explains how AEO can feed lead generation by capturing intent and guiding readers toward contextual calls to action.",
+      "read_when_built": true
+    },
+    {
+      "n": 24,
+      "title": "What is Answer Engine Optimization? A Practical Guide to AEO | Marcel Digital",
+      "url": "https://www.marceldigital.com/blog/what-is-answer-engine-optimization",
+      "type": "Digital Marketing Agency Article (Marcel Digital)",
+      "summary": "A practical guide to AEO organised around a set of strategic pillars, with advice on restructuring existing content.",
+      "read_when_built": true
+    },
+    {
+      "n": 25,
+      "title": "How to optimize for AI Overviews: 7 best practices to follow - SE Ranking",
+      "url": "https://seranking.com/blog/how-to-optimize-for-ai-overviews/",
+      "type": "SEO Software Platform Article (SE Ranking)",
+      "summary": "Best practices for appearing in Google AI Overviews, including the role of existing rankings and content clustering.",
+      "read_when_built": true
+    },
+    {
+      "n": 26,
+      "title": "Generative Engine Optimization (GEO): SEO for Chat GPT | Forge and Smith",
+      "url": "https://forgeandsmith.com/blog/generative-engine-optimization-geo-seo-chat-gpt/",
+      "type": "Digital Agency Article (Forge and Smith)",
+      "summary": "Explains generative engine optimization for ChatGPT, how it differs from classic SEO, and how to put it into practice.",
+      "read_when_built": true
+    },
+    {
+      "n": 27,
+      "title": "Mastering AI Overview SEO: 7 Strategies for Success - Finch",
+      "url": "https://www.finch.com/blog/google-ai-overviews-optimization-seo",
+      "type": "Marketing Technology Company Article (Finch)",
+      "summary": "Strategies for Google AI Overviews, including an e-commerce angle and a discussion of traffic and accuracy concerns.",
+      "read_when_built": true
+    },
+    {
+      "n": 28,
+      "title": "What Is Google AI Mode? (+ How to Optimize for It in 2025) - Semrush",
+      "url": "https://www.semrush.com/blog/google-ai-mode/",
+      "type": "SEO Platform Article (Semrush)",
+      "summary": "Describes Google AI Mode, how it differs from AI Overviews, and how sites can adapt their content for it.",
+      "read_when_built": true
+    },
+    {
+      "n": 29,
+      "title": "Top 6 Generative Engine Optimization Strategies [Tried & Tested] - Writesonic",
+      "url": "https://writesonic.com/blog/generative-engine-optimization-strategies",
+      "type": "AI Writing Platform Article (Writesonic)",
+      "summary": "Lists strategies for generative engine optimization and separates content that gets mentioned by AI from content that ranks.",
+      "read_when_built": true
+    },
+    {
+      "n": 30,
+      "title": "A New Form of SEO: The Complete AEO Implementation Guide",
+      "url": "https://padron.sh/blog/new-form-of-seo-aeo-guide/",
+      "type": "SEO Consultant Article (Padron)",
+      "summary": "Treats AEO as a new form of SEO, with implementation strategies and a frank look at its limits.",
+      "read_when_built": true
+    },
+    {
+      "n": 31,
+      "title": "AEO: Why answer engine optimization matters to your content strategy",
+      "url": "https://wgcontent.com/blog/aeo-answer-engine-optimization/",
+      "type": "Content Agency Article (WG Content)",
+      "summary": "Explains why AEO matters to content strategy and how to shape answers around long-tail questions.",
+      "read_when_built": true
+    },
+    {
+      "n": 32,
+      "title": "How To Adjust Your Content Strategy for Google's AI Mode - Moz",
+      "url": "https://moz.com/blog/adjust-content-strategy-for-ai-mode",
+      "type": "SEO Authority Article (Moz)",
+      "summary": "Advice on adjusting content strategy for Google AI Mode, covering intent coverage and retrieval at the passage level.",
+      "read_when_built": true
+    },
+    {
+      "n": 33,
+      "title": "Optimize content and SEO for Google AI Mode - WG Content",
+      "url": "https://wgcontent.com/blog/google-ai-mode-content-seo/",
+      "type": "Content Agency Article (WG Content)",
+      "summary": "Describes Google AI Mode and the shift from ranking to citation, with content strategies to suit it.",
+      "read_when_built": true
+    },
+    {
+      "n": 34,
+      "title": "Answer Engine Optimization: Get Found through AI - Postdigitalist",
+      "url": "https://www.postdigitalist.xyz/guides/answer-engine-optimization",
+      "type": "Digital Marketing Guide (Post Digitalist)",
+      "summary": "A broad AEO guide covering zero-click behaviour, how AI systems choose content, and schema markup.",
+      "read_when_built": true
+    },
+    {
+      "n": 35,
+      "title": "The Ultimate Checklist for Implementing Answer Engine Optimization (AEO) at Scale",
+      "url": "https://www.hashmeta.ai/blog/the-ultimate-checklist-for-implementing-answer-engine-optimization-aeo-at-scale",
+      "type": "AI Marketing Platform Article (Hashmeta AI)",
+      "summary": "A checklist for rolling out AEO across a large organisation, with phases, team responsibilities and shared standards.",
+      "read_when_built": true
+    },
+    {
+      "n": 36,
+      "title": "How To Do SEO For ChatGPT In 2025 - DOM",
+      "url": "https://www.directom.com/chatgpt-seo/",
+      "type": "Digital Marketing Agency Article (Directom)",
+      "summary": "Approaches to SEO for ChatGPT, touching on authority signals, voice search and using ChatGPT itself in content work.",
+      "read_when_built": true
+    },
+    {
+      "n": 37,
+      "title": "How to Rank in ChatGPT Search: Core Ranking Factors for SearchGPT SEO",
+      "url": "https://www.rocktherankings.com/how-to-rank-in-chatgpt-search/",
+      "type": "SEO Agency Article (Rock the Rankings)",
+      "summary": "Explains how ChatGPT search differs from traditional search and suggests ranking strategies, with a short case example.",
+      "read_when_built": true
+    },
+    {
+      "n": 38,
+      "title": "Answer Engine Optimization (AEO): What is it and What it Means for Your Digital Marketing",
+      "url": "https://www.zaginteractive.com/insights/articles/december-2024/answer-engine-optimization-aeo",
+      "type": "Digital Agency Article (ZAG Interactive)",
+      "summary": "An overview of AEO for digital marketers that contrasts it with SEO and recommends content types suited to answer engines.",
+      "read_when_built": true
+    },
+    {
+      "n": 39,
+      "title": "Top ways to ensure your content performs well in Google's AI experiences on Search",
+      "url": "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search",
+      "type": "OFFICIAL GOOGLE GUIDANCE (Google Search Central Blog)",
+      "summary": "Google's own guidance on doing well in AI Overviews and AI Mode, centred on people-first content and technical basics.",
+      "read_when_built": true
+    },
+    {
+      "n": 40,
+      "title": "Case Study: How AEO Strategies Increased Zero-Click Visibility by ...",
+      "url": "https://www.hashmeta.ai/blog/case-study-how-aeo-strategies-increased-zero-click-visibility-by-50",
+      "type": "case study",
+      "summary": "A case study describing how an AEO programme changed a site's zero-click visibility and featured snippet presence.",
+      "read_when_built": false
+    },
+    {
+      "n": 41,
+      "title": "What is AEO? Understanding Answer Engine Optimization - Creaitor",
+      "url": "https://www.creaitor.ai/blog/aeo-answer-engine-optimization",
+      "type": "article",
+      "summary": "An introductory explanation of what answer engine optimization is and why it matters.",
+      "read_when_built": false
+    },
+    {
+      "n": 42,
+      "title": "Boost B2B Leads with AEO: The Future of Search - The Repp Group",
+      "url": "https://www.thereppgroup.com/boost-b2b-leads-with-aeo-the-future-of-search",
+      "type": "agency article",
+      "summary": "Discusses how AEO can support lead generation for B2B and industrial companies.",
+      "read_when_built": false
+    },
+    {
+      "n": 43,
+      "title": "AEO for E-commerce: Product Answers in AI Search - INSIDEA",
+      "url": "https://insidea.com/blog/seo/aeo/aeo-for-e-commerce/",
+      "type": "agency article",
+      "summary": "Explains how online stores can structure product information so that AI search tools can answer shopping questions.",
+      "read_when_built": false
+    },
+    {
+      "n": 44,
+      "title": "AEO and Lead Generation: What B2B Marketers Need to Know - EvenDigit",
+      "url": "https://www.evendigit.com/aeo-lead-generation-strategies-b2b-marketers/",
+      "type": "agency article",
+      "summary": "Guidance for B2B marketers on using AEO to generate leads.",
+      "read_when_built": false
+    },
+    {
+      "n": 45,
+      "title": "AI Overviews: What Are They & How to Optimize for Them - Semrush",
+      "url": "https://www.semrush.com/blog/ai-overviews/",
+      "type": "SEO platform article",
+      "summary": "Explains what Google AI Overviews are and how to optimise content to appear in them.",
+      "read_when_built": false
+    },
+    {
+      "n": 46,
+      "title": "Disadvantages of AEO: Why Marketers Are Questioning AI-Driven Search",
+      "url": "https://www.media-marketing.com/en/news/disadvantages-of-aeo-why-marketers-are-questioning-ai-driven-search/",
+      "type": "news article",
+      "summary": "Examines the drawbacks of AEO and why some marketers question AI-driven search.",
+      "read_when_built": false
+    },
+    {
+      "n": 47,
+      "title": "10 Microsoft Copilot Hacks to Skyrocket Workplace Productivity - NetCom Learning",
+      "url": "https://www.netcomlearning.com/blog/10-ways-to-boost-workplace-productivity-with-microsoft-copilot",
+      "type": "training provider article",
+      "summary": "Tips for using Microsoft Copilot to improve workplace productivity.",
+      "read_when_built": false
+    },
+    {
+      "n": 48,
+      "title": "Microsoft 365 Copilot Tuning Overview (preview)",
+      "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/copilot-tuning-overview",
+      "type": "official documentation",
+      "summary": "Microsoft documentation introducing Copilot Tuning, a preview feature for adapting Microsoft 365 Copilot to an organisation.",
+      "read_when_built": false
+    },
+    {
+      "n": 49,
+      "title": "Generative Engine Optimization (GEO) Case Study: 3X'ing Leads ...",
+      "url": "https://gofishdigital.com/blog/generative-engine-optimization-geo-case-study-driving-leads/",
+      "type": "case study",
+      "summary": "A case study on how generative engine optimization increased leads for a business.",
+      "read_when_built": false
+    },
+    {
+      "n": 50,
+      "title": "What Is Answer Engine Optimization For E-Commerce Sites? - StrategyBeam",
+      "url": "https://www.strategybeam.com/blog/answer-engine-optimization-e-commerce/",
+      "type": "agency article",
+      "summary": "Explains answer engine optimization for e-commerce sites.",
+      "read_when_built": false
+    },
+    {
+      "n": 51,
+      "title": "What is AEO in Marketing? AEO vs SEO Marketing - Arc Intermedia",
+      "url": "https://www.arcintermedia.com/knowledge-base/ai-marketing-and-processes/what-is-aeo-in-marketing/",
+      "type": "agency article",
+      "summary": "Defines AEO in a marketing context and compares it with SEO.",
+      "read_when_built": false
+    },
+    {
+      "n": 52,
+      "title": "SEO Analytics for Google, AI & LLM Search Engines - Atomic AGI",
+      "url": "https://www.atomicagi.com/seo-analytics",
+      "type": "product page",
+      "summary": "Product page for an analytics service that tracks visibility across Google and AI search engines.",
+      "read_when_built": false
+    },
+    {
+      "n": 53,
+      "title": "Atomic AGI - AI-First SEO Analytics & Attribution Platform",
+      "url": "https://www.atomicagi.com/",
+      "type": "product page",
+      "summary": "Home page of an analytics and attribution platform built around AI-first search.",
+      "read_when_built": false
+    },
+    {
+      "n": 54,
+      "title": "10 Best Answer Engine Optimization (AEO) Tools Personally Tested & Reviewed [July 2025]",
+      "url": "https://writesonic.com/blog/answer-engine-optimization-tools",
+      "type": "tool review",
+      "summary": "A hands-on review of tools for answer engine optimization.",
+      "read_when_built": false
+    },
+    {
+      "n": 55,
+      "title": "Top 24 Generative Engine Optimization Tools That I'd Recommend - Writesonic",
+      "url": "https://writesonic.com/blog/generative-engine-optimization-tools",
+      "type": "tool roundup",
+      "summary": "A roundup of tools for generative engine optimization with the author's recommendations.",
+      "read_when_built": false
+    },
+    {
+      "n": 56,
+      "title": "Generative Engine Optimization (GEO): How to Win in AI Search - Backlinko",
+      "url": "https://backlinko.com/generative-engine-optimization-geo",
+      "type": "article",
+      "summary": "A guide to generative engine optimization and how to earn visibility in AI search.",
+      "read_when_built": false
+    },
+    {
+      "n": 57,
+      "title": "Use cases - Semrush Developers",
+      "url": "https://developer.semrush.com/api/basics/use-cases/",
+      "type": "official documentation",
+      "summary": "Semrush API documentation describing example uses of its data.",
+      "read_when_built": false
+    },
+    {
+      "n": 58,
+      "title": "Generative Engine Optimization: The New Era of Search - Semrush",
+      "url": "https://www.semrush.com/blog/generative-engine-optimization/",
+      "type": "SEO platform article",
+      "summary": "An introduction to generative engine optimization and how it changes search marketing.",
+      "read_when_built": false
+    },
+    {
+      "n": 59,
+      "title": "Top 12 Generative Engine Optimization Tools For 2025 - Addlly AI",
+      "url": "https://addlly.ai/blog/generative-engine-optimization-tools/",
+      "type": "tool roundup",
+      "summary": "A roundup of tools for generative engine optimization.",
+      "read_when_built": false
+    },
+    {
+      "n": 60,
+      "title": "Evaluating AEO Success: Essential Metrics & Dashboard ...",
+      "url": "https://www.hashmeta.ai/blog/evaluating-aeo-success-essential-metrics-dashboard-frameworks-for-optimal-performance",
+      "type": "article",
+      "summary": "Describes metrics and dashboard designs for judging whether an AEO programme is working.",
+      "read_when_built": false
+    },
+    {
+      "n": 61,
+      "title": "What Is Your SEO's ROI? Learn How to Calculate Yours Now",
+      "url": "https://www.seo.com/basics/analytics/roi/",
+      "type": "article",
+      "summary": "Explains how to calculate the return on investment of SEO work.",
+      "read_when_built": false
+    },
+    {
+      "n": 62,
+      "title": "9 Advanced AEO Implementation Services: 2025's Top Answer Engine Optimization Providers - Single Grain",
+      "url": "https://www.singlegrain.com/search-everywhere-optimization/9-advanced-aeo-implementation-services-2025s-top-answer-engine-optimization-providers/",
+      "type": "agency list",
+      "summary": "A list of agencies that offer AEO implementation services.",
+      "read_when_built": false
+    },
+    {
+      "n": 63,
+      "title": "10 Key Technical AEO Challenges in 2025",
+      "url": "https://aeoradar.com/technical-aeo-challenges/",
+      "type": "article",
+      "summary": "Describes the technical challenges teams commonly meet when implementing AEO.",
+      "read_when_built": false
+    },
+    {
+      "n": 64,
+      "title": "Overcoming Challenges in AEO Implementation - INSIDEA",
+      "url": "https://insidea.com/blog/seo/aeo/overcoming-challenges-in-aeo-implementation/",
+      "type": "agency article",
+      "summary": "Discusses common obstacles to implementing AEO and how to address them.",
+      "read_when_built": false
+    },
+    {
+      "n": 65,
+      "title": "Answer Engine Optimization Guide 2025: The Future of Search",
+      "url": "https://thedigitalbloom.com/learn/answer-engine-optimization-guide/",
+      "type": "article",
+      "summary": "A guide to answer engine optimization and where search is heading.",
+      "read_when_built": false
+    },
+    {
+      "n": 66,
+      "title": "Is Answer Engine Optimization (AEO) the future of SEO in 2025? : r/seogrowth - Reddit",
+      "url": "https://www.reddit.com/r/seogrowth/comments/1nni9ek/is_answer_engine_optimization_aeo_the_future_of/",
+      "type": "community discussion",
+      "summary": "A community discussion on whether AEO is the future of SEO.",
+      "read_when_built": false
+    },
+    {
+      "n": 67,
+      "title": "Why Answer Engine Optimization (AEO) Is the Future of SEO in 2025 - AdsRole",
+      "url": "https://www.adsrole.com/blog/why-answer-engine-optimization-aeo-is-the-future-of-seo-in-2025/",
+      "type": "agency article",
+      "summary": "An article arguing that AEO is becoming central to SEO.",
+      "read_when_built": false
+    },
+    {
+      "n": 68,
+      "title": "Answer Engine Optimization (Neil Patel)",
+      "url": "https://neilpatel.com/blog/answer-engine-optimization/",
+      "type": "Marketing Authority Article (Neil Patel)",
+      "summary": "A broad guide to AEO covering its relation to SEO and GEO, the risk of AI errors, and strategies for answer engines.",
+      "read_when_built": true,
+      "note": "Not in the source guide's Works cited; read during the build as roadmap record 47."
+    }
+  ],
+  "roadmap_only": [
+    {
+      "record": 40,
+      "url": "https://www.aeoanalytics.com/tools",
+      "type": "AEO Analytics Measurement Tools",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 41,
+      "url": "https://www.searchenginejournal.com/answer-engine-optimization-guide/",
+      "type": "Search Engine Journal AEO Guide",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 42,
+      "url": "https://www.conductor.com/academy/glossary/answer-engine-optimization/",
+      "type": "Conductor Academy Glossary - AEO Definition",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 43,
+      "url": "https://www.brightedge.com/glossary/answer-engine-optimization",
+      "type": "BrightEdge Glossary - AEO Definition",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 45,
+      "url": "https://www.linkedin.com/pulse/answer-engine-optimization-aeo-complete-guide-2025-aamir-kamal",
+      "type": "LinkedIn Article - AEO 2025 Guide",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 46,
+      "url": "https://www.wordstream.com/blog/ws/2025/01/answer-engine-optimization",
+      "type": "WordStream Blog - AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 48,
+      "url": "https://www.sistrix.com/answer-engine-optimization/",
+      "type": "SISTRIX AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 49,
+      "url": "https://www.seoclarity.net/blog/answer-engine-optimization",
+      "type": "seoClarity Blog - AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 50,
+      "url": "https://www.ranktracker.com/blog/answer-engine-optimization/",
+      "type": "Ranktracker Blog - AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 51,
+      "url": "https://www.searchenginewatch.com/answer-engine-optimization-guide/",
+      "type": "Search Engine Watch - AEO Guide",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 52,
+      "url": "https://www.conductor.com/blog/answer-engine-optimization-complete-guide/",
+      "type": "Conductor Blog - AEO Complete Guide",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 53,
+      "url": "https://www.brightedge.com/blog/answer-engine-optimization",
+      "type": "BrightEdge Blog - AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 54,
+      "url": "https://www.searchmetrics.com/glossary/answer-engine-optimization/",
+      "type": "Searchmetrics Glossary - AEO Definition",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 55,
+      "url": "https://www.linkassistant.com/news/answer-engine-optimization.html",
+      "type": "LinkAssistant News - AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 56,
+      "url": "https://www.business2community.com/seo/answer-engine-optimization",
+      "type": "Business2Community SEO - AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 57,
+      "url": "https://www.searchenginepeople.com/blog/answer-engine-optimization.html",
+      "type": "Search Engine People Blog - AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 58,
+      "url": "https://www.webfx.com/blog/seo/answer-engine-optimization/",
+      "type": "WebFX Blog - AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 59,
+      "url": "https://www.singlegrain.com/blog/answer-engine-optimization/",
+      "type": "Single Grain Blog - AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 60,
+      "url": "https://www.growandconvert.com/seo/answer-engine-optimization/",
+      "type": "Grow and Convert - AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 61,
+      "url": "https://www.siegemedia.com/strategy/answer-engine-optimization",
+      "type": "Siege Media Strategy - AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 62,
+      "url": "https://www.ninjaoutreach.com/answer-engine-optimization/",
+      "type": "Ninja Outreach - AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 63,
+      "url": "https://www.searchenginejournal.com/answer-engine-optimization-seo/",
+      "type": "Search Engine Journal - AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 64,
+      "url": "https://www.searchengineland.com/answer-engine-optimization-guide",
+      "type": "Search Engine Land - AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 65,
+      "url": "https://www.marketingdive.com/news/answer-engine-optimization-chatgpt/",
+      "type": "Marketing Dive News - AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 66,
+      "url": "https://www.adweek.com/performance-marketing/answer-engine-optimization/",
+      "type": "Adweek Performance Marketing - AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    },
+    {
+      "record": 67,
+      "url": "https://www.forbes.com/sites/forbesagencycouncil/answer-engine-optimization/",
+      "type": "Forbes Agency Council - AEO Article",
+      "summary": "Listed in the build roadmap; the page could not be read, so nothing from it is used.",
+      "read_when_built": false
+    }
+  ]
+}

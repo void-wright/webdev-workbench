@@ -1,0 +1,870 @@
+{
+  "about": "Sources behind the corporate graphic design skill. The per-source detail gathered while building this skill is not redistributed; this list links to the originals.",
+  "numbering": "n is the Works Cited number in the research compilation preserved in knowledge/complete_document_transcript.json, so a citation number in that text is entry n here. The category files group the same numbers in the ranges listed under categories. cross_reference_indexes.json and url_extraction_roadmap.json carry the build's own record numbers 1-104, which match these numbers for 87 of 104 entries; for the other 17 (21, 22, 39, 42, 67, 68, 72-75, 77-80, 86, 87, 90) the build record held a placeholder or a different page, so trust the title and URL given here.",
+  "summaries": "Each summary is our own one-sentence description of what the source covers. Figures and wording from the sources are not reproduced.",
+  "categories": {
+    "01_foundational_design_principles": [
+      1,
+      15
+    ],
+    "02_color_theory_and_accessibility": [
+      16,
+      35
+    ],
+    "03_corporate_typography": [
+      36,
+      52
+    ],
+    "04_layout_and_grid_systems": [
+      53,
+      63
+    ],
+    "05_brand_identity_and_consistency": [
+      64,
+      74
+    ],
+    "06_psychology_of_persuasion": [
+      75,
+      88
+    ],
+    "07_production_and_file_formats": [
+      89,
+      104
+    ]
+  },
+  "count": 104,
+  "sources": [
+    {
+      "n": 1,
+      "title": "The fundamental principles of design - Vistaprint (same page as 5)",
+      "url": "https://www.vistaprint.com/hub/principles-of-design",
+      "type": "article",
+      "summary": "Same Vistaprint page as source 5, cited here for its overview of the fundamental principles of design.",
+      "category": "01_foundational_design_principles"
+    },
+    {
+      "n": 2,
+      "title": "The Key Elements & Principles of Visual Design | IxDF",
+      "url": "https://www.interaction-design.org/literature/article/the-building-blocks-of-visual-design",
+      "type": "article",
+      "summary": "Explains the building blocks of visual design, separating the elements a designer works with from the principles that arrange them.",
+      "category": "01_foundational_design_principles"
+    },
+    {
+      "n": 3,
+      "title": "13 Principles of Design: A Visual Guide From Superside (2025)",
+      "url": "https://www.superside.com/blog/principles-of-design-guide",
+      "type": "article",
+      "summary": "A visual guide to the principles of design, such as emphasis, balance and proportion, illustrated with brand examples.",
+      "category": "01_foundational_design_principles"
+    },
+    {
+      "n": 4,
+      "title": "8 Basic design principles to help you make awesome graphics",
+      "url": "https://www.adobe.com/express/learn/blog/8-basic-design-principles-to-help-you-create-better-graphics",
+      "type": "article",
+      "summary": "Introduces basic design principles and shows how to apply them when making everyday graphics.",
+      "category": "01_foundational_design_principles"
+    },
+    {
+      "n": 5,
+      "title": "The 7 principles of design and how to use them (with infographic) - Vistaprint",
+      "url": "https://www.vistaprint.com/hub/principles-of-design",
+      "type": "article",
+      "summary": "Explains the core principles of design from a business printing point of view, with an infographic.",
+      "category": "01_foundational_design_principles"
+    },
+    {
+      "n": 6,
+      "title": "12+ Basic Graphic Design Principles (And How To Use Them) - ThimPress",
+      "url": "https://thimpress.com/basic-graphic-design-principles-and-how-to-use-them/",
+      "type": "article",
+      "summary": "A beginner's list of basic graphic design principles with short advice on using each one.",
+      "category": "01_foundational_design_principles"
+    },
+    {
+      "n": 7,
+      "title": "Designing with contrast: 20 tips from a designer - Canva",
+      "url": "https://www.canva.com/learn/contrasting-colors/",
+      "type": "article",
+      "summary": "Tips for creating contrast in a design through colour, type, size and other visual differences.",
+      "category": "01_foundational_design_principles"
+    },
+    {
+      "n": 8,
+      "title": "Exposing the Secrets of Effective Report Design Standards - Bold Reports",
+      "url": "https://www.boldreports.com/blog/report-design-standards/",
+      "type": "article",
+      "summary": "Describes design standards for business reports, covering layout, consistency and readability.",
+      "category": "01_foundational_design_principles"
+    },
+    {
+      "n": 9,
+      "title": "5 Principles of Report Design | IMA - Strategic Finance",
+      "url": "https://www.sfmagazine.com/articles/2018/april/5-principles-of-report-design/",
+      "type": "professional journal article",
+      "summary": "Sets out principles for designing financial and management reports, illustrated with before-and-after examples.",
+      "category": "01_foundational_design_principles"
+    },
+    {
+      "n": 10,
+      "title": "White Space In Graphic Design: A Detailed Guide with Examples - DocHipo",
+      "url": "https://www.dochipo.com/white-space-in-graphic-design/",
+      "type": "article",
+      "summary": "A guide to white space in graphic design, covering its types, benefits and techniques, with brand examples.",
+      "category": "01_foundational_design_principles"
+    },
+    {
+      "n": 11,
+      "title": "White Space in Design - A Complete Guide | AND Academy",
+      "url": "https://www.andacademy.com/resources/blog/graphic-design/white-space-in-design/",
+      "type": "article",
+      "summary": "Explains white space in design, how it relates to negative space, and how to use it well.",
+      "category": "01_foundational_design_principles"
+    },
+    {
+      "n": 12,
+      "title": "Graphic Design Principles: Balance and White Space - The Noun Project Blog",
+      "url": "https://blog.thenounproject.com/graphic-design-principles-balance-and-white-space/",
+      "type": "article",
+      "summary": "A short article on balance and white space as graphic design principles.",
+      "category": "01_foundational_design_principles"
+    },
+    {
+      "n": 13,
+      "title": "The ultimate guide to visual hierarchy | Canva",
+      "url": "https://www.canva.com/learn/visual-hierarchy/",
+      "type": "article",
+      "summary": "A guide to visual hierarchy, covering how people scan a page and techniques for directing attention.",
+      "category": "01_foundational_design_principles"
+    },
+    {
+      "n": 14,
+      "title": "Understanding Gestalt Principles and Their Practical Application in UI/UX Design - Bejamas",
+      "url": "https://bejamas.com/blog/gestalt-principles-of-design",
+      "type": "article",
+      "summary": "Explains the Gestalt principles of perception and how to apply them in UI and UX design.",
+      "category": "01_foundational_design_principles"
+    },
+    {
+      "n": 15,
+      "title": "11 Gestalt Principles of Design: A visual guide for design teams",
+      "url": "https://www.superside.com/blog/gestalt-principles-of-design",
+      "type": "article",
+      "summary": "A visual guide to the Gestalt principles of design for design teams, with brand examples.",
+      "category": "01_foundational_design_principles"
+    },
+    {
+      "n": 16,
+      "title": "RGB vs. CMYK: Understanding the Differences - The Noun Project Blog",
+      "url": "https://blog.thenounproject.com/rgb-vs-cmyk-understanding-the-differences/",
+      "type": "article",
+      "summary": "Explains the difference between the RGB and CMYK colour models and when each applies.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 17,
+      "title": "Color Theory In Web Design: A Complete Guide (2024) - Elementor",
+      "url": "https://elementor.com/blog/color-theory-web-design/",
+      "type": "article",
+      "summary": "A guide to colour theory for web design, covering the colour wheel, harmony schemes and what colours suggest.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 18,
+      "title": "The RYB, CMYK, RGB, HSV and Hexadecimal Color Models",
+      "url": "https://www.ferrum.edu/downloads/academics/programs/school_of_art_divisions/dept_visual/art-color-systems-handbook.pdf",
+      "type": "academic paper",
+      "summary": "A college handbook describing the RYB, CMYK, RGB, HSV and hexadecimal colour models.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 19,
+      "title": "RGB VS CMYK: An Ultimate Guide to Mastering Color Modes - TourBox",
+      "url": "https://www.tourboxtech.com/en/news/rgb-vs-cmyk.html",
+      "type": "article",
+      "summary": "A guide to the RGB and CMYK colour modes, including gamut differences and workflows for screen and print.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 20,
+      "title": "Is there a difference between CMYK and RGB? : r/ArtistLounge - Reddit",
+      "url": "https://www.reddit.com/r/ArtistLounge/comments/1fbtl1c/is_there_a_difference_between_cmyk_and_rgb/",
+      "type": "community discussion",
+      "summary": "A community discussion about how CMYK and RGB differ in practice.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 21,
+      "title": "Color Wheel - Color Calculator | Sessions College",
+      "url": "https://www.sessions.edu/color-calculator/",
+      "type": "online tool",
+      "summary": "An interactive colour wheel tool for exploring colour relationships and building palettes.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 22,
+      "title": "Designing With Color: Complementary, Analogous, Monochromatic & Triadic Color Combinations - Event Leadership Institute",
+      "url": "https://pcmainstitute.org/designing-with-color-complementary-analogous-monochromatic-triadic-color-combinations/",
+      "type": "article",
+      "summary": "Explains complementary, analogous, monochromatic and triadic colour combinations.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 23,
+      "title": "The Power of Color in Design — Part 2: Color Schemes | by Vian Pua Meno - Medium",
+      "url": "https://medium.com/design-bootcamp/the-power-of-color-in-design-part-2-color-schemes-af9a9c36a70c",
+      "type": "article",
+      "summary": "Part of a series on colour in design, explaining the main colour schemes and when to choose each.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 24,
+      "title": "What Is Color Theory? A Comprehensive Color Guide For The Designers - Musemind",
+      "url": "https://musemind.agency/blog/color-theory",
+      "type": "article",
+      "summary": "A broad introduction to colour theory for designers, covering the colour wheel, colour classes and harmony schemes.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 25,
+      "title": "Creating accessible digital colour palettes using the 60-30-10 ...",
+      "url": "https://www.visionaustralia.org/business-consulting/digital-access/Creating-accessible-digital-colour-palettes-60-30-10-design-rule",
+      "type": "article",
+      "summary": "Shows how to build accessible digital colour palettes with the 60-30-10 proportion rule while keeping enough contrast.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 26,
+      "title": "How to use the 60-30-10 rule to balance your brand's color palette : r/EntrepreneurRideAlong - Reddit",
+      "url": "https://www.reddit.com/r/EntrepreneurRideAlong/comments/gp2uce/how_to_use_the_603010_rule_to_balance_your_brands/",
+      "type": "community discussion",
+      "summary": "A community post explaining how to apply the 60-30-10 rule to balance a brand's colour palette.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 27,
+      "title": "The Psychology of Color in Branding and Marketing - ResearchGate",
+      "url": "https://www.researchgate.net/publication/395720517_The_Psychology_of_Color_in_Branding_and_Marketing",
+      "type": "academic paper",
+      "summary": "An academic review of research on colour psychology in branding and marketing.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 28,
+      "title": "Psychology of Color: Its Influence on Marketing and Design - Kampala International University",
+      "url": "https://kiu.ac.ug/assets/publications/3462_psychology-of-color-its-influence-on-marketing-and-design.pdf",
+      "type": "academic paper",
+      "summary": "An academic paper on the psychology of colour and its influence on marketing and design.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 29,
+      "title": "The Ultimate Guide to Color Psychology in Marketing with Examples - Instapage",
+      "url": "https://instapage.com/blog/ultimate-guide-to-color-psychology/",
+      "type": "article",
+      "summary": "A guide to colour psychology in marketing, with examples of how brands and landing pages use colour.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 30,
+      "title": "Color Psychology in Marketing and Branding is All About Context - Help Scout",
+      "url": "https://www.helpscout.com/blog/psychology-of-color/",
+      "type": "article",
+      "summary": "Argues that what a colour means depends on context and brand fit rather than on fixed universal associations.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 31,
+      "title": "Designing for engagement: How color, type and space can impact the - Canva",
+      "url": "https://www.canva.com/learn/design-for-engagement/",
+      "type": "article",
+      "summary": "Explains how colour, type and spacing affect the mood and engagement of a design.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 32,
+      "title": "Contrast and Color Accessibility - Understanding WCAG 2 ... - WebAIM",
+      "url": "https://webaim.org/articles/contrast/",
+      "type": "accessibility guide",
+      "summary": "Explains the WCAG 2 contrast requirements, how contrast ratios work and how to test colour accessibility.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 33,
+      "title": "Color contrast accessibility requirements explained - Pope Tech Blog",
+      "url": "https://blog.pope.tech/2022/11/08/color-contrast-accessibility-requirements-explained/",
+      "type": "accessibility guide",
+      "summary": "Explains WCAG colour contrast requirements for text and non-text elements, with common failures.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 34,
+      "title": "Understanding Success Criterion 1.4.3: Contrast (Minimum) | WAI - W3C",
+      "url": "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html",
+      "type": "official documentation",
+      "summary": "The official W3C explanation of the WCAG minimum contrast success criterion, its intent and how to meet it.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 35,
+      "title": "Color contrast - Accessibility - MDN Web Docs - Mozilla",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Understanding_WCAG/Perceivable/Color_contrast",
+      "type": "official documentation",
+      "summary": "Developer documentation on colour contrast for accessibility, with guidance on meeting WCAG in HTML and CSS.",
+      "category": "02_color_theory_and_accessibility"
+    },
+    {
+      "n": 36,
+      "title": "Understanding the psychology of font and using text in design - Adobe",
+      "url": "https://www.adobe.com/express/learn/blog/psychology-font",
+      "type": "article",
+      "summary": "Discusses the emotional associations typefaces carry and how to choose text styles in a design.",
+      "category": "03_corporate_typography"
+    },
+    {
+      "n": 37,
+      "title": "A Guide to the Best Fonts for Legal Documents - Clio",
+      "url": "https://www.clio.com/blog/legal-fonts-for-legal-documents/",
+      "type": "article",
+      "summary": "Recommends fonts for legal documents and explains typographic requirements that courts may set.",
+      "category": "03_corporate_typography"
+    },
+    {
+      "n": 38,
+      "title": "Types of Fonts: The Ultimate Guide to Fonts Styles - Looka",
+      "url": "https://looka.com/blog/types-of-fonts/",
+      "type": "article",
+      "summary": "A guide to the main font styles and type terminology, with advice on choosing type for a brand.",
+      "category": "03_corporate_typography"
+    },
+    {
+      "n": 39,
+      "title": "Typeface - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Typeface",
+      "type": "encyclopedia article",
+      "summary": "Encyclopedia article on typefaces, covering their history, classification and terminology.",
+      "category": "03_corporate_typography"
+    },
+    {
+      "n": 40,
+      "title": "Document Fonts – The Complete Guide - Windward Studios",
+      "url": "https://www.windwardstudios.com/blog/document-fonts",
+      "type": "article",
+      "summary": "A guide to choosing fonts for business documents, with advice on size, type families and readability.",
+      "category": "03_corporate_typography"
+    },
+    {
+      "n": 41,
+      "title": "Typeface classification: font styles explained - Typeheist",
+      "url": "https://typeheist.co/blog/typeface-classification-font-types-and-uses/",
+      "type": "article",
+      "summary": "Explains how typefaces are classified and what each style family suits.",
+      "category": "03_corporate_typography"
+    },
+    {
+      "n": 42,
+      "title": "Font - APA Style - American Psychological Association",
+      "url": "https://apastyle.apa.org/style-grammar-guidelines/paper-format/font",
+      "type": "official documentation",
+      "summary": "APA Style guidance on acceptable fonts and font sizes for academic papers.",
+      "category": "03_corporate_typography"
+    },
+    {
+      "n": 43,
+      "title": "Document Fonts - Windward Studios (same page as 40)",
+      "url": "https://www.windwardstudios.com/blog/document-fonts",
+      "type": "article",
+      "summary": "Same Windward Studios page as source 40, cited here for one specific recommendation it makes.",
+      "category": "03_corporate_typography"
+    },
+    {
+      "n": 44,
+      "title": "The Ultimate Guide to Font Pairing — Learn - Canva",
+      "url": "https://www.canva.com/learn/the-ultimate-guide-to-font-pairing/",
+      "type": "article",
+      "summary": "A guide to pairing fonts, with principles for combining typefaces and example combinations.",
+      "category": "03_corporate_typography"
+    },
+    {
+      "n": 45,
+      "title": "The ultimate guide to font pairings - Creative Bloq",
+      "url": "https://www.creativebloq.com/typography/20-perfect-font-pairings-3132120",
+      "type": "article",
+      "summary": "A curated set of font pairings with notes on why the combinations work.",
+      "category": "03_corporate_typography"
+    },
+    {
+      "n": 46,
+      "title": "How to create a typographic hierarchy – Pangram Pangram Foundry",
+      "url": "https://pangrampangram.com/blogs/journal/typographic-hierarchy",
+      "type": "article",
+      "summary": "Explains how to build a typographic hierarchy using size, weight and style.",
+      "category": "03_corporate_typography"
+    },
+    {
+      "n": 47,
+      "title": "Introduction to typography hierarchy - Uxcel",
+      "url": "https://uxcel.com/blog/beginners-guide-to-typographic-hierarchy",
+      "type": "article",
+      "summary": "A beginner's introduction to typographic hierarchy in interface design.",
+      "category": "03_corporate_typography"
+    },
+    {
+      "n": 48,
+      "title": "Microtypography - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microtypography",
+      "type": "encyclopedia article",
+      "summary": "Encyclopedia article on microtypography, the fine adjustments such as kerning and spacing that improve text.",
+      "category": "03_corporate_typography"
+    },
+    {
+      "n": 49,
+      "title": "Master kerning for polished typography | Adobe India",
+      "url": "https://www.adobe.com/in/creativecloud/roc/blog/design/kerning-typography-tips.html",
+      "type": "article",
+      "summary": "Explains kerning, why it matters and how to adjust it in design software.",
+      "category": "03_corporate_typography"
+    },
+    {
+      "n": 50,
+      "title": "20 Basic Typographic Terms for UI Designers | FlowMapp design blog",
+      "url": "https://www.flowmapp.com/blog/qa/20-basic-typographic-terms-ui",
+      "type": "article",
+      "summary": "A glossary of basic typographic terms for UI designers.",
+      "category": "03_corporate_typography"
+    },
+    {
+      "n": 51,
+      "title": "The Role of Kerning, Tracking, and Leading in Typography: A ...",
+      "url": "https://tomoson.com/the-role-of-kerning-tracking-and-leading-in-typography-a-designers-guide/",
+      "type": "article",
+      "summary": "Explains the roles of kerning, tracking and leading in readable typography.",
+      "category": "03_corporate_typography"
+    },
+    {
+      "n": 52,
+      "title": "A Step-by-Step Guide on How to Format a Business Document - Numerous.ai",
+      "url": "https://numerous.ai/blog/business-document-format",
+      "type": "article",
+      "summary": "A step-by-step guide to formatting business documents, covering type, spacing and templates.",
+      "category": "03_corporate_typography"
+    },
+    {
+      "n": 53,
+      "title": "Grid Systems - Baseline • The Free Design Bootcamp",
+      "url": "https://baselinehq.com/4-grid-systems.html",
+      "type": "article",
+      "summary": "An introduction to grid systems that describes the main grid types used in layout.",
+      "category": "04_layout_and_grid_systems"
+    },
+    {
+      "n": 54,
+      "title": "The Grid System: Importance of a Solid UX/UI Layout | Designlab",
+      "url": "https://designlab.com/blog/grid-systems-history-ux-ui-layout",
+      "type": "article",
+      "summary": "Explains grid systems in UX and UI layout, their history and their component parts.",
+      "category": "04_layout_and_grid_systems"
+    },
+    {
+      "n": 55,
+      "title": "Grid Layout Design Guide (2025) – History, Tips & Top Examples",
+      "url": "https://www.onething.design/post/grid-layout-design-guide-history-tips-examples",
+      "type": "article",
+      "summary": "A guide to grid layout design with history, tips and examples.",
+      "category": "04_layout_and_grid_systems"
+    },
+    {
+      "n": 56,
+      "title": "Guide to grid layout design with examples - Halo Lab",
+      "url": "https://www.halo-lab.com/blog/guide-to-grid-layout-design-with-examples",
+      "type": "article",
+      "summary": "A guide to grid layout types and how to choose and apply one, with examples.",
+      "category": "04_layout_and_grid_systems"
+    },
+    {
+      "n": 57,
+      "title": "What are Grid Systems? | IxDF - The Interaction Design Foundation",
+      "url": "https://www.interaction-design.org/literature/topics/grid-systems",
+      "type": "article",
+      "summary": "Explains what grid systems are, the main types and why designers use them.",
+      "category": "04_layout_and_grid_systems"
+    },
+    {
+      "n": 58,
+      "title": "Layout Design: Types of Grids for Creating Professional-Looking Designs - Visme",
+      "url": "https://visme.co/blog/layout-design/",
+      "type": "article",
+      "summary": "Describes the anatomy of a layout grid and the grid types used for professional designs.",
+      "category": "04_layout_and_grid_systems"
+    },
+    {
+      "n": 59,
+      "title": "Understanding the Grid Layout Design: Types, Examples, Tips - Eleken",
+      "url": "https://www.eleken.co/blog-posts/grid-layout-design-history-tips-and-best-examples",
+      "type": "article",
+      "summary": "Explains grid layout design through its history, types, examples and tips.",
+      "category": "04_layout_and_grid_systems"
+    },
+    {
+      "n": 60,
+      "title": "10 DOs and DON'Ts of Report Design | Blog - Datylon",
+      "url": "https://www.datylon.com/blog/10-report-design-tips",
+      "type": "article",
+      "summary": "Practical do's and don'ts for designing data-driven reports.",
+      "category": "04_layout_and_grid_systems"
+    },
+    {
+      "n": 61,
+      "title": "21 Presentation Design Tips For Success - Venngage",
+      "url": "https://venngage.com/blog/presentation-design/",
+      "type": "article",
+      "summary": "Tips for designing effective presentations, from structure to visual style.",
+      "category": "04_layout_and_grid_systems"
+    },
+    {
+      "n": 62,
+      "title": "6 Tips for Your Next Proposal Presentation - Mimeo",
+      "url": "https://www.mimeo.com/blog/proposal-presentation-tips/",
+      "type": "article",
+      "summary": "Advice on preparing and designing a proposal presentation.",
+      "category": "04_layout_and_grid_systems"
+    },
+    {
+      "n": 63,
+      "title": "The Ultimate Guide to Corporate Presentation Design - Slidor",
+      "url": "https://www.slidor.agency/blog/ultimate-guide-corporate-presentation-design",
+      "type": "article",
+      "summary": "A guide to corporate presentation design, including brand integration and presenting to executives.",
+      "category": "04_layout_and_grid_systems"
+    },
+    {
+      "n": 64,
+      "title": "Brand Consistency: How to Stay On-Brand, Always. - Frontify",
+      "url": "https://www.frontify.com/en/guide/brand-consistency",
+      "type": "article",
+      "summary": "Explains brand consistency, why it matters and how to keep a brand consistent across channels.",
+      "category": "05_brand_identity_and_consistency"
+    },
+    {
+      "n": 65,
+      "title": "How to Maintain Brand Consistency Without a Design Team - Venngage",
+      "url": "https://venngage.com/blog/brand-consistency/",
+      "type": "article",
+      "summary": "Practical ways to keep a brand consistent when there is no dedicated design team.",
+      "category": "05_brand_identity_and_consistency"
+    },
+    {
+      "n": 66,
+      "title": "Create a brand style guide for your business. - Adobe",
+      "url": "https://www.adobe.com/creativecloud/business/teams/resources/how-to/brand-guide.html",
+      "type": "article",
+      "summary": "Explains how to create a brand style guide and what it should contain.",
+      "category": "05_brand_identity_and_consistency"
+    },
+    {
+      "n": 67,
+      "title": "Brand Guidelines: Definition & How to Create a Style Guide - Bynder",
+      "url": "https://www.bynder.com/en/glossary/brand-guidelines-definition/",
+      "type": "article",
+      "summary": "Defines brand guidelines and outlines how to create a style guide.",
+      "category": "05_brand_identity_and_consistency"
+    },
+    {
+      "n": 68,
+      "title": "The 6 Elements Which Every Brand Guideline Should Have - Studio Noel",
+      "url": "https://studionoel.co.uk/elements-of-brand-guidelines",
+      "type": "article",
+      "summary": "Describes the core elements that every set of brand guidelines should include.",
+      "category": "05_brand_identity_and_consistency"
+    },
+    {
+      "n": 69,
+      "title": "Creating a brand style guide: templates, how-to, tips | Canva",
+      "url": "https://www.canva.com/learn/your-brand-needs-a-visual-style-guide/",
+      "type": "article",
+      "summary": "A how-to for creating a brand style guide, with templates and tips.",
+      "category": "05_brand_identity_and_consistency"
+    },
+    {
+      "n": 70,
+      "title": "5 ways to maintain brand consistency through design - Playbook",
+      "url": "https://www.playbook.com/blog/5-ways-to-maintain-brand-consistency-through-design/",
+      "type": "article",
+      "summary": "Suggests ways to maintain brand consistency through design.",
+      "category": "05_brand_identity_and_consistency"
+    },
+    {
+      "n": 71,
+      "title": "19 brand guidelines that brand experts love | Frontify",
+      "url": "https://www.frontify.com/en/guide/brand-guidelines-examples",
+      "type": "article",
+      "summary": "A showcase of well-regarded brand guidelines and what makes them effective.",
+      "category": "05_brand_identity_and_consistency"
+    },
+    {
+      "n": 72,
+      "title": "Brand guidelines: how should I make them? : r/graphic_design - Reddit",
+      "url": "https://www.reddit.com/r/graphic_design/comments/15jodbd/brand_guidelines_how_should_i_make_them/",
+      "type": "community discussion",
+      "summary": "A community discussion on how to put brand guidelines together.",
+      "category": "05_brand_identity_and_consistency"
+    },
+    {
+      "n": 73,
+      "title": "How to maintain Brand consistency? : r/graphic_design - Reddit",
+      "url": "https://www.reddit.com/r/graphic_design/comments/1depgxi/how_to_maintain_brand_consistency/",
+      "type": "community discussion",
+      "summary": "A community discussion on how to keep a brand consistent.",
+      "category": "05_brand_identity_and_consistency"
+    },
+    {
+      "n": 74,
+      "title": "10 Strategies For Maintaining Brand Consistency Across Platforms",
+      "url": "https://www.mastroke.com/blog/digital-marketing/10-strategies-for-maintaining-brand-consistency-across-platforms/",
+      "type": "article",
+      "summary": "Strategies for keeping a brand consistent across different platforms.",
+      "category": "05_brand_identity_and_consistency"
+    },
+    {
+      "n": 75,
+      "title": "Graphic Design in Advertising: Persuasion Through Imagery - Lauer Media Company",
+      "url": "https://lauermediaco.com/blog/graphic-design-in-advertising-persuasion-through-imagery/",
+      "type": "article",
+      "summary": "Explains how imagery in advertising design is used to persuade.",
+      "category": "06_psychology_of_persuasion"
+    },
+    {
+      "n": 76,
+      "title": "The Psychology of Persuasion: How Science Shapes Marketing Success - Phable",
+      "url": "https://www.phable.io/phable-labs/the-psychology-of-persuasion-how-science-shapes-marketing-success",
+      "type": "article",
+      "summary": "Explains the psychology behind persuasion in marketing, including common cognitive biases.",
+      "category": "06_psychology_of_persuasion"
+    },
+    {
+      "n": 77,
+      "title": "How to Use Cialdini's 6 Principles of Persuasion to Boost ... - CXL",
+      "url": "https://cxl.com/blog/cialdinis-principles-persuasion/",
+      "type": "article",
+      "summary": "Explains how to apply Cialdini's principles of persuasion to marketing and conversion work.",
+      "category": "06_psychology_of_persuasion"
+    },
+    {
+      "n": 78,
+      "title": "Dr. Robert Cialdini's Seven Principles of Persuasion | IAW - Influence at Work",
+      "url": "https://www.influenceatwork.com/7-principles-of-persuasion/",
+      "type": "article",
+      "summary": "The Cialdini organisation's own summary of the principles of persuasion.",
+      "category": "06_psychology_of_persuasion"
+    },
+    {
+      "n": 79,
+      "title": "How You Can Use Design To Build Brand Trust And Authority",
+      "url": "https://www.designaphy.com/insights/use-design-to-build-brand-trust",
+      "type": "article",
+      "summary": "Explains how design choices can build brand trust and authority.",
+      "category": "06_psychology_of_persuasion"
+    },
+    {
+      "n": 80,
+      "title": "How to Add Social Proof to Websites: 7 Examples People are Raving About - Orbit Media",
+      "url": "https://www.orbitmedia.com/blog/social-proof-web-design/",
+      "type": "article",
+      "summary": "Shows ways to add social proof to websites, with examples.",
+      "category": "06_psychology_of_persuasion"
+    },
+    {
+      "n": 81,
+      "title": "How to use website social proof: strategies and examples that work",
+      "url": "https://www.blendb2b.com/blog/website-social-proof",
+      "type": "article",
+      "summary": "Strategies and examples for using social proof on B2B websites.",
+      "category": "06_psychology_of_persuasion"
+    },
+    {
+      "n": 82,
+      "title": "The Scarcity Principle: How to Create Urgency - Mailchimp",
+      "url": "https://mailchimp.com/resources/scarcity-principle/",
+      "type": "article",
+      "summary": "Explains the scarcity principle and how marketers use it to create urgency.",
+      "category": "06_psychology_of_persuasion"
+    },
+    {
+      "n": 83,
+      "title": "Creating Urgency and Scarcity: Effective Marketing Strategies - NEKLO",
+      "url": "https://neklo.com/blog/urgency-and-scarcity-marketing-strategies",
+      "type": "article",
+      "summary": "Describes marketing strategies that create urgency and scarcity.",
+      "category": "06_psychology_of_persuasion"
+    },
+    {
+      "n": 84,
+      "title": "While Supplies Last: 8 Scarcity and Urgency Tips for Stores - Shopify",
+      "url": "https://www.shopify.com/blog/using-scarcity-urgency-increase-sales",
+      "type": "article",
+      "summary": "Tips for online stores on using scarcity and urgency, and on doing so responsibly.",
+      "category": "06_psychology_of_persuasion"
+    },
+    {
+      "n": 85,
+      "title": "Scarcity and Urgency: Powerful Form Design Tools",
+      "url": "https://www.gravityforms.com/blog/scarcity-urgency-form-design/",
+      "type": "article",
+      "summary": "Explains how scarcity and urgency can be applied in form design.",
+      "category": "06_psychology_of_persuasion"
+    },
+    {
+      "n": 86,
+      "title": "Creating Urgency and Scarcity in Your Q4 Marketing Campaigns - Socium Media",
+      "url": "https://www.sociummedia.com/blog/urgency-scarcity-marketing-campaigns/",
+      "type": "article",
+      "summary": "Advice on creating urgency and scarcity in end-of-year marketing campaigns.",
+      "category": "06_psychology_of_persuasion"
+    },
+    {
+      "n": 87,
+      "title": "Applying principles of persuasion in UX Design | by Yun Xuan | UX Planet",
+      "url": "https://uxplanet.org/applying-principles-of-persuasion-in-ux-design-ce3edeb934ae",
+      "type": "article",
+      "summary": "Applies principles of persuasion to UX design.",
+      "category": "06_psychology_of_persuasion"
+    },
+    {
+      "n": 88,
+      "title": "7 Secrets of Persuasion in Website Design",
+      "url": "https://studio1design.com/the-7-secrets-of-persuasion-in-website-design/",
+      "type": "article",
+      "summary": "Applies persuasion principles to website design.",
+      "category": "06_psychology_of_persuasion"
+    },
+    {
+      "n": 89,
+      "title": "Raster vs. vector: What are the differences? - Adobe",
+      "url": "https://www.adobe.com/creativecloud/file-types/image/comparison/raster-vs-vector.html",
+      "type": "article",
+      "summary": "Explains the differences between raster and vector images and when to use each.",
+      "category": "07_production_and_file_formats"
+    },
+    {
+      "n": 90,
+      "title": "Raster vs. Vector Files: Key Differences and When to Use Them - Shutterstock",
+      "url": "https://www.shutterstock.com/blog/raster-vs-vector-file-formats",
+      "type": "article",
+      "summary": "Explains the key differences between raster and vector files and when to use them.",
+      "category": "07_production_and_file_formats"
+    },
+    {
+      "n": 91,
+      "title": "Raster vs Vector: Which to Use for Packaging? | Pakfactory Blog",
+      "url": "https://pakfactory.com/blog/raster-vs-vector/",
+      "type": "article",
+      "summary": "Advice on choosing raster or vector files for packaging design and print.",
+      "category": "07_production_and_file_formats"
+    },
+    {
+      "n": 92,
+      "title": "A Guide to Image File Formats | Know Image File Types - Graphic Design Eye",
+      "url": "https://graphicdesigneye.com/guide-to-image-file-formats/",
+      "type": "article",
+      "summary": "A guide to common image file formats and what each is suited for.",
+      "category": "07_production_and_file_formats"
+    },
+    {
+      "n": 93,
+      "title": "File Formats Explained - The Glow Studio",
+      "url": "https://theglowstudio.com/file-formats-explained/",
+      "type": "article",
+      "summary": "Explains common file formats used in graphic design and when to use them.",
+      "category": "07_production_and_file_formats"
+    },
+    {
+      "n": 94,
+      "title": "Raster vs. vector: What are the differences? - Adobe (same page as 89)",
+      "url": "https://www.adobe.com/creativecloud/file-types/image/comparison/raster-vs-vector.html",
+      "type": "article",
+      "summary": "Same Adobe page as source 89, cited here for its quick way to tell raster and vector images apart.",
+      "category": "07_production_and_file_formats"
+    },
+    {
+      "n": 95,
+      "title": "Raster vs. vector: Which image type is best for your project | Adobe India",
+      "url": "https://www.adobe.com/in/creativecloud/roc/blog/design/should-you-use-raster-or-vector-for-your-projects.html",
+      "type": "article",
+      "summary": "Guidance on choosing raster or vector images for different kinds of project.",
+      "category": "07_production_and_file_formats"
+    },
+    {
+      "n": 96,
+      "title": "Vector vs Raster Graphics - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-graphics/vector-vs-raster-graphics/",
+      "type": "article",
+      "summary": "A technical comparison of vector and raster graphics.",
+      "category": "07_production_and_file_formats"
+    },
+    {
+      "n": 97,
+      "title": "Vector vs. Raster: What image format does my designer need and why? - Proforma Blog",
+      "url": "https://proformablog.com/vector-vs-raster-what-image-format-does-my-designer-need-and-why/",
+      "type": "article",
+      "summary": "Explains which image formats a designer needs from clients and why.",
+      "category": "07_production_and_file_formats"
+    },
+    {
+      "n": 98,
+      "title": "Decoding Graphic Design File Types - Communications - Blogs",
+      "url": "https://blogs.ifas.ufl.edu/ifascomm/2023/09/01/decoding-graphic-design-file-types/",
+      "type": "university blog post",
+      "summary": "A university communications blog post decoding common graphic design file types.",
+      "category": "07_production_and_file_formats"
+    },
+    {
+      "n": 99,
+      "title": "Explaining Vector vs Raster to Clients? : r/CommercialPrinting - Reddit",
+      "url": "https://www.reddit.com/r/CommercialPrinting/comments/120oga7/explaining_vector_vs_raster_to_clients/",
+      "type": "community discussion",
+      "summary": "A community discussion on how to explain vector and raster files to clients.",
+      "category": "07_production_and_file_formats"
+    },
+    {
+      "n": 100,
+      "title": "Prepress Checklist: How to prepare your design for print",
+      "url": "https://www.thebusinesstoolkit.com/prepress-checklist-how-to-prepare-your-design-for-print/",
+      "type": "article",
+      "summary": "A prepress checklist for preparing a design file for print.",
+      "category": "07_production_and_file_formats"
+    },
+    {
+      "n": 101,
+      "title": "Prepress Checklist: Prepare Custom Label File for Print | Sttark",
+      "url": "https://www.sttark.com/blog/prepress-checklist",
+      "type": "article",
+      "summary": "A prepress checklist for preparing custom label files for print.",
+      "category": "07_production_and_file_formats"
+    },
+    {
+      "n": 102,
+      "title": "Idiot Proof Graphic Design Pre-Print Check List - Reddit",
+      "url": "https://www.reddit.com/r/Design/comments/btv8f/idiot_proof_graphic_design_preprint_check_list/",
+      "type": "community discussion",
+      "summary": "A community checklist of things to check before sending a design to print.",
+      "category": "07_production_and_file_formats"
+    },
+    {
+      "n": 103,
+      "title": "Prepress Checklist - Crown Connect",
+      "url": "https://www.crownconnect.com/prepress-checklist/",
+      "type": "article",
+      "summary": "Describes a prepress process for checking files before printing.",
+      "category": "07_production_and_file_formats"
+    },
+    {
+      "n": 104,
+      "title": "Designers and Prepress Checklist | Duncan-Parnell",
+      "url": "https://www.duncan-parnell.com/blog/199/designers-and-prepress-checklist",
+      "type": "article",
+      "summary": "A prepress checklist describing how designers and print providers work together.",
+      "category": "07_production_and_file_formats"
+    }
+  ]
+}

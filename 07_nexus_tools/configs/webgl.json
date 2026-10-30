@@ -1,0 +1,15 @@
+{
+ "anchor": "webgl_nexus",
+ "topic_tag": "webgl",
+ "title": "WebGL craft nexus",
+ "clusters": [
+  {"tag": "performance", "theme": "Renderer choice and budgets: frame time, device pixel ratio, overdraw, particle and byte budgets", "read_when": "choosing a technology or a performance limit"},
+  {"tag": "testing", "theme": "Production safety and testing: boot rules, first frame, context loss, loop hygiene, the browser test battery", "read_when": "putting a layer on a real page, or reviewing and testing one"},
+  {"tag": "progressive-enhancement", "theme": "The static page is the design; the canvas is an enhancement with a fallback", "read_when": "deciding what a visitor without WebGL sees"},
+  {"tag": "accessibility", "theme": "Reduced motion, pause controls, contrast and keyboard paths for animated layers", "read_when": "anything moves, glows or must be operable"},
+  {"tag": "interaction", "theme": "The page owns state; hit-testing, hover and pin grammar, springs", "read_when": "anything must respond to pointer or focus"},
+  {"tag": "compositing", "theme": "Glow without bloom, halos, blend modes, dithering and colour", "read_when": "anything glows, bands, or must match a static poster"},
+  {"tag": "visualization", "theme": "Constellation and node-link figures: layout, lines, links, ranked light", "read_when": "designing or reviewing a star or node-link figure"},
+  {"tag": "art-direction", "theme": "Look and motion: reference plates, motifs, WebGL versus a video model", "read_when": "deciding how a cosmic layer should look and move"}
+ ]
+}

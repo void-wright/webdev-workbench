@@ -1,0 +1,22 @@
+---
+// EXAMPLE PAGE: the dark journey between two ordinary sections. Delete it once your own page uses the component.
+import ScrollJourney from '../components/ScrollJourney.astro';
+import { nightSky } from '../data/journeys/night-sky';
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A first night out | Example astronomy club</title>
+  </head>
+  <body style="margin:0;background:#1b1712;color:#f2ede4;font-family:system-ui,sans-serif">
+    <section style="min-height:70svh;display:grid;place-items:center;padding:2rem">
+      <h1>A first night out</h1>
+    </section>
+    <ScrollJourney journey={nightSky} />
+    <section style="min-height:70svh;padding:2rem">
+      <h2>Membership</h2>
+      <p>Join at any observing night.</p>
+    </section>
+  </body>
+</html>

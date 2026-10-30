@@ -1,0 +1,594 @@
+[
+ {
+  "phrase": "first site build Astro Cloudflare Workers preview checklist",
+  "row": "Any first-build session"
+ },
+ {
+  "phrase": "is 9.8 a hard bar or a target for the ACE loop",
+  "row": "Deciding whether a loop is done"
+ },
+ {
+  "phrase": "ACE hard threshold no rounding",
+  "row": "A reflector says a below-threshold score is close enough"
+ },
+ {
+  "phrase": "ACE iterations completion evidence",
+  "row": "Planning how many iterations a build needs"
+ },
+ {
+  "phrase": "code inspection scoring Lighthouse axe live render",
+  "row": "Scores are based only on reading code"
+ },
+ {
+  "phrase": "ACE workspaces outside deployable source",
+  "row": "Choosing where to put the ACE workspace"
+ },
+ {
+  "phrase": "every ACE iteration generator reflector curator",
+  "row": "Tempted to skip the curator this round"
+ },
+ {
+  "phrase": "curator each reusable skill separate record",
+  "row": "Curator finished; what to store"
+ },
+ {
+  "phrase": "calm baseline reduces corner cutting",
+  "row": "Urgency is encouraging shortcuts"
+ },
+ {
+  "phrase": "wrong Cloudflare account wrangler environment separation",
+  "row": "Working on a second Cloudflare account while other keys are exported"
+ },
+ {
+  "phrase": "wrangler deploy dry run account authentication",
+  "row": "Proving which account a deploy will hit"
+ },
+ {
+  "phrase": "wrong account probe authentication rejection",
+  "row": "Running the wrong-account probe"
+ },
+ {
+  "phrase": "secret sweep token fragments repository transcripts",
+  "row": "Before claiming no secret leaked"
+ },
+ {
+  "phrase": "token probe permissions workers subdomain",
+  "row": "First look at a new API token"
+ },
+ {
+  "phrase": "scoped Cloudflare API token private window account zone",
+  "row": "Creating a scoped Cloudflare token"
+ },
+ {
+  "phrase": "local build account guard foreign environment variables",
+  "row": "Plain npm run build is refused locally"
+ },
+ {
+  "phrase": "new static site on Cloudflare prefer Workers with static assets over Pages",
+  "row": "Choosing Workers or Pages"
+ },
+ {
+  "phrase": "static Astro on Cloudflare Workers scaffold with pinned dependencies Node version and Wrangler configuration",
+  "row": "Scaffolding the Astro + Workers repo"
+ },
+ {
+  "phrase": "register the workers subdomain before preview URLs",
+  "row": "Registering the workers subdomain"
+ },
+ {
+  "phrase": "back up the parking DNS records then attach the custom domain to the Worker",
+  "row": "Domain parked, going live with a holding page"
+ },
+ {
+  "phrase": "GitHub and Cloudflare wired push to preview link push to main deploys",
+  "row": "Wiring the complete platform"
+ },
+ {
+  "phrase": "dashboard click steps for a beginner include what you should see",
+  "row": "Writing a dashboard guide for a human"
+ },
+ {
+  "phrase": "runbook seed for a first build on Cloudflare Workers and GitHub",
+  "row": "Turning the build into a runbook"
+ },
+ {
+  "phrase": "two preview pipelines on one Worker one fails every time",
+  "row": "Preview builds red in the dashboard while the API shows green"
+ },
+ {
+  "phrase": "Workers Builds API does not list Worker Previews builds",
+  "row": "Watching preview builds by API"
+ },
+ {
+  "phrase": "recipe for preview and main deployments on Cloudflare Workers",
+  "row": "Need the preview and main recipe"
+ },
+ {
+  "phrase": "standing checks after every deploy clean clone dashboard 302 and 200",
+  "row": "The standing post-deploy checks"
+ },
+ {
+  "phrase": "clean clone CI simulation with env -i and the nvm bin",
+  "row": "Before pushing, simulate the CI build"
+ },
+ {
+  "phrase": "unticking Builds for Preview branches can delete the preview trigger",
+  "row": "Tempted to untick Builds for Preview branches"
+ },
+ {
+  "phrase": "separate preview D1 database migrated through a throwaway config",
+  "row": "Setting up preview resources"
+ },
+ {
+  "phrase": "base-config secrets before creation recreate a stale Preview",
+  "row": "Stale Preview after config change"
+ },
+ {
+  "phrase": "judge a deploy by its product with a probe path marker and binding names",
+  "row": "Declaring a deploy done"
+ },
+ {
+  "phrase": "missing a previews block on a branch cut from main",
+  "row": "New branch cut from main fails its preview build"
+ },
+ {
+  "phrase": "Cloudflare preview hosts override X-Robots-Tag noindex",
+  "row": "Preview host shows the wrong X-Robots-Tag"
+ },
+ {
+  "phrase": "probe an Access protected host without printing the session cookie",
+  "row": "Probing an Access-protected host"
+ },
+ {
+  "phrase": "Access service token passes the preview lock 302 without and 200 with",
+  "row": "Service token for automation"
+ },
+ {
+  "phrase": "verify noindex headers on Workers for the intended host and deployment mode",
+  "row": "Header posture on Workers"
+ },
+ {
+  "phrase": "one D1 database form kind attribution join",
+  "row": "Designing the forms data home"
+ },
+ {
+  "phrase": "check the current D1 Time Travel retention for the selected Workers plan",
+  "row": "Backup horizon for form data"
+ },
+ {
+  "phrase": "time to submit broken by clock skew measure fill time in the page",
+  "row": "Bot checks pass a fast bot"
+ },
+ {
+  "phrase": "repeat sign-up indistinguishable from the first one",
+  "row": "Repeat sign-ups"
+ },
+ {
+  "phrase": "never log a malformed request body",
+  "row": "Logging request bodies"
+ },
+ {
+  "phrase": "build a guard from the definition of what it refuses and prove every spelling",
+  "row": "Writing a build guard"
+ },
+ {
+  "phrase": "check every privacy page sentence against the code as true false unverifiable",
+  "row": "Signing the privacy page"
+ },
+ {
+  "phrase": "exact switches to turn on tracking or paid ads later",
+  "row": "Site owner wants tracking later"
+ },
+ {
+  "phrase": "classify browser storage by purpose and check applicable consent requirements before enabling it",
+  "row": "Storing anything in the browser"
+ },
+ {
+  "phrase": "contact form on a static site with a Worker API honeypot and shared field definitions",
+  "row": "Contact form on a static site"
+ },
+ {
+  "phrase": "Turnstile widget token cf-turnstile-response verified",
+  "row": "Turnstile wiring"
+ },
+ {
+  "phrase": "production settings applied by the build on main coordinated cutover",
+  "row": "Cutover on a Workers site"
+ },
+ {
+  "phrase": "production build refused because the main trigger had no build variable",
+  "row": "First production build refused"
+ },
+ {
+  "phrase": "run an agent readiness scan against the production site",
+  "row": "Launch audit failures"
+ },
+ {
+  "phrase": "why does an authentication documentation check fail on a public site",
+  "row": "Authentication documentation check stays red"
+ },
+ {
+  "phrase": "DNS-AID SVCB records for agents on a Cloudflare zone",
+  "row": "DNS-AID records"
+ },
+ {
+  "phrase": "DMARC reporting on a Cloudflare zone without a mailbox",
+  "row": "DMARC reports without a mailbox"
+ },
+ {
+  "phrase": "add CAA records on a Cloudflare proxied zone renewal",
+  "row": "CAA records"
+ },
+ {
+  "phrase": "hold a Wrangler upgrade until preview and production configurations pass",
+  "row": "Wrangler upgrade"
+ },
+ {
+  "phrase": "npm audit before launch verify dependency overrides with a clean reproducible build",
+  "row": "npm audit before launch"
+ },
+ {
+  "phrase": "QR code on a printed poster re-pointable short path end to end check",
+  "row": "A QR code on a printed event poster"
+ },
+ {
+  "phrase": "master go-live checklist every required check passes before cutover",
+  "row": "Master go-live checklist"
+ },
+ {
+  "phrase": "launch checklist domain registered to the site owner account registrar lock TTL",
+  "row": "Domain and DNS section"
+ },
+ {
+  "phrase": "launch checklist error tracking uptime alerting",
+  "row": "Monitoring before launch"
+ },
+ {
+  "phrase": "launch checklist Search Console sitemap Bing Webmaster Tools",
+  "row": "Search Console at launch"
+ },
+ {
+  "phrase": "launch checklist backup restore tested rollback RTO RPO",
+  "row": "Backups and rollback"
+ },
+ {
+  "phrase": "launch checklist documentation handoff architecture overview editor guide",
+  "row": "Documentation handoff"
+ },
+ {
+  "phrase": "launch checklist transactional email SPF DKIM DMARC deliverability",
+  "row": "Transactional email"
+ },
+ {
+  "phrase": "launch checklist SEO AEO schemas sitemap robots",
+  "row": "SEO/AEO launch checks"
+ },
+ {
+  "phrase": "production crawler rules content signals and AI bot access choices",
+  "row": "Production crawler policy"
+ },
+ {
+  "phrase": "governance before production record checks that did not run",
+  "row": "Governance before production"
+ },
+ {
+  "phrase": "Astro static first with Tailwind v4 through the Vite plugin stack default",
+  "row": "Starting the stack"
+ },
+ {
+  "phrase": "render page standalone HTML first Astro components",
+  "row": "Building a page"
+ },
+ {
+  "phrase": "Astro 6 removed output hybrid use server with prerender",
+  "row": "Astro 6 output hybrid error"
+ },
+ {
+  "phrase": "turn a finished site into a reusable template with config constants",
+  "row": "Turning a site into a template"
+ },
+ {
+  "phrase": "content security policy every external host the page loads",
+  "row": "CSP blocks fonts or CDNs"
+ },
+ {
+  "phrase": "hero LCP image eager fetchpriority high with width and height",
+  "row": "LCP image lazy loaded"
+ },
+ {
+  "phrase": "axe heading-order check shared footer group titles across every page",
+  "row": "Heading-order axe failure from a shared footer"
+ },
+ {
+  "phrase": "run Lighthouse and axe with Playwright bundled Chromium without system Chrome",
+  "row": "No system Chrome for Lighthouse"
+ },
+ {
+  "phrase": "builder runs axe before submitting a build for review",
+  "row": "Self-check before review"
+ },
+ {
+  "phrase": "interactive tool in the visitor browser with WASM no serverless function",
+  "row": "Interactive calculator, no backend"
+ },
+ {
+  "phrase": "open the targeted details FAQ item when following a fragment link",
+  "row": "Fragment link should open a disclosure"
+ },
+ {
+  "phrase": "review structured data on every indexable page",
+  "row": "Schemas per page"
+ },
+ {
+  "phrase": "Cloudflare agent readiness framework categories",
+  "row": "Agent readiness overview"
+ },
+ {
+  "phrase": "agent ready baseline documents for a public static Astro site",
+  "row": "Agent-ready baseline files"
+ },
+ {
+  "phrase": "OAuth protected resource metadata resource field must match the serving origin",
+  "row": "OAuth resource check fails"
+ },
+ {
+  "phrase": "public site authentication documentation states that no resources require authentication",
+  "row": "Authentication documentation on a public site"
+ },
+ {
+  "phrase": "A2A agent discovery card is distinct from the MCP card",
+  "row": "A2A card"
+ },
+ {
+  "phrase": "API catalog must use the RFC 9264 linkset format",
+  "row": "API catalog format"
+ },
+ {
+  "phrase": "markdown negotiation Accept actually return markdown not just Link header",
+  "row": "Markdown negotiation"
+ },
+ {
+  "phrase": "run a live agent readiness scan and require the applicable checks to pass",
+  "row": "Live scan before calling it done"
+ },
+ {
+  "phrase": "generate the AI catalog in the build never hand author it",
+  "row": "Generated AI catalog"
+ },
+ {
+  "phrase": "rebuilding a site build the old URL inventory before mapping slugs",
+  "row": "Porting an existing site"
+ },
+ {
+  "phrase": "set equality audit of crawled URLs",
+  "row": "Crawled pages as a contract"
+ },
+ {
+  "phrase": "backlink discovery tiers sitemap Wayback search Common Crawl",
+  "row": "Old-URL discovery tiers"
+ },
+ {
+  "phrase": "classify WordPress media category tag and feed URLs for redirects",
+  "row": "WordPress URL patterns"
+ },
+ {
+  "phrase": "flatten old Apache redirect chains",
+  "row": "Old Apache redirects"
+ },
+ {
+  "phrase": "old CMS asset URLs on the domain become 404 at DNS cutover",
+  "row": "Old CMS asset URLs"
+ },
+ {
+  "phrase": "transcribe reverse-engineered captured pages",
+  "row": "Strict-fidelity rebuild"
+ },
+ {
+  "phrase": "multi-agent parallel rebuild in bounded batches of pages",
+  "row": "Many pages to transcribe"
+ },
+ {
+  "phrase": "generator reflector curator as separate agents in sequence",
+  "row": "Roles in the loop"
+ },
+ {
+  "phrase": "the examinee may not modify the exam generator reports check defects",
+  "row": "Keeping the loop honest"
+ },
+ {
+  "phrase": "independent reviewer scores and never fixes orchestrator never builds inline",
+  "row": "Orchestrator doing generator work"
+ },
+ {
+  "phrase": "visual diff against the canonical handoff when one exists",
+  "row": "Canonical reference exists"
+ },
+ {
+  "phrase": "write down where workbench defaults do not apply before the build loop",
+  "row": "House defaults don't fit"
+ },
+ {
+  "phrase": "recall in batches and run read-only sweeps before writing the plan",
+  "row": "Planning the build"
+ },
+ {
+  "phrase": "content gate separates hidden harms from house style",
+  "row": "Designing a content gate"
+ },
+ {
+  "phrase": "prove each disclosure check with a deliberately defective example",
+  "row": "Floor classes for leaks"
+ },
+ {
+  "phrase": "positive control certified the defect",
+  "row": "Positive control lies"
+ },
+ {
+  "phrase": "cold reader belief test on the foundation",
+  "row": "Cold-reader test"
+ },
+ {
+  "phrase": "orchestrator wording most writer defects",
+  "row": "Writer defects trace to briefs"
+ },
+ {
+  "phrase": "fact digest one line per fact with status source and verified",
+  "row": "Facts digest format"
+ },
+ {
+  "phrase": "status lives in tense one status statement page",
+  "row": "Status placement"
+ },
+ {
+  "phrase": "FAQ answers that name products carry their own status word",
+  "row": "FAQ JSON-LD status"
+ },
+ {
+  "phrase": "check a capability against the path that serves it with a tense per capability",
+  "row": "Product claims vs code"
+ },
+ {
+  "phrase": "fetch and check source claims for contradictions",
+  "row": "Deep research claims"
+ },
+ {
+  "phrase": "amending a fact requires a sweep of affected copy",
+  "row": "Amending a fact"
+ },
+ {
+  "phrase": "register signed page strings with a dry run and refuse unknown keys",
+  "row": "Signed strings registry"
+ },
+ {
+  "phrase": "check text readability over painted imagery",
+  "row": "Words over a painting"
+ },
+ {
+  "phrase": "check the scrim against the image and text",
+  "row": "Adding a scrim"
+ },
+ {
+  "phrase": "art directed image container",
+  "row": "Art-directed image container"
+ },
+ {
+  "phrase": "image prompt calibration pilot what the model did",
+  "row": "Image model paints layout words"
+ },
+ {
+  "phrase": "make a painting move cutting elements against the fill",
+  "row": "Painting that moves"
+ },
+ {
+  "phrase": "build-time figure layout solver from a spec of keys",
+  "row": "Data figure"
+ },
+ {
+  "phrase": "inspect sticky layers in their actual scroll state",
+  "row": "Sticky layer judged wrongly"
+ },
+ {
+  "phrase": "first screen check at the visible viewport minus browser UI",
+  "row": "Headline in first screen on phones"
+ },
+ {
+  "phrase": "pause stop hide WCAG 2.2.2 ambient motion",
+  "row": "Auto motion"
+ },
+ {
+  "phrase": "govern above-the-fold media competing for LCP as one class",
+  "row": "Above-the-fold media"
+ },
+ {
+  "phrase": "renderer decision tree WebGL",
+  "row": "Choosing a renderer"
+ },
+ {
+  "phrase": "when may a WebGL layer boot never during page load",
+  "row": "When may the GPU layer start"
+ },
+ {
+  "phrase": "layer stack static design aria-hidden canvas first frame truth",
+  "row": "Static design under the canvas"
+ },
+ {
+  "phrase": "slice WebGL boot so no task exceeds 50 ms perf-002",
+  "row": "Boot jank on scroll"
+ },
+ {
+  "phrase": "production CSP stopped painted scenes because data URLs were blocked",
+  "row": "Animations broken in production only"
+ },
+ {
+  "phrase": "run motion checks with production CSP headers",
+  "row": "Gates under production CSP"
+ },
+ {
+  "phrase": "headless SwiftShader force and confirm the device tier",
+  "row": "Device tier in headless"
+ },
+ {
+  "phrase": "verification churn can dominate a build cycle",
+  "row": "Verification taking hours"
+ },
+ {
+  "phrase": "gate log names the build it graded with the served tree hash",
+  "row": "Which build did a gate grade"
+ },
+ {
+  "phrase": "Lighthouse produced zero reports and the script printed all pass",
+  "row": "Lighthouse wrote nothing"
+ },
+ {
+  "phrase": "prove a new gate rule by running the old gate code on the mutant",
+  "row": "Mutant proof"
+ },
+ {
+  "phrase": "cmd piped to tail returns the pipe exit status",
+  "row": "Pipes hide failures"
+ },
+ {
+  "phrase": "pgrep -f matches its own command line",
+  "row": "Process checks"
+ },
+ {
+  "phrase": "background agents can exhaust session memory",
+  "row": "Too many agents"
+ },
+ {
+  "phrase": "shared scratchpads can compromise independent review",
+  "row": "Shared scratchpad"
+ },
+ {
+  "phrase": "ship a credible first preview for design review",
+  "row": "Fast first preview"
+ },
+ {
+  "phrase": "capture decisions evidence and refresh points during a site build",
+  "row": "Capture during the build"
+ },
+ {
+  "phrase": "audit reusable lessons across build and maintenance workflows",
+  "row": "Flag bias"
+ },
+ {
+  "phrase": "empty body memory store bug assert minimum content length",
+  "row": "Batch store from agent JSON"
+ },
+ {
+  "phrase": "package reusable lessons with search phrases",
+  "row": "Packaging for another developer"
+ },
+ {
+  "phrase": "copy and verify the brand bundle before retiring its old location",
+  "row": "Brand bundle moved"
+ },
+ {
+  "phrase": "keep project tooling separate from shared configuration",
+  "row": "Project tooling separation"
+ },
+ {
+  "phrase": "imported document pages need a fidelity check",
+  "row": "A foreign document as a page"
+ }
+]

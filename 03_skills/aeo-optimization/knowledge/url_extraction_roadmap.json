@@ -1,0 +1,659 @@
+{
+  "skill_name": "AEO Optimization",
+  "skill_version": "1.0",
+  "total_urls": 67,
+  "source_document": "AI-Era_SEO_AEO_Documentation_Guide.md",
+  "extraction_methodology": "Each source was read from its public web page; pages that could not be read are marked inaccessible",
+  "category_structure": {
+    "01_core_concepts": {
+      "name": "Core AEO/GEO Concepts and Definitions",
+      "description": "Foundational concepts, AEO vs SEO comparisons, core terminology",
+      "url_count": 25
+    },
+    "02_ai_platforms": {
+      "name": "AI Platform Optimization",
+      "description": "Google AI Overviews, ChatGPT, Perplexity, Microsoft Copilot platform-specific strategies",
+      "url_count": 11
+    },
+    "03_strategic_pillars": {
+      "name": "Strategic Pillars and Authority Building",
+      "description": "Topical authority, E-E-A-T framework, brand mentions, entity consistency",
+      "url_count": 5
+    },
+    "04_content_optimization": {
+      "name": "Content and On-Page Optimization",
+      "description": "Answer-first principle, structural elements, modular content, formatting tactics",
+      "url_count": 8
+    },
+    "05_technical_foundation": {
+      "name": "Technical Foundation and Implementation",
+      "description": "Schema markup, crawlability, JavaScript rendering, Core Web Vitals, mobile optimization",
+      "url_count": 0
+    },
+    "06_business_integration": {
+      "name": "Business Applications and Lead Generation",
+      "description": "B2B lead generation, e-commerce optimization, local business AEO, ROI measurement",
+      "url_count": 8
+    },
+    "07_tools_ecosystem": {
+      "name": "AEO Tools and Analytics Platforms",
+      "description": "Atomic AGI, Writesonic, Semrush, monitoring tools, analytics platforms",
+      "url_count": 6
+    },
+    "08_measurement_framework": {
+      "name": "Metrics, Analytics, and Performance Measurement",
+      "description": "Visibility metrics, engagement metrics, ROI calculation, dashboard frameworks",
+      "url_count": 3
+    },
+    "09_challenges_future_trends": {
+      "name": "Challenges, Solutions, and Future Trends",
+      "description": "Algorithm volatility, technical hurdles, multimodal search, AI agents, personalization",
+      "url_count": 1
+    }
+  },
+  "extraction_roadmap": [
+    {
+      "url_number": 1,
+      "url": "https://aioseo.com/what-is-answer-engine-optimization/",
+      "citation_reference": "[1]",
+      "category": "01_core_concepts",
+      "primary_focus": "AEO definition and overview",
+      "extraction_priority": "high",
+      "expected_content": "Foundational AEO definition, comparison to SEO"
+    },
+    {
+      "url_number": 2,
+      "url": "https://surferseo.com/blog/answer-engine-optimization/",
+      "citation_reference": "[2]",
+      "category": "01_core_concepts",
+      "primary_focus": "6 steps to elevate reach with AEO",
+      "extraction_priority": "high",
+      "expected_content": "Step-by-step AEO implementation guide"
+    },
+    {
+      "url_number": 3,
+      "url": "https://saastorm.io/blog/answer-engine-optimization/",
+      "citation_reference": "[3]",
+      "category": "01_core_concepts",
+      "primary_focus": "AEO guide in SEO world",
+      "extraction_priority": "high",
+      "expected_content": "AEO integration with traditional SEO"
+    },
+    {
+      "url_number": 4,
+      "url": "https://builtin.com/articles/aeo-answer-engine-optimization",
+      "citation_reference": "[4]",
+      "category": "01_core_concepts",
+      "primary_focus": "Integrating AEO with SEO strategy",
+      "extraction_priority": "high",
+      "expected_content": "Strategic integration of AEO and SEO"
+    },
+    {
+      "url_number": 5,
+      "url": "https://www.atomicagi.com/blog/best-geo-analytics-tools-2025",
+      "citation_reference": "[5]",
+      "category": "07_tools_ecosystem",
+      "primary_focus": "Top 9 GEO analytics tools 2025",
+      "extraction_priority": "high",
+      "expected_content": "Tool comparisons and evaluations"
+    },
+    {
+      "url_number": 6,
+      "url": "https://www.officeevolution.com/blog/generative-engine-optimization-geo-answer-engine-optimization-aeo-what-they-mean-for-local-businesses-using-coworking-spaces/",
+      "citation_reference": "[6]",
+      "category": "06_business_integration",
+      "primary_focus": "GEO/AEO for local businesses",
+      "extraction_priority": "medium",
+      "expected_content": "Local business AEO strategies"
+    },
+    {
+      "url_number": 7,
+      "url": "https://zapier.com/blog/generative-engine-optimization/",
+      "citation_reference": "[7]",
+      "category": "01_core_concepts",
+      "primary_focus": "GEO: How to outrank competitors in AI search",
+      "extraction_priority": "high",
+      "expected_content": "Competitive GEO strategies"
+    },
+    {
+      "url_number": 8,
+      "url": "https://www.contractorgrowthnetwork.com/answer-engine-optimization/",
+      "citation_reference": "[8]",
+      "category": "01_core_concepts",
+      "primary_focus": "AEO strategies vs traditional SEO",
+      "extraction_priority": "high",
+      "expected_content": "AEO vs SEO comparison"
+    },
+    {
+      "url_number": 9,
+      "url": "https://www.callboxinc.com/lead-generation/be-the-first-answer-lead-generation/",
+      "citation_reference": "[9]",
+      "category": "06_business_integration",
+      "primary_focus": "AEO/GEO for lead generation",
+      "extraction_priority": "high",
+      "expected_content": "Lead generation strategies with AEO"
+    },
+    {
+      "url_number": 10,
+      "url": "https://www.seo.com/ai/aeo-vs-seo/",
+      "citation_reference": "[10]",
+      "category": "01_core_concepts",
+      "primary_focus": "How answer engines change digital marketing",
+      "extraction_priority": "high",
+      "expected_content": "Digital marketing transformation with AEO"
+    },
+    {
+      "url_number": 11,
+      "url": "https://www.glorywebs.com/blog/aeo-vs-seo",
+      "citation_reference": "[11]",
+      "category": "01_core_concepts",
+      "primary_focus": "AEO vs SEO key differences 2025",
+      "extraction_priority": "high",
+      "expected_content": "Comparative analysis AEO vs SEO"
+    },
+    {
+      "url_number": 12,
+      "url": "https://www.semrush.com/blog/answer-engine-optimization/",
+      "citation_reference": "[12]",
+      "category": "01_core_concepts",
+      "primary_focus": "What is AEO and how to do it",
+      "extraction_priority": "high",
+      "expected_content": "Comprehensive AEO implementation guide from Semrush"
+    },
+    {
+      "url_number": 13,
+      "url": "https://www.tripledart.com/ai-seo/aeo-vs-seo",
+      "citation_reference": "[13]",
+      "category": "01_core_concepts",
+      "primary_focus": "Ultimate guide AEO vs SEO 2025",
+      "extraction_priority": "high",
+      "expected_content": "Complete comparison guide"
+    },
+    {
+      "url_number": 14,
+      "url": "https://searchengineland.com/chunks-passages-and-micro-answer-engine-optimization-wins-in-google-ai-mode-456850",
+      "citation_reference": "[14]",
+      "category": "02_ai_platforms",
+      "primary_focus": "Micro-AEO wins in Google AI Mode",
+      "extraction_priority": "high",
+      "expected_content": "Passage-level optimization for Google AI Mode"
+    },
+    {
+      "url_number": 15,
+      "url": "https://searchengineland.com/answer-engine-optimization-ai-models-453509",
+      "citation_reference": "[15]",
+      "category": "02_ai_platforms",
+      "primary_focus": "6 AI models to optimize for",
+      "extraction_priority": "high",
+      "expected_content": "Multi-platform AI optimization strategies"
+    },
+    {
+      "url_number": 16,
+      "url": "https://firstpagesage.com/seo-blog/chatgpt-optimization-guide/",
+      "citation_reference": "[16]",
+      "category": "02_ai_platforms",
+      "primary_focus": "ChatGPT optimization 2025 guide",
+      "extraction_priority": "high",
+      "expected_content": "ChatGPT-specific optimization tactics"
+    },
+    {
+      "url_number": 17,
+      "url": "https://www.semrush.com/blog/perplexity-ai-optimization/",
+      "citation_reference": "[17]",
+      "category": "02_ai_platforms",
+      "primary_focus": "5 ways to optimize for Perplexity AI",
+      "extraction_priority": "high",
+      "expected_content": "Perplexity-specific strategies"
+    },
+    {
+      "url_number": 18,
+      "url": "https://www.resultfirst.com/blog/ai-seo/aeo-vs-seo/",
+      "citation_reference": "[18]",
+      "category": "01_core_concepts",
+      "primary_focus": "Navigating future of search in AI age",
+      "extraction_priority": "medium",
+      "expected_content": "Future trends in AEO"
+    },
+    {
+      "url_number": 19,
+      "url": "https://simplybefound.com/the-truth-about-aeo-marketing-the-future-of-search/",
+      "citation_reference": "[19]",
+      "category": "01_core_concepts",
+      "primary_focus": "Truth about AEO marketing",
+      "extraction_priority": "medium",
+      "expected_content": "AEO marketing reality check"
+    },
+    {
+      "url_number": 20,
+      "url": "https://shyamfuture.com/aeo-unplugged-the-blueprint-for-using-aeo-in-digital-marketing/",
+      "citation_reference": "[20]",
+      "category": "01_core_concepts",
+      "primary_focus": "Blueprint for AEO in digital marketing",
+      "extraction_priority": "medium",
+      "expected_content": "Strategic AEO blueprint"
+    },
+    {
+      "url_number": 21,
+      "url": "https://searchengineland.com/google-ai-mode-actionable-tips-456897",
+      "citation_reference": "[21]",
+      "category": "02_ai_platforms",
+      "primary_focus": "11 actionable tips for Google AI Mode",
+      "extraction_priority": "high",
+      "expected_content": "Google AI Mode optimization tactics"
+    },
+    {
+      "url_number": 22,
+      "url": "https://seoprofy.com/blog/answer-engine-optimization/",
+      "citation_reference": "[22]",
+      "category": "04_content_optimization",
+      "primary_focus": "AEO implementation for business",
+      "extraction_priority": "medium",
+      "expected_content": "Business-focused AEO implementation"
+    },
+    {
+      "url_number": 23,
+      "url": "https://www.pedowitzgroup.com/how-does-aeo-directly-increase-lead-generation",
+      "citation_reference": "[23]",
+      "category": "06_business_integration",
+      "primary_focus": "AEO's direct impact on lead generation",
+      "extraction_priority": "high",
+      "expected_content": "Lead gen measurement and attribution"
+    },
+    {
+      "url_number": 24,
+      "url": "https://www.marceldigital.com/blog/what-is-answer-engine-optimization",
+      "citation_reference": "[24]",
+      "category": "03_strategic_pillars",
+      "primary_focus": "Practical guide to AEO",
+      "extraction_priority": "medium",
+      "expected_content": "Practical AEO implementation"
+    },
+    {
+      "url_number": 25,
+      "url": "https://seranking.com/blog/how-to-optimize-for-ai-overviews/",
+      "citation_reference": "[25]",
+      "category": "02_ai_platforms",
+      "primary_focus": "7 best practices for AI Overviews",
+      "extraction_priority": "high",
+      "expected_content": "Google AI Overviews optimization"
+    },
+    {
+      "url_number": 26,
+      "url": "https://forgeandsmith.com/blog/generative-engine-optimization-geo-seo-chat-gpt/",
+      "citation_reference": "[26]",
+      "category": "01_core_concepts",
+      "primary_focus": "GEO/SEO for ChatGPT",
+      "extraction_priority": "high",
+      "expected_content": "ChatGPT optimization foundations"
+    },
+    {
+      "url_number": 27,
+      "url": "https://www.finch.com/blog/google-ai-overviews-optimization-seo",
+      "citation_reference": "[27]",
+      "category": "02_ai_platforms",
+      "primary_focus": "7 strategies for AI Overview SEO success",
+      "extraction_priority": "high",
+      "expected_content": "Strategic AI Overview optimization"
+    },
+    {
+      "url_number": 28,
+      "url": "https://www.semrush.com/blog/google-ai-mode/",
+      "citation_reference": "[28]",
+      "category": "02_ai_platforms",
+      "primary_focus": "What is Google AI Mode + optimization 2025",
+      "extraction_priority": "high",
+      "expected_content": "Google AI Mode comprehensive guide"
+    },
+    {
+      "url_number": 29,
+      "url": "https://writesonic.com/blog/generative-engine-optimization-strategies",
+      "citation_reference": "[29]",
+      "category": "03_strategic_pillars",
+      "primary_focus": "Top 6 GEO strategies tried & tested",
+      "extraction_priority": "high",
+      "expected_content": "Proven GEO strategies"
+    },
+    {
+      "url_number": 30,
+      "url": "https://padron.sh/blog/new-form-of-seo-aeo-guide/",
+      "citation_reference": "[30]",
+      "category": "04_content_optimization",
+      "primary_focus": "Complete AEO implementation guide",
+      "extraction_priority": "medium",
+      "expected_content": "End-to-end AEO implementation"
+    },
+    {
+      "url_number": 31,
+      "url": "https://wgcontent.com/blog/aeo-answer-engine-optimization/",
+      "citation_reference": "[31]",
+      "category": "04_content_optimization",
+      "primary_focus": "Why AEO matters to content strategy",
+      "extraction_priority": "medium",
+      "expected_content": "Content strategy with AEO"
+    },
+    {
+      "url_number": 32,
+      "url": "https://moz.com/blog/adjust-content-strategy-for-ai-mode",
+      "citation_reference": "[32]",
+      "category": "04_content_optimization",
+      "primary_focus": "Adjust content strategy for Google AI Mode",
+      "extraction_priority": "high",
+      "expected_content": "Content strategy adaptation for AI Mode"
+    },
+    {
+      "url_number": 33,
+      "url": "https://wgcontent.com/blog/google-ai-mode-content-seo/",
+      "citation_reference": "[33]",
+      "category": "04_content_optimization",
+      "primary_focus": "Optimize content and SEO for Google AI Mode",
+      "extraction_priority": "medium",
+      "expected_content": "Content optimization tactics"
+    },
+    {
+      "url_number": 34,
+      "url": "https://www.postdigitalist.xyz/guides/answer-engine-optimization",
+      "citation_reference": "[34]",
+      "category": "04_content_optimization",
+      "primary_focus": "Get found through AI",
+      "extraction_priority": "medium",
+      "expected_content": "AI discovery optimization"
+    },
+    {
+      "url_number": 35,
+      "url": "https://www.hashmeta.ai/blog/the-ultimate-checklist-for-implementing-answer-engine-optimization-aeo-at-scale",
+      "citation_reference": "[35]",
+      "category": "04_content_optimization",
+      "primary_focus": "Ultimate checklist for AEO at scale",
+      "extraction_priority": "high",
+      "expected_content": "Scalable AEO implementation checklist"
+    },
+    {
+      "url_number": 36,
+      "url": "https://www.directom.com/chatgpt-seo/",
+      "citation_reference": "[36]",
+      "category": "02_ai_platforms",
+      "primary_focus": "How to do SEO for ChatGPT 2025",
+      "extraction_priority": "high",
+      "expected_content": "ChatGPT SEO tactics"
+    },
+    {
+      "url_number": 37,
+      "url": "https://www.rocktherankings.com/how-to-rank-in-chatgpt-search/",
+      "citation_reference": "[37]",
+      "category": "02_ai_platforms",
+      "primary_focus": "Core ranking factors for SearchGPT SEO",
+      "extraction_priority": "high",
+      "expected_content": "ChatGPT ranking factors"
+    },
+    {
+      "url_number": 38,
+      "url": "https://www.zaginteractive.com/insights/articles/december-2024/answer-engine-optimization-aeo",
+      "citation_reference": "[38]",
+      "category": "04_content_optimization",
+      "primary_focus": "AEO for digital marketing",
+      "extraction_priority": "medium",
+      "expected_content": "Digital marketing AEO integration"
+    },
+    {
+      "url_number": 39,
+      "url": "https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search",
+      "citation_reference": "[39]",
+      "category": "02_ai_platforms",
+      "primary_focus": "Official Google: AI experiences on Search",
+      "extraction_priority": "critical",
+      "expected_content": "Official Google guidance for AI search"
+    },
+    {
+      "url_number": 40,
+      "url": "https://www.aeoanalytics.com/tools",
+      "citation_reference": "[40]",
+      "category": "08_measurement_framework",
+      "primary_focus": "AEO analytics and measurement tools page",
+      "extraction_priority": "high",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 41,
+      "url": "https://www.searchenginejournal.com/answer-engine-optimization-guide/",
+      "citation_reference": "[41]",
+      "category": "01_core_concepts",
+      "primary_focus": "Search Engine Journal: AEO guide",
+      "extraction_priority": "medium",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 42,
+      "url": "https://www.conductor.com/academy/glossary/answer-engine-optimization/",
+      "citation_reference": "[42]",
+      "category": "01_core_concepts",
+      "primary_focus": "Conductor glossary: answer engine optimization",
+      "extraction_priority": "high",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 43,
+      "url": "https://www.brightedge.com/glossary/answer-engine-optimization",
+      "citation_reference": "[43]",
+      "category": "01_core_concepts",
+      "primary_focus": "BrightEdge glossary: answer engine optimization",
+      "extraction_priority": "high",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 44,
+      "url": "https://www.semrush.com/blog/answer-engine-optimization/",
+      "citation_reference": "[44]",
+      "category": "01_core_concepts",
+      "primary_focus": "Semrush: answer engine optimization guide",
+      "extraction_priority": "high",
+      "expected_content": "AEO conversion value, citation freshness, AI Overview trigger rate and an AI visibility measurement approach"
+    },
+    {
+      "url_number": 45,
+      "url": "https://www.linkedin.com/pulse/answer-engine-optimization-aeo-complete-guide-2025-aamir-kamal",
+      "citation_reference": "[45]",
+      "category": "01_core_concepts",
+      "primary_focus": "LinkedIn article: AEO guide for 2025",
+      "extraction_priority": "high",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 46,
+      "url": "https://www.wordstream.com/blog/ws/2025/01/answer-engine-optimization",
+      "citation_reference": "[46]",
+      "category": "01_core_concepts",
+      "primary_focus": "WordStream: answer engine optimization",
+      "extraction_priority": "high",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 47,
+      "url": "https://neilpatel.com/blog/answer-engine-optimization/",
+      "citation_reference": "[47]",
+      "category": "01_core_concepts",
+      "primary_focus": "Neil Patel: answer engine optimization guide",
+      "extraction_priority": "medium",
+      "expected_content": "ChatGPT ranking factors research, AEO vs SEO vs GEO, and a step-by-step implementation framework"
+    },
+    {
+      "url_number": 48,
+      "url": "https://www.sistrix.com/answer-engine-optimization/",
+      "citation_reference": "[48]",
+      "category": "01_core_concepts",
+      "primary_focus": "SISTRIX: answer engine optimization",
+      "extraction_priority": "high",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 49,
+      "url": "https://www.seoclarity.net/blog/answer-engine-optimization",
+      "citation_reference": "[49]",
+      "category": "01_core_concepts",
+      "primary_focus": "seoClarity: answer engine optimization",
+      "extraction_priority": "high",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 50,
+      "url": "https://www.ranktracker.com/blog/answer-engine-optimization/",
+      "citation_reference": "[50]",
+      "category": "01_core_concepts",
+      "primary_focus": "Ranktracker: answer engine optimization",
+      "extraction_priority": "medium",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 51,
+      "url": "https://www.searchenginewatch.com/answer-engine-optimization-guide/",
+      "citation_reference": "[51]",
+      "category": "01_core_concepts",
+      "primary_focus": "Search Engine Watch: AEO guide",
+      "extraction_priority": "medium",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 52,
+      "url": "https://www.conductor.com/blog/answer-engine-optimization-complete-guide/",
+      "citation_reference": "[52]",
+      "category": "03_strategic_pillars",
+      "primary_focus": "Conductor: complete AEO guide",
+      "extraction_priority": "high",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 53,
+      "url": "https://www.brightedge.com/blog/answer-engine-optimization",
+      "citation_reference": "[53]",
+      "category": "03_strategic_pillars",
+      "primary_focus": "BrightEdge: answer engine optimization",
+      "extraction_priority": "high",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 54,
+      "url": "https://www.searchmetrics.com/glossary/answer-engine-optimization/",
+      "citation_reference": "[54]",
+      "category": "03_strategic_pillars",
+      "primary_focus": "Searchmetrics glossary: answer engine optimization",
+      "extraction_priority": "high",
+      "expected_content": "Not available when extracted (301 Moved Permanently); kept as an inaccessible record"
+    },
+    {
+      "url_number": 55,
+      "url": "https://www.linkassistant.com/news/answer-engine-optimization.html",
+      "citation_reference": "[55]",
+      "category": "06_business_integration",
+      "primary_focus": "LinkAssistant: answer engine optimization",
+      "extraction_priority": "high",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 56,
+      "url": "https://www.business2community.com/seo/answer-engine-optimization",
+      "citation_reference": "[56]",
+      "category": "06_business_integration",
+      "primary_focus": "Business 2 Community: answer engine optimization",
+      "extraction_priority": "high",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 57,
+      "url": "https://www.searchenginepeople.com/blog/answer-engine-optimization.html",
+      "citation_reference": "[57]",
+      "category": "06_business_integration",
+      "primary_focus": "Search Engine People: answer engine optimization",
+      "extraction_priority": "medium",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 58,
+      "url": "https://www.webfx.com/blog/seo/answer-engine-optimization/",
+      "citation_reference": "[58]",
+      "category": "06_business_integration",
+      "primary_focus": "WebFX: answer engine optimization",
+      "extraction_priority": "high",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 59,
+      "url": "https://www.singlegrain.com/blog/answer-engine-optimization/",
+      "citation_reference": "[59]",
+      "category": "06_business_integration",
+      "primary_focus": "Single Grain: answer engine optimization",
+      "extraction_priority": "medium",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 60,
+      "url": "https://www.growandconvert.com/seo/answer-engine-optimization/",
+      "citation_reference": "[60]",
+      "category": "07_tools_ecosystem",
+      "primary_focus": "Grow and Convert: answer engine optimization",
+      "extraction_priority": "high",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 61,
+      "url": "https://www.siegemedia.com/strategy/answer-engine-optimization",
+      "citation_reference": "[61]",
+      "category": "07_tools_ecosystem",
+      "primary_focus": "Siege Media: answer engine optimization strategy",
+      "extraction_priority": "medium",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 62,
+      "url": "https://www.ninjaoutreach.com/answer-engine-optimization/",
+      "citation_reference": "[62]",
+      "category": "07_tools_ecosystem",
+      "primary_focus": "NinjaOutreach: answer engine optimization",
+      "extraction_priority": "medium",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 63,
+      "url": "https://www.searchenginejournal.com/answer-engine-optimization-seo/",
+      "citation_reference": "[63]",
+      "category": "07_tools_ecosystem",
+      "primary_focus": "Search Engine Journal: AEO and SEO",
+      "extraction_priority": "high",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 64,
+      "url": "https://www.searchengineland.com/answer-engine-optimization-guide",
+      "citation_reference": "[64]",
+      "category": "07_tools_ecosystem",
+      "primary_focus": "Search Engine Land: AEO guide",
+      "extraction_priority": "high",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 65,
+      "url": "https://www.marketingdive.com/news/answer-engine-optimization-chatgpt/",
+      "citation_reference": "[65]",
+      "category": "08_measurement_framework",
+      "primary_focus": "Marketing Dive: AEO and ChatGPT",
+      "extraction_priority": "medium",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 66,
+      "url": "https://www.adweek.com/performance-marketing/answer-engine-optimization/",
+      "citation_reference": "[66]",
+      "category": "08_measurement_framework",
+      "primary_focus": "Adweek: answer engine optimization",
+      "extraction_priority": "low",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    },
+    {
+      "url_number": 67,
+      "url": "https://www.forbes.com/sites/forbesagencycouncil/answer-engine-optimization/",
+      "citation_reference": "[67]",
+      "category": "09_challenges_future_trends",
+      "primary_focus": "Forbes Agency Council: answer engine optimization",
+      "extraction_priority": "medium",
+      "expected_content": "Not available when extracted (404 Not Found); kept as an inaccessible record"
+    }
+  ]
+}

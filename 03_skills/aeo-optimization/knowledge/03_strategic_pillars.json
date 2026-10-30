@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "category": "03_strategic_pillars",
+    "category_name": "Strategic Pillars for AEO Success",
+    "description": "Topical authority, E-E-A-T framework, brand mentions, entity consistency",
+    "url_count": 2,
+    "source_sections": [
+      "strategic_pillars"
+    ],
+    "sources_file": "knowledge/sources.json",
+    "per_source_detail": "The per-source detail gathered while building this skill is not redistributed; this list links to the originals."
+  },
+  "source_document_content": {
+    "strategic_pillars": {
+      "topical_authority": {
+        "definition": "The perception that a website or brand is the definitive expert on a specific subject area, established through comprehensive, interconnected content coverage",
+        "importance": "AI systems prioritize authoritative sources when selecting content for answer generation",
+        "implementation_framework": {
+          "hub_and_spoke_model": {
+            "hub_page": "Comprehensive pillar content covering broad topic overview (3,000-5,000+ words)",
+            "spoke_pages": "Detailed subtopic pages (1,500-2,500 words each) linking back to hub",
+            "internal_linking": "Robust cross-linking between hub and spokes to signal topical relationship",
+            "content_depth": "Minimum 10-15 interconnected pieces per topic cluster",
+            "source": "AI-Era_SEO_AEO_Documentation_Guide.md"
+          },
+          "comprehensive_coverage": "Address topic from every relevant angle, answering all related questions",
+          "content_freshness": "Regular updates to maintain currency and relevance",
+          "semantic_connections": "Use topic modeling and entity relationships to demonstrate subject mastery"
+        },
+        "measurement": "Track domain authority, subject-specific keyword rankings, and citation frequency in AI answers"
+      },
+      "eeat_framework": {
+        "acronym": "Experience, Expertise, Authoritativeness, Trustworthiness",
+        "origin": "Google Search Quality Rater Guidelines",
+        "aeo_importance": "AI systems evaluate E-E-A-T signals when selecting sources for authoritative answers",
+        "components": [
+          {
+            "element": "Experience",
+            "definition": "Demonstrable first-hand, real-world experience with the topic",
+            "implementation": [
+              "Include author credentials and practical experience in bylines",
+              "Share case studies, experiments, and original research",
+              "Document real-world applications and results",
+              "Use first-person narrative when appropriate"
+            ]
+          },
+          {
+            "element": "Expertise",
+            "definition": "Depth of knowledge and skill in a particular field",
+            "implementation": [
+              "Highlight author qualifications, certifications, and education",
+              "Reference professional affiliations and industry recognition",
+              "Demonstrate technical knowledge through detailed explanations",
+              "Include expert contributors and interview industry leaders"
+            ]
+          },
+          {
+            "element": "Authoritativeness",
+            "definition": "Recognition as a leading voice or source in the subject area",
+            "implementation": [
+              "Earn citations and backlinks from other authoritative sources",
+              "Build brand mentions across reputable platforms",
+              "Develop Wikipedia presence for brand and key contributors",
+              "Secure media coverage and industry awards"
+            ]
+          },
+          {
+            "element": "Trustworthiness",
+            "definition": "Accuracy, honesty, and safety of content and website",
+            "implementation": [
+              "Maintain HTTPS security across all pages",
+              "Display clear privacy policies and terms of service",
+              "Provide transparent contact information and author details",
+              "Fact-check all claims and cite authoritative sources",
+              "Correct errors promptly and transparently"
+            ]
+          }
+        ],
+        "source": "AI-Era_SEO_AEO_Documentation_Guide.md"
+      },
+      "brand_mentions_off_site_signals": {
+        "definition": "References to brand name, products, or key personnel across external websites, even without direct backlinks",
+        "aeo_importance": "AI systems use unlinked brand mentions as authority signals when compiling answers",
+        "strategic_approach": {
+          "earned_media": "Secure mentions in industry publications, news outlets, and authoritative blogs",
+          "thought_leadership": "Contribute guest posts, expert quotes, and interviews to establish subject matter expertise",
+          "social_proof": "Build mentions across social media platforms, forums, and community discussions",
+          "wikipedia_presence": "Create and maintain accurate Wikipedia entries for brand and key products/people",
+          "ugc_platforms": "Encourage authentic mentions on user-generated content sites (Reddit, Quora, review platforms)"
+        },
+        "geo_tactic": "Consistently publish content around brand-related topics and earn credible mentions across the web",
+        "source": "https://www.semrush.com/blog/generative-engine-optimization/",
+        "measurement": "Track brand mention volume, sentiment, and context using tools like Atomic AGI, Writesonic AI Visibility Tool"
+      },
+      "entity_consistency": {
+        "definition": "Uniform Name, Address, Phone (NAP) data and entity information across all online properties",
+        "importance": "Consistent entity data helps AI systems accurately identify and reference brands",
+        "implementation": [
+          "Maintain identical NAP across website, Google Business Profile, social media, directories",
+          "Use Organization and LocalBusiness schema markup with complete entity data",
+          "Create and maintain Knowledge Graph entities through structured data",
+          "Ensure consistent brand naming, product names, and terminology across all content"
+        ],
+        "source": "AI-Era_SEO_AEO_Documentation_Guide.md"
+      }
+    }
+  },
+  "sources": [
+    24,
+    29
+  ]
+}

@@ -1,0 +1,875 @@
+---
+/**
+ * <ScrollJourney journey={...} />: a scroll-driven journey section. Data: src/data/journeys/<slug>.ts (types.ts).
+ *
+ * PAINT THE STOPS, FILM THE PASSAGES. Each stop is a real <picture> through Astro's image pipeline (a wide and a phone
+ * painting, switched by aspect: a narrowed desktop tab flips live). Each passage is a short silent clip whose first
+ * frame is stop A and whose last frame is stop B, scrubbed by scroll. The controller (src/scripts/journey.ts, imported
+ * lazily on approach, no WebGL) creates the <video muted playsinline> elements itself, so without script, under
+ * reduced motion, under Save-Data, with motion paused, or with ?journey=stills, no clip is ever fetched and the stops
+ * crossfade instead.
+ *
+ * Two themes. dark: a night ground, light words with a soft glow. light: the page's own white paper: ink words on a
+ * feathered paper veil, and every painting's top and bottom fading into the page.
+ *
+ * Layout, decided by CSS before first paint (the inline script below sets html.sj-js):
+ *   - with script: a sticky full-viewport stage inside a tall track (--sj-hold screens per stop, times its own hold;
+ *     --sj-pass per passage; ?hold= and ?pass= override them live for a test), every stop stacked in the stage;
+ *   - without script, or when a stop's words cannot sit whole in the pinned screen (the fit test, data-sj-stack), the
+ *     stops stack vertically: dark, each a screen of its painting with its words on it; light, each painting with its
+ *     words beneath it on the paper.
+ * Headings are real headings in document order, so search engines, reader modes and screen readers get every word.
+ * Clips live in public/ (for example public/video/<slug>/p1-16x9-v1.mp4), never imported through the bundler, and the
+ * host must answer byte-range requests (HTTP 206) for them.
+ *
+ * Theming: every colour, font and size is a CSS custom property on .sj (and .sj--light). Override them from your own
+ * stylesheet; the list is in references/build_astro.md of the scroll-journey skill.
+ */
+import { getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import type { Journey, JourneyDoor } from '../data/journeys/types';
+
+interface Props {
+  journey: Journey;
+}
+const { journey: J } = Astro.props;
+
+// the paintings, found by name ('seed-library/s0' is src/assets/journeys/seed-library/s0-w.jpg and s0-p.jpg)
+const paintings = import.meta.glob<{ default: ImageMetadata }>('../assets/journeys/*/*.{jpg,jpeg,png,webp}', { eager: true });
+const art = (name: string): ImageMetadata => {
+  const k = Object.keys(paintings).find((p) => p.replace(/\.(jpe?g|png|webp)$/, '').endsWith(`/${name}`));
+  if (!k) throw new Error(`<ScrollJourney>: no painting ${name}.(jpg|jpeg|png|webp) in src/assets/journeys/`);
+  return paintings[k].default;
+};
+// the aspect switch, shared by the stills, the word placement and the controller (exactly square counts as portrait)
+const PORTRAIT = '(max-aspect-ratio: 1/1)';
+
+async function srcset(img: ImageMetadata, ws: number[], format: 'avif' | 'webp') {
+  const use = [...new Set([...ws.filter((w) => w < img.width), img.width])];
+  return (await Promise.all(use.map(async (w) => `${(await getImage({ src: img, width: w, format })).src} ${w}w`))).join(', ');
+}
+async function still(w: ImageMetadata, p: ImageMetadata) {
+  return {
+    w,
+    wA: await srcset(w, [960, 1376], 'avif'),
+    wW: await srcset(w, [960, 1376], 'webp'),
+    pA: await srcset(p, [480, 768], 'avif'),
+    pW: await srcset(p, [480, 768], 'webp'),
+    fb: await getImage({ src: w, width: w.width, format: 'jpg', quality: 80 }),
+  };
+}
+
+if (J.stops.length < 2) throw new Error('<ScrollJourney>: a journey needs two or more stops');
+const stops = [];
+for (const [i, s] of J.stops.entries()) {
+  stops.push({ ...s, id: `${J.idPrefix}-s${i}`, bodies: s.body === undefined ? [] : Array.isArray(s.body) ? s.body : [s.body], art: await still(art(`${s.art}-w`), art(`${s.art}-p`)) });
+}
+const last = stops.length - 1;
+const wordsId = `${J.idPrefix}-s${last}-words`;
+const doorVars = (d: JourneyDoor) =>
+  `--sj-dxw:${d.w[0]};--sj-dyw:${d.w[1]};--sj-dww:${d.w[2]};--sj-dhw:${d.w[3]};--sj-dxp:${d.p[0]};--sj-dyp:${d.p[1]};--sj-dwp:${d.p[2]};--sj-dhp:${d.p[3]}` +
+  (d.color ? `;--sj-swell-c:${d.color}` : '');
+// the track's length in screens, from the stops' own holds
+const holds = stops.slice(0, last).reduce((n, s) => n + (s.hold ?? 1), 0);
+const endh = stops[last].hold ?? 1;
+const vars = [`--sj-holds:${+holds.toFixed(4)}`, `--sj-passes:${last}`, `--sj-endh:${endh}`];
+if (J.veil) vars.push(`--sj-veil-w:${J.veil.wide}`, `--sj-veil-p:${J.veil.phone}`);
+const style = vars.join(';');
+---
+<script is:inline>document.documentElement.classList.add('sj-js');</script>
+<div class:list={['sj', J.theme === 'light' && 'sj--light', J.class]} data-scroll-journey data-sj-clips={J.clips} data-sj-portrait={PORTRAIT} data-sj-fit={J.fit || undefined} style={style}>
+  <div class="sj-sticky">
+    <a class="sj-skip sj-label" href={`#${wordsId}`}>{J.skipLabel}</a>
+    {J.pause && (
+      <button class="sj-pause sj-label" type="button" aria-pressed="false" data-sj-pause data-label-pause={J.pause.pause} data-label-play={J.pause.play}>{J.pause.pause}</button>
+    )}
+    {/* the passages' clips go here (the controller adds them); the art box matches the stills' exactly */}
+    <div class="sj-media sj-art" data-sj-media aria-hidden="true"></div>
+    {stops.map((s, i) => {
+      const H = s.level === 3 ? 'h3' : 'h2';
+      return (
+        <section class="sj-stop" id={s.id} data-stop={i} data-side={s.side} data-hold={s.hold} aria-labelledby={s.anchor ?? `${s.id}-title`}>
+          <picture class="sj-still sj-art">
+            <source media={PORTRAIT} type="image/avif" srcset={s.art.pA} sizes="100vw" />
+            <source media={PORTRAIT} type="image/webp" srcset={s.art.pW} sizes="100vw" />
+            <source type="image/avif" srcset={s.art.wA} sizes="100vw" />
+            <source type="image/webp" srcset={s.art.wW} sizes="100vw" />
+            <img src={s.art.fb.src} width={s.art.w.width} height={s.art.w.height} alt="" loading="lazy" decoding="async" fetchpriority="low" />
+          </picture>
+          <div class="sj-copy" id={i === last ? wordsId : undefined} tabindex={i === last ? -1 : undefined}>
+            <H class:list={['sj-title', s.lead && 'sj-title--lead']} id={s.anchor ?? `${s.id}-title`}>{s.title}</H>
+            {s.subhead && <p class="sj-dek">{s.subhead}</p>}
+            {s.bodies.map((p) => <p class="sj-body">{p}</p>)}
+            {s.line && <p class="sj-line">{s.line}</p>}
+            {s.more && <p class="sj-more"><a class="sj-more__link sj-label" href={s.more.href}>{s.more.label}</a></p>}
+            {s.door && (
+              <div class="sj-band">
+                {/* the door's description: an in-flow band under the words, shown on hover or focus (always on touch) */}
+                <p class="sj-ro" id={`${s.id}-ro`}>{s.door.readout}</p>
+                {J.affordance && <p class="sj-hint sj-hint--pointer">{J.affordance.pointer}</p>}
+                {J.affordance && <p class="sj-hint sj-hint--touch">{J.affordance.touch}</p>}
+              </div>
+            )}
+          </div>
+          {s.door && (
+            <div class="sj-art sj-doorbox">
+              <a class="sj-door" href={s.door.href} aria-describedby={`${s.id}-ro`} style={doorVars(s.door)}>
+                <span class="sj-door__swell" aria-hidden="true"></span>
+                <span class="sj-door__name sj-label">{s.door.label}</span>
+              </a>
+            </div>
+          )}
+        </section>
+      );
+    })}
+    <nav class="sj-rail" aria-label={J.railLabel}>
+      <ol>
+        {stops.map((s, i) => (
+          <li><a class="sj-rail__mark" href={`#${s.id}`} data-rail={i}><span class="sj-sr">{s.rail ?? s.title}</span></a></li>
+        ))}
+      </ol>
+    </nav>
+  </div>
+  <div class="sj-track" aria-hidden="true"></div>
+</div>
+{/* the fit test, at parse, before the stage is first painted: if any stop's words would run under the pinned header or
+    off the foot of the pinned screen, the journey stacks (journey.ts tests again on wake, on resize and after fonts) */}
+{J.fit && (
+  <script is:inline>{`(function(){var r=document.currentScript.previousElementSibling,s=r.querySelector('.sj-sticky');if(getComputedStyle(s).position!=='sticky')return;var t=s.getBoundingClientRect().top,h=parseFloat(getComputedStyle(r).getPropertyValue('--sj-head'))||0,c=r.querySelectorAll('.sj-copy');for(var i=0;i<c.length;i++){var b=c[i].getBoundingClientRect();if(b.top-t<h+8||b.bottom-t>s.offsetHeight-8){r.setAttribute('data-sj-stack','');return}}})()`}</script>
+)}
+
+<script>
+  // The motion pause (WCAG 2.2.2): one attribute on <html>, data-motion="paused", which the controller watches. A
+  // site-wide control can set the same attribute instead (then pass pause: false in the data). The choice is
+  // remembered per browser when storage is allowed; nothing breaks when it is not.
+  const KEY = 'sj-motion';
+  const html = document.documentElement;
+  try {
+    if (localStorage.getItem(KEY) === 'paused') html.dataset.motion = 'paused';
+  } catch {
+    /* storage blocked: start playing */
+  }
+  const paint = () => {
+    const paused = html.dataset.motion === 'paused';
+    for (const b of document.querySelectorAll<HTMLButtonElement>('[data-sj-pause]')) {
+      b.setAttribute('aria-pressed', String(paused));
+      b.textContent = (paused ? b.dataset.labelPlay : b.dataset.labelPause) || '';
+    }
+  };
+  for (const b of document.querySelectorAll<HTMLButtonElement>('[data-sj-pause]')) {
+    b.addEventListener('click', () => {
+      const paused = html.dataset.motion !== 'paused';
+      if (paused) html.dataset.motion = 'paused';
+      else delete html.dataset.motion;
+      try {
+        localStorage.setItem(KEY, paused ? 'paused' : 'playing');
+      } catch {
+        /* storage blocked: the choice lasts for this page only */
+      }
+      paint();
+    });
+  }
+  new MutationObserver(paint).observe(html, { attributes: true, attributeFilter: ['data-motion'] });
+  paint();
+
+  // The controller is fetched when a journey comes within a screen and a half.
+  for (const root of document.querySelectorAll<HTMLElement>('[data-scroll-journey]')) {
+    const go = () => import('../scripts/journey').then((m) => m.wake(root));
+    if (!('IntersectionObserver' in window)) go();
+    else {
+      const io = new IntersectionObserver(
+        (es) => {
+          if (!es.some((e) => e.isIntersecting)) return;
+          io.disconnect();
+          go();
+        },
+        { rootMargin: '150% 0px' },
+      );
+      io.observe(root);
+    }
+  }
+</script>
+
+<style is:global>
+  /* ---- the design tokens: override any of these from your own stylesheet ------------------------------------------- */
+  .sj {
+    /* the tuning constants, in screens: a stop's hold, a passage's scroll, the last stop's hold (?hold= ?pass= live) */
+    --sj-hold: 1;
+    --sj-pass: 1.2;
+    --sj-end: 1;
+    /* the paintings' aspect: wide 1376 x 768 (portrait screens: 768 x 1376, below) */
+    --sj-ar: 1.7917;
+    /* the height of YOUR pinned site header, if any: the words and the skip link keep clear of it */
+    --sj-head: 0px;
+    --sj-gutter: clamp(1rem, 4vw, 2rem);
+    --sj-target: 44px;
+    --sj-font-display: Georgia, 'Times New Roman', serif;
+    --sj-font-body: inherit;
+    --sj-tracking-label: 0.01em;
+    --sj-title-size: 1.6rem;
+    /* colours (dark theme) */
+    --sj-ground: #1b1712;
+    --sj-text: #f2ede4;
+    --sj-heading: var(--sj-text);
+    --sj-accent: #8fd3c1;
+    --sj-swell-c: var(--sj-accent);
+    /* the scrim behind small labels (skip link, door names), as a share of the ground colour */
+    --sj-label-veil: 0.7;
+    position: relative;
+    background: var(--sj-ground);
+    color: var(--sj-text);
+    font-family: var(--sj-font-body);
+  }
+  @media (max-aspect-ratio: 1/1) {
+    .sj {
+      --sj-ar: 0.5581;
+    }
+  }
+  @media (min-aspect-ratio: 1001/1000) {
+    .sj {
+      --sj-title-size: clamp(1.7rem, 2.4vw, 2.3rem);
+    }
+  }
+
+  /* ---- shared small pieces ---------------------------------------------------------------------------------------- */
+  .sj-sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  .sj-label {
+    padding: 0.1em 0.45em;
+    border-radius: 0.4em;
+    background: color-mix(in srgb, var(--sj-ground) calc(var(--sj-label-veil) * 100%), transparent);
+  }
+
+  /* ---- the base (no script): every stop a screen of its painting, stacked in reading order -------------------------- */
+  .sj-sticky {
+    position: relative;
+  }
+  .sj-stop {
+    position: relative;
+    height: max(100svh, 36rem);
+    overflow: hidden;
+    overflow: clip;
+    container-type: size;
+  }
+  .sj-media,
+  .sj-track,
+  .sj-rail,
+  .sj-pause {
+    display: none;
+  }
+  /* the art box: the painting's own aspect, covering the stage, centred; the still, the clips and the door links all
+     share it, so a link sits on its painted form at every size */
+  .sj-art {
+    position: absolute;
+    --sj-bw: max(100cqw, 100cqh * var(--sj-ar));
+    --sj-bh: max(100cqh, 100cqw / var(--sj-ar));
+    width: var(--sj-bw);
+    height: var(--sj-bh);
+    left: calc(50cqw - var(--sj-bw) / 2);
+    top: calc(50cqh - var(--sj-bh) / 2);
+  }
+  .sj-still {
+    z-index: 0;
+    display: block;
+  }
+  .sj-still img,
+  .sj-media video {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .sj-skip {
+    position: absolute;
+    z-index: 4;
+    right: var(--sj-gutter);
+    top: calc(var(--sj-head) + 0.5rem);
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--sj-target);
+    color: var(--sj-accent);
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-underline-offset: 0.25em;
+  }
+  .sj-pause {
+    position: absolute;
+    z-index: 4;
+    left: var(--sj-gutter);
+    top: calc(var(--sj-head) + 0.5rem);
+    min-height: var(--sj-target);
+    border: 1px solid color-mix(in srgb, var(--sj-accent) 60%, transparent);
+    color: var(--sj-accent);
+    font: inherit;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  /* the skip link's target (the last stop's words) takes focus programmatically: no ring on a non-interactive block */
+  .sj-copy:focus {
+    outline: none;
+  }
+  .sj-skip:focus-visible,
+  .sj-pause:focus-visible {
+    outline: 2px solid var(--sj-accent);
+    outline-offset: 3px;
+  }
+
+  /* ---- the words: on the painting's calm side (wide: left or right; portrait: the lower part) ----------------------- */
+  .sj-copy {
+    position: absolute;
+    z-index: 2;
+    left: var(--sj-gutter);
+    right: var(--sj-gutter);
+    bottom: max(1.5rem, 5cqh);
+    max-width: 34rem;
+    margin-inline: auto;
+  }
+  /* a soft local veil of the painting's own ground behind the words: no edge, no box */
+  .sj-copy::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: -3rem -2.5rem;
+    background: radial-gradient(closest-side, color-mix(in srgb, var(--sj-ground) 62%, transparent) 0%, color-mix(in srgb, var(--sj-ground) 40%, transparent) 55%, transparent 100%);
+    pointer-events: none;
+  }
+  .sj-copy > * {
+    text-shadow: 0 0 2px var(--sj-ground), 0 0 14px var(--sj-ground), 0 0 28px color-mix(in oklab, var(--sj-ground) 70%, transparent);
+  }
+  .sj-title {
+    margin: 0;
+    font-family: var(--sj-font-display);
+    font-weight: 500;
+    font-size: var(--sj-title-size);
+    line-height: 1.15;
+    color: var(--sj-heading);
+    text-wrap: balance;
+  }
+  .sj-title--lead {
+    font-size: clamp(2rem, 7vw, 2.4rem);
+  }
+  .sj-dek {
+    margin: 0.6rem 0 0;
+    font-family: var(--sj-font-display);
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-wrap: pretty;
+  }
+  .sj-body {
+    margin: 0.8rem 0 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--sj-text);
+    text-wrap: pretty;
+  }
+  .sj-line {
+    margin: 1rem 0 0;
+    font-family: var(--sj-font-display);
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: var(--sj-text);
+    text-wrap: balance;
+  }
+  @media (min-aspect-ratio: 1001/1000) {
+    .sj-copy {
+      top: 50%;
+      bottom: auto;
+      width: min(30rem, 36cqw);
+      margin: 0;
+      transform: translateY(calc(-50% + var(--sj-head) / 2));
+    }
+    .sj-stop[data-side='left'] .sj-copy {
+      left: clamp(1.5rem, 5cqw, 5rem);
+      right: auto;
+    }
+    /* clear of the stop rail on the right */
+    .sj-stop[data-side='right'] .sj-copy {
+      left: auto;
+      right: clamp(4.5rem, 7cqw, 7rem);
+    }
+    /* a centred stop: the words in the open upper part of the painting, above whatever sits low in it */
+    .sj-stop[data-side='center'] .sj-copy {
+      left: 50%;
+      right: auto;
+      top: 38%;
+      width: min(42rem, 60cqw);
+      text-align: center;
+      transform: translate(-50%, calc(-50% + var(--sj-head) / 2));
+    }
+    .sj-title--lead {
+      font-size: clamp(2.1rem, 3.3vw, 3.2rem);
+    }
+    .sj-body {
+      font-size: clamp(1rem, 1.1vw, 1.125rem);
+      line-height: 1.7;
+    }
+    .sj-line {
+      font-size: clamp(1.3rem, 1.6vw, 1.6rem);
+    }
+  }
+  .sj-stop[data-side='center'] .sj-copy {
+    text-align: center;
+  }
+
+  /* a text link under the words */
+  .sj-more {
+    margin: 1.1rem 0 0;
+  }
+  .sj-more__link {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--sj-target);
+    color: var(--sj-accent);
+    font-weight: 500;
+    text-underline-offset: 0.25em;
+  }
+  .sj-more__link:hover {
+    text-shadow: 0 0 12px color-mix(in srgb, var(--sj-accent) 70%, transparent);
+  }
+  .sj-more__link:focus-visible {
+    outline: 2px solid var(--sj-accent);
+    outline-offset: 3px;
+  }
+
+  /* ---- the door's description band (in flow, under the words; never a tooltip) ------------------------------------ */
+  .sj-band {
+    display: grid;
+    margin-top: 1.1rem;
+  }
+  .sj-band > p {
+    grid-area: 1 / 1;
+    margin: 0;
+    transition: opacity 180ms ease;
+  }
+  .sj-ro {
+    font-family: var(--sj-font-display);
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: var(--sj-text);
+    opacity: 0;
+  }
+  .sj-band > .sj-hint {
+    grid-area: 2 / 1;
+    margin-top: 0.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    color: var(--sj-accent);
+  }
+  .sj-hint--touch {
+    display: none;
+  }
+  /* hover or focus on a door previews it: its description shows (Esc clears it: data-esc, from the controller) */
+  .sj-stop:has(.sj-door:is(:hover, :focus-visible)):not([data-esc]) .sj-ro {
+    opacity: 1;
+  }
+  /* touch: there is no hover, so the description is always shown and a tap visits */
+  @media not ((hover: hover) and (pointer: fine)) {
+    .sj-ro {
+      opacity: 1;
+    }
+    .sj-hint--pointer {
+      display: none;
+    }
+    .sj-hint--touch {
+      display: block;
+    }
+  }
+
+  /* ---- portrait: the whole stop in the screen a phone actually shows. A phone browser's own bars (for example a
+     floating bottom toolbar) cover the foot of a 100svh pinned stage, and an emulator never shows them: the words are
+     lifted clear of that strip (--sj-bar, scaled with the screen's height) and set a little tighter, so title, words
+     and a door's description sit in view together. Measured at 360x640, 375x667, 390x664, 390x844 and 430x932; on
+     short screens (under 46rem) the tap hint gives way, since the name and its glow already say it. */
+  @media (max-aspect-ratio: 1/1) {
+    .sj {
+      --sj-title-size: 1.35rem;
+      --sj-bar: clamp(2.5rem, 10svh - 1rem, 5.5rem);
+    }
+    .sj-copy {
+      bottom: calc(max(0.75rem, 2.5cqh) + var(--sj-bar));
+    }
+    .sj-title--lead {
+      font-size: clamp(1.65rem, 6.2vw, 2rem);
+    }
+    .sj-dek {
+      margin-top: 0.4rem;
+      font-size: 1.05rem;
+      line-height: 1.35;
+    }
+    .sj-body {
+      margin-top: 0.5rem;
+      font-size: 0.9375rem;
+      line-height: 1.45;
+    }
+    .sj-line {
+      margin-top: 0.6rem;
+      font-size: 1.125rem;
+      line-height: 1.35;
+    }
+    .sj-more {
+      margin-top: 0.4rem;
+    }
+    .sj-band {
+      margin-top: 0.6rem;
+    }
+    .sj-ro {
+      font-size: 1.05rem;
+      line-height: 1.35;
+    }
+    .sj-band > .sj-hint {
+      margin-top: 0.3rem;
+      font-size: 0.875rem;
+    }
+  }
+  @media (max-aspect-ratio: 1/1) and (max-height: 46rem) {
+    .sj-band > .sj-hint {
+      display: none;
+    }
+  }
+
+  /* ---- a door: a real link over the painted form, with a soft glow -------------------------------------------------- */
+  .sj-doorbox {
+    z-index: 2;
+    pointer-events: none;
+  }
+  .sj-door {
+    --sj-dx: var(--sj-dxw);
+    --sj-dy: var(--sj-dyw);
+    --sj-dw: var(--sj-dww);
+    --sj-dh: var(--sj-dhw);
+    position: absolute;
+    left: calc((var(--sj-dx) - var(--sj-dw) / 2) * 100%);
+    top: calc((var(--sj-dy) - var(--sj-dh) / 2) * 100%);
+    width: max(var(--sj-target), calc(var(--sj-dw) * 100%));
+    height: max(var(--sj-target), calc(var(--sj-dh) * 100%));
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 40%;
+    color: var(--sj-text);
+    text-decoration: none;
+    pointer-events: auto;
+    -webkit-tap-highlight-color: transparent;
+  }
+  @media (max-aspect-ratio: 1/1) {
+    .sj-door {
+      --sj-dx: var(--sj-dxp);
+      --sj-dy: var(--sj-dyp);
+      --sj-dw: var(--sj-dwp);
+      --sj-dh: var(--sj-dhp);
+    }
+  }
+  .sj-door:focus-visible {
+    outline: 2px solid var(--sj-accent);
+    outline-offset: 4px;
+  }
+  .sj-door__swell {
+    position: absolute;
+    inset: -8%;
+    opacity: 0;
+    transform: scale(0.9);
+    background: radial-gradient(
+      closest-side,
+      color-mix(in srgb, var(--sj-swell-c) 62%, transparent) 0%,
+      color-mix(in srgb, var(--sj-swell-c) 34%, transparent) 38%,
+      color-mix(in srgb, var(--sj-swell-c) 12%, transparent) 70%,
+      transparent 100%
+    );
+    mix-blend-mode: screen;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    pointer-events: none;
+  }
+  .sj-door:is(:hover, :focus-visible) .sj-door__swell {
+    opacity: 0.75;
+    transform: none;
+    animation: sj-swell 1.3s ease-out;
+  }
+  .sj-stop[data-esc] .sj-door__swell {
+    opacity: 0;
+    animation: none;
+  }
+  .sj-door[data-wake] .sj-door__swell {
+    animation: sj-wake 2.2s ease-in-out;
+  }
+  @keyframes sj-swell {
+    0% {
+      opacity: 0;
+      transform: scale(0.88);
+    }
+    45% {
+      opacity: 1;
+      transform: scale(1.04);
+    }
+    100% {
+      opacity: 0.75;
+      transform: none;
+    }
+  }
+  @keyframes sj-wake {
+    0%,
+    100% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    45% {
+      opacity: 0.9;
+      transform: scale(1.03);
+    }
+  }
+  /* the door's name: the stop title's size on a lighter scrim (the painting shows through). Wide: held halfway from the
+     form's foot to the painting's foot; portrait: just below the form's foot. It stays inside the link, so it is part
+     of the link's name and hit area. */
+  .sj-door__name {
+    --sj-label-veil: 0.4;
+    position: absolute;
+    left: 50%;
+    top: calc(((var(--sj-dy) + var(--sj-dh) / 2 + 1) / 2 - (var(--sj-dy) - var(--sj-dh) / 2)) / var(--sj-dh) * 100%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: var(--sj-font-display);
+    font-weight: 500;
+    font-size: var(--sj-title-size);
+    line-height: 1.15;
+    letter-spacing: var(--sj-tracking-label);
+  }
+  @media (max-aspect-ratio: 1/1) {
+    .sj-door__name {
+      top: calc(100% + 0.4rem);
+      transform: translate(-50%, 0);
+    }
+  }
+  .sj-door:is(:hover, :focus-visible) .sj-door__name {
+    text-shadow: 0 0 12px color-mix(in srgb, var(--sj-accent) 70%, transparent);
+  }
+
+  /* ---- with script: one sticky stage, the stops stacked in it, the track supplying the scroll ---------------------- */
+  html.sj-js .sj:not([data-sj-stack]) .sj-sticky {
+    position: sticky;
+    top: 0;
+    height: 100svh;
+    overflow: hidden;
+    overflow: clip;
+    container-type: size;
+  }
+  /* the stops are NOT their own containers or stacking contexts here: the clips' layer sits between their stills and
+     their words */
+  html.sj-js .sj:not([data-sj-stack]) .sj-stop {
+    position: absolute;
+    inset: 0;
+    height: auto;
+    overflow: visible;
+    container-type: normal;
+  }
+  html.sj-js .sj:not([data-sj-stack]) .sj-media {
+    display: block;
+    z-index: 1;
+    pointer-events: none;
+  }
+  html.sj-js .sj:not([data-sj-stack]) .sj-media video {
+    opacity: 0;
+    transition: opacity 200ms ease;
+  }
+  html.sj-js .sj:not([data-sj-stack]) .sj-media video[data-on] {
+    opacity: 1;
+  }
+  html.sj-js .sj:not([data-sj-stack]) .sj-track {
+    display: block;
+    height: calc((var(--sj-hold) * var(--sj-holds, 4) + var(--sj-pass) * var(--sj-passes, 4) + var(--sj-end) * var(--sj-endh, 1)) * 100svh);
+  }
+  html.sj-js .sj:not([data-sj-stack]) .sj-pause {
+    display: inline-flex;
+    align-items: center;
+  }
+  /* before the controller wakes, the first stop is shown */
+  html.sj-js .sj:not([data-sj-stack]):not([data-sj-ready]) .sj-stop:not([data-stop='0']) > * {
+    opacity: 0;
+  }
+  html.sj-js .sj:not([data-sj-stack]) .sj-rail {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    right: 0.5rem;
+    top: calc(50% + var(--sj-head) / 2);
+    transform: translateY(-50%);
+  }
+  .sj-rail ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .sj-rail__mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--sj-target);
+    height: 2.5rem;
+  }
+  .sj-rail__mark::before {
+    content: '';
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 50%;
+    border: 1.5px solid var(--sj-accent);
+    transition: background-color 200ms ease, transform 200ms ease;
+  }
+  .sj-rail__mark[aria-current]::before {
+    background: var(--sj-accent);
+    transform: scale(1.25);
+  }
+  .sj-rail__mark:focus-visible {
+    outline: 2px solid var(--sj-accent);
+    outline-offset: -6px;
+  }
+  @media (max-aspect-ratio: 1/1) {
+    html.sj-js .sj:not([data-sj-stack]) .sj-rail {
+      top: calc(var(--sj-head) + 3.75rem);
+      transform: none;
+      right: 0;
+    }
+    .sj-rail__mark {
+      height: 2.25rem;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .sj-band > p,
+    .sj-door__swell,
+    html.sj-js .sj:not([data-sj-stack]) .sj-media video {
+      transition: none;
+    }
+    .sj-door:is(:hover, :focus-visible) .sj-door__swell,
+    .sj-door[data-wake] .sj-door__swell {
+      animation: none;
+    }
+  }
+
+  /* ==== the LIGHT theme: the page's own white paper. Ink words on a feathered paper veil (its strength set from
+     measured contrast: --sj-veil-w / -p from the data), no glow, and every painting's top and bottom fading into the
+     page, so the stage is the paper itself. No multiply blend: over pure white it changes nothing, and it would darken
+     a stills crossfade; lift the clips' own paper to white instead (color_match.py --paper-lift). */
+  .sj--light {
+    --sj-ground: #ffffff;
+    --sj-text: #1c1f24;
+    --sj-heading: #1e3a5f;
+    --sj-accent: #2f6f4e;
+    --sj-swell-c: #c9a227;
+    --sj-label-veil: 0.8;
+    --sj-veil-w: 0.8;
+    --sj-veil-p: 0.86;
+    --sj-veil: var(--sj-veil-w);
+  }
+  @media (max-aspect-ratio: 1/1) {
+    .sj--light {
+      --sj-veil: var(--sj-veil-p);
+    }
+  }
+  .sj--light .sj-dek {
+    color: var(--sj-heading);
+  }
+  .sj--light .sj-copy > * {
+    text-shadow: none;
+  }
+  .sj--light .sj-door__swell {
+    mix-blend-mode: normal;
+  }
+  .sj--light .sj-copy::before {
+    inset: -2.5rem -2rem;
+    background: radial-gradient(
+      closest-side,
+      color-mix(in srgb, var(--sj-ground) calc(var(--sj-veil) * 100%), transparent) 0%,
+      color-mix(in srgb, var(--sj-ground) calc(var(--sj-veil) * 80%), transparent) 60%,
+      transparent 100%
+    );
+  }
+  .sj--light .sj-more__link:hover,
+  .sj--light .sj-door:is(:hover, :focus-visible) .sj-door__name {
+    text-shadow: none;
+    text-decoration-thickness: 2px;
+  }
+  /* phones: the phone paintings hold their forms in the upper part, so the stage shows each from its TOP (the bare paper
+     at the foot is what the cover crop loses), and the words sit on a band of paper rising from the foot with a
+     feathered top edge (a radial veil thins at the block's top, exactly where a long stop's title sits) */
+  @media (max-aspect-ratio: 1/1) {
+    .sj--light :is(.sj-still img, .sj-media video) {
+      object-position: 50% 0%;
+    }
+    .sj--light .sj-copy::before {
+      inset: -3.5rem calc(-1 * var(--sj-gutter)) -1.5rem;
+      background: linear-gradient(
+        to bottom,
+        transparent,
+        color-mix(in srgb, var(--sj-ground) calc(var(--sj-veil) * 100%), transparent) 3.5rem,
+        color-mix(in srgb, var(--sj-ground) calc(var(--sj-veil) * 100%), transparent)
+      );
+    }
+  }
+  /* the paintings and the clips fade into the page at their top and bottom */
+  .sj--light :is(.sj-still, .sj-media) {
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
+  }
+  /* phones: washes that stop in straight edges just inside the frame read as a card on the page, so the stage also
+     feathers its sides into the paper (the top and bottom band intersected with a side band) */
+  @media (max-aspect-ratio: 1/1) {
+    .sj--light :is(.sj-still, .sj-media) {
+      -webkit-mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent), linear-gradient(to right, transparent, black 16%, black 84%, transparent);
+      -webkit-mask-composite: source-in;
+      mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent), linear-gradient(to right, transparent, black 16%, black 84%, transparent);
+      mask-composite: intersect;
+    }
+  }
+  /* wide: a little more room for longer copy */
+  @media (min-aspect-ratio: 1001/1000) {
+    .sj--light .sj-copy {
+      width: min(32rem, 40cqw);
+    }
+    .sj--light .sj-dek {
+      font-size: clamp(1.2rem, 1.35vw, 1.4rem);
+    }
+  }
+
+  /* stacked (no script, or the fit test): each painting, then its words beneath it on the paper */
+  :is(html:not(.sj-js) .sj--light, .sj--light[data-sj-stack]) .sj-stop {
+    height: auto;
+    overflow: visible;
+    container-type: inline-size;
+    padding-bottom: clamp(2.5rem, 6vw, 4.5rem);
+  }
+  :is(html:not(.sj-js) .sj--light, .sj--light[data-sj-stack]) .sj-stop .sj-still {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    height: auto;
+    aspect-ratio: var(--sj-ar);
+  }
+  :is(html:not(.sj-js) .sj--light, .sj--light[data-sj-stack]) .sj-stop .sj-copy {
+    position: static;
+    width: auto;
+    max-width: 40rem;
+    margin: 1.25rem auto 0;
+    padding-inline: var(--sj-gutter);
+    transform: none;
+    text-align: start;
+  }
+  :is(html:not(.sj-js) .sj--light, .sj--light[data-sj-stack]) .sj-stop .sj-copy::before {
+    content: none;
+  }
+  .sj[data-sj-stack] :is(.sj-media, .sj-track, .sj-rail, .sj-pause) {
+    display: none;
+  }
+</style>

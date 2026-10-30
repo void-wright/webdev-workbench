@@ -1,0 +1,22 @@
+[
+  "first site build Astro Cloudflare Workers preview checklist",
+  "is 9.8 a hard bar or a target for the ACE loop",
+  "code-inspection scoring caps 9.8 Lighthouse and axe",
+  "ACE workspaces inside the website folder",
+  "prevent wrong Cloudflare account deployments with separate Wrangler shell environments",
+  "new static site on Cloudflare prefer Workers with static assets over Pages",
+  "recipe for preview and main deployments on Cloudflare Workers",
+  "standing checks after every deploy clean clone dashboard redirects and successful responses",
+  "configure secrets before creating a preview deployment and recreate stale preview experiments",
+  "verify deployment output using a probe route marker and expected binding names",
+  "apply production settings during the main branch build and verify them before cutover",
+  "check every privacy page sentence against the code as true false unverifiable",
+  "schemas for every indexable page",
+  "public agent-readiness baseline files for a static Astro site",
+  "complete every go-live check before cutover",
+  "content checks catch subtle harms and enforce editorial style",
+  "ACE curator skill qa-031 validation evidence",
+  "renderer decision tree WebGL",
+  "verification churn can prolong a generator iteration",
+  "a command piped to tail can hide the original command's failure without pipefail"
+]

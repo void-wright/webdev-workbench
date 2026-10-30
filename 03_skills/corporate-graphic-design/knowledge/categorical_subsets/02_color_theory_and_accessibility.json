@@ -1,0 +1,46 @@
+{
+  "category_id": "02_color_theory_and_accessibility",
+  "category_name": "02 Color Theory And Accessibility",
+  "description": "RGB vs CMYK, color psychology, WCAG accessibility standards, contrast ratios",
+  "creation_date": "2025-11-10T22:34:14Z",
+  "total_sources": 20,
+  "sources": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "sources_file": "knowledge/sources.json",
+  "per_source_detail": "The per-source detail gathered while building this skill is not redistributed; this list links to the originals.",
+  "synthesis": {
+    "from": "knowledge/complete_document_transcript.json",
+    "note": "The part of the research compilation that covers this category. Bracket-free numbers after a sentence are Works Cited numbers; look them up in knowledge/sources.json.",
+    "sections": [
+      {
+        "section": "section_3_color",
+        "title": "Pillar I: Advanced Color Theory for Corporate Use",
+        "line_range": [
+          49,
+          123
+        ],
+        "text": "## **Section 3: Pillar I: Advanced Color Theory for Corporate Use**\nColor is a technical, psychological, and strategic tool. In a corporate environment, color is never subjective; it is a critical decision that impacts brand perception, readability, and accessibility. Mastery requires understanding all three facets.\n### **3.1 The Physics of Color: Screen (Light) vs. Print (Ink)**\nThe most common professional error is a misunderstanding of the two primary color models.\n* **RGB (Red, Green, Blue):** This is an **additive** color model used exclusively for digital screens.16 It is based on light. Zero light from all three (R:0, G:0, B:0) is black; 100% light from all three (R:255, G:255, B:255) is pure white.17\n* **CMYK (Cyan, Magenta, Yellow, Key/Black):** This is a **subtractive** color model used exclusively for professional printing.17 It is based on ink absorbing light. You begin with white paper, and as you add ink, you *subtract* light, making the color darker.16\nThe critical takeaway is the **\"Gamut Problem.\"** The gamut, or range of colors, that an RGB screen can produce is *vastly larger* than what CMYK inks can reproduce.16 A vibrant, glowing blue on a website (RGB) will *always* appear duller, darker, and less saturated when printed on paper (CMYK).19 A master designer knows this. For any print project, they set their design software to CMYK mode *from the beginning* and use a \"gamut warning\" tool to select only colors that can be accurately printed.19\n**Table 3.1: Color Models: Digital vs. Print**\n| Feature | RGB (Digital) | CMYK (Print) |\n| :---- | :---- | :---- |\n| **Stands For** | Red, Green, Blue 16 | Cyan, Magenta, Yellow, Key (Black) 17 |\n| **Model** | **Additive** (Light-based) 16 | **Subtractive** (Ink-based) 16 |\n| **Zero Value** | Black (No light) 17 | White (No ink) 17 |\n| **Max Value** | White (All light) 17 | Black (All ink) 17 |\n| **Use Case** | Websites, Apps, Presentations, Digital 16 | Brochures, Reports, Packaging, Print 17 |\n| **Gamut** | Wide (approx. 16.7 million colors) 16 | Narrower (approx. 16,000 colors) 16 |\n| **Pitfall** | Colors will appear dull/different when printed 19 | N/A (This is the print standard) |\n### **3.2 Building Professional Corporate Palettes**\nA professional palette is created using a combination of a harmony model and an application methodology.\n* **Harmony Models:** These are frameworks for selecting colors that work well together.\n  * **Monochromatic:** One base color (hue) with various tints, tones, and shades. Conveys a clean, sophisticated, and minimalist look.21\n  * **Analogous:** Colors that are adjacent on the color wheel. Creates a sense of harmony and unity.22\n  * **Complementary:** Colors directly opposite on the color wheel. Creates high contrast and energy. Used sparingly to draw attention.22\n  * **Triadic:** Three evenly spaced colors on the wheel. Offers balance and variety.21\n* **The 60-30-10 Rule:** This is the professional *methodology for applying* a palette. It ensures balance and guides the eye by assigning proportions.25\n  * **60% (Primary/Dominant):** The main color of the design, often the background. It creates the overall unity.25\n  * **30% (Secondary):** The supporting color, used for secondary elements like subheadings or sidebars to add depth.25\n  * **10% (Accent):** The contrast color. Used sparingly for critical elements that require action, such as calls-to-action (CTAs), buttons, and links.25\n### **3.3 The Psychology of Color in Marketing**\nColor is a primary driver of brand personality and consumer perception.27 Research indicates that up to 90% of snap judgments made about products can be based on color alone.29 In a (Western) corporate context, colors carry specific associations:\n* **Blue:** Consistently associated with trust, security, competence, and high quality. It is the dominant color for finance, tech, and healthcare.27\n* **Red:** Evokes excitement, energy, and urgency. Used to stimulate action, which is why it's the standard for \"Sale\" signs and \"Order Now\" buttons.28\n* **Black:** Associated with power, luxury, sophistication, and expense.27\n* **Green:** Conveys calm, health, nature, and growth. Often used for environmental or financial brands.6\n* **White:** Evokes minimalism, simplicity, and cleanliness.31\n### **3.4 Accessibility as a Professional Mandate (WCAG)**\nA \"polished\" corporate document is one that *all* stakeholders can read, including those with visual impairments. Adherence to the Web Content Accessibility Guidelines (WCAG) is a non-negotiable aspect of professional design.\n* **The Rule (WCAG 1.4.1):** Color cannot be the *only* visual means of conveying information, indicating an action, or distinguishing an element.32 For example, an error in a form field cannot be indicated by a red border *alone*; it must also have an icon or text label. A link that is not underlined *must* have a 3:1 contrast ratio with the surrounding text.33\n* **The Ratios (WCAG 1.4.3 Level AA):** This is the technical standard for the luminance contrast between text (foreground) and its background.32\n  * **Normal Text:** Text smaller than 18 points (or 14 points if bold) must have a minimum contrast ratio of **4.5:1**.\n  * **Large Text:** Text that is 18 points or larger (or 14 points or larger if bold) must have a minimum ratio of **3:1**.\n  * **Non-text UI Components:** Buttons, icons, and segments of a graph must have a **3:1** ratio against adjacent colors.33\n**Table 3.2: WCAG 2.1 Contrast Ratios (Level AA)**\n| Content Type | Text Size | WCAG Requirement | Rationale |\n| :---- | :---- | :---- | :---- |\n| **Normal Text** | $\\<$ 18pt (or $\\<$ 14pt bold) | **4.5:1 Minimum** 32 | This is the standard for body copy and most text. |\n| **Large Text** | $\\\\geq$ 18pt (or $\\\\geq$ 14pt bold) | **3:1 Minimum** 32 | Larger text is inherently easier to read, so the contrast can be lower. |\n| **UI / Graphics** | N/A | **3:1 Minimum** 33 | Applies to buttons, icons, and graph segments. |\n| **Logos** | N/A | **No Requirement** 33 | Brand identity is exempt from contrast rules. |\nThese three areas—palette, psychology, and accessibility—are not separate. They form a single, interconnected system. A master designer's workflow is as follows:\n1. The brand's *psychological* goal is \"trust,\" so **Blue** is chosen.27\n2. The *palette* needs a dominant color (60%) for backgrounds, so **White** is chosen for readability.25\n3. The *accessibility* mandate requires the designer to check their Blue (e.g., as a 10% accent for link text) against the White background.32\n4. If the chosen shade of Blue is too light (e.g., a 3.5:1 ratio), it *fails* the 4.5:1 test for normal text.34\n5. The designer must therefore select a *darker* shade of Blue that is *both* psychologically aligned with \"trust\" *and* technically compliant with the 4.5:1 ratio. This constraint-based process is the hallmark of a professional."
+      }
+    ]
+  }
+}

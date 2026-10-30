@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# bearer-curl: run curl with "Authorization: Bearer <one of YOUR keys>" without the key ever touching a command line.
+#
+#   bash bearer-curl <KEY_NAME> <curl arguments...>
+#
+#   KEY_NAME   the name of a line in ~/.config/webtools/keys.env, for example SANITY_API_TOKEN
+#
+# The key file is parsed, never sourced, and the value is never printed. The header reaches curl on its standard
+# input (curl -K -), so you cannot also feed curl data from standard input (-K, --config and @- are refused).
+# Exit codes: 64 usage, 65 bad token characters, 66 key file problem, otherwise curl's own exit code.
+set -euo pipefail
+WT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+. "$WT_DIR/webtools-lib.sh"
+
+usage() { sed -n '2,12p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; exit 64; }
+[ "$#" -ge 2 ] || usage
+name="$1"; shift
+for a in "$@"; do
+  case "$a" in
+    -K|-K*|--config|--config=*) wt_die 64 "bearer-curl already uses curl's -K for the header; remove $a" ;;
+    *@-) wt_die 64 "bearer-curl uses standard input for the header; put the data in a file and pass @<file> instead of @-" ;;
+  esac
+done
+wt_check_keyfile
+wt_require "$name" tok
+wt_check_token_chars "$name" "$tok"
+printf 'header = "Authorization: Bearer %s"\n' "$tok" | curl -sS -K - "$@"

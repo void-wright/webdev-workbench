@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+# cf-api: call the Cloudflare API with YOUR token, read from ~/.config/webtools/keys.env (parsed, never sourced or printed).
+#
+#   bash cf-api <METHOD> <path> [json-body]
+#
+#   METHOD     GET, POST, PUT, PATCH or DELETE
+#   path       the part after https://api.cloudflare.com/client/v4, starting with "/".
+#              {account} is replaced with CLOUDFLARE_ACCOUNT_ID and {zone} with CLOUDFLARE_ZONE_ID.
+#   json-body  optional request body (JSON text) for POST, PUT and PATCH
+#
+# Keys read: CLOUDFLARE_API_TOKEN (always), CLOUDFLARE_ACCOUNT_ID (when the path has {account}),
+#            CLOUDFLARE_ZONE_ID (when the path has {zone}).
+# The token reaches curl on its standard input (curl -K -), so it never appears in a command line or the process list.
+# Prints the JSON response. Cloudflare reports errors inside the JSON ("success": false), so read it.
+# Exit codes: 0 the request was sent, 64 usage, 65 bad token characters, 66 key file problem, other = curl's own code.
+set -euo pipefail
+WT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+. "$WT_DIR/webtools-lib.sh"
+
+usage() { sed -n '2,15p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; exit 64; }
+[ "$#" -ge 2 ] || usage
+method="$1"; path="$2"; body="${3:-}"
+case "$method" in GET|POST|PUT|PATCH|DELETE) ;; *) wt_die 64 "METHOD must be GET, POST, PUT, PATCH or DELETE (got: $method)" ;; esac
+case "$path" in /*) ;; *) wt_die 64 "path must start with / (for example /user/tokens/verify)" ;; esac
+
+wt_check_keyfile
+wt_require CLOUDFLARE_API_TOKEN tok
+wt_check_token_chars CLOUDFLARE_API_TOKEN "$tok"
+label="token only"
+case "$path" in *'{account}'*)
+  wt_require CLOUDFLARE_ACCOUNT_ID acct
+  path="${path//\{account\}/$acct}"; label="account ...$(wt_tail4 "$acct")" ;;
+esac
+case "$path" in *'{zone}'*)
+  wt_require CLOUDFLARE_ZONE_ID zone
+  path="${path//\{zone\}/$zone}" ;;
+esac
+echo "[cf-api] $method ($label)" >&2
+
+url="https://api.cloudflare.com/client/v4$path"
+if [ -n "$body" ]; then
+  printf 'header = "Authorization: Bearer %s"\n' "$tok" | curl -sS -K - -X "$method" -H "Content-Type: application/json" --data "$body" "$url"
+else
+  printf 'header = "Authorization: Bearer %s"\n' "$tok" | curl -sS -K - -X "$method" "$url"
+fi
+echo

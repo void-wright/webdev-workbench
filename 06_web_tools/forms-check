@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# forms-check: look after the form submissions your site stores in a Cloudflare D1 database.
+# This file only starts forms_check.py (same folder); run `bash forms-check --help` for the commands.
+set -euo pipefail
+WT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec python3 "$WT_DIR/forms_check.py" "$@"

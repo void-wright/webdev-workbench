@@ -1,0 +1,130 @@
+{
+  "about": "Which sources fed each planning category during the build. Numbers are entries in knowledge/sources.json. The per-source detail gathered while building this skill is not redistributed; this list links to the originals.",
+  "01_core_concepts": {
+    "sources_read": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      11,
+      12,
+      13,
+      18,
+      19,
+      20,
+      26,
+      68
+    ],
+    "sources_not_read": [
+      8,
+      10
+    ],
+    "roadmap_only_records_not_read": [
+      41,
+      42,
+      43,
+      45,
+      46,
+      48,
+      49,
+      50,
+      51
+    ],
+    "total": 25
+  },
+  "07_tools_ecosystem": {
+    "sources_read": [
+      5
+    ],
+    "sources_not_read": [],
+    "roadmap_only_records_not_read": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "total": 6
+  },
+  "06_business_integration": {
+    "sources_read": [
+      6,
+      9,
+      23
+    ],
+    "sources_not_read": [],
+    "roadmap_only_records_not_read": [
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "total": 8
+  },
+  "02_ai_platforms": {
+    "sources_read": [
+      14,
+      15,
+      16,
+      17,
+      21,
+      25,
+      27,
+      28,
+      36,
+      37,
+      39
+    ],
+    "sources_not_read": [],
+    "roadmap_only_records_not_read": [],
+    "total": 11
+  },
+  "04_content_optimization": {
+    "sources_read": [
+      22,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      38
+    ],
+    "sources_not_read": [],
+    "roadmap_only_records_not_read": [],
+    "total": 8
+  },
+  "03_strategic_pillars": {
+    "sources_read": [
+      24,
+      29
+    ],
+    "sources_not_read": [],
+    "roadmap_only_records_not_read": [
+      52,
+      53,
+      54
+    ],
+    "total": 5
+  },
+  "08_measurement_framework": {
+    "sources_read": [],
+    "sources_not_read": [],
+    "roadmap_only_records_not_read": [
+      40,
+      65,
+      66
+    ],
+    "total": 3
+  },
+  "09_challenges_future_trends": {
+    "sources_read": [],
+    "sources_not_read": [],
+    "roadmap_only_records_not_read": [
+      67
+    ],
+    "total": 1
+  }
+}

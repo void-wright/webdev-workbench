@@ -1,0 +1,250 @@
+# MANIFEST — Webdev Workbench (a Voidwright extension) (2026-10-30)
+
+Every file in this package, its size and sha256, derived at assembly time (never typed).
+
+- Memory pack: see `02_memory/PACK_MANIFEST.md` (its first lines):
+  > **Web-dev workbench pre-seed pack (a free Voidwright release)** · **Version 1.0.0** · **Entries: 1666** · common tag `webdev-pack` · generated 2026-10-29 · sha256 `0525906c89fd43a6de586eeff2c4bf6719791d5c4ad1c17a0b19716a32570af1`
+- Files: 225 (plus this MANIFEST.md); total 5,636,077 bytes
+
+| top-level | files |
+|---|---|
+| `(root files)` | 6 |
+| `02_memory` | 4 |
+| `03_skills` | 114 |
+| `04_reasoning` | 23 |
+| `05_automations` | 53 |
+| `06_web_tools` | 10 |
+| `07_nexus_tools` | 4 |
+| `08_claude_md` | 1 |
+| `09_guides` | 7 |
+| `bin` | 3 |
+
+To verify every file on your machine, run `python3 verify_manifest.py` from the package folder (prints `OK n files` or each mismatch).
+
+| path | bytes | sha256 |
+|---|---|---|
+| `00_START_HERE.md` | 6520 | `dbe626d903801a2806ece21ecb36e2376a954ff2df5f2470ad2c30cdcf80bffa` |
+| `LICENSE` | 11362 | `73c162a8c72b5ed4f6279a8608ac42a195221bdbcb8a886b6651317f2941e126` |
+| `NOTICE` | 1691 | `522b41b832ee96b2f770523799220cd2ef8b3059ff2413f46969b6b8f9916746` |
+| `README.md` | 13642 | `5238574c57947600fc9718055368fc1835d9284e108e50f5137e62025b3cec36` |
+| `SETUP_GUIDE.md` | 63180 | `01c6330c3a8d6609a859467c0750016569dfa46076204f90e13c849327a0af7c` |
+| `verify_manifest.py` | 3872 | `f4fb0b6048ae00c3356bf4ed04e5b1f09bed43d086619729b3cf7f1cecba4275` |
+| `02_memory/PACK_MANIFEST.md` | 2302 | `f07c71d6cd5fcc5a5f9ece8147b5eed528432583ac8cd1c3d76e5448bf1f539a` |
+| `02_memory/recall_battery.json` | 69664 | `db2122d1b2211d7d89bd283f5654402484307fcd6d544748375dd213c75446d9` |
+| `02_memory/run_battery.py` | 10992 | `2fa61ef8dde201057c84562e49817b5ce4bca58be26cbc4b10a27fb434bcf9ed` |
+| `02_memory/webdev_pack.json` | 1845471 | `0525906c89fd43a6de586eeff2c4bf6719791d5c4ad1c17a0b19716a32570af1` |
+| `03_skills/aeo-optimization/README.md` | 11048 | `7e8081ded989488b9a95337d5778066c988cb203be35bd6e18078c1fbef08b55` |
+| `03_skills/aeo-optimization/SKILL.md` | 11013 | `c7768970daedc9d645634c6dbc040d7b591b6b29e002bfdd5bf86e65d59a6490` |
+| `03_skills/aeo-optimization/knowledge/01_core_concepts.json` | 6136 | `a44f2c59c6d5c114df2245aa414c0a34f7e29b9c22f1bac623d925c5f02b66a9` |
+| `03_skills/aeo-optimization/knowledge/02_ai_platforms.json` | 14523 | `d4f2f8f1109fa2263e5750157ece0fdc8cb2d018140a7dbc0a693961d1bc0474` |
+| `03_skills/aeo-optimization/knowledge/03_strategic_pillars.json` | 6263 | `ac7021500010f132e2197b3efe5a5ddaa8210315a106c1a3c373b2040e3103f9` |
+| `03_skills/aeo-optimization/knowledge/04_content_optimization.json` | 9630 | `799f9918238a28fff9641a27fbd4e710f2b32a74a39709ba6ba9fc920def3800` |
+| `03_skills/aeo-optimization/knowledge/05_technical_foundation.json` | 19529 | `5c34302dd685ce27487a583e17cacb3f06e4973d8736cf77c7a438f1ac6b2217` |
+| `03_skills/aeo-optimization/knowledge/06_business_integration.json` | 11419 | `b52dd57e92b6482d65fb65d14175353e718bc2c612ab91e8410e5d89bb20f2ce` |
+| `03_skills/aeo-optimization/knowledge/07_measurement_tools.json` | 21847 | `b399de986aa7ba012119b8f0aa20fb5b498954593cbebf88f410329db2fddc85` |
+| `03_skills/aeo-optimization/knowledge/08_future_trends.json` | 18539 | `50ff52bcf6cc19f2b957bef826822c0161f4ee0a988bf121cb447d0d6a8f17ee` |
+| `03_skills/aeo-optimization/knowledge/category_analysis.json` | 2074 | `b0fe67e85be18f479d683c61957e6db3cc30e494ace9c935bfd3d673eec3a13e` |
+| `03_skills/aeo-optimization/knowledge/complete_document_transcript.json` | 191343 | `331d617024a33fe8f8143e3c4e1e8e3e74b534984e24d0487effe725dbc70c78` |
+| `03_skills/aeo-optimization/knowledge/complete_knowledge_base.json` | 221666 | `b1dbba6cdc0fd117d410db012b709517e36631ec1b268976f1cc618d6b779aa6` |
+| `03_skills/aeo-optimization/knowledge/sources.json` | 35917 | `cfc752fbb4f0e35ee0a6db15cc41691f2036b9da303570a5ec24d2b0911cde20` |
+| `03_skills/aeo-optimization/knowledge/url_extraction_roadmap.json` | 27471 | `8f80a79d73de195908889fc13133e56cc9c8fd4b828c7b89e7491733de03a188` |
+| `03_skills/aeo-optimization/source_documents/AEO_Master_Knowledge_Base.json` | 107099 | `4148a76a2cff454a328bb02d9cbf19dbf723754d6d9938d2d3ebae78c5f8797d` |
+| `03_skills/aeo-optimization/source_documents/AEO_Project_Quality_Assurance_Report.md` | 14084 | `ca7d5aac078c2e5401a182716e6228624323751f6dcc1024076330fa087928c7` |
+| `03_skills/aeo-optimization/source_documents/AI-Era_SEO_AEO_Documentation_Guide.md` | 68816 | `6a5b06ee099530c693b166fc91300d835b8a8b15acc227e303d38d6af2cc53e0` |
+| `03_skills/aeo-optimization/source_documents/Google_Ads_Optimization_in_AEO_Era.md` | 71712 | `85c5be30766bd506eb131967f89b6f0620cb734239c57f5e68e01fb5ced2f763` |
+| `03_skills/agent-readiness-frontier/SKILL.md` | 4609 | `f833de27b0ea3660f80faa2d7c6550fb93ddf4cdde0fd231487e6d26ea8858c0` |
+| `03_skills/astro-website-page-creation/SKILL.md` | 9834 | `307e2f23dcd9d353fb21103c04d61a20ef3abaf1d265ebc62182930945db1034` |
+| `03_skills/corporate-graphic-design/SKILL.md` | 8061 | `0f8b5cfa48c39bf87ff49adbc35350a84d9dffd7486cb6283a3fc4847ab084e9` |
+| `03_skills/corporate-graphic-design/knowledge/README.md` | 13788 | `67ed32be911520cee2f82908bf31004ad5272376de98a22a945cbb3b751348c2` |
+| `03_skills/corporate-graphic-design/knowledge/citations_database.json` | 68988 | `003f211903d1902f2a8774dca6644564904e0f1350e365312822e22911affd90` |
+| `03_skills/corporate-graphic-design/knowledge/complete_document_transcript.json` | 74341 | `518fd46eeee97156e0bb5c283760812c403d9beb59e317a537d960b85dbb0bde` |
+| `03_skills/corporate-graphic-design/knowledge/cross_reference_indexes.json` | 93478 | `d076b6967dc607dcb7223675fddc05f0f7b9554d7bfa02807a22a57a7b59d308` |
+| `03_skills/corporate-graphic-design/knowledge/sources.json` | 40631 | `2bb31477b61971611ca7e44b2b7c9f84b6a72fe498135cf268515990000e947e` |
+| `03_skills/corporate-graphic-design/knowledge/url_extraction_roadmap.json` | 15110 | `fa6f7a09d80108f74ada463ee6616a3a8d686dfdcf88d49108cec46815f0f640` |
+| `03_skills/corporate-graphic-design/knowledge/categorical_subsets/01_foundational_design_principles.json` | 9279 | `393c0805aa755cc433844372c2afc40352bdc533fbac40679062202671acfa50` |
+| `03_skills/corporate-graphic-design/knowledge/categorical_subsets/02_color_theory_and_accessibility.json` | 8096 | `4a2a58014671822749f5521c5b84a6dcfb1ef05309c3163fee2c3ec1dc1f9b0b` |
+| `03_skills/corporate-graphic-design/knowledge/categorical_subsets/03_corporate_typography.json` | 6503 | `3e77a0a57eb7c06c57b6482445e9ce1b68975942567247a18811c41014e781a3` |
+| `03_skills/corporate-graphic-design/knowledge/categorical_subsets/04_layout_and_grid_systems.json` | 5044 | `d75293ad70a13670f31b34789cd0aea910c6a1df47b483d62aaac1151da2a6de` |
+| `03_skills/corporate-graphic-design/knowledge/categorical_subsets/05_brand_identity_and_consistency.json` | 4335 | `885181cb175fd3958e1990a1a1cc50f18e435b3216c2a8c988a424519baa71f0` |
+| `03_skills/corporate-graphic-design/knowledge/categorical_subsets/06_psychology_of_persuasion.json` | 7054 | `7c96e217cb9d4cf9bd4dec9d742d60e12d48085a23069170ca1dea81674a415a` |
+| `03_skills/corporate-graphic-design/knowledge/categorical_subsets/07_production_and_file_formats.json` | 6112 | `c8fedaefe6a61b9d3cb1a080b58d09bcfd156de2ebf2d76df5b00ec1d27aa2ce` |
+| `03_skills/design-architect-thinking/SKILL.md` | 23032 | `b34966e0c2555306dc31f5f0050338dfbccbba8b3042dc9204d1528efff95237` |
+| `03_skills/prototype-website-generation/SKILL.md` | 14722 | `e6e446925af968c9b9b5cd4ce00c581ad5ecdeb2dba9744b365fbe4700c726da` |
+| `03_skills/resource-hub-resource-page-builder/SKILL.md` | 40844 | `04c30dd5bbc6b0f85f558035354391b493c3e4bfc22455cf9bea82122bdd7761` |
+| `03_skills/resource-hub-resource-page-builder/content-type-patterns.html` | 71924 | `e6cd3c19db217d869c461d2554765e9158f94429d7eddd350192b8e0194d2bd4` |
+| `03_skills/resource-hub-thinking/SKILL.md` | 12593 | `1443c74ac2cce0ef35af27737f086784adcbbeed34e7cf32ad90e0261d54194c` |
+| `03_skills/resource-slug-design-canonical/SKILL.md` | 10851 | `df7f94c0791e6f3483f887db6432bc77bde44c468cca0f2c863b2f3704b09b83` |
+| `03_skills/scroll-journey/LICENSE` | 1066 | `5da3c0d8e8e95dc7ae32685dee8c6dc969d0a80399c1964a1eb7b45de6a52f87` |
+| `03_skills/scroll-journey/SKILL.md` | 11821 | `90bb929d08152f14ee045a822b3ee1fbaad580444a07262b3e3a32cdd5631b4b` |
+| `03_skills/scroll-journey/VENDOR_NOTE.md` | 3640 | `6ded75db8b7c5c72e6b9dfdda18471fefd0187610cb92a3a367e0ac3d7fb0ea4` |
+| `03_skills/scroll-journey/references/build_astro.md` | 10807 | `7aa8c7226cdc39caa4c591d5da53f262263513ed148b9d085f6ce1ab823025bc` |
+| `03_skills/scroll-journey/references/mobile.md` | 6081 | `52f20d8bd97e1f9bfd20803c31459cdcfe7f61184a64ac8f93629334231c6a6f` |
+| `03_skills/scroll-journey/references/omni_passages.md` | 20061 | `b33037eb47566e81f7354877a0c157fd59ca32220872e7abb51a17b8c779e7f9` |
+| `03_skills/scroll-journey/references/pipeline.md` | 15061 | `2e756fcbc038f5092570570f6cb3d37b5742dc1a89f7ac410905ace76b1cf30b` |
+| `03_skills/scroll-journey/references/qa_checklist.md` | 7639 | `4f3989176d4d97348b0c799f0ba9a92f213f713ed34e6fd1448792d4290e0e6a` |
+| `03_skills/scroll-journey/references/stills.md` | 6834 | `6b5e688398088e9409d6b2b8ac4f6042b2bf2e2aac327cac569f1405804deed4` |
+| `03_skills/scroll-journey/references/white_ground.md` | 5537 | `5e5c260cc5cfbcf8d213ade7c80ae39ead8edda59d2b71438b944ba4843ac5df` |
+| `03_skills/scroll-journey/scripts/_vidlib.py` | 13965 | `bdfefc11bcbd5304bb38a4d976821032e757577f77c09623b920153d0313d289` |
+| `03_skills/scroll-journey/scripts/blend_detect.py` | 5510 | `5a9029e7260d33684c3d27d2c2967cb8ebffc7e365bc669e0af2918480d7646f` |
+| `03_skills/scroll-journey/scripts/boundary_frames.py` | 4158 | `d90e2449fa011cced653ab355ce905ecf65fd93c955f14cbe0cb83c97ec38ae6` |
+| `03_skills/scroll-journey/scripts/color_match.py` | 8291 | `b90d4aabfb37b79f7c45fde47be4d1c53b4ea10cd7e3ca65c42848f175e0d292` |
+| `03_skills/scroll-journey/scripts/contact_sheet.py` | 6362 | `a0a20450a6ddf414ecefa92740cbb16610adcf0141401ec466232bad12302a3c` |
+| `03_skills/scroll-journey/scripts/continuity_audit.py` | 6622 | `c0b3b365b02ded95ee51483dc8b1b11fde75477fe1d6b6bc380f3781b3db0b8b` |
+| `03_skills/scroll-journey/scripts/freeze_detect.py` | 4576 | `49ec5475741292a1d8815afe84223f8993523b33d485e3723ce4b5d1b13df31c` |
+| `03_skills/scroll-journey/scripts/journey_battery.mjs` | 7333 | `88a967e1429675649d1eebfe48e0d4056fc930c292580d65a8a533a2627e726c` |
+| `03_skills/scroll-journey/scripts/loop_seal.py` | 7746 | `9c78f1936964a80ab9dbe6e932fce336e9277c872be50989dcdba50473eae4f6` |
+| `03_skills/scroll-journey/scripts/placeholder_stills.py` | 5221 | `f1d0ce7e2486bfff5bfcd7ff34b8e369cf0a935a63d6235bbc891a211cef66e2` |
+| `03_skills/scroll-journey/scripts/route_sheet.py` | 7930 | `08707d8f59dd274ea8211d4f0ddfa62fa5b49fe0b3f33918ebc6dcef90d35416` |
+| `03_skills/scroll-journey/scripts/seam_check.py` | 9307 | `1c6acd19a94f3230851b07c7adc27e1eae5f861fba02116134c052fc67ba5048` |
+| `03_skills/scroll-journey/scripts/seam_repair.py` | 7833 | `7d867d98e42d892c8bf1bde6f0687632174d22608a9d82a60b889d1f77a365a9` |
+| `03_skills/scroll-journey/scripts/stop_check.py` | 7769 | `b3e78b669e2b3ea88f4d32c11580f9a3ba54eb686f05d3ccebbe378239b698f8` |
+| `03_skills/scroll-journey/scripts/verify_web_media.py` | 6612 | `57def4dd8e2e0c2acf2e017e4cba296a1c4e22102146cf94f9be384f758e970f` |
+| `03_skills/scroll-journey/scripts/web_normalize.py` | 10174 | `cf9fc7a5aaec0feba8e5cab77ac2fc76dafef8ee96537a511e8bf327ac1e89eb` |
+| `03_skills/scroll-journey/template/src/components/ScrollJourney.astro` | 31049 | `7ee62e31d587ef5046a6adbf31f04188531c6975dae1410201fd5f5058f7cdce` |
+| `03_skills/scroll-journey/template/src/data/journeys/night-sky.ts` | 2270 | `6fa868d228c1088903b67d883cd077a647b54b2bdf3540744ec61e693cfbc50c` |
+| `03_skills/scroll-journey/template/src/data/journeys/seed-library.ts` | 2093 | `eefffd3b5d9596070c7af6e7b9a432072daeee679d4fcd2c4d4c670c8bd31580` |
+| `03_skills/scroll-journey/template/src/data/journeys/types.ts` | 3353 | `874bf21fd6b4bdd7314bf1c1b5c8a9dd019b8449352b83919b3705f5bbc6adfe` |
+| `03_skills/scroll-journey/template/src/pages/night-sky.astro` | 860 | `07e12fe46e40185fd3a68be730018f45b1b4006602e4752865c29d3b938f854a` |
+| `03_skills/scroll-journey/template/src/pages/seed-library.astro` | 882 | `11e071e33c6992eb4672dee37ccaa51dfccce06607b5d773c4036891c3937c6b` |
+| `03_skills/scroll-journey/template/src/scripts/journey.ts` | 19660 | `35ed8251dd15e5a06a359a5b76bceb0d6f001c3f60a421c5260eec04ecf81213` |
+| `03_skills/web-app-building/SKILL.md` | 8327 | `636a938e24e77e60f0c99f643b286a89e7c82b6309977af2c40974dfd85641de` |
+| `03_skills/web-app-building/knowledge/ace-loop-patterns.md` | 6903 | `9a0393f195ded3867f7c78cc00440c9de6f51a6c776778db2452932bd64bddd0` |
+| `03_skills/web-app-building/knowledge/api-routes-and-server.md` | 8547 | `5f9aacca9d4129a8be7473cc6ace50592d5fe2c97ed68f8c4299547113798707` |
+| `03_skills/web-app-building/knowledge/auth-and-security.md` | 9272 | `39a063dd90d6d09db8d24b257f88f26a1c2ea39585d5d859d2796bff8adebe5e` |
+| `03_skills/web-app-building/knowledge/build-and-deploy.md` | 5906 | `61a200b2f69581e71df36658de29213233429886dce2cdc8f533f5ce019dada6` |
+| `03_skills/web-app-building/knowledge/database-and-schema.md` | 5465 | `0b43c354e390f925b560a02724f8e726ea4790a86fac96771415ea9f7aded92f` |
+| `03_skills/web-app-building/knowledge/deployment-troubleshooting.md` | 7888 | `51226b7ea1f4cd60b72a621153e4d88f69333cc4b297fa7a0d8150a82f9f0bac` |
+| `03_skills/web-app-building/knowledge/electron-to-web.md` | 9138 | `01a2270b04cf2947f517e9338d8243dc2d66b97591e59ff62f32580a6ced5a7f` |
+| `03_skills/web-app-building/knowledge/security-hardening.md` | 6937 | `c6db54ab36f8135cdc439ea0afffba1517cae9bb9cccc24d61ee7bd65b2ba5d1` |
+| `03_skills/web-app-building/knowledge/state-management.md` | 6538 | `464a970f548dd5ba9b6c6b791613d5e520e1e8afa598d62ee3f55d6e811f8343` |
+| `03_skills/web-app-building/knowledge/ui-components.md` | 6317 | `f287a15584c88a4c4ed9db42c91c0d9e4349bb68fecfb5ea4dc9fe4ea37fca11` |
+| `03_skills/webgl-constellations/SKILL.md` | 5845 | `aee02d89df24de873247a95c37cad525f7f73dac42721a918fd61cd67fe12d94` |
+| `03_skills/webgl-constellations/references/06-constellations.md` | 8875 | `7bb020e70fe1a4676e50aac2db442e487d6e2888e614efbe283e4e2ffef18efd` |
+| `03_skills/webgl-constellations/references/14-perception-and-living-constellations.md` | 4495 | `8c0336f110051cea75b6d07640c9d6595c7d1bc1dafe6b4e6d1be63d8c095168` |
+| `03_skills/webgl-cosmic-art-direction/SKILL.md` | 10004 | `42b77cf0c0a54c67bcc69976447bc660e13ab17d73368f1085844987627adfa9` |
+| `03_skills/webgl-cosmic-art-direction/references/07-motifs.md` | 10259 | `053e444d7de2477a3982b14fbad9d2ffaee930aa17145615eb3e60191827ff57` |
+| `03_skills/webgl-cosmic-art-direction/references/PLATE_STYLE_SPEC.md` | 6318 | `1b8895aa876b841d25cecd4c60313c24b60d7c5265608278c7765d7fd3698dd8` |
+| `03_skills/webgl-cosmic-art-direction/scripts/calm_plate.py` | 2458 | `04cdb7ce10a0a24de1ae911b074be9ab0df02d4337a8ba67fc8e5820674720d8` |
+| `03_skills/webgl-cosmic-art-direction/scripts/cloud-sprites-from-plate.mjs` | 5934 | `4c17c96572f74cb275aea8ffec523ec66f3b28dad046c1d7f9b4795b45289cf2` |
+| `03_skills/webgl-cosmic-art-direction/scripts/figure_star_probe.py` | 1125 | `1fe5fe05db050bcbcf128168fce6eeca8abf6882b8757158b79e2094ef4b921b` |
+| `03_skills/webgl-cosmic-art-direction/scripts/plate_style_probe.py` | 3806 | `687cb588643069568153796e3e1adec99b5afe5a4058996a25079fe72fafb105` |
+| `03_skills/webgl-craft/SKILL.md` | 7896 | `4c268add7c4143b5e9bdbd5928e3536427133b00798574c690a9f419d4f8e260` |
+| `03_skills/webgl-craft/references/00-how-to-read.md` | 3524 | `5e0d743da64f69f45c52a6c141ae5ccb2ff2fb9d62439229658d0f7d3bd28826` |
+| `03_skills/webgl-craft/references/09-original-single-skill-spec.md` | 14710 | `f32b1ac40fabbfb92019ed497a677bd382d8f0ea3da53918da4780df7ee2f1b4` |
+| `03_skills/webgl-craft/references/10-licence-ledger.md` | 3746 | `6936433f81fdb412cc25c354249d676aab1d08df455fe7434f45abb4745ddc84` |
+| `03_skills/webgl-craft/references/11-mistakes.md` | 4249 | `f6c86a7d4b008000f11d6f5481ce7aae433e762ca4540b960833d5b8c3684b8b` |
+| `03_skills/webgl-craft/references/12-open-conflicts.md` | 2491 | `e09aba59c606773b6120a68b80509951a7418b50741197a92ed29d8757b4c49c` |
+| `03_skills/webgl-handoff-and-porting/SKILL.md` | 9042 | `0f0c0efad8074c107b7a86819f4c0b40564077524b5caeaf5c08863c523ca441` |
+| `03_skills/webgl-hardening-and-testing/SKILL.md` | 7075 | `a1a87a799b79b7646d33b7db2be97bb514eeb4e0682e71676c2b909ad0f0b596` |
+| `03_skills/webgl-hardening-and-testing/references/03-hardened-recipe.md` | 10919 | `40075fe00ea4e1b40c8290306f156c1df7a0e9cebbbbf3088c196354810be116` |
+| `03_skills/webgl-hardening-and-testing/references/08-testing-and-measurement.md` | 8572 | `717385a9d0417a97af7784c584121c3f299acdac7b0e61152df9e12e9114ed87` |
+| `03_skills/webgl-hardening-and-testing/references/13-field-lessons.md` | 8132 | `2aa837553e764aa54729a833f0e55cc98b3aa84785ed9a3ea7ff9bc3ae55aa1e` |
+| `03_skills/webgl-interaction/SKILL.md` | 6129 | `9666a0582294908c8289f7f3e4caaf54d7fb4b7d9780ce727a9501540277d7f1` |
+| `03_skills/webgl-interaction/references/04-interaction-recipes.md` | 12486 | `f6d138b1206e4e98d3f80adbc179bf86d2b0a2a6379f2cb1471615755f1ae85d` |
+| `03_skills/webgl-light-and-color/SKILL.md` | 4646 | `1952b04236b4708cb26911bd9b3a9ad7c73bb7958d9c4b998690f42bf782a3e1` |
+| `03_skills/webgl-light-and-color/references/05-glow-and-light.md` | 5487 | `d5671d32c6cf6b50395e0300fbaf8f1f351ddcfe05c69a35ea1199bdbd45f727` |
+| `03_skills/webgl-renderer-and-budget/SKILL.md` | 6835 | `f4bba134e5287b87e9f9ddeb8cf143f52b04edb874c6aa657d55c05d7923f410` |
+| `03_skills/webgl-renderer-and-budget/references/01-renderer-decision.md` | 9460 | `3eafe08300c607b91d6a6bcbe0f83b0f9c302fd1f840974dbb2da7b450e899ff` |
+| `03_skills/webgl-renderer-and-budget/references/02-performance-budget.md` | 7238 | `f6395064d10a40d973bd9369003dc9e92a9eba390dc7f0b64c0e2f58e4c2c060` |
+| `03_skills/website-maintenance-thinking/SKILL.md` | 10916 | `be74ba09e4e2f82e761b6fad51913bbc27fdc732e861c83a5eebdab42cbc8ef5` |
+| `04_reasoning/commands/inner-council.md` | 2671 | `c85aaadfb616fa68d264020790f4e04c69405527d45efc091fdfb9ac5eb09daa` |
+| `04_reasoning/council-dessa/SKILL.md` | 2318 | `70c95f594a5068ce63a5cf2deb1e8f84f660deced3972d4433797520939070d8` |
+| `04_reasoning/council-dessa/operations.md` | 4840 | `c319485487ec368ffd334a7feb49e87d92bbc155aa403791396270734417cc2d` |
+| `04_reasoning/council-dessa/persona-foundation.md` | 6260 | `e3613173a094f9e42206d112dd31de20e9b5549b04e75b28375f8a7b678e2d05` |
+| `04_reasoning/council-dessa/recall-map.md` | 2446 | `34c8094ff61778b03b9f5205e36096364461ec4b88410563bcceb6dcf8c1a7d5` |
+| `04_reasoning/council-dessa/voice.md` | 5069 | `6f0a1fb8ef66ad1a34e697a35a445dbdcda4533b82f56d80b18fc8a074949f7b` |
+| `04_reasoning/council-kael-em/SKILL.md` | 2384 | `14334c904ad76f5e670df0a5d584ef75dbe0beb06de0cec7434082f285b1ec68` |
+| `04_reasoning/council-kael-em/operations.md` | 4664 | `d5d21f5d369ca680b83674b972dd95d9108e5ba1913827160f74cd8395007018` |
+| `04_reasoning/council-kael-em/persona-foundation.md` | 6518 | `7f4f22aec4bbf8294fe4809abd4cf470599e8a499b168d26a7c3e0b179da4a2d` |
+| `04_reasoning/council-kael-em/recall-map.md` | 2275 | `001d166f86cc6b53c9a72a843959b8283275dd96f88e86b59e0d742e082ee501` |
+| `04_reasoning/council-kael-em/voice.md` | 5722 | `bee94f6f178800a6a9c495831c30a722a7b07481985522b088d72af6f3e9db57` |
+| `04_reasoning/council-orin/SKILL.md` | 2160 | `12f36e632550ce8f4bfdc4e5ce3b7f897906b6ac0eeb4d36faa199ad83b2a9e0` |
+| `04_reasoning/council-orin/operations.md` | 3694 | `733694945f93ee787a71783347712fe10bfb0d44be2ac62c150282dd13e90cc6` |
+| `04_reasoning/council-orin/persona-foundation.md` | 5012 | `af372fa1dfbbe523b46c287f93af03335d7309ec67119762980d56346ec0970c` |
+| `04_reasoning/council-orin/recall-map.md` | 2597 | `9544f0dea35a47cc9221f42592ae1f1de116487b444ad5d160a011cd5c065f0d` |
+| `04_reasoning/council-orin/voice.md` | 3705 | `9005725b0b8ef1d6f505d20da24e15a3ea555ca0557650d938e195a8a5eed91b` |
+| `04_reasoning/council-vael/SKILL.md` | 2174 | `cde195329ff3e2b0796dffba3102837e0b237be73d1722d6fdf648f62c7a9af9` |
+| `04_reasoning/council-vael/operations.md` | 4308 | `62e9aef99f2c0c374c672012d2afe092c6ba99894a6be1af91023ff01022f42d` |
+| `04_reasoning/council-vael/persona-foundation.md` | 6051 | `9c42931d29eb4af8716b1b0125cf2945571c3b05d290d9f74f2392a78496a543` |
+| `04_reasoning/council-vael/recall-map.md` | 2167 | `27e526973b90f07b16aa8e908668c9b888f73c5d0fbc788a962d005a4d7ab162` |
+| `04_reasoning/council-vael/voice.md` | 4395 | `94f51113a3ce42a7cc5cfb813c0c89cb5590e69674bd385fadba36972492997c` |
+| `04_reasoning/fable-planning-cognition/SKILL.md` | 27065 | `292b2dd685feca47e9809f143716baf1ce267f1dd657afdbdbf602d463dc6feb` |
+| `04_reasoning/fable-planning-cognition/delta-memory-matrix.md` | 12972 | `02db65644541f8fcb4216710c0ba9ce3278a2a44e6df89437dce0cafc4e3b699` |
+| `05_automations/agents/design-curator.md` | 18100 | `0868dea3dc5a0b8e9fa13191103005a46dc8316936e22f0eb9e606b568a43d51` |
+| `05_automations/agents/design-generator.md` | 13125 | `7f72b8d5975ef2d2a27ba40483aab202991febbc4cdaa54ac646044b48378b2c` |
+| `05_automations/agents/design-reflector.md` | 20761 | `b0fb9990a66fe270df74cc6316e88004b311017b906ce86c7681b8712f86ceb3` |
+| `05_automations/client-site-first-build/EDITION_NOTES.md` | 7493 | `503da25d8a368052968d4e4a82b457a3fc7bddd956473ba041795846df0017cf` |
+| `05_automations/client-site-first-build/comprehensive_guide.md` | 103795 | `373ec206bc47d3940d9060d2faff914368dfb665d5de257b4b3b30c054917845` |
+| `05_automations/client-site-first-build/personality.json` | 22743 | `2e67159a8dd804872eb0237fc3d8c6e563c72ffbdb8442a0e55d93f27bd2f941` |
+| `05_automations/client-site-first-build/recall_phrases.json` | 17643 | `fd9cb8252c56e07e148343314692b9b9e30456ad6d6f615337ca6a7335eb69a1` |
+| `05_automations/client-site-first-build/setup_instructions.md` | 6933 | `66070d589f44863a1a0ad9bf0426362d58155be96a39ba7c0a6c505e2862abf0` |
+| `05_automations/client-site-first-build/skillbook.md` | 268782 | `c3bb2b2f1b9191a9cac48363d99784367714258f6c22146c96af01bcda4b36f4` |
+| `05_automations/client-site-first-build/startup_queries.json` | 1365 | `63554a9e39618ea33d66cd8eb1e3523cd06d7d043b314ef3468d2fa764aa6a8c` |
+| `05_automations/client-site-first-build/_gate/GATE.md` | 5051 | `95360856ec66caa98df42b6cde1c91e5050a4f1ab967e1b8598f6fa6f5b89cc0` |
+| `05_automations/client-site-first-build/runbook_appendix/ace_loop_astro_build.md` | 14518 | `3fe6bb09a19b1a0066ed26816a59501447514b959194cb92b663bd4883e36cbe` |
+| `05_automations/client-site-first-build/runbook_appendix/asset_placement.md` | 2830 | `aacdc90bf621d954200d878f46c41cc8c3e80a5f2bd1eeda0a08b314162c8397` |
+| `05_automations/client-site-first-build/runbook_appendix/backlink_discovery.md` | 19895 | `39d2f565f0111ecb3b336aaff29616fd201fd7e4f3cace60009d9c20bbdf5af1` |
+| `05_automations/client-site-first-build/runbook_appendix/build_mode_decision.md` | 10367 | `49a2050e2386ef7e36bba9e31b7f519838ced6c4ad632c9ae2bdc207b4c56975` |
+| `05_automations/client-site-first-build/runbook_appendix/cloudflare_workers_github_path.md` | 37539 | `9a98a1f34e45bc8911217e01549e304f6c2221b6523d78570ec87344170e18a0` |
+| `05_automations/client-site-first-build/runbook_appendix/cross_automation_handoff.md` | 3693 | `29109d013c73524ba776efbf447cf68d64d73cce0f8454b95778dfa6e372d911` |
+| `05_automations/client-site-first-build/runbook_appendix/dns_cutover_pause.md` | 2270 | `588c8950dc69b21f1d30539cb3a159f3984ba4e32a24a4f11b84e64858c7b757` |
+| `05_automations/client-site-first-build/runbook_appendix/gsc_export_pause.md` | 7060 | `de65a73f58de39ea104a12f74b6f896ddd83efded7a30180ea04038b0ec5adbd` |
+| `05_automations/client-site-first-build/runbook_appendix/in_browser_compute_module.md` | 20096 | `b4df6605f9f688e497e3e9c1db676a6abd13fc9bdccafd16e88a2640356cf2f1` |
+| `05_automations/client-site-first-build/runbook_appendix/old_website_archive.md` | 11385 | `e2e2525a445d8aac3ae85467bee9ea0ed137ea935c7d37df89a8b7bf60dd67af` |
+| `05_automations/client-site-first-build/runbook_appendix/redirect_application.md` | 3296 | `fb55bac0ed9b7482ed3d4cb65e123235f434044ec10544ef72da3cd250a80d40` |
+| `05_automations/client-site-first-build/runbook_appendix/redirect_authoring.md` | 5496 | `f89b09313d2ba4d1687bdba6beacf7543bd985649d1fc8a26a7884b5cbea04b4` |
+| `05_automations/client-site-first-build/runbook_appendix/sanity_org_setup.md` | 2041 | `d5b618c4376a9f7e7a0da2dd64026dda17bcf7abfdf0f259bcce45a70caaabe2` |
+| `05_automations/client-site-first-build/runbook_appendix/zip_handoff.md` | 6042 | `2819eb52a9380cbd665b88d54aa6020a3dc1f10c8a000ed8fd37d1c11c2b808e` |
+| `05_automations/resource-hub-maintenance/EDITION_NOTES.md` | 6451 | `2bb568f606f8e53f89b11d7ca080ec419c3768b47a748271cff31c91bbcf00e9` |
+| `05_automations/resource-hub-maintenance/comprehensive_guide.md` | 65689 | `97010a18d36085df75ea3511842666c0d4f36971cedec84e47cb15bb08e228da` |
+| `05_automations/resource-hub-maintenance/personality.json` | 15854 | `8a9fd4535f1c7ba22b939c32c477605d5b2b3a55f050afb39778a80df0f3a265` |
+| `05_automations/resource-hub-maintenance/recall_phrases.json` | 12167 | `5a556bc6568fe17f637f90a8b02580fc0a0ad6ebd41ce108f1eb1ce2cb2db8fa` |
+| `05_automations/resource-hub-maintenance/setup_instructions.md` | 6600 | `efc9d2ffc032974ba243173dd05a6bb40cea93c20dfd4ee2b03b4ed9b2a288a6` |
+| `05_automations/resource-hub-maintenance/skillbook.md` | 195821 | `f4e86c0fa1ae108c550e5e4427f5e184cc6db576562a533cbde0d6643215bac3` |
+| `05_automations/resource-hub-maintenance/startup_queries.json` | 1272 | `64f68a9a4bc226459611fab751c16185e4c09ce3ea76455a22c60f3d6070d0d6` |
+| `05_automations/resource-hub-maintenance/runbook_appendix/client_registry.md` | 1583 | `27c6dac2a058f26f2d94c938f626844bab65c222f7b3a5e98c30971aa66f2032` |
+| `05_automations/resource-hub-maintenance/runbook_appendix/gate_doctrine_module.md` | 11632 | `483e83d03e0bc5ab69cf5143809ba897e32fa516a0d7e324b595baa06cd32517` |
+| `05_automations/resource-hub-maintenance/runbook_appendix/new_resource_type.md` | 5973 | `0ae15ac040eb110a886e267dbae9d7b2691e14f782b44bd5cdb6e626470538c2` |
+| `05_automations/resource-hub-maintenance/runbook_appendix/playwright_cookie_test_harness.md` | 4215 | `c5e887ec9cc2586307cfafc65bff7d8e5a7093523bd406d0134458fe18b6ced8` |
+| `05_automations/resource-hub-maintenance/runbook_appendix/redeploy_cloudflare_workers.md` | 5569 | `d7ecdc03f4fbce7c4e1b78495f2e1f574fdd8dbc41981cb42b409c213753b7ac` |
+| `05_automations/resource-hub-maintenance/runbook_appendix/sanity_content_ops.md` | 7177 | `976728b0d020f11795e45ff79bdc0bfc4bff52d06399c30ca233ebca492b41e6` |
+| `05_automations/resource-hub-maintenance/runbook_appendix/second_account_sanity_and_external_writer.md` | 6159 | `258a559ff0dcd4c7569eff3b4da922511242c73a799e78218dd223174bb423e5` |
+| `05_automations/resource-hub-maintenance/runbook_appendix/ssr_detail_and_hide_from_listing.md` | 6228 | `cc38c7c0463013a138aff8bbca2602f149e9b821157599251278e32de34134ea` |
+| `05_automations/resource-hub-maintenance/runbook_appendix/wave_cycle_module.md` | 5691 | `88580616cf68e71b6f64bc23f3d95ab71254a76e26a0e8ba46f459c5683797f4` |
+| `05_automations/website-maintenance/EDITION_NOTES.md` | 5973 | `8a5d847f4505a65f043b4456a68421b4ba1dabdb30c606bc14374df9771eee63` |
+| `05_automations/website-maintenance/comprehensive_guide.md` | 85126 | `4e5ddc84a0ce7f4e7574806b99c02369f00c9c8be64eb99e37e3a3f1ef7c22df` |
+| `05_automations/website-maintenance/personality.json` | 8427 | `a98558c537f46ee8a1ef38c22bdf9afc4c993574ae555e7570856ba51f7ffef0` |
+| `05_automations/website-maintenance/recall_phrases.json` | 12101 | `bc27c4b05b59c67223d520145cc4f2f620100a3b48763c28a4970347291a08a7` |
+| `05_automations/website-maintenance/setup_instructions.md` | 8350 | `e3cb1e4a3b68decbbdf25e824bc87877390a3e68444430e4ae01b3455ed0c174` |
+| `05_automations/website-maintenance/skillbook.md` | 123779 | `f30b10132dc4804c8b004c7fd1ba00b0c34527e4d9dfd89efb358dbcf5ab3d57` |
+| `05_automations/website-maintenance/startup_queries.json` | 2015 | `e069e0412affcd22c987a2fed94de2c53f615813787589ac9d3ee9469a8718eb` |
+| `05_automations/website-maintenance/runbook_appendix/client_registry.md` | 3502 | `a5e1c9c758ba4f05028176cae2144afcf7a0499ea1a6f90492cdb6fee2a47679` |
+| `05_automations/website-maintenance/runbook_appendix/cloudflare_maintenance_ops.md` | 13050 | `99f5f178f643c568ba4addc5cebd1972311b99d8f95542862ad81b3dc9576047` |
+| `05_automations/website-maintenance/runbook_appendix/in_browser_compute_module.md` | 19425 | `4bdf1348afbf3e0b37eb2e1912be18e230a9111238098a98d394a98420255615` |
+| `05_automations/website-maintenance/runbook_appendix/platform_detection.md` | 5207 | `2e2e594715ab8328332187d69eac6e9218ad250264cbb3c377e2312bbf3680cf` |
+| `05_automations/website-maintenance/runbook_appendix/promote_to_production.md` | 7256 | `cf4f3d7355ad5f752f2cb71072c21316201689b118266c9108853eb508e58983` |
+| `06_web_tools/README.md` | 6686 | `8ec37ac841bd36dafbc0da14848ec0032bb1f0e66993ce19e9fdf8193b2c468f` |
+| `06_web_tools/bearer-curl` | 1269 | `ddd340bceab0a799a86cd6b54e7753c9c35ae98e5946fa616f8883fddf38be8a` |
+| `06_web_tools/builds_watch.py` | 4311 | `ac79c21dcbca2e3761780a9b5732465cbe23d13eb7192442fe034d1b92a6b669` |
+| `06_web_tools/cf-api` | 2220 | `a4eda8007aec734fe749da61a4fc25ef10985bf328eb140347a7169bee1e9520` |
+| `06_web_tools/forms-check` | 331 | `4e4cca5047e364b47b0f688a98977f5b22beabb41f2586f2732c318a5b8aa1f0` |
+| `06_web_tools/forms_check.py` | 7197 | `c9da3467ec534cbbb65786bddb43174b895ea6e444799f73e3761eb7f434c0af` |
+| `06_web_tools/preview_url_watch.py` | 4074 | `5956cf59fd52bb5a54fbdfa349cbbdffabed4ba12618f88fa0b2dabd23b368f3` |
+| `06_web_tools/webtools-lib.sh` | 3700 | `ce6989b4c20a38e48322163441845e0cfdc76bd6096b70beb7f0dbad24befec4` |
+| `06_web_tools/webtools_keys.py` | 2428 | `aa54cb4737eb711bc897deec403ee82026b3a33c056bde75bb5acff9ded9bbd2` |
+| `06_web_tools/wrangler-safe` | 2385 | `5159b87766209bcd544f6d48f49a7d04a62a7b9e1967da60db473a1196356dad` |
+| `07_nexus_tools/README.md` | 2226 | `38cc18c5adbac2871799b3d89911e60728578fcd5a2b3e910c60ccc3f45f9f42` |
+| `07_nexus_tools/nexus_refresh.py` | 7492 | `64089014d8257afddee36b0160c3b1ab4bfea4aed66b6cd1cc2b63ea1aa56159` |
+| `07_nexus_tools/configs/scroll-journey.json` | 750 | `629884974ee6a6d329156bdc028217a0a4e89558528b1e9a3814816eaf994733` |
+| `07_nexus_tools/configs/webgl.json` | 1562 | `c6a3500e3f00ee2a0950e02de5fc07b82da7e32d70b6712fc9da98e9bc56dcf4` |
+| `08_claude_md/webdev_workbench_block.md` | 3465 | `cf2f126a9ce532ae4484fc3fb02cd8b9cb1614152f7df2afcb1186077fb31e83` |
+| `09_guides/CHOOSING_A_HOST.md` | 11416 | `eaefe013627500a6c22a4c0421b7a3a884eb24d07c0d3ffa451ad8751b4853ec` |
+| `09_guides/DEPLOY_CLOUDFLARE.md` | 43038 | `d390a546d32cc8900b176c89cb858b4768ac764397b6590ab241401201bf28fa` |
+| `09_guides/DEPLOY_VERCEL.md` | 30322 | `0b26dbba4c4663489fdf536b2b010f05c893c86ca5f8c25b62178319f8e5960c` |
+| `09_guides/GITHUB_SETUP.md` | 31616 | `aa9b65cced19735107257030f27d16f6808394d9eedb36464693eb52b2b7dc35` |
+| `09_guides/SERVICES.md` | 39604 | `cbd219b668156bf87bdebc402580fda5b11e51758365eadc76b0aac831fffe4f` |
+| `09_guides/keys.env.example` | 3725 | `6a6155632ed5028fe756b9a72c77869af70b3cf883b03538853f513629c16ae7` |
+| `09_guides/with_keys.py` | 4474 | `11a4eafb524c0f48fc105691f32ae7534db8f5b2eddeb298b00f71d96d4f31bf` |
+| `bin/install_skills.sh` | 9990 | `f92123fc9db9ce4acb97d015ac1230f499d970786c9027881d8d6df903cd1adc` |
+| `bin/redact_preflight.py` | 4017 | `dc4df993323d4cc1442b185fab5986670cd754a354d574e3d1e3c34c5e107068` |
+| `bin/shell_env.sh` | 1614 | `30377b912d4cfb880477f849246e864f8957a801e310aa6e115336e13f2c86f0` |

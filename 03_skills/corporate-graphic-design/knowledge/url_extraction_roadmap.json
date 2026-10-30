@@ -1,0 +1,376 @@
+{
+  "metadata": {
+    "source_document": "Mastering Corporate Graphic Design 11-9-25.md",
+    "total_citations": 123,
+    "unique_urls": 104,
+    "categories": 7,
+    "creation_date": "2025-11-09",
+    "estimated_extraction_time": "10-14 hours",
+    "skill_name": "corporate-graphic-design",
+    "extraction_methodology": "Gemini CLI with -m gemini-2.5-flash flag, sequential one-at-a-time processing"
+  },
+  "extraction_phases": {
+    "phase_1_high_priority_authoritative": {
+      "description": "Authoritative sources (Adobe, W3C, official standards) - Critical references",
+      "url_count": 30,
+      "urls": [4, 16, 17, 32, 33, 34, 35, 36, 37, 40, 44, 49, 53, 54, 57, 63, 64, 65, 66, 67, 68, 76, 77, 78, 79, 87, 89, 92, 95, 100],
+      "estimated_time": "4-5 hours",
+      "priority": "critical",
+      "extraction_method": "webfetch_primary_with_gemini_context"
+    },
+    "phase_2_professional_practice": {
+      "description": "Professional blogs, design agencies, educational platforms",
+      "url_count": 40,
+      "urls": [1, 2, 3, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 21, 22, 23, 24, 25, 27, 28, 29, 30, 31, 38, 41, 43, 45, 46, 47, 48, 50, 51, 52, 55, 56, 58, 59, 60, 61, 62, 69, 70, 71, 74, 75, 80, 81, 82, 83, 84, 85, 86, 88, 90, 91, 93, 96, 97, 98, 101, 103, 104],
+      "estimated_time": "5-6 hours",
+      "priority": "high",
+      "extraction_method": "gemini_topic_explanation"
+    },
+    "phase_3_community_discussions": {
+      "description": "Reddit discussions, community forums, supplementary resources",
+      "url_count": 34,
+      "urls": [9, 18, 19, 20, 26, 39, 42, 72, 73, 94, 99, 102],
+      "estimated_time": "2-3 hours",
+      "priority": "standard",
+      "extraction_method": "webfetch_or_gemini_hybrid"
+    }
+  },
+  "categorical_mapping": {
+    "01_foundational_design_principles": {
+      "description": "Core design principles: hierarchy, contrast, alignment, proximity, repetition, balance, white space",
+      "url_count": 20,
+      "urls": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "section_reference": "Sections 1-2",
+      "priority": "critical"
+    },
+    "02_color_theory_and_accessibility": {
+      "description": "RGB vs CMYK, color psychology, WCAG accessibility standards, contrast ratios",
+      "url_count": 15,
+      "urls": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35],
+      "section_reference": "Section 3",
+      "priority": "critical"
+    },
+    "03_corporate_typography": {
+      "description": "Typeface classifications, font pairing, hierarchy, micro-typography (leading, tracking, kerning)",
+      "url_count": 15,
+      "urls": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52],
+      "section_reference": "Section 4",
+      "priority": "high"
+    },
+    "04_layout_and_grid_systems": {
+      "description": "Grid systems (manuscript, column, modular, baseline), layout best practices, reports, presentations",
+      "url_count": 12,
+      "urls": [53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63],
+      "section_reference": "Section 5",
+      "priority": "high"
+    },
+    "05_brand_identity_and_consistency": {
+      "description": "Brand style guides, visual identity, brand consistency, templates, asset libraries",
+      "url_count": 14,
+      "urls": [64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74],
+      "section_reference": "Section 6",
+      "priority": "high"
+    },
+    "06_psychology_of_persuasion": {
+      "description": "Cialdini's 7 principles: authority, social proof, scarcity, reciprocity, liking, commitment, unity",
+      "url_count": 12,
+      "urls": [75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88],
+      "section_reference": "Section 7",
+      "priority": "high"
+    },
+    "07_production_and_file_formats": {
+      "description": "Vector vs raster, file formats (AI, EPS, SVG, JPG, PNG), pre-press checklist, CMYK print preparation",
+      "url_count": 16,
+      "urls": [89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104],
+      "section_reference": "Section 8",
+      "priority": "standard"
+    }
+  },
+  "url_details": {
+    "1": {
+      "url": "https://www.vistaprint.com/hub/principles-of-design#:~:text=The%20fundamental%20principles%20of%20design,attention%2C%20a%20point%20of%20focus.",
+      "title": "Principles of Design - Vistaprint",
+      "category": "01_foundational_design_principles",
+      "extraction_method": "gemini_topic_explanation",
+      "priority": "high",
+      "domain": "vistaprint.com",
+      "expected_size_kb": "8-12",
+      "content_type": "professional_blog"
+    },
+    "2": {
+      "url": "https://www.interaction-design.org/literature/article/the-building-blocks-of-visual-design",
+      "title": "The Key Elements & Principles of Visual Design - IxDF",
+      "category": "01_foundational_design_principles",
+      "extraction_method": "webfetch_primary",
+      "priority": "critical",
+      "domain": "interaction-design.org",
+      "expected_size_kb": "12-20",
+      "content_type": "authoritative_educational"
+    },
+    "3": {
+      "url": "https://www.superside.com/blog/principles-of-design-guide",
+      "title": "13 Principles of Design Guide - Superside",
+      "category": "01_foundational_design_principles",
+      "extraction_method": "gemini_topic_explanation",
+      "priority": "high",
+      "domain": "superside.com",
+      "expected_size_kb": "10-15",
+      "content_type": "professional_agency"
+    },
+    "4": {
+      "url": "https://www.adobe.com/express/learn/blog/8-basic-design-principles-to-help-you-create-better-graphics",
+      "title": "8 Basic Design Principles - Adobe",
+      "category": "01_foundational_design_principles",
+      "extraction_method": "webfetch_primary",
+      "priority": "critical",
+      "domain": "adobe.com",
+      "expected_size_kb": "15-25",
+      "content_type": "vendor_authoritative"
+    },
+    "5": {
+      "url": "https://www.vistaprint.com/hub/principles-of-design",
+      "title": "The 7 Principles of Design - Vistaprint",
+      "category": "01_foundational_design_principles",
+      "extraction_method": "gemini_topic_explanation",
+      "priority": "high",
+      "domain": "vistaprint.com",
+      "expected_size_kb": "8-12",
+      "content_type": "professional_blog"
+    },
+    "6": {
+      "url": "https://thimpress.com/basic-graphic-design-principles-and-how-to-use-them/",
+      "title": "12+ Basic Graphic Design Principles - ThimPress",
+      "category": "01_foundational_design_principles",
+      "extraction_method": "gemini_topic_explanation",
+      "priority": "standard",
+      "domain": "thimpress.com",
+      "expected_size_kb": "8-12",
+      "content_type": "educational_blog"
+    },
+    "7": {
+      "url": "https://www.canva.com/learn/contrasting-colors/",
+      "title": "Designing with Contrast: 20 Tips - Canva",
+      "category": "01_foundational_design_principles",
+      "extraction_method": "gemini_topic_explanation",
+      "priority": "high",
+      "domain": "canva.com",
+      "expected_size_kb": "10-15",
+      "content_type": "professional_platform"
+    },
+    "8": {
+      "url": "https://www.boldreports.com/blog/report-design-standards/",
+      "title": "Secrets of Effective Report Design - Bold Reports",
+      "category": "01_foundational_design_principles",
+      "extraction_method": "gemini_topic_explanation",
+      "priority": "high",
+      "domain": "boldreports.com",
+      "expected_size_kb": "8-12",
+      "content_type": "vendor_blog"
+    },
+    "9": {
+      "url": "https://www.sfmagazine.com/articles/2018/april/5-principles-of-report-design/",
+      "title": "5 Principles of Report Design - IMA Strategic Finance",
+      "category": "01_foundational_design_principles",
+      "extraction_method": "webfetch_primary",
+      "priority": "high",
+      "domain": "sfmagazine.com",
+      "expected_size_kb": "8-12",
+      "content_type": "professional_publication"
+    },
+    "10": {
+      "url": "https://www.dochipo.com/white-space-in-graphic-design/",
+      "title": "White Space in Graphic Design Guide - DocHipo",
+      "category": "01_foundational_design_principles",
+      "extraction_method": "gemini_topic_explanation",
+      "priority": "standard",
+      "domain": "dochipo.com",
+      "expected_size_kb": "8-10",
+      "content_type": "professional_blog"
+    },
+    "11": {
+      "url": "https://www.andacademy.com/resources/blog/graphic-design/white-space-in-design/",
+      "title": "White Space in Design Complete Guide - AND Academy",
+      "category": "01_foundational_design_principles",
+      "extraction_method": "gemini_topic_explanation",
+      "priority": "standard",
+      "domain": "andacademy.com",
+      "expected_size_kb": "8-10",
+      "content_type": "educational_platform"
+    },
+    "12": {
+      "url": "https://blog.thenounproject.com/graphic-design-principles-balance-and-white-space/",
+      "title": "Balance and White Space - Noun Project Blog",
+      "category": "01_foundational_design_principles",
+      "extraction_method": "gemini_topic_explanation",
+      "priority": "standard",
+      "domain": "thenounproject.com",
+      "expected_size_kb": "6-10",
+      "content_type": "professional_blog"
+    },
+    "13": {
+      "url": "https://www.canva.com/learn/visual-hierarchy/",
+      "title": "Ultimate Guide to Visual Hierarchy - Canva",
+      "category": "01_foundational_design_principles",
+      "extraction_method": "gemini_topic_explanation",
+      "priority": "high",
+      "domain": "canva.com",
+      "expected_size_kb": "12-18",
+      "content_type": "professional_platform"
+    },
+    "14": {
+      "url": "https://bejamas.com/blog/gestalt-principles-of-design",
+      "title": "Understanding Gestalt Principles in UI/UX - Bejamas",
+      "category": "01_foundational_design_principles",
+      "extraction_method": "gemini_topic_explanation",
+      "priority": "high",
+      "domain": "bejamas.com",
+      "expected_size_kb": "10-15",
+      "content_type": "professional_blog"
+    },
+    "15": {
+      "url": "https://www.superside.com/blog/gestalt-principles-of-design",
+      "title": "11 Gestalt Principles Visual Guide - Superside",
+      "category": "01_foundational_design_principles",
+      "extraction_method": "gemini_topic_explanation",
+      "priority": "high",
+      "domain": "superside.com",
+      "expected_size_kb": "12-18",
+      "content_type": "professional_agency"
+    },
+    "16": {
+      "url": "https://blog.thenounproject.com/rgb-vs-cmyk-understanding-the-differences/",
+      "title": "RGB vs CMYK Understanding Differences - Noun Project",
+      "category": "02_color_theory_and_accessibility",
+      "extraction_method": "gemini_topic_explanation",
+      "priority": "critical",
+      "domain": "thenounproject.com",
+      "expected_size_kb": "10-15",
+      "content_type": "professional_blog"
+    },
+    "17": {
+      "url": "https://elementor.com/blog/color-theory-web-design/",
+      "title": "Color Theory in Web Design Complete Guide - Elementor",
+      "category": "02_color_theory_and_accessibility",
+      "extraction_method": "gemini_topic_explanation",
+      "priority": "critical",
+      "domain": "elementor.com",
+      "expected_size_kb": "15-25",
+      "content_type": "vendor_platform"
+    },
+    "18": {
+      "url": "https://www.ferrum.edu/downloads/academics/programs/school_of_art_divisions/dept_visual/art-color-systems-handbook.pdf",
+      "title": "RYB, CMYK, RGB, HSV Color Models Handbook - Ferrum College",
+      "category": "02_color_theory_and_accessibility",
+      "extraction_method": "pdf_requires_manual",
+      "priority": "high",
+      "domain": "ferrum.edu",
+      "expected_size_kb": "pending_pdf_extraction",
+      "content_type": "academic_pdf"
+    },
+    "19": {
+      "url": "https://www.tourboxtech.com/en/news/rgb-vs-cmyk.html",
+      "title": "RGB VS CMYK Ultimate Guide - TourBox",
+      "category": "02_color_theory_and_accessibility",
+      "extraction_method": "gemini_topic_explanation",
+      "priority": "high",
+      "domain": "tourboxtech.com",
+      "expected_size_kb": "10-15",
+      "content_type": "vendor_blog"
+    },
+    "20": {
+      "url": "https://www.reddit.com/r/ArtistLounge/comments/1fbtl1c/is_there_a_difference_between_cmyk_and_rgb/",
+      "title": "CMYK vs RGB Difference Discussion - Reddit ArtistLounge",
+      "category": "02_color_theory_and_accessibility",
+      "extraction_method": "webfetch_community",
+      "priority": "low",
+      "domain": "reddit.com",
+      "expected_size_kb": "3-6",
+      "content_type": "community_discussion"
+    }
+  },
+  "domain_analysis": {
+    "major_domains": {
+      "adobe.com": {
+        "count": 7,
+        "type": "vendor_authoritative",
+        "priority": "critical",
+        "extraction_method": "webfetch_primary"
+      },
+      "canva.com": {
+        "count": 5,
+        "type": "professional_platform",
+        "priority": "high",
+        "extraction_method": "gemini_topic_explanation"
+      },
+      "reddit.com": {
+        "count": 6,
+        "type": "community_discussions",
+        "priority": "low",
+        "extraction_method": "webfetch_community"
+      },
+      "vistaprint.com": {
+        "count": 3,
+        "type": "professional_vendor",
+        "priority": "high",
+        "extraction_method": "gemini_topic_explanation"
+      },
+      "superside.com": {
+        "count": 2,
+        "type": "professional_agency",
+        "priority": "high",
+        "extraction_method": "gemini_topic_explanation"
+      },
+      "w3.org": {
+        "count": 2,
+        "type": "standards_body",
+        "priority": "critical",
+        "extraction_method": "webfetch_only"
+      }
+    },
+    "content_type_distribution": {
+      "vendor_authoritative": 15,
+      "professional_blogs": 35,
+      "educational_platforms": 20,
+      "community_discussions": 12,
+      "academic_sources": 8,
+      "standards_bodies": 5,
+      "research_publications": 9
+    }
+  },
+  "extraction_strategy_summary": {
+    "gemini_topic_explanation": {
+      "count": 45,
+      "reason": "General design topics where comprehensive theory coverage is more valuable than URL-specific details",
+      "expected_avg_size_kb": "10-15"
+    },
+    "webfetch_primary": {
+      "count": 35,
+      "reason": "Authoritative sources, vendor documentation, specific standards that require exact content",
+      "expected_avg_size_kb": "12-20"
+    },
+    "webfetch_only": {
+      "count": 20,
+      "reason": "Vendor specs, W3C standards, product documentation requiring exact details",
+      "expected_avg_size_kb": "8-15"
+    },
+    "hybrid_approach": {
+      "count": 4,
+      "reason": "Complex topics benefiting from both theoretical depth and URL-specific examples",
+      "expected_avg_size_kb": "15-25"
+    }
+  },
+  "special_handling_notes": {
+    "pdf_urls": [18],
+    "reddit_urls": [20, 26, 72, 73, 94, 99, 102],
+    "paywall_risk": [],
+    "authentication_required": []
+  },
+  "progress_tracking": {
+    "urls_mapped": 104,
+    "categories_defined": 7,
+    "extraction_phases": 3,
+    "domain_analysis_complete": true,
+    "ready_for_extraction": true,
+    "next_step": "Create complete_document_transcript.json"
+  }
+}

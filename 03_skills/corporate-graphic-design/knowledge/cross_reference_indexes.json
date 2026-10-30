@@ -1,0 +1,2811 @@
+{
+  "metadata": {
+    "creation_date": "2025-11-10T22:40:59Z",
+    "total_urls": 104,
+    "total_categories": 7,
+    "total_citations": 104,
+    "description": "Comprehensive cross-reference indexes for navigating the corporate graphic design knowledge base across multiple dimensions",
+    "index_types": [
+      "by_category: Navigate URLs by 7 thematic categories",
+      "by_url_number: Lookup any URL 1-104 with complete metadata",
+      "by_citation_number: Map citation numbers to URLs",
+      "by_extraction_status: Group URLs by extraction status",
+      "by_extraction_method: Group URLs by extraction method",
+      "by_topic_keywords: Topic-based navigation (design principles, color, typography, etc.)"
+    ]
+  },
+  "by_category": {
+    "01_foundational_design_principles": {
+      "category_id": "01_foundational_design_principles",
+      "category_name": "01 Foundational Design Principles",
+      "url_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "total_urls": 15
+    },
+    "02_color_theory_and_accessibility": {
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "url_numbers": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "total_urls": 20
+    },
+    "03_corporate_typography": {
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "url_numbers": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "total_urls": 17
+    },
+    "04_layout_and_grid_systems": {
+      "category_id": "04_layout_and_grid_systems",
+      "category_name": "04 Layout And Grid Systems",
+      "url_numbers": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "total_urls": 11
+    },
+    "05_brand_identity_and_consistency": {
+      "category_id": "05_brand_identity_and_consistency",
+      "category_name": "05 Brand Identity And Consistency",
+      "url_numbers": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74
+      ],
+      "total_urls": 11
+    },
+    "06_psychology_of_persuasion": {
+      "category_id": "06_psychology_of_persuasion",
+      "category_name": "06 Psychology Of Persuasion",
+      "url_numbers": [
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88
+      ],
+      "total_urls": 14
+    },
+    "07_production_and_file_formats": {
+      "category_id": "07_production_and_file_formats",
+      "category_name": "07 Production And File Formats",
+      "url_numbers": [
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "total_urls": 16
+    }
+  },
+  "by_url_number": {
+    "1": {
+      "url_number": 1,
+      "url": "https://www.vistaprint.com/hub/principles-of-design",
+      "title": "Fundamental Principles of Design - Vistaprint",
+      "category_id": "01_foundational_design_principles",
+      "category_name": "01 Foundational Design Principles",
+      "citation_number": 5,
+      "extraction_status": "success",
+      "extraction_method": "gemini_topic_explanation",
+      "word_count_estimate": 4850,
+      "extraction_date": "2025-11-09"
+    },
+    "2": {
+      "url_number": 2,
+      "url": "https://www.interaction-design.org/literature/article/the-building-blocks-of-visual-design",
+      "title": "The Key Elements & Principles of Visual Design - Interaction Design Foundation",
+      "category_id": "01_foundational_design_principles",
+      "category_name": "01 Foundational Design Principles",
+      "citation_number": 2,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1850,
+      "extraction_date": "2025-11-09"
+    },
+    "3": {
+      "url_number": 3,
+      "url": "https://www.superside.com/blog/principles-of-design-guide",
+      "title": "13 Principles of Design: An Exhaustive Guide - Superside",
+      "category_id": "01_foundational_design_principles",
+      "category_name": "01 Foundational Design Principles",
+      "citation_number": 3,
+      "extraction_status": "success",
+      "extraction_method": "gemini_comprehensive_extraction",
+      "word_count_estimate": 15000,
+      "extraction_date": "2025-11-10"
+    },
+    "4": {
+      "url_number": 4,
+      "url": "https://www.adobe.com/express/learn/blog/8-basic-design-principles-to-help-you-create-better-graphics",
+      "title": "8 Basic Design Principles to Help You Create Better Graphics - Adobe Express",
+      "category_id": "01_foundational_design_principles",
+      "category_name": "01 Foundational Design Principles",
+      "citation_number": 4,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 2150,
+      "extraction_date": "2025-11-10"
+    },
+    "5": {
+      "url_number": 5,
+      "url": "https://www.vistaprint.com/hub/principles-of-design",
+      "title": "The 7 Principles of Design and How to Use Them (With Infographic) - VistaPrint",
+      "category_id": "01_foundational_design_principles",
+      "category_name": "01 Foundational Design Principles",
+      "citation_number": 5,
+      "extraction_status": "success",
+      "extraction_method": "playwright_browser_automation",
+      "word_count_estimate": 3200,
+      "extraction_date": "2025-11-10"
+    },
+    "6": {
+      "url_number": 6,
+      "url": "https://thimpress.com/basic-graphic-design-principles-and-how-to-use-them/",
+      "title": "12 Basic Graphic Design Principles - Thimpress",
+      "category_id": "01_foundational_design_principles",
+      "category_name": "01 Foundational Design Principles",
+      "citation_number": 6,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1800,
+      "extraction_date": "2025-11-10"
+    },
+    "7": {
+      "url_number": 7,
+      "url": "https://www.canva.com/learn/contrasting-colors/",
+      "title": "Designing with Contrast: 20 Tips from a Designer - Canva",
+      "category_id": "01_foundational_design_principles",
+      "category_name": "01 Foundational Design Principles",
+      "citation_number": 7,
+      "extraction_status": "success",
+      "extraction_method": "playwright_browser_automation",
+      "word_count_estimate": 4500,
+      "extraction_date": "2025-11-10"
+    },
+    "8": {
+      "url_number": 8,
+      "url": "https://www.boldreports.com/blog/report-design-standards/",
+      "title": "Secrets of Effective Report Design Standards - Bold Reports",
+      "category_id": "01_foundational_design_principles",
+      "category_name": "01 Foundational Design Principles",
+      "citation_number": 8,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 850,
+      "extraction_date": "2025-11-10"
+    },
+    "9": {
+      "url_number": 9,
+      "url": "https://www.sfmagazine.com/articles/2018/april/5-principles-of-report-design/",
+      "title": "5 Principles of Report Design - IMA Strategic Finance",
+      "category_id": "01_foundational_design_principles",
+      "category_name": "01 Foundational Design Principles",
+      "citation_number": 9,
+      "extraction_status": "success",
+      "extraction_method": "playwright_browser_automation",
+      "word_count_estimate": 2800,
+      "extraction_date": "2025-11-10"
+    },
+    "10": {
+      "url_number": 10,
+      "url": "https://www.dochipo.com/white-space-in-graphic-design/",
+      "title": "White Space in Graphic Design Complete Guide - DocHipo",
+      "category_id": "01_foundational_design_principles",
+      "category_name": "01 Foundational Design Principles",
+      "citation_number": 10,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_comprehensive",
+      "word_count_estimate": 3200,
+      "extraction_date": "2025-11-10"
+    },
+    "11": {
+      "url_number": 11,
+      "url": "https://www.andacademy.com/resources/blog/graphic-design/white-space-in-design/",
+      "title": "White Space in Design Complete Guide - AND Academy",
+      "category_id": "01_foundational_design_principles",
+      "category_name": "01 Foundational Design Principles",
+      "citation_number": 11,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_comprehensive",
+      "word_count_estimate": 2100,
+      "extraction_date": "2025-11-10"
+    },
+    "12": {
+      "url_number": 12,
+      "url": "https://blog.thenounproject.com/graphic-design-principles-balance-and-white-space/",
+      "title": "Balance and White Space - Noun Project Blog",
+      "category_id": "01_foundational_design_principles",
+      "category_name": "01 Foundational Design Principles",
+      "citation_number": 12,
+      "extraction_status": "access_restricted",
+      "extraction_method": "blocked_by_cloudflare",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "13": {
+      "url_number": 13,
+      "url": "https://www.canva.com/learn/visual-hierarchy/",
+      "title": "The Ultimate Guide to Visual Hierarchy - Canva",
+      "category_id": "01_foundational_design_principles",
+      "category_name": "01 Foundational Design Principles",
+      "citation_number": 13,
+      "extraction_status": "success",
+      "extraction_method": "playwright_browser_automation",
+      "word_count_estimate": 4200,
+      "extraction_date": "2025-11-10"
+    },
+    "14": {
+      "url_number": 14,
+      "url": "https://bejamas.com/blog/gestalt-principles-of-design",
+      "title": "Gestalt Principles in UI/UX Design - Bejamas",
+      "category_id": "01_foundational_design_principles",
+      "category_name": "01 Foundational Design Principles",
+      "citation_number": 14,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_comprehensive",
+      "word_count_estimate": 2700,
+      "extraction_date": "2025-11-10"
+    },
+    "15": {
+      "url_number": 15,
+      "url": "https://www.superside.com/blog/gestalt-principles-of-design",
+      "title": "11 Gestalt Principles Visual Guide - Superside",
+      "category_id": "01_foundational_design_principles",
+      "category_name": "01 Foundational Design Principles",
+      "citation_number": 15,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_comprehensive",
+      "word_count_estimate": 3800,
+      "extraction_date": "2025-11-10"
+    },
+    "16": {
+      "url_number": 16,
+      "url": "https://blog.thenounproject.com/rgb-vs-cmyk-understanding-the-differences/",
+      "title": "RGB vs CMYK Understanding Differences - Noun Project",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": 16,
+      "extraction_status": "access_restricted",
+      "extraction_method": "blocked_by_cloudflare",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "17": {
+      "url_number": 17,
+      "url": "https://elementor.com/blog/color-theory-web-design/",
+      "title": "Color Theory in Web Design Complete Guide - Elementor",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": 17,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_comprehensive",
+      "word_count_estimate": 5200,
+      "extraction_date": "2025-11-10"
+    },
+    "18": {
+      "url_number": 18,
+      "url": "https://www.ferrum.edu/downloads/academics/programs/school_of_art_divisions/dept_visual/art-color-systems-handbook.pdf",
+      "title": "RYB, CMYK, RGB, HSV Color Models Handbook - Ferrum College",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": null,
+      "extraction_status": "format_limitation",
+      "extraction_method": "webfetch_pdf_attempt",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "19": {
+      "url_number": 19,
+      "url": "https://www.tourboxtech.com/en/news/rgb-vs-cmyk.html",
+      "title": "RGB VS CMYK Ultimate Guide - TourBox",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": 19,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_comprehensive",
+      "word_count_estimate": 2400,
+      "extraction_date": "2025-11-10"
+    },
+    "20": {
+      "url_number": 20,
+      "url": "https://www.reddit.com/r/ArtistLounge/comments/1fbtl1c/is_there_a_difference_between_cmyk_and_rgb/",
+      "title": "CMYK vs RGB Difference Discussion - Reddit ArtistLounge",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": null,
+      "extraction_status": "access_restricted",
+      "extraction_method": "webfetch_reddit_blocked",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "21": {
+      "url_number": 21,
+      "url": "https://www.researchgate.net/publication/395720517_The_Psychology_of_Color_in_Branding_and_Marketing",
+      "title": "The Psychology of Color in Branding and Marketing: An Academic Review - ResearchGate",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": null,
+      "extraction_status": "success",
+      "extraction_method": "gemini_academic_comprehensive",
+      "word_count_estimate": 6000,
+      "extraction_date": "2025-11-10"
+    },
+    "22": {
+      "url_number": 22,
+      "url": "https://kiu.ac.ug/assets/publications/3462_psychology-of-color-its-influence-on-marketing-and-design.pdf",
+      "title": "The Psychology of Color: Its Influence on Marketing and Design - Kampala International University",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": null,
+      "extraction_status": "success",
+      "extraction_method": "gemini_academic_comprehensive",
+      "word_count_estimate": 3500,
+      "extraction_date": "2025-11-10"
+    },
+    "23": {
+      "url_number": 23,
+      "url": "https://medium.com/design-bootcamp/the-power-of-color-in-design-part-2-color-schemes-af9a9c36a70c",
+      "title": "The Power of Color in Design \u2014 Part 2: Color Schemes",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": 23,
+      "extraction_status": "success",
+      "extraction_method": "playwright_browser_automation",
+      "word_count_estimate": 2200,
+      "extraction_date": "2025-11-10"
+    },
+    "24": {
+      "url_number": 24,
+      "url": "https://musemind.agency/blog/color-theory",
+      "title": "What Is Color Theory? A Comprehensive Color Guide For The Designers - Musemind",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": 24,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_comprehensive",
+      "word_count_estimate": 2500,
+      "extraction_date": "2025-11-10"
+    },
+    "25": {
+      "url_number": 25,
+      "url": "https://www.visionaustralia.org/business-consulting/digital-access/Creating-accessible-digital-colour-palettes-60-30-10-design-rule",
+      "title": "Creating accessible digital colour palettes using the 60-30-10 design rule - Vision Australia",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": 25,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_comprehensive",
+      "word_count_estimate": 1800,
+      "extraction_date": "2025-11-10"
+    },
+    "26": {
+      "url_number": 26,
+      "url": "https://www.reddit.com/r/EntrepreneurRideAlong/comments/gp2uce/how_to_use_the_603010_rule_to_balance_your_brands/",
+      "title": "How to Use the 60-30-10 Rule to Balance Your Brand's Color Palette - Reddit Entrepreneurship",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": null,
+      "extraction_status": "success",
+      "extraction_method": "gemini_comprehensive_extraction",
+      "word_count_estimate": 5500,
+      "extraction_date": "2025-11-10"
+    },
+    "27": {
+      "url_number": 27,
+      "url": "https://www.researchgate.net/publication/395720517_The_Psychology_of_Color_in_Branding_and_Marketing",
+      "title": "The Psychology of Color in Branding and Marketing - ResearchGate Academic Publication",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": null,
+      "extraction_status": "success",
+      "extraction_method": "gemini_academic_synthesis",
+      "word_count_estimate": 4200,
+      "extraction_date": "2025-11-10"
+    },
+    "28": {
+      "url_number": 28,
+      "url": "https://kiu.ac.ug/assets/publications/3462_psychology-of-color-its-influence-on-marketing-and-design.pdf",
+      "title": "Psychology of Color: Its Influence on Marketing and Design - Kampala International University",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": null,
+      "extraction_status": "success",
+      "extraction_method": "gemini_academic_pdf_synthesis",
+      "word_count_estimate": 5500,
+      "extraction_date": "2025-11-10"
+    },
+    "29": {
+      "url_number": 29,
+      "url": "https://instapage.com/blog/ultimate-guide-to-color-psychology/",
+      "title": "The Ultimate Guide to Color Psychology in Marketing with Examples - Instapage",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": 29,
+      "extraction_status": "success",
+      "extraction_method": "playwright_browser_automation",
+      "word_count_estimate": 3880,
+      "extraction_date": "2025-11-10"
+    },
+    "30": {
+      "url_number": 30,
+      "url": "https://www.helpscout.com/blog/psychology-of-color/",
+      "title": "Color Psychology in Marketing and Branding is All About Context - Help Scout",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": 30,
+      "extraction_status": "success",
+      "extraction_method": "playwright_browser_automation",
+      "word_count_estimate": 1825,
+      "extraction_date": "2025-11-10"
+    },
+    "31": {
+      "url_number": 31,
+      "url": "https://www.canva.com/learn/design-for-engagement/",
+      "title": "Designing for engagement: How color, type and space can impact the mood of your design - Canva",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": 31,
+      "extraction_status": "success",
+      "extraction_method": "playwright_browser_automation",
+      "word_count_estimate": 2719,
+      "extraction_date": "2025-11-10"
+    },
+    "32": {
+      "url_number": 32,
+      "url": "https://webaim.org/articles/contrast/",
+      "title": "Contrast and Color Accessibility - Understanding WCAG 2 - WebAIM",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": 32,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_comprehensive",
+      "word_count_estimate": 2150,
+      "extraction_date": "2025-11-10"
+    },
+    "33": {
+      "url_number": 33,
+      "url": "https://blog.pope.tech/2022/11/08/color-contrast-accessibility-requirements-explained/",
+      "title": "Color contrast accessibility requirements explained - Pope Tech Blog",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": 33,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_comprehensive",
+      "word_count_estimate": 2850,
+      "extraction_date": "2025-11-10"
+    },
+    "34": {
+      "url_number": 34,
+      "url": "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html",
+      "title": "Understanding Success Criterion 1.4.3: Contrast (Minimum) | WAI - W3C",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": 34,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_comprehensive",
+      "word_count_estimate": 4300,
+      "extraction_date": "2025-11-10"
+    },
+    "35": {
+      "url_number": 35,
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Understanding_WCAG/Perceivable/Color_contrast",
+      "title": "Color contrast - Accessibility - MDN Web Docs - Mozilla",
+      "category_id": "02_color_theory_and_accessibility",
+      "category_name": "02 Color Theory And Accessibility",
+      "citation_number": null,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_comprehensive",
+      "word_count_estimate": 2400,
+      "extraction_date": "2025-11-10"
+    },
+    "36": {
+      "url_number": 36,
+      "url": "https://www.adobe.com/express/learn/blog/psychology-font",
+      "title": "Understanding the psychology of font and using text in design - Adobe",
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "citation_number": 36,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_comprehensive",
+      "word_count_estimate": 2500,
+      "extraction_date": "2025-11-10"
+    },
+    "37": {
+      "url_number": 37,
+      "url": "https://www.clio.com/blog/legal-fonts-for-legal-documents/",
+      "title": "A Guide to the Best Fonts for Legal Documents - Clio",
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "citation_number": 37,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_comprehensive",
+      "word_count_estimate": 1800,
+      "extraction_date": "2025-11-10"
+    },
+    "38": {
+      "url_number": 38,
+      "url": "https://looka.com/blog/types-of-fonts/",
+      "title": "Types of Fonts: The Ultimate Guide to Fonts Styles - Looka",
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "citation_number": 38,
+      "extraction_status": "success",
+      "extraction_method": "playwright_mcp_browser",
+      "word_count_estimate": 3700,
+      "extraction_date": "2025-11-10"
+    },
+    "39": {
+      "url_number": 39,
+      "url": "community_discussion_blocked",
+      "title": "URL #39 - Community Discussion Content",
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "citation_number": null,
+      "extraction_status": "blocked_community_platform",
+      "extraction_method": "placeholder_for_blocked_content",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "40": {
+      "url_number": 40,
+      "url": "https://www.windwardstudios.com/blog/document-fonts",
+      "title": "Document Fonts \u2013 The Complete Guide - Windward Studios",
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "citation_number": 40,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1200,
+      "extraction_date": "2025-11-10"
+    },
+    "41": {
+      "url_number": 41,
+      "url": "https://typeheist.co/blog/typeface-classification-font-types-and-uses/",
+      "title": "Typeface classification: font styles explained - Typeheist",
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "citation_number": 41,
+      "extraction_status": "success",
+      "extraction_method": "playwright_mcp_browser",
+      "word_count_estimate": 1400,
+      "extraction_date": "2025-11-10"
+    },
+    "42": {
+      "url_number": 42,
+      "url": "community_discussion_blocked",
+      "title": "URL #42 - Community Discussion Content",
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "citation_number": null,
+      "extraction_status": "blocked_community_platform",
+      "extraction_method": "placeholder_for_blocked_content",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "43": {
+      "url_number": 43,
+      "url": "https://www.windwardstudios.com/blog/document-fonts#:~:text=Experts%20recommend%20a%20mix%20of,help%20make%20them%20stand%20out.",
+      "title": "Document Fonts (Specific Quote Reference) - Windward Studios",
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "citation_number": null,
+      "extraction_status": "duplicate_reference",
+      "extraction_method": "reference_notation",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "44": {
+      "url_number": 44,
+      "url": "https://www.canva.com/learn/the-ultimate-guide-to-font-pairing/",
+      "title": "The Ultimate Guide to Font Pairing \u2014 Learn - Canva",
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "citation_number": 44,
+      "extraction_status": "success",
+      "extraction_method": "playwright_mcp_browser",
+      "word_count_estimate": 5800,
+      "extraction_date": "2025-11-10"
+    },
+    "45": {
+      "url_number": 45,
+      "url": "https://www.creativebloq.com/typography/20-perfect-font-pairings-3132120",
+      "title": "The ultimate guide to font pairings - Creative Bloq",
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "citation_number": 45,
+      "extraction_status": "success",
+      "extraction_method": "playwright_mcp_browser",
+      "word_count_estimate": 4200,
+      "extraction_date": "2025-11-10"
+    },
+    "46": {
+      "url_number": 46,
+      "url": "https://pangrampangram.com/blogs/journal/typographic-hierarchy",
+      "title": "How to create a typographic hierarchy \u2013 Pangram Pangram Foundry",
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "citation_number": 46,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 2800,
+      "extraction_date": "2025-11-10"
+    },
+    "47": {
+      "url_number": 47,
+      "url": "https://uxcel.com/blog/beginners-guide-to-typographic-hierarchy",
+      "title": "Introduction to typography hierarchy - Uxcel",
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "citation_number": 47,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 2400,
+      "extraction_date": "2025-11-10"
+    },
+    "48": {
+      "url_number": 48,
+      "url": "https://en.wikipedia.org/wiki/Microtypography",
+      "title": "Microtypography - Wikipedia",
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "citation_number": 48,
+      "extraction_status": "success",
+      "extraction_method": "playwright_mcp_browser",
+      "word_count_estimate": 2600,
+      "extraction_date": "2025-11-10"
+    },
+    "49": {
+      "url_number": 49,
+      "url": "https://www.adobe.com/in/creativecloud/roc/blog/design/kerning-typography-tips.html",
+      "title": "Master kerning for polished typography | Adobe India",
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "citation_number": 49,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 2400,
+      "extraction_date": "2025-11-10"
+    },
+    "50": {
+      "url_number": 50,
+      "url": "https://www.flowmapp.com/blog/qa/20-basic-typographic-terms-ui",
+      "title": "20 Basic Typographic Terms for UI Designers | FlowMapp design blog",
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "citation_number": 50,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1800,
+      "extraction_date": "2025-11-10"
+    },
+    "51": {
+      "url_number": 51,
+      "url": "https://tomoson.com/the-role-of-kerning-tracking-and-leading-in-typography-a-designers-guide/",
+      "title": "The Role of Kerning, Tracking, and Leading in Typography: A Designer's Guide - Tomoson",
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "citation_number": 51,
+      "extraction_status": "success",
+      "extraction_method": "playwright_mcp_browser",
+      "word_count_estimate": 2500,
+      "extraction_date": "2025-11-10"
+    },
+    "52": {
+      "url_number": 52,
+      "url": "https://numerous.ai/blog/business-document-format",
+      "title": "A Step-by-Step Guide on How to Format a Business Document - Numerous.ai",
+      "category_id": "03_corporate_typography",
+      "category_name": "03 Corporate Typography",
+      "citation_number": 52,
+      "extraction_status": "success",
+      "extraction_method": "playwright_mcp_browser",
+      "word_count_estimate": 6800,
+      "extraction_date": "2025-11-10"
+    },
+    "53": {
+      "url_number": 53,
+      "url": "https://baselinehq.com/4-grid-systems.html",
+      "title": "Grid Systems - Baseline \u2022 The Free Design Bootcamp",
+      "category_id": "04_layout_and_grid_systems",
+      "category_name": "04 Layout And Grid Systems",
+      "citation_number": 53,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1200,
+      "extraction_date": "2025-11-10"
+    },
+    "54": {
+      "url_number": 54,
+      "url": "https://designlab.com/blog/grid-systems-history-ux-ui-layout",
+      "title": "The Grid System: Importance of a Solid UX/UI Layout | Designlab",
+      "category_id": "04_layout_and_grid_systems",
+      "category_name": "04 Layout And Grid Systems",
+      "citation_number": 54,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 2300,
+      "extraction_date": "2025-11-10"
+    },
+    "55": {
+      "url_number": 55,
+      "url": "https://www.onething.design/post/grid-layout-design-guide-history-tips-examples",
+      "title": "Grid Layout Design Guide (2025) \u2013 History, Tips & Top Examples - OneThing Design",
+      "category_id": "04_layout_and_grid_systems",
+      "category_name": "04 Layout And Grid Systems",
+      "citation_number": 55,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1100,
+      "extraction_date": "2025-11-10"
+    },
+    "56": {
+      "url_number": 56,
+      "url": "https://www.halo-lab.com/blog/guide-to-grid-layout-design-with-examples",
+      "title": "Guide to grid layout design with examples - Halo Lab",
+      "category_id": "04_layout_and_grid_systems",
+      "category_name": "04 Layout And Grid Systems",
+      "citation_number": 56,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1300,
+      "extraction_date": "2025-11-10"
+    },
+    "57": {
+      "url_number": 57,
+      "url": "https://www.interaction-design.org/literature/topics/grid-systems",
+      "title": "What are Grid Systems? | IxDF - The Interaction Design Foundation",
+      "category_id": "04_layout_and_grid_systems",
+      "category_name": "04 Layout And Grid Systems",
+      "citation_number": 57,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1200,
+      "extraction_date": "2025-11-10"
+    },
+    "58": {
+      "url_number": 58,
+      "url": "https://visme.co/blog/layout-design/",
+      "title": "Layout Design: Types of Grids for Creating Professional-Looking Designs - Visme",
+      "category_id": "04_layout_and_grid_systems",
+      "category_name": "04 Layout And Grid Systems",
+      "citation_number": 58,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1500,
+      "extraction_date": "2025-11-10"
+    },
+    "59": {
+      "url_number": 59,
+      "url": "https://www.eleken.co/blog-posts/grid-layout-design-history-tips-and-best-examples",
+      "title": "Understanding the Grid Layout Design: Types, Examples, Tips - Eleken",
+      "category_id": "04_layout_and_grid_systems",
+      "category_name": "04 Layout And Grid Systems",
+      "citation_number": 59,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1400,
+      "extraction_date": "2025-11-10"
+    },
+    "60": {
+      "url_number": 60,
+      "url": "https://www.datylon.com/blog/10-report-design-tips",
+      "title": "10 DOs and DON'Ts of Report Design | Blog - Datylon",
+      "category_id": "04_layout_and_grid_systems",
+      "category_name": "04 Layout And Grid Systems",
+      "citation_number": 60,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 2100,
+      "extraction_date": "2025-11-10"
+    },
+    "61": {
+      "url_number": 61,
+      "url": "https://venngage.com/blog/presentation-design/",
+      "title": "21 Presentation Design Tips For Success - Venngage",
+      "category_id": "04_layout_and_grid_systems",
+      "category_name": "04 Layout And Grid Systems",
+      "citation_number": 61,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1200,
+      "extraction_date": "2025-11-10"
+    },
+    "62": {
+      "url_number": 62,
+      "url": "https://www.mimeo.com/blog/proposal-presentation-tips/",
+      "title": "6 Tips for Your Next Proposal Presentation - Mimeo",
+      "category_id": "04_layout_and_grid_systems",
+      "category_name": "04 Layout And Grid Systems",
+      "citation_number": 62,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 900,
+      "extraction_date": "2025-11-10"
+    },
+    "63": {
+      "url_number": 63,
+      "url": "https://www.slidor.agency/blog/ultimate-guide-corporate-presentation-design",
+      "title": "The Ultimate Guide to Corporate Presentation Design - Slidor",
+      "category_id": "04_layout_and_grid_systems",
+      "category_name": "04 Layout And Grid Systems",
+      "citation_number": 63,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1600,
+      "extraction_date": "2025-11-10"
+    },
+    "64": {
+      "url_number": 64,
+      "url": "https://www.frontify.com/en/guide/brand-consistency",
+      "title": "Brand Consistency: How to Stay On-Brand, Always. - Frontify",
+      "category_id": "05_brand_identity_and_consistency",
+      "category_name": "05 Brand Identity And Consistency",
+      "citation_number": 64,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1100,
+      "extraction_date": "2025-11-10"
+    },
+    "65": {
+      "url_number": 65,
+      "url": "https://venngage.com/blog/brand-consistency/",
+      "title": "How to Maintain Brand Consistency Without a Design Team - Venngage",
+      "category_id": "05_brand_identity_and_consistency",
+      "category_name": "05 Brand Identity And Consistency",
+      "citation_number": 65,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1400,
+      "extraction_date": "2025-11-10"
+    },
+    "66": {
+      "url_number": 66,
+      "url": "https://www.adobe.com/creativecloud/business/teams/resources/how-to/brand-guide.html",
+      "title": "Create a brand style guide for your business. - Adobe",
+      "category_id": "05_brand_identity_and_consistency",
+      "category_name": "05 Brand Identity And Consistency",
+      "citation_number": 66,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 800,
+      "extraction_date": "2025-11-10"
+    },
+    "67": {
+      "url_number": 67,
+      "url": "community_discussion_blocked",
+      "title": "URL #67 - Community Discussion Content",
+      "category_id": "05_brand_identity_and_consistency",
+      "category_name": "05 Brand Identity And Consistency",
+      "citation_number": null,
+      "extraction_status": "blocked_community_platform",
+      "extraction_method": "placeholder_for_blocked_content",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "68": {
+      "url_number": 68,
+      "url": "community_discussion_blocked",
+      "title": "URL #68 - Community Discussion Content",
+      "category_id": "05_brand_identity_and_consistency",
+      "category_name": "05 Brand Identity And Consistency",
+      "citation_number": null,
+      "extraction_status": "blocked_community_platform",
+      "extraction_method": "placeholder_for_blocked_content",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "69": {
+      "url_number": 69,
+      "url": "https://www.canva.com/learn/your-brand-needs-a-visual-style-guide/",
+      "title": "Creating a brand style guide: templates, how-to, tips | Canva",
+      "category_id": "05_brand_identity_and_consistency",
+      "category_name": "05 Brand Identity And Consistency",
+      "citation_number": 69,
+      "extraction_status": "success",
+      "extraction_method": "playwright_mcp",
+      "word_count_estimate": 2100,
+      "extraction_date": "2025-11-10"
+    },
+    "70": {
+      "url_number": 70,
+      "url": "https://www.playbook.com/blog/5-ways-to-maintain-brand-consistency-through-design/",
+      "title": "5 ways to maintain brand consistency through design - Playbook",
+      "category_id": "05_brand_identity_and_consistency",
+      "category_name": "05 Brand Identity And Consistency",
+      "citation_number": 70,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 800,
+      "extraction_date": "2025-11-10"
+    },
+    "71": {
+      "url_number": 71,
+      "url": "https://www.frontify.com/en/guide/brand-guidelines-examples",
+      "title": "19 brand guidelines that brand experts love | Frontify",
+      "category_id": "05_brand_identity_and_consistency",
+      "category_name": "05 Brand Identity And Consistency",
+      "citation_number": 71,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1400,
+      "extraction_date": "2025-11-10"
+    },
+    "72": {
+      "url_number": 72,
+      "url": "community_discussion_content",
+      "title": "URL #72 - Brand Identity Community Discussion",
+      "category_id": "05_brand_identity_and_consistency",
+      "category_name": "05 Brand Identity And Consistency",
+      "citation_number": null,
+      "extraction_status": "community_platform_content",
+      "extraction_method": "placeholder_community_discussion",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "73": {
+      "url_number": 73,
+      "url": "",
+      "title": "",
+      "category_id": "05_brand_identity_and_consistency",
+      "category_name": "05 Brand Identity And Consistency",
+      "citation_number": null,
+      "extraction_status": "pending",
+      "extraction_method": "unknown",
+      "word_count_estimate": 0,
+      "extraction_date": ""
+    },
+    "74": {
+      "url_number": 74,
+      "url": "",
+      "title": "",
+      "category_id": "05_brand_identity_and_consistency",
+      "category_name": "05 Brand Identity And Consistency",
+      "citation_number": null,
+      "extraction_status": "pending",
+      "extraction_method": "unknown",
+      "word_count_estimate": 0,
+      "extraction_date": ""
+    },
+    "75": {
+      "url_number": 75,
+      "url": "",
+      "title": "",
+      "category_id": "06_psychology_of_persuasion",
+      "category_name": "06 Psychology Of Persuasion",
+      "citation_number": null,
+      "extraction_status": "pending",
+      "extraction_method": "unknown",
+      "word_count_estimate": 0,
+      "extraction_date": ""
+    },
+    "76": {
+      "url_number": 76,
+      "url": "https://www.phable.io/phable-labs/the-psychology-of-persuasion-how-science-shapes-marketing-success",
+      "title": "The Psychology of Persuasion: How Science Shapes Marketing Success - Phable",
+      "category_id": "06_psychology_of_persuasion",
+      "category_name": "06 Psychology Of Persuasion",
+      "citation_number": 76,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1100,
+      "extraction_date": "2025-11-10"
+    },
+    "77": {
+      "url_number": 77,
+      "url": "",
+      "title": "",
+      "category_id": "06_psychology_of_persuasion",
+      "category_name": "06 Psychology Of Persuasion",
+      "citation_number": null,
+      "extraction_status": "pending",
+      "extraction_method": "unknown",
+      "word_count_estimate": 0,
+      "extraction_date": ""
+    },
+    "78": {
+      "url_number": 78,
+      "url": "",
+      "title": "",
+      "category_id": "06_psychology_of_persuasion",
+      "category_name": "06 Psychology Of Persuasion",
+      "citation_number": null,
+      "extraction_status": "pending",
+      "extraction_method": "unknown",
+      "word_count_estimate": 0,
+      "extraction_date": ""
+    },
+    "79": {
+      "url_number": 79,
+      "url": "",
+      "title": "",
+      "category_id": "06_psychology_of_persuasion",
+      "category_name": "06 Psychology Of Persuasion",
+      "citation_number": null,
+      "extraction_status": "pending",
+      "extraction_method": "unknown",
+      "word_count_estimate": 0,
+      "extraction_date": ""
+    },
+    "80": {
+      "url_number": 80,
+      "url": "",
+      "title": "",
+      "category_id": "06_psychology_of_persuasion",
+      "category_name": "06 Psychology Of Persuasion",
+      "citation_number": null,
+      "extraction_status": "pending",
+      "extraction_method": "unknown",
+      "word_count_estimate": 0,
+      "extraction_date": ""
+    },
+    "81": {
+      "url_number": 81,
+      "url": "https://www.blendb2b.com/blog/website-social-proof",
+      "title": "How to use website social proof: strategies and examples that work - BlendB2B",
+      "category_id": "06_psychology_of_persuasion",
+      "category_name": "06 Psychology Of Persuasion",
+      "citation_number": 81,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 950,
+      "extraction_date": "2025-11-10"
+    },
+    "82": {
+      "url_number": 82,
+      "url": "https://mailchimp.com/resources/scarcity-principle/",
+      "title": "The Scarcity Principle: How to Create Urgency - Mailchimp",
+      "category_id": "06_psychology_of_persuasion",
+      "category_name": "06 Psychology Of Persuasion",
+      "citation_number": 82,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 850,
+      "extraction_date": "2025-11-10"
+    },
+    "83": {
+      "url_number": 83,
+      "url": "https://neklo.com/blog/urgency-and-scarcity-marketing-strategies",
+      "title": "Creating Urgency and Scarcity: Effective Marketing Strategies - NEKLO",
+      "category_id": "06_psychology_of_persuasion",
+      "category_name": "06 Psychology Of Persuasion",
+      "citation_number": 83,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 900,
+      "extraction_date": "2025-11-10"
+    },
+    "84": {
+      "url_number": 84,
+      "url": "https://www.shopify.com/blog/using-scarcity-urgency-increase-sales",
+      "title": "While Supplies Last: 8 Scarcity and Urgency Tips for Stores - Shopify",
+      "category_id": "06_psychology_of_persuasion",
+      "category_name": "06 Psychology Of Persuasion",
+      "citation_number": 84,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1050,
+      "extraction_date": "2025-11-10"
+    },
+    "85": {
+      "url_number": 85,
+      "url": "https://www.gravityforms.com/blog/scarcity-urgency-form-design/",
+      "title": "Scarcity and Urgency: Powerful Form Design Tools - Gravity Forms",
+      "category_id": "06_psychology_of_persuasion",
+      "category_name": "06 Psychology Of Persuasion",
+      "citation_number": 85,
+      "extraction_status": "success",
+      "extraction_method": "playwright_mcp",
+      "word_count_estimate": 1200,
+      "extraction_date": "2025-11-10"
+    },
+    "86": {
+      "url_number": 86,
+      "url": "blocked_access",
+      "title": "URL #86 - Access Restricted",
+      "category_id": "06_psychology_of_persuasion",
+      "category_name": "06 Psychology Of Persuasion",
+      "citation_number": null,
+      "extraction_status": "blocked",
+      "extraction_method": "blocked_url_placeholder",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "87": {
+      "url_number": 87,
+      "url": "blocked_access",
+      "title": "URL #87 - Access Restricted",
+      "category_id": "06_psychology_of_persuasion",
+      "category_name": "06 Psychology Of Persuasion",
+      "citation_number": null,
+      "extraction_status": "blocked",
+      "extraction_method": "blocked_url_placeholder",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "88": {
+      "url_number": 88,
+      "url": "https://studio1design.com/the-7-secrets-of-persuasion-in-website-design/",
+      "title": "7 Secrets of Persuasion in Website Design - Studio 1 Design",
+      "category_id": "06_psychology_of_persuasion",
+      "category_name": "06 Psychology Of Persuasion",
+      "citation_number": 88,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1150,
+      "extraction_date": "2025-11-10"
+    },
+    "89": {
+      "url_number": 89,
+      "url": "https://www.adobe.com/creativecloud/file-types/image/comparison/raster-vs-vector.html",
+      "title": "Raster vs. vector: What are the differences? - Adobe",
+      "category_id": "07_production_and_file_formats",
+      "category_name": "07 Production And File Formats",
+      "citation_number": 89,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1250,
+      "extraction_date": "2025-11-10"
+    },
+    "90": {
+      "url_number": 90,
+      "url": "blocked_access",
+      "title": "URL #90 - Access Restricted",
+      "category_id": "07_production_and_file_formats",
+      "category_name": "07 Production And File Formats",
+      "citation_number": null,
+      "extraction_status": "blocked",
+      "extraction_method": "blocked_url_placeholder",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "91": {
+      "url_number": 91,
+      "url": "https://pakfactory.com/blog/raster-vs-vector/",
+      "title": "Raster vs Vector: Which to Use for Packaging? | Pakfactory Blog",
+      "category_id": "07_production_and_file_formats",
+      "category_name": "07 Production And File Formats",
+      "citation_number": 91,
+      "extraction_status": "success",
+      "extraction_method": "playwright_mcp",
+      "word_count_estimate": 1300,
+      "extraction_date": "2025-11-10"
+    },
+    "92": {
+      "url_number": 92,
+      "url": "https://graphicdesigneye.com/guide-to-image-file-formats/",
+      "title": "A Guide to Image File Formats | Know Image File Types - Graphic Design Eye",
+      "category_id": "07_production_and_file_formats",
+      "category_name": "07 Production And File Formats",
+      "citation_number": 92,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1300,
+      "extraction_date": "2025-11-10"
+    },
+    "93": {
+      "url_number": 93,
+      "url": "https://theglowstudio.com/file-formats-explained/",
+      "title": "File Formats Explained - The Glow Studio",
+      "category_id": "07_production_and_file_formats",
+      "category_name": "07 Production And File Formats",
+      "citation_number": 93,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1200,
+      "extraction_date": "2025-11-10"
+    },
+    "94": {
+      "url_number": 94,
+      "url": "https://www.adobe.com/creativecloud/file-types/image/comparison/raster-vs-vector.html#:~:text=An%20easy%20way%20to%20tell,without%20losing%20any%20image%20quality.",
+      "title": "Raster vs. vector - Adobe (duplicate reference with URL fragment)",
+      "category_id": "07_production_and_file_formats",
+      "category_name": "07 Production And File Formats",
+      "citation_number": null,
+      "extraction_status": "duplicate",
+      "extraction_method": "duplicate_detection",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "95": {
+      "url_number": 95,
+      "url": "https://www.adobe.com/in/creativecloud/roc/blog/design/should-you-use-raster-or-vector-for-your-projects.html",
+      "title": "Raster vs. vector: Which image type is best for your project | Adobe India",
+      "category_id": "07_production_and_file_formats",
+      "category_name": "07 Production And File Formats",
+      "citation_number": 95,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1250,
+      "extraction_date": "2025-11-10"
+    },
+    "96": {
+      "url_number": 96,
+      "url": "https://www.geeksforgeeks.org/computer-graphics/vector-vs-raster-graphics/",
+      "title": "Vector vs Raster Graphics - GeeksforGeeks",
+      "category_id": "07_production_and_file_formats",
+      "category_name": "07 Production And File Formats",
+      "citation_number": 96,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1200,
+      "extraction_date": "2025-11-10"
+    },
+    "97": {
+      "url_number": 97,
+      "url": "https://proformablog.com/vector-vs-raster-what-image-format-does-my-designer-need-and-why/",
+      "title": "Vector vs. Raster: What image format does my designer need and why? - Proforma Blog",
+      "category_id": "07_production_and_file_formats",
+      "category_name": "07 Production And File Formats",
+      "citation_number": 97,
+      "extraction_status": "blocked_webfetch_empty_content",
+      "extraction_method": "webfetch_primary_failed",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "98": {
+      "url_number": 98,
+      "url": "https://blogs.ifas.ufl.edu/ifascomm/2023/09/01/decoding-graphic-design-file-types/",
+      "title": "Decoding Graphic Design File Types - Communications - Blogs (University of Florida IFAS)",
+      "category_id": "07_production_and_file_formats",
+      "category_name": "07 Production And File Formats",
+      "citation_number": 98,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 950,
+      "extraction_date": "2025-11-10"
+    },
+    "99": {
+      "url_number": 99,
+      "url": "https://www.reddit.com/r/CommercialPrinting/comments/120oga7/explaining_vector_vs_raster_to_clients/",
+      "title": "Explaining Vector vs Raster to Clients? : r/CommercialPrinting - Reddit",
+      "category_id": "07_production_and_file_formats",
+      "category_name": "07 Production And File Formats",
+      "citation_number": null,
+      "extraction_status": "blocked_reddit_access_restriction",
+      "extraction_method": "webfetch_primary_failed",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "100": {
+      "url_number": 100,
+      "url": "https://www.thebusinesstoolkit.com/prepress-checklist-how-to-prepare-your-design-for-print/",
+      "title": "Prepress Checklist: How to prepare your design for print - The Business Toolkit",
+      "category_id": "07_production_and_file_formats",
+      "category_name": "07 Production And File Formats",
+      "citation_number": 100,
+      "extraction_status": "blocked_webfetch_empty_content",
+      "extraction_method": "webfetch_primary_failed",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "101": {
+      "url_number": 101,
+      "url": "https://www.sttark.com/blog/prepress-checklist",
+      "title": "Prepress Checklist: Prepare Custom Label File for Print | Sttark",
+      "category_id": "07_production_and_file_formats",
+      "category_name": "07 Production And File Formats",
+      "citation_number": 101,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 850,
+      "extraction_date": "2025-11-10"
+    },
+    "102": {
+      "url_number": 102,
+      "url": "https://www.reddit.com/r/Design/comments/btv8f/idiot_proof_graphic_design_preprint_check_list/",
+      "title": "Idiot Proof Graphic Design Pre-Print Check List - Reddit r/Design",
+      "category_id": "07_production_and_file_formats",
+      "category_name": "07 Production And File Formats",
+      "citation_number": null,
+      "extraction_status": "blocked_reddit_access_restriction",
+      "extraction_method": "webfetch_primary_failed",
+      "word_count_estimate": 0,
+      "extraction_date": "2025-11-10"
+    },
+    "103": {
+      "url_number": 103,
+      "url": "https://www.crownconnect.com/prepress-checklist/",
+      "title": "Prepress Checklist - Crown Connect",
+      "category_id": "07_production_and_file_formats",
+      "category_name": "07 Production And File Formats",
+      "citation_number": 103,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 900,
+      "extraction_date": "2025-11-10"
+    },
+    "104": {
+      "url_number": 104,
+      "url": "https://www.duncan-parnell.com/blog/199/designers-and-prepress-checklist",
+      "title": "Designers and Prepress Checklist | Duncan-Parnell",
+      "category_id": "07_production_and_file_formats",
+      "category_name": "07 Production And File Formats",
+      "citation_number": 104,
+      "extraction_status": "success",
+      "extraction_method": "webfetch_primary",
+      "word_count_estimate": 1000,
+      "extraction_date": "2025-11-10"
+    }
+  },
+  "by_citation_number": {
+    "1": {
+      "citation_number": 1,
+      "url_number": 1,
+      "url": "https://www.vistaprint.com/hub/principles-of-design\\#:\\~:text=The%20fundamental%20principles%20of%20design,attention%2C%20a%20point%20of%20focus.",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "2": {
+      "citation_number": 2,
+      "url_number": 2,
+      "url": "https://www.interaction-design.org/literature/article/the-building-blocks-of-visual-design",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "3": {
+      "citation_number": 3,
+      "url_number": 3,
+      "url": "https://www.superside.com/blog/principles-of-design-guide",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "4": {
+      "citation_number": 4,
+      "url_number": 4,
+      "url": "https://www.adobe.com/express/learn/blog/8-basic-design-principles-to-help-you-create-better-graphics",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "5": {
+      "citation_number": 5,
+      "url_number": 1,
+      "url": "https://www.vistaprint.com/hub/principles-of-design",
+      "title": "The 7 principles of design and how to use them (with infographic) \\",
+      "source": "Vistaprint",
+      "access_date": "November 9, 2025"
+    },
+    "6": {
+      "citation_number": 6,
+      "url_number": 6,
+      "url": "https://thimpress.com/basic-graphic-design-principles-and-how-to-use-them/",
+      "title": "12+ Basic Graphic Design Principles (And How To Use Them) \\",
+      "source": "ThimPress",
+      "access_date": "November 9, 2025"
+    },
+    "7": {
+      "citation_number": 7,
+      "url_number": 7,
+      "url": "https://www.canva.com/learn/contrasting-colors/",
+      "title": "Designing with contrast: 20 tips from a designer \\",
+      "source": "Canva",
+      "access_date": "November 9, 2025"
+    },
+    "8": {
+      "citation_number": 8,
+      "url_number": 8,
+      "url": "https://www.boldreports.com/blog/report-design-standards/",
+      "title": "Exposing the Secrets of Effective Report Design Standards \\",
+      "source": "Bold Reports",
+      "access_date": "November 9, 2025"
+    },
+    "9": {
+      "citation_number": 9,
+      "url_number": 9,
+      "url": "https://www.sfmagazine.com/articles/2018/april/5-principles-of-report-design/",
+      "title": "5 Principles of Report Design | IMA \\",
+      "source": "Strategic Finance",
+      "access_date": "November 9, 2025"
+    },
+    "10": {
+      "citation_number": 10,
+      "url_number": 10,
+      "url": "https://www.dochipo.com/white-space-in-graphic-design/",
+      "title": "White Space In Graphic Design: A Detailed Guide with Examples \\",
+      "source": "DocHipo",
+      "access_date": "November 9, 2025"
+    },
+    "11": {
+      "citation_number": 11,
+      "url_number": 11,
+      "url": "https://www.andacademy.com/resources/blog/graphic-design/white-space-in-design/",
+      "title": "White Space in Design \\",
+      "source": "A Complete Guide | AND Academy",
+      "access_date": "November 9, 2025"
+    },
+    "12": {
+      "citation_number": 12,
+      "url_number": 12,
+      "url": "https://blog.thenounproject.com/graphic-design-principles-balance-and-white-space/",
+      "title": "Graphic Design Principles: Balance and White Space \\",
+      "source": "The Noun Project Blog",
+      "access_date": "November 9, 2025"
+    },
+    "13": {
+      "citation_number": 13,
+      "url_number": 13,
+      "url": "https://www.canva.com/learn/visual-hierarchy/",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "14": {
+      "citation_number": 14,
+      "url_number": 14,
+      "url": "https://bejamas.com/blog/gestalt-principles-of-design",
+      "title": "Understanding Gestalt Principles and Their Practical Application in UI/UX Design \\",
+      "source": "Bejamas",
+      "access_date": "November 9, 2025"
+    },
+    "15": {
+      "citation_number": 15,
+      "url_number": 15,
+      "url": "https://www.superside.com/blog/gestalt-principles-of-design",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "16": {
+      "citation_number": 16,
+      "url_number": 16,
+      "url": "https://blog.thenounproject.com/rgb-vs-cmyk-understanding-the-differences/",
+      "title": "RGB vs. CMYK: Understanding the Differences \\",
+      "source": "The Noun Project Blog",
+      "access_date": "November 9, 2025"
+    },
+    "17": {
+      "citation_number": 17,
+      "url_number": 17,
+      "url": "https://elementor.com/blog/color-theory-web-design/",
+      "title": "Color Theory In Web Design: A Complete Guide (2024) \\",
+      "source": "Elementor",
+      "access_date": "November 9, 2025"
+    },
+    "18": {
+      "citation_number": 18,
+      "url_number": 73,
+      "url": "https://www.ferrum.edu/downloads/academics/programs/school\\_of\\_art\\_divisions/dept\\_visual/art-color-systems-handbook.pdf",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "19": {
+      "citation_number": 19,
+      "url_number": 19,
+      "url": "https://www.tourboxtech.com/en/news/rgb-vs-cmyk.html",
+      "title": "RGB VS CMYK: An Ultimate Guide to Mastering Color Modes \\",
+      "source": "TourBox",
+      "access_date": "November 9, 2025"
+    },
+    "20": {
+      "citation_number": 20,
+      "url_number": 73,
+      "url": "https://www.reddit.com/r/ArtistLounge/comments/1fbtl1c/is\\_there\\_a\\_difference\\_between\\_cmyk\\_and\\_rgb/",
+      "title": "Is there a difference between CMYK and RGB? : r/ArtistLounge \\",
+      "source": "Reddit",
+      "access_date": "November 9, 2025"
+    },
+    "21": {
+      "citation_number": 21,
+      "url_number": 73,
+      "url": "https://www.sessions.edu/color-calculator/",
+      "title": "Color Wheel \\",
+      "source": "Color Calculator | Sessions College",
+      "access_date": "November 9, 2025"
+    },
+    "22": {
+      "citation_number": 22,
+      "url_number": 73,
+      "url": "https://pcmainstitute.org/designing-with-color-complementary-analogous-monochromatic-triadic-color-combinations/",
+      "title": "Designing With Color: Complementary, Analogous, Monochromatic & Triadic Color Combinations \\",
+      "source": "Event Leadership Institute",
+      "access_date": "November 9, 2025"
+    },
+    "23": {
+      "citation_number": 23,
+      "url_number": 23,
+      "url": "https://medium.com/design-bootcamp/the-power-of-color-in-design-part-2-color-schemes-af9a9c36a70c",
+      "title": "The Power of Color in Design \u2014 Part 2: Color Schemes | by Vian Pua Meno \\",
+      "source": "Medium",
+      "access_date": "November 9, 2025"
+    },
+    "24": {
+      "citation_number": 24,
+      "url_number": 24,
+      "url": "https://musemind.agency/blog/color-theory",
+      "title": "What Is Color Theory? A Comprehensive Color Guide For The Designers \\",
+      "source": "Musemind",
+      "access_date": "November 9, 2025"
+    },
+    "25": {
+      "citation_number": 25,
+      "url_number": 25,
+      "url": "https://www.visionaustralia.org/business-consulting/digital-access/Creating-accessible-digital-colour-palettes-60-30-10-design-rule",
+      "title": "Creating accessible digital colour palettes using the 60",
+      "source": "30-10 ...",
+      "access_date": "November 9, 2025"
+    },
+    "26": {
+      "citation_number": 26,
+      "url_number": 73,
+      "url": "https://www.reddit.com/r/EntrepreneurRideAlong/comments/gp2uce/how\\_to\\_use\\_the\\_603010\\_rule\\_to\\_balance\\_your\\_brands/",
+      "title": "How to use the 60",
+      "source": "30-10 rule to balance your brand's color palette : r/EntrepreneurRideAlong \\- Reddit",
+      "access_date": "November 9, 2025"
+    },
+    "27": {
+      "citation_number": 27,
+      "url_number": 73,
+      "url": "https://www.researchgate.net/publication/395720517\\_The\\_Psychology\\_of\\_Color\\_in\\_Branding\\_and\\_Marketing",
+      "title": "The Psychology of Color in Branding and Marketing \\",
+      "source": "ResearchGate",
+      "access_date": "November 9, 2025"
+    },
+    "28": {
+      "citation_number": 28,
+      "url_number": 73,
+      "url": "https://kiu.ac.ug/assets/publications/3462\\_psychology-of-color-its-influence-on-marketing-and-design.pdf",
+      "title": "Psychology of Color: Its Influence on Marketing and Design \\",
+      "source": "Kampala International University",
+      "access_date": "November 9, 2025"
+    },
+    "29": {
+      "citation_number": 29,
+      "url_number": 29,
+      "url": "https://instapage.com/blog/ultimate-guide-to-color-psychology/",
+      "title": "The Ultimate Guide to Color Psychology in Marketing with Examples \\",
+      "source": "Instapage",
+      "access_date": "November 9, 2025"
+    },
+    "30": {
+      "citation_number": 30,
+      "url_number": 30,
+      "url": "https://www.helpscout.com/blog/psychology-of-color/",
+      "title": "Color Psychology in Marketing and Branding is All About Context \\",
+      "source": "Help Scout",
+      "access_date": "November 9, 2025"
+    },
+    "31": {
+      "citation_number": 31,
+      "url_number": 31,
+      "url": "https://www.canva.com/learn/design-for-engagement/",
+      "title": "Designing for engagement: How color, type and space can impact the \\",
+      "source": "Canva",
+      "access_date": "November 9, 2025"
+    },
+    "32": {
+      "citation_number": 32,
+      "url_number": 32,
+      "url": "https://webaim.org/articles/contrast/",
+      "title": "Contrast and Color Accessibility \\",
+      "source": "Understanding WCAG 2 ... \\- WebAIM",
+      "access_date": "November 9, 2025"
+    },
+    "33": {
+      "citation_number": 33,
+      "url_number": 33,
+      "url": "https://blog.pope.tech/2022/11/08/color-contrast-accessibility-requirements-explained/",
+      "title": "Color contrast accessibility requirements explained \\",
+      "source": "Pope Tech Blog",
+      "access_date": "November 9, 2025"
+    },
+    "34": {
+      "citation_number": 34,
+      "url_number": 34,
+      "url": "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html",
+      "title": "Understanding Success Criterion 1.4.3: Contrast (Minimum) | WAI \\",
+      "source": "W3C",
+      "access_date": "November 9, 2025"
+    },
+    "35": {
+      "citation_number": 35,
+      "url_number": 73,
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Understanding\\_WCAG/Perceivable/Color\\_contrast",
+      "title": "Color contrast \\",
+      "source": "Accessibility \\- MDN Web Docs \\- Mozilla",
+      "access_date": "November 9, 2025"
+    },
+    "36": {
+      "citation_number": 36,
+      "url_number": 36,
+      "url": "https://www.adobe.com/express/learn/blog/psychology-font",
+      "title": "Understanding the psychology of font and using text in design \\",
+      "source": "Adobe",
+      "access_date": "November 9, 2025"
+    },
+    "37": {
+      "citation_number": 37,
+      "url_number": 37,
+      "url": "https://www.clio.com/blog/legal-fonts-for-legal-documents/",
+      "title": "A Guide to the Best Fonts for Legal Documents \\",
+      "source": "Clio",
+      "access_date": "November 9, 2025"
+    },
+    "38": {
+      "citation_number": 38,
+      "url_number": 38,
+      "url": "https://looka.com/blog/types-of-fonts/",
+      "title": "Types of Fonts: The Ultimate Guide to Fonts Styles \\",
+      "source": "Looka",
+      "access_date": "November 9, 2025"
+    },
+    "39": {
+      "citation_number": 39,
+      "url_number": 73,
+      "url": "https://en.wikipedia.org/wiki/Typeface",
+      "title": "Typeface \\",
+      "source": "Wikipedia",
+      "access_date": "November 9, 2025"
+    },
+    "40": {
+      "citation_number": 40,
+      "url_number": 40,
+      "url": "https://www.windwardstudios.com/blog/document-fonts",
+      "title": "Document Fonts",
+      "source": "The Complete Guide \\- Windward Studios",
+      "access_date": "November 9, 2025"
+    },
+    "41": {
+      "citation_number": 41,
+      "url_number": 41,
+      "url": "https://typeheist.co/blog/typeface-classification-font-types-and-uses/",
+      "title": "Typeface classification: font styles explained \\",
+      "source": "Typeheist",
+      "access_date": "November 9, 2025"
+    },
+    "42": {
+      "citation_number": 42,
+      "url_number": 73,
+      "url": "https://apastyle.apa.org/style-grammar-guidelines/paper-format/font",
+      "title": "Font \\",
+      "source": "APA Style \\- American Psychological Association",
+      "access_date": "November 9, 2025"
+    },
+    "43": {
+      "citation_number": 43,
+      "url_number": 40,
+      "url": "https://www.windwardstudios.com/blog/document-fonts\\#:\\~:text=Experts%20recommend%20a%20mix%20of,help%20make%20them%20stand%20out.",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "44": {
+      "citation_number": 44,
+      "url_number": 44,
+      "url": "https://www.canva.com/learn/the-ultimate-guide-to-font-pairing/",
+      "title": "The Ultimate Guide to Font Pairing \u2014 Learn \\",
+      "source": "Canva",
+      "access_date": "November 9, 2025"
+    },
+    "45": {
+      "citation_number": 45,
+      "url_number": 45,
+      "url": "https://www.creativebloq.com/typography/20-perfect-font-pairings-3132120",
+      "title": "The ultimate guide to font pairings \\",
+      "source": "Creative Bloq",
+      "access_date": "November 9, 2025"
+    },
+    "46": {
+      "citation_number": 46,
+      "url_number": 46,
+      "url": "https://pangrampangram.com/blogs/journal/typographic-hierarchy",
+      "title": "How to create a typographic hierarchy",
+      "source": "Pangram Pangram Foundry",
+      "access_date": "November 9, 2025"
+    },
+    "47": {
+      "citation_number": 47,
+      "url_number": 47,
+      "url": "https://uxcel.com/blog/beginners-guide-to-typographic-hierarchy",
+      "title": "Introduction to typography hierarchy \\",
+      "source": "Uxcel",
+      "access_date": "November 9, 2025"
+    },
+    "48": {
+      "citation_number": 48,
+      "url_number": 48,
+      "url": "https://en.wikipedia.org/wiki/Microtypography",
+      "title": "Microtypography \\",
+      "source": "Wikipedia",
+      "access_date": "November 9, 2025"
+    },
+    "49": {
+      "citation_number": 49,
+      "url_number": 49,
+      "url": "https://www.adobe.com/in/creativecloud/roc/blog/design/kerning-typography-tips.html",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "50": {
+      "citation_number": 50,
+      "url_number": 50,
+      "url": "https://www.flowmapp.com/blog/qa/20-basic-typographic-terms-ui",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "51": {
+      "citation_number": 51,
+      "url_number": 51,
+      "url": "https://tomoson.com/the-role-of-kerning-tracking-and-leading-in-typography-a-designers-guide/",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "52": {
+      "citation_number": 52,
+      "url_number": 52,
+      "url": "https://numerous.ai/blog/business-document-format",
+      "title": "A Step",
+      "source": "by-Step Guide on How to Format a Business Document \\- Numerous.ai",
+      "access_date": "November 9, 2025"
+    },
+    "53": {
+      "citation_number": 53,
+      "url_number": 53,
+      "url": "https://baselinehq.com/4-grid-systems.html",
+      "title": "Grid Systems \\",
+      "source": "Baseline \u2022 The Free Design Bootcamp",
+      "access_date": "November 9, 2025"
+    },
+    "54": {
+      "citation_number": 54,
+      "url_number": 54,
+      "url": "https://designlab.com/blog/grid-systems-history-ux-ui-layout",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "55": {
+      "citation_number": 55,
+      "url_number": 55,
+      "url": "https://www.onething.design/post/grid-layout-design-guide-history-tips-examples",
+      "title": "Grid Layout Design Guide (2025)",
+      "source": "History, Tips & Top Examples",
+      "access_date": "November 9, 2025"
+    },
+    "56": {
+      "citation_number": 56,
+      "url_number": 56,
+      "url": "https://www.halo-lab.com/blog/guide-to-grid-layout-design-with-examples",
+      "title": "Guide to grid layout design with examples \\",
+      "source": "Halo Lab",
+      "access_date": "November 9, 2025"
+    },
+    "57": {
+      "citation_number": 57,
+      "url_number": 57,
+      "url": "https://www.interaction-design.org/literature/topics/grid-systems",
+      "title": "What are Grid Systems? | IxDF \\",
+      "source": "The Interaction Design Foundation",
+      "access_date": "November 9, 2025"
+    },
+    "58": {
+      "citation_number": 58,
+      "url_number": 58,
+      "url": "https://visme.co/blog/layout-design/",
+      "title": "Layout Design: Types of Grids for Creating Professional",
+      "source": "Looking Designs \\- Visme",
+      "access_date": "November 9, 2025"
+    },
+    "59": {
+      "citation_number": 59,
+      "url_number": 59,
+      "url": "https://www.eleken.co/blog-posts/grid-layout-design-history-tips-and-best-examples",
+      "title": "Understanding the Grid Layout Design: Types, Examples, Tips \\",
+      "source": "Eleken",
+      "access_date": "November 9, 2025"
+    },
+    "60": {
+      "citation_number": 60,
+      "url_number": 60,
+      "url": "https://www.datylon.com/blog/10-report-design-tips",
+      "title": "10 DOs and DON'Ts of Report Design | Blog \\",
+      "source": "Datylon",
+      "access_date": "November 9, 2025"
+    },
+    "61": {
+      "citation_number": 61,
+      "url_number": 61,
+      "url": "https://venngage.com/blog/presentation-design/",
+      "title": "21 Presentation Design Tips For Success \\",
+      "source": "Venngage",
+      "access_date": "November 9, 2025"
+    },
+    "62": {
+      "citation_number": 62,
+      "url_number": 62,
+      "url": "https://www.mimeo.com/blog/proposal-presentation-tips/",
+      "title": "6 Tips for Your Next Proposal Presentation \\",
+      "source": "Mimeo",
+      "access_date": "November 9, 2025"
+    },
+    "63": {
+      "citation_number": 63,
+      "url_number": 63,
+      "url": "https://www.slidor.agency/blog/ultimate-guide-corporate-presentation-design",
+      "title": "The Ultimate Guide to Corporate Presentation Design \\",
+      "source": "Slidor",
+      "access_date": "November 9, 2025"
+    },
+    "64": {
+      "citation_number": 64,
+      "url_number": 64,
+      "url": "https://www.frontify.com/en/guide/brand-consistency",
+      "title": "Brand Consistency: How to Stay On",
+      "source": "Brand, Always. \\- Frontify",
+      "access_date": "November 9, 2025"
+    },
+    "65": {
+      "citation_number": 65,
+      "url_number": 65,
+      "url": "https://venngage.com/blog/brand-consistency/",
+      "title": "How to Maintain Brand Consistency Without a Design Team \\",
+      "source": "Venngage",
+      "access_date": "November 9, 2025"
+    },
+    "66": {
+      "citation_number": 66,
+      "url_number": 66,
+      "url": "https://www.adobe.com/creativecloud/business/teams/resources/how-to/brand-guide.html",
+      "title": "Create a brand style guide for your business. \\",
+      "source": "Adobe",
+      "access_date": "November 9, 2025"
+    },
+    "67": {
+      "citation_number": 67,
+      "url_number": 73,
+      "url": "https://www.bynder.com/en/glossary/brand-guidelines-definition/",
+      "title": "Brand Guidelines: Definition & How to Create a Style Guide \\",
+      "source": "Bynder",
+      "access_date": "November 9, 2025"
+    },
+    "68": {
+      "citation_number": 68,
+      "url_number": 73,
+      "url": "https://studionoel.co.uk/elements-of-brand-guidelines",
+      "title": "The 6 Elements Which Every Brand Guideline Should Have \\",
+      "source": "Studio Noel",
+      "access_date": "November 9, 2025"
+    },
+    "69": {
+      "citation_number": 69,
+      "url_number": 69,
+      "url": "https://www.canva.com/learn/your-brand-needs-a-visual-style-guide/",
+      "title": "Creating a brand style guide: templates, how",
+      "source": "to, tips | Canva",
+      "access_date": "November 9, 2025"
+    },
+    "70": {
+      "citation_number": 70,
+      "url_number": 70,
+      "url": "https://www.playbook.com/blog/5-ways-to-maintain-brand-consistency-through-design/",
+      "title": "5 ways to maintain brand consistency through design \\",
+      "source": "Playbook",
+      "access_date": "November 9, 2025"
+    },
+    "71": {
+      "citation_number": 71,
+      "url_number": 71,
+      "url": "https://www.frontify.com/en/guide/brand-guidelines-examples",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "72": {
+      "citation_number": 72,
+      "url_number": 73,
+      "url": "https://www.reddit.com/r/graphic\\_design/comments/15jodbd/brand\\_guidelines\\_how\\_should\\_i\\_make\\_them/",
+      "title": "Brand guidelines: how should I make them? : r/graphic\\_design \\",
+      "source": "Reddit",
+      "access_date": "November 9, 2025"
+    },
+    "73": {
+      "citation_number": 73,
+      "url_number": 73,
+      "url": "https://www.reddit.com/r/graphic\\_design/comments/1depgxi/how\\_to\\_maintain\\_brand\\_consistency/",
+      "title": "How to maintain Brand consistency? : r/graphic\\_design \\",
+      "source": "Reddit",
+      "access_date": "November 9, 2025"
+    },
+    "74": {
+      "citation_number": 74,
+      "url_number": 73,
+      "url": "https://www.mastroke.com/blog/digital-marketing/10-strategies-for-maintaining-brand-consistency-across-platforms/",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "75": {
+      "citation_number": 75,
+      "url_number": 73,
+      "url": "https://lauermediaco.com/blog/graphic-design-in-advertising-persuasion-through-imagery/",
+      "title": "Graphic Design in Advertising: Persuasion Through Imagery \\",
+      "source": "Lauer Media Company",
+      "access_date": "November 9, 2025"
+    },
+    "76": {
+      "citation_number": 76,
+      "url_number": 73,
+      "url": "https://www.phable.io/phable-labs/the-psychology-of-persuasion-how-science-shapes-marketing-success",
+      "title": "The Psychology of Persuasion: How Science Shapes Marketing Success \\",
+      "source": "Phable",
+      "access_date": "November 9, 2025"
+    },
+    "77": {
+      "citation_number": 77,
+      "url_number": 73,
+      "url": "https://cxl.com/blog/cialdinis-principles-persuasion/",
+      "title": "How to Use Cialdini's 6 Principles of Persuasion to Boost ... \\",
+      "source": "CXL",
+      "access_date": "November 9, 2025"
+    },
+    "78": {
+      "citation_number": 78,
+      "url_number": 73,
+      "url": "https://www.influenceatwork.com/7-principles-of-persuasion/",
+      "title": "Dr. Robert Cialdini's Seven Principles of Persuasion | IAW \\",
+      "source": "Influence at Work",
+      "access_date": "November 9, 2025"
+    },
+    "79": {
+      "citation_number": 79,
+      "url_number": 73,
+      "url": "https://www.designaphy.com/insights/use-design-to-build-brand-trust",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "80": {
+      "citation_number": 80,
+      "url_number": 73,
+      "url": "https://www.orbitmedia.com/blog/social-proof-web-design/",
+      "title": "How to Add Social Proof to Websites: 7 Examples People are Raving About \\",
+      "source": "Orbit Media",
+      "access_date": "November 9, 2025"
+    },
+    "81": {
+      "citation_number": 81,
+      "url_number": 73,
+      "url": "https://www.blendb2b.com/blog/website-social-proof",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "82": {
+      "citation_number": 82,
+      "url_number": 73,
+      "url": "https://mailchimp.com/resources/scarcity-principle/",
+      "title": "The Scarcity Principle: How to Create Urgency \\",
+      "source": "Mailchimp",
+      "access_date": "November 9, 2025"
+    },
+    "83": {
+      "citation_number": 83,
+      "url_number": 73,
+      "url": "https://neklo.com/blog/urgency-and-scarcity-marketing-strategies",
+      "title": "Creating Urgency and Scarcity: Effective Marketing Strategies \\",
+      "source": "NEKLO",
+      "access_date": "November 9, 2025"
+    },
+    "84": {
+      "citation_number": 84,
+      "url_number": 73,
+      "url": "https://www.shopify.com/blog/using-scarcity-urgency-increase-sales",
+      "title": "While Supplies Last: 8 Scarcity and Urgency Tips for Stores \\",
+      "source": "Shopify",
+      "access_date": "November 9, 2025"
+    },
+    "85": {
+      "citation_number": 85,
+      "url_number": 73,
+      "url": "https://www.gravityforms.com/blog/scarcity-urgency-form-design/",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "86": {
+      "citation_number": 86,
+      "url_number": 73,
+      "url": "https://www.sociummedia.com/blog/urgency-scarcity-marketing-campaigns/",
+      "title": "Creating Urgency and Scarcity in Your Q4 Marketing Campaigns \\",
+      "source": "Socium Media",
+      "access_date": "November 9, 2025"
+    },
+    "87": {
+      "citation_number": 87,
+      "url_number": 73,
+      "url": "https://uxplanet.org/applying-principles-of-persuasion-in-ux-design-ce3edeb934ae",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "88": {
+      "citation_number": 88,
+      "url_number": 73,
+      "url": "https://studio1design.com/the-7-secrets-of-persuasion-in-website-design/",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "89": {
+      "citation_number": 89,
+      "url_number": 73,
+      "url": "https://www.adobe.com/creativecloud/file-types/image/comparison/raster-vs-vector.html",
+      "title": "Raster vs. vector: What are the differences? \\",
+      "source": "Adobe",
+      "access_date": "November 9, 2025"
+    },
+    "90": {
+      "citation_number": 90,
+      "url_number": 73,
+      "url": "https://www.shutterstock.com/blog/raster-vs-vector-file-formats",
+      "title": "Raster vs. Vector Files: Key Differences and When to Use Them \\",
+      "source": "Shutterstock",
+      "access_date": "November 9, 2025"
+    },
+    "91": {
+      "citation_number": 91,
+      "url_number": 73,
+      "url": "https://pakfactory.com/blog/raster-vs-vector/",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "92": {
+      "citation_number": 92,
+      "url_number": 73,
+      "url": "https://graphicdesigneye.com/guide-to-image-file-formats/",
+      "title": "A Guide to Image File Formats | Know Image File Types \\",
+      "source": "Graphic Design Eye",
+      "access_date": "November 9, 2025"
+    },
+    "93": {
+      "citation_number": 93,
+      "url_number": 73,
+      "url": "https://theglowstudio.com/file-formats-explained/",
+      "title": "File Formats Explained \\",
+      "source": "The Glow Studio",
+      "access_date": "November 9, 2025"
+    },
+    "94": {
+      "citation_number": 94,
+      "url_number": 73,
+      "url": "https://www.adobe.com/creativecloud/file-types/image/comparison/raster-vs-vector.html\\#:\\~:text=An%20easy%20way%20to%20tell,without%20losing%20any%20image%20quality.",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "95": {
+      "citation_number": 95,
+      "url_number": 73,
+      "url": "https://www.adobe.com/in/creativecloud/roc/blog/design/should-you-use-raster-or-vector-for-your-projects.html",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "96": {
+      "citation_number": 96,
+      "url_number": 73,
+      "url": "https://www.geeksforgeeks.org/computer-graphics/vector-vs-raster-graphics/",
+      "title": "Vector vs Raster Graphics \\",
+      "source": "GeeksforGeeks",
+      "access_date": "November 9, 2025"
+    },
+    "97": {
+      "citation_number": 97,
+      "url_number": 73,
+      "url": "https://proformablog.com/vector-vs-raster-what-image-format-does-my-designer-need-and-why/",
+      "title": "Vector vs. Raster: What image format does my designer need and why? \\",
+      "source": "Proforma Blog",
+      "access_date": "November 9, 2025"
+    },
+    "98": {
+      "citation_number": 98,
+      "url_number": 73,
+      "url": "https://blogs.ifas.ufl.edu/ifascomm/2023/09/01/decoding-graphic-design-file-types/",
+      "title": "Decoding Graphic Design File Types \\",
+      "source": "Communications \\- Blogs",
+      "access_date": "November 9, 2025"
+    },
+    "99": {
+      "citation_number": 99,
+      "url_number": 73,
+      "url": "https://www.reddit.com/r/CommercialPrinting/comments/120oga7/explaining\\_vector\\_vs\\_raster\\_to\\_clients/",
+      "title": "Explaining Vector vs Raster to Clients? : r/CommercialPrinting \\",
+      "source": "Reddit",
+      "access_date": "November 9, 2025"
+    },
+    "100": {
+      "citation_number": 100,
+      "url_number": 73,
+      "url": "https://www.thebusinesstoolkit.com/prepress-checklist-how-to-prepare-your-design-for-print/",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "101": {
+      "citation_number": 101,
+      "url_number": 73,
+      "url": "https://www.sttark.com/blog/prepress-checklist",
+      "title": "",
+      "source": "",
+      "access_date": "November 9, 2025"
+    },
+    "102": {
+      "citation_number": 102,
+      "url_number": 73,
+      "url": "https://www.reddit.com/r/Design/comments/btv8f/idiot\\_proof\\_graphic\\_design\\_preprint\\_check\\_list/",
+      "title": "Idiot Proof Graphic Design Pre",
+      "source": "Print Check List \\- Reddit",
+      "access_date": "November 9, 2025"
+    },
+    "103": {
+      "citation_number": 103,
+      "url_number": 73,
+      "url": "https://www.crownconnect.com/prepress-checklist/",
+      "title": "Prepress Checklist \\",
+      "source": "Crown Connect",
+      "access_date": "November 9, 2025"
+    },
+    "104": {
+      "citation_number": 104,
+      "url_number": 73,
+      "url": "https://www.duncan-parnell.com/blog/199/designers-and-prepress-checklist",
+      "title": "Designers and Prepress Checklist | Duncan",
+      "source": "Parnell",
+      "access_date": "November 9, 2025"
+    }
+  },
+  "by_extraction_status": {
+    "success": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      17,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      40,
+      41,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      69,
+      70,
+      71,
+      76,
+      81,
+      82,
+      83,
+      84,
+      85,
+      88,
+      89,
+      91,
+      92,
+      93,
+      95,
+      96,
+      98,
+      101,
+      103,
+      104
+    ],
+    "access_restricted": [
+      12,
+      16,
+      20
+    ],
+    "format_limitation": [
+      18
+    ],
+    "blocked_community_platform": [
+      39,
+      42,
+      67,
+      68
+    ],
+    "duplicate_reference": [
+      43
+    ],
+    "community_platform_content": [
+      72
+    ],
+    "pending": [
+      73,
+      74,
+      75,
+      77,
+      78,
+      79,
+      80
+    ],
+    "blocked": [
+      86,
+      87,
+      90
+    ],
+    "duplicate": [
+      94
+    ],
+    "blocked_webfetch_empty_content": [
+      97,
+      100
+    ],
+    "blocked_reddit_access_restriction": [
+      99,
+      102
+    ]
+  },
+  "by_extraction_method": {
+    "gemini_topic_explanation": [
+      1
+    ],
+    "webfetch_primary": [
+      2,
+      4,
+      6,
+      8,
+      40,
+      46,
+      47,
+      49,
+      50,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      70,
+      71,
+      76,
+      81,
+      82,
+      83,
+      84,
+      88,
+      89,
+      92,
+      93,
+      95,
+      96,
+      98,
+      101,
+      103,
+      104
+    ],
+    "gemini_comprehensive_extraction": [
+      3,
+      26
+    ],
+    "playwright_browser_automation": [
+      5,
+      7,
+      9,
+      13,
+      23,
+      29,
+      30,
+      31
+    ],
+    "webfetch_comprehensive": [
+      10,
+      11,
+      14,
+      15,
+      17,
+      19,
+      24,
+      25,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37
+    ],
+    "blocked_by_cloudflare": [
+      12,
+      16
+    ],
+    "webfetch_pdf_attempt": [
+      18
+    ],
+    "webfetch_reddit_blocked": [
+      20
+    ],
+    "gemini_academic_comprehensive": [
+      21,
+      22
+    ],
+    "gemini_academic_synthesis": [
+      27
+    ],
+    "gemini_academic_pdf_synthesis": [
+      28
+    ],
+    "playwright_mcp_browser": [
+      38,
+      41,
+      44,
+      45,
+      48,
+      51,
+      52
+    ],
+    "placeholder_for_blocked_content": [
+      39,
+      42,
+      67,
+      68
+    ],
+    "reference_notation": [
+      43
+    ],
+    "playwright_mcp": [
+      69,
+      85,
+      91
+    ],
+    "placeholder_community_discussion": [
+      72
+    ],
+    "unknown": [
+      73,
+      74,
+      75,
+      77,
+      78,
+      79,
+      80
+    ],
+    "blocked_url_placeholder": [
+      86,
+      87,
+      90
+    ],
+    "duplicate_detection": [
+      94
+    ],
+    "webfetch_primary_failed": [
+      97,
+      99,
+      100,
+      102
+    ]
+  },
+  "by_topic_keywords": {
+    "design_principles": {
+      "topic": "Design Principles",
+      "url_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "total_urls": 15
+    },
+    "hierarchy_contrast_alignment": {
+      "topic": "Hierarchy Contrast Alignment",
+      "url_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "total_urls": 7
+    },
+    "gestalt_psychology": {
+      "topic": "Gestalt Psychology",
+      "url_numbers": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "total_urls": 7
+    },
+    "color_psychology": {
+      "topic": "Color Psychology",
+      "url_numbers": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "total_urls": 13
+    },
+    "color_models_rgb_cmyk": {
+      "topic": "Color Models Rgb Cmyk",
+      "url_numbers": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "total_urls": 4
+    },
+    "color_palettes_603010": {
+      "topic": "Color Palettes 603010",
+      "url_numbers": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "total_urls": 9
+    },
+    "accessibility_wcag": {
+      "topic": "Accessibility Wcag",
+      "url_numbers": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "total_urls": 7
+    },
+    "typography_fonts": {
+      "topic": "Typography Fonts",
+      "url_numbers": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "total_urls": 17
+    },
+    "font_pairing": {
+      "topic": "Font Pairing",
+      "url_numbers": [
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "total_urls": 5
+    },
+    "layout_grid_systems": {
+      "topic": "Layout Grid Systems",
+      "url_numbers": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "total_urls": 11
+    },
+    "responsive_design": {
+      "topic": "Responsive Design",
+      "url_numbers": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "total_urls": 6
+    },
+    "brand_guidelines": {
+      "topic": "Brand Guidelines",
+      "url_numbers": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74
+      ],
+      "total_urls": 11
+    },
+    "brand_consistency": {
+      "topic": "Brand Consistency",
+      "url_numbers": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69
+      ],
+      "total_urls": 6
+    },
+    "style_guides": {
+      "topic": "Style Guides",
+      "url_numbers": [
+        70,
+        71,
+        72,
+        73,
+        74
+      ],
+      "total_urls": 5
+    },
+    "persuasion_psychology": {
+      "topic": "Persuasion Psychology",
+      "url_numbers": [
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88
+      ],
+      "total_urls": 14
+    },
+    "cialdini_principles": {
+      "topic": "Cialdini Principles",
+      "url_numbers": [
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "total_urls": 5
+    },
+    "social_proof_scarcity": {
+      "topic": "Social Proof Scarcity",
+      "url_numbers": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88
+      ],
+      "total_urls": 7
+    },
+    "file_formats_raster_vector": {
+      "topic": "File Formats Raster Vector",
+      "url_numbers": [
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+      ],
+      "total_urls": 11
+    },
+    "prepress_print_production": {
+      "topic": "Prepress Print Production",
+      "url_numbers": [
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "total_urls": 5
+    }
+  }
+}

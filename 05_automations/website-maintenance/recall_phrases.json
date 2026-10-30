@@ -1,0 +1,314 @@
+[
+ {
+  "phrase": "worker previews setup secrets before a preview exists recreate a stale preview",
+  "row": "Any change to the Worker Previews setup, a preview secret, or a stale preview"
+ },
+ {
+  "phrase": "branch cut from main fails preview build wrangler configuration missing previews block",
+  "row": "A branch cut from main fails its preview build (\"missing a previews block\")"
+ },
+ {
+  "phrase": "builds watch commit retry invisible uuid",
+  "row": "Watching a main (production) build, or a retry of a failed one"
+ },
+ {
+  "phrase": "preview watcher needs independent review of success and failure detection",
+  "row": "Writing or running a preview watcher"
+ },
+ {
+  "phrase": "judge a deploy by its product probe path build marker binding names on the tagged deployment",
+  "row": "Deciding a deploy is \"done\""
+ },
+ {
+  "phrase": "workers builds API preview build coverage dashboard red api green verify the same build",
+  "row": "The dashboard shows a red preview build while the API says green"
+ },
+ {
+  "phrase": "clean clone CI simulation command workers build readlink node symlink npm",
+  "row": "Before any push: simulate the CI build locally"
+ },
+ {
+  "phrase": "Access service token preview lock 302 without token 200 with token",
+  "row": "Your previews sit behind Cloudflare Access: checking the lock"
+ },
+ {
+  "phrase": "immutable preview links confuse review",
+  "row": "A reviewer says \"none of my changes are there\""
+ },
+ {
+  "phrase": "probe Access protected host without printing cookie",
+  "row": "Probing an Access-protected host from the terminal"
+ },
+ {
+  "phrase": "cloudflare preview hosts override X-Robots-Tag workers dev noindex header verifier",
+  "row": "Header checks differ between preview and production"
+ },
+ {
+  "phrase": "workers X-Robots-Tag header indexing posture",
+  "row": "Indexing posture on a Workers site (noindex, robots)"
+ },
+ {
+  "phrase": "run_worker_first exclusions can leave special route 404 responses without X-Robots-Tag",
+  "row": "A links check fails on special route 404 responses"
+ },
+ {
+  "phrase": "production change path without touching the preview working tree git worktree from origin main",
+  "row": "A change must go to main while the preview checkout is in use"
+ },
+ {
+  "phrase": "pin account_id wrangler verify token account scope",
+  "row": "A plain build or wrangler call hits the wrong Cloudflare account"
+ },
+ {
+  "phrase": "shell profile exports api tokens into every shell second account wrong account allowlist wrapper",
+  "row": "Your shell exports another account's token"
+ },
+ {
+  "phrase": "D1 time travel verify plan retention schedule independent exports",
+  "row": "Planning backups of the forms database"
+ },
+ {
+  "phrase": "check every privacy page sentence against the code true false unverifiable truth table",
+  "row": "Any change touching data practices or the privacy page"
+ },
+ {
+  "phrase": "repeat sign-up indistinguishable from the first one deletion still reaches it",
+  "row": "Repeat sign-ups or duplicate form submissions"
+ },
+ {
+  "phrase": "malformed request body is never logged map to 4xx log e.name only",
+  "row": "Error handling and logging in the form Worker"
+ },
+ {
+  "phrase": "worker code writes error reports only enforced by a lint over the import closure",
+  "row": "The privacy page says the server keeps only error reports"
+ },
+ {
+  "phrase": "optional form question nullable additive migration applied local then remote",
+  "row": "Adding a field to a form"
+ },
+ {
+  "phrase": "exact switches to turn on tracking paid ads cookie analytics later banner consent mode",
+  "row": "Turning on paid ads or cookie analytics later"
+ },
+ {
+  "phrase": "signed consent change broke the consent record verify signed payload and consent version",
+  "row": "Changing consent wording or any signed string"
+ },
+ {
+  "phrase": "review browser storage purpose necessity and applicable consent requirements before enabling it",
+  "row": "Adding browser storage (localStorage, sessionStorage)"
+ },
+ {
+  "phrase": "automate coordinated production settings on the main build and verify the deployed result",
+  "row": "Promoting preview to production on a Workers site"
+ },
+ {
+  "phrase": "push to main verify preview approval and deployment settings first",
+  "row": "Tempted to push to main because it is \"the production branch\""
+ },
+ {
+  "phrase": "QR code on a printed poster re-pointable short path end to end check",
+  "row": "A QR code on a printed event poster"
+ },
+ {
+  "phrase": "recheck agent readiness against explicit criteria on the deployed site",
+  "row": "Re-scanning agent readiness after a change"
+ },
+ {
+  "phrase": "agent discovery DNS records verify supported format cloudflare API DNSSEC",
+  "row": "Adding agent discovery over DNS"
+ },
+ {
+  "phrase": "DMARC reporting on a cloudflare zone without a mailbox verify report routing",
+  "row": "DMARC reports without a mailbox"
+ },
+ {
+  "phrase": "wrangler upgrade audit compatibility document temporary holds and review conditions",
+  "row": "Upgrading wrangler or another deploy tool"
+ },
+ {
+  "phrase": "outside collaborator branch protection access",
+  "row": "Giving a collaborator access to your site"
+ },
+ {
+  "phrase": "written change list for every preview to production cutover site url noindex robots",
+  "row": "Preview to production on any host: what must change together"
+ },
+ {
+  "phrase": "lighthouse produced zero reports median script printed all pass zero inputs is a fail",
+  "row": "A verification check printed PASS"
+ },
+ {
+  "phrase": "build a guard with explicit inputs failure conditions and evidence that it catches defects",
+  "row": "Building a guard, lint or validator"
+ },
+ {
+  "phrase": "validate checking tools with a deliberate defect confirm axe detects the rendered opacity change",
+  "row": "Planting a mutant to prove a check"
+ },
+ {
+  "phrase": "a verification log names the build it graded print the served tree hash first",
+  "row": "Filing a verification log"
+ },
+ {
+  "phrase": "reduce verification churn target checks to changes retain required final validation",
+  "row": "Verification is taking hours"
+ },
+ {
+  "phrase": "pipe tail exit status axe test suite",
+  "row": "Reading a command's exit code"
+ },
+ {
+  "phrase": "pgrep -f matches its own command line killed process looks alive",
+  "row": "Waiting on a process by name"
+ },
+ {
+  "phrase": "playwright install chromium serves lighthouse and axe point CHROME_PATH at the bundled binary",
+  "row": "Running Lighthouse/axe headless without system Chrome"
+ },
+ {
+  "phrase": "first screen check on phones test the visible viewport minus browser UI sweep heights",
+  "row": "A \"headline in the first screen\" check on phones"
+ },
+ {
+  "phrase": "sticky layer viewport captures scroll positions",
+  "row": "Judging a sticky or fixed layer from screenshots"
+ },
+ {
+  "phrase": "code inspection alone cannot establish quality run lighthouse and axe scores below 9.8 require continued work",
+  "row": "Scoring a pass that only inspected code"
+ },
+ {
+  "phrase": "use approved design scope and remaining defects to plan further iterations",
+  "row": "Planning how many iterations to spend"
+ },
+ {
+  "phrase": "near the threshold use binary acceptance checks and two independent blind reviews instead of scalar movement alone",
+  "row": "Close to the threshold, the score barely moves"
+ },
+ {
+  "phrase": "independent reviewer scores never fixes mechanical checks are a precondition not the verdict",
+  "row": "The coordinator wants to review its own work instead of using an independent reviewer"
+ },
+ {
+  "phrase": "product changes require refreshed source facts and a stale copy sweep",
+  "row": "The product the page describes has changed"
+ },
+ {
+  "phrase": "ambiguous fix instructions can cause writer defects state evidence expected behavior and constraints clearly",
+  "row": "Writing a finding or a fix instruction for a writer"
+ },
+ {
+  "phrase": "register approved page keys before merging signed strings reject unknown keys",
+  "row": "Merging signed strings into the registry"
+ },
+ {
+  "phrase": "check contrast against the brightest pixel beneath each line of text",
+  "row": "Words over a painted or photographic image"
+ },
+ {
+  "phrase": "media-007 validate scrim contrast on the rendered page",
+  "row": "Adding or changing a scrim"
+ },
+ {
+  "phrase": "art directed image container verify crop focal point and text clearance at breakpoints",
+  "row": "Art-directed images and breakpoints"
+ },
+ {
+  "phrase": "rebuild image edits from the untouched source adjust effect radius composite and save at source quality",
+  "row": "Editing an image file"
+ },
+ {
+  "phrase": "stylesheet generated as a string may escape static css checks assert the computed value",
+  "row": "CSS generated as a string in a component"
+ },
+ {
+  "phrase": "astro scoped styles do not reach elements created by client script global",
+  "row": "Styles do not apply to script-created elements in Astro"
+ },
+ {
+  "phrase": "govern above the fold media LCP candidate budgets video poster",
+  "row": "Above-the-fold images, video or canvas"
+ },
+ {
+  "phrase": "brand colors fail WCAG AA as text add aa suffix sibling tokens",
+  "row": "Brand colours fail contrast as text"
+ },
+ {
+  "phrase": "post launch polish loop one targeted fix hotfix commit make the container bigger first",
+  "row": "A layout looks \"pushed down\" after launch"
+ },
+ {
+  "phrase": "ambient header motion WCAG 2.2.2 pause stop hide visible mechanism",
+  "row": "Ambient motion that runs more than 5 seconds"
+ },
+ {
+  "phrase": "animation-play-state pause rule",
+  "row": "A pause control that does not stop everything"
+ },
+ {
+  "phrase": "addition drawn by a live layer starts at zero",
+  "row": "A live layer over a static design"
+ },
+ {
+  "phrase": "renderer decision tree first suitable option wins html svg css for meaning",
+  "row": "Choosing how to render something animated"
+ },
+ {
+  "phrase": "consult 03_skills/webgl-craft/SKILL.md for renderer and interaction guidance",
+  "row": "Any canvas/WebGL change"
+ },
+ {
+  "phrase": "when a gpu layer may start never during page load after load and idle",
+  "row": "When a GPU layer may start"
+ },
+ {
+  "phrase": "live layer that boots on scroll slice the boot so no task exceeds 50 ms",
+  "row": "A scroll-started layer janks on boot"
+ },
+ {
+  "phrase": "run every motion and initial frame check under the production CSP data url connect-src",
+  "row": "Animations work locally but break in production"
+ },
+ {
+  "phrase": "wrangler dev local upstream hostname must match form environment checks turnstile fails closed",
+  "row": "Local form round trip fails only on success paths"
+ },
+ {
+  "phrase": "review installed versions against current releases assess compatibility and security before upgrading",
+  "row": "Starting maintenance: which version of everything"
+ },
+ {
+  "phrase": "middleware reads request headers astro prerender warning isPrerendered guard",
+  "row": "Astro middleware warnings on prerendered routes"
+ },
+ {
+  "phrase": "redesign of a live site pick the workflow by mechanical fit not by label",
+  "row": "A redesign feels like a first build"
+ },
+ {
+  "phrase": "sweep the whole family convention drift",
+  "row": "Copying a pattern from sibling pages"
+ },
+ {
+  "phrase": "content security policy must account for every required external host font stylesheet",
+  "row": "Tightening or extending the CSP"
+ },
+ {
+  "phrase": "cloudflare web analytics beacon shared layout verify placement loading and cookieless configuration",
+  "row": "Adding cookieless analytics on Cloudflare"
+ },
+ {
+  "phrase": "dashboard-only instructions state the action expected result and what the operator should see",
+  "row": "A dashboard step you must do by hand"
+ },
+ {
+  "phrase": "in-browser compute evaluate whether a real language runtime is needed inside a static page",
+  "row": "Someone asks for a calculator or interactive tool"
+ },
+ {
+  "phrase": "in-browser compute astro set:html script inertness external script data attributes",
+  "row": "A widget works locally but is inert after the Astro build"
+ }
+]
