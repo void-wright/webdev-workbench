@@ -229,6 +229,25 @@ Every change is recorded, and `bin/install_skills.sh --uninstall` puts back what
 
 ---
 
+## Versions and updates
+
+The current version is in [`VERSION`](./VERSION), and every release is listed in
+[`CHANGELOG.md`](./CHANGELOG.md) and tagged in git (`v1.0.0`, and so on). To install a specific release, clone it
+by tag: `git clone --branch v1.0.0 https://github.com/void-wright/webdev-workbench.git ~/webdev-workbench-package`.
+
+To update an existing install, ask Claude to do it, or run these from the package folder:
+
+```bash
+git pull                                   # fetch the latest release
+bash bin/install_skills.sh --uninstall     # remove the previous version's skills and harnesses (restores backups)
+bash bin/install_skills.sh                 # install the new version
+```
+
+Then reload the memory pack exactly as in setup step P3 (`load-seed`, then the vector backfill). A newer pack replaces
+changed memories in place and leaves your own memories untouched. The changelog says when a release changes the pack.
+
+---
+
 ## Keys, accounts and the network
 
 - **No keys are required.** Each service the skills can use has a manual route.
