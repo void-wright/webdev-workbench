@@ -10,7 +10,6 @@ description: Interaction physics and state wiring for WebGL/canvas layers that s
 |---|---|
 | wiring hover, focus, click, pin, keyboard or touch to a canvas layer; writing motion that follows, springs, flows or loops | **this skill** |
 | deciding whether to use WebGL at all, or its cost | `03_skills/webgl-renderer-and-budget/SKILL.md` |
-| figures made of stars and links (legibility, layout, dimming) | `03_skills/webgl-constellations/SKILL.md` |
 | boot, pause, reduced motion, tests | `03_skills/webgl-hardening-and-testing/SKILL.md` |
 
 ## The one rule: the DOM owns state; the canvas follows

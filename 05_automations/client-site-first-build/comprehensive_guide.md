@@ -685,7 +685,7 @@ Every time this automation spawns a design-generator or design-reflector for a *
 | Content type | Confer with (package skills) |
 |---|---|
 | Website page (hero, product, landing copy) | `design-architect-thinking`, `corporate-graphic-design`, `aeo-optimization`, `agent-readiness-frontier` |
-| Page with a live or interactive layer | the `webgl-craft` cluster (renderer and budget, hardening and testing, interaction, light and color, constellations, cosmic art direction) |
+| Page with a live or interactive layer | the `webgl-craft` cluster (renderer and budget, hardening and testing, interaction, light and color, handoff and porting) |
 | A long scroll story or guided journey page | `scroll-journey` |
 | Resource hub, resource page, resource card | `resource-hub-thinking`, `resource-hub-resource-page-builder`, `resource-slug-design-canonical`, `aeo-optimization` |
 | Prototype or a new page type | `prototype-website-generation`, `astro-website-page-creation`, `web-app-building` |

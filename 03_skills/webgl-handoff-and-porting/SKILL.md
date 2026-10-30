@@ -37,7 +37,7 @@ Give every supplied asset an explicit path and an intended role. Distinguish:
 
 Record dimensions, transparency, cropping expectations, and any relationship between assets. Do not leave the developer to infer whether a reference image belongs in the deployed page.
 
-Keep the brief, asset inventory, implementation, porting notes, and acceptance checks together. For broader specification context, consult `03_skills/webgl-craft/references/09-original-single-skill-spec.md`. When the selected imagery calls for cosmic or astral treatments, consult `03_skills/webgl-cosmic-art-direction/SKILL.md`.
+Keep the brief, asset inventory, implementation, porting notes, and acceptance checks together. For broader specification context, consult `03_skills/webgl-craft/references/09-original-single-skill-spec.md`.
 
 ## Choose the medium
 

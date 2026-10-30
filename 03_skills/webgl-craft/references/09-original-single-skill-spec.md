@@ -46,14 +46,6 @@ The shipped cluster separates the entry point, implementation guidance and valid
     SKILL.md
     references/
       05-glow-and-light.md
-  webgl-constellations/
-    SKILL.md
-    references/
-      06-constellations.md
-  webgl-cosmic-art-direction/
-    SKILL.md
-    references/
-      07-motifs.md
   webgl-handoff-and-porting/
     SKILL.md
 ```
@@ -88,10 +80,6 @@ A project implementing this specification also needs the following assets. These
 **03_skills/webgl-interaction/references/04-interaction-recipes.md**: cover DOM-owned state, force fields, springs, curl flow, hit-testing, preview/pin behaviour, parallax and moving highlights. Write fresh GLSL and TypeScript examples rather than copying code from sources available only for study.
 
 **03_skills/webgl-light-and-color/references/05-glow-and-light.md**: explain the shared halo profile, blend choices, `alpha=max(r,g,b)`, dithering, colour space and the token-to-uniform path.
-
-**03_skills/webgl-constellations/references/06-constellations.md**: explain contrast measurement, compounded opacity, seeded randomness, relative neighbourhood graph links, ranked brightness and reserved readout space. For example, applying opacity 0.35 twice produces an effective opacity of 0.1225, which can make an otherwise legible line disappear.
-
-**03_skills/webgl-cosmic-art-direction/references/07-motifs.md**: present motifs as an open menu drawn from each site's own subject (for example, rising steam for a kitchen-equipment maker or turning spokes for a bicycle-parts company), never as a fixed set. Show the loop-period arithmetic for each animated motif.
 
 **03_skills/webgl-hardening-and-testing/references/08-testing-and-measurement.md**: put instrumentation rules first: identify the actual renderer, distinguish hardware rendering from software fallback and state that CPU throttling does not emulate a mobile GPU. Implement the acceptance checks as reusable Playwright tests.
 

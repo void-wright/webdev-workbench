@@ -4,13 +4,13 @@ Every file in this package, its size and sha256, derived at assembly time (never
 
 - Memory pack: see `02_memory/PACK_MANIFEST.md` (its first lines):
   > **Web-dev workbench pre-seed pack (a free Voidwright release)** · **Version 1.0.0** · **Entries: 1666** · common tag `webdev-pack` · generated 2026-10-29 · sha256 `0525906c89fd43a6de586eeff2c4bf6719791d5c4ad1c17a0b19716a32570af1`
-- Files: 227 (plus this MANIFEST.md); total 5,639,199 bytes
+- Files: 217 (plus this MANIFEST.md); total 5,578,471 bytes
 
 | top-level | files |
 |---|---|
 | `(root files)` | 8 |
 | `02_memory` | 4 |
-| `03_skills` | 114 |
+| `03_skills` | 104 |
 | `04_reasoning` | 23 |
 | `05_automations` | 53 |
 | `06_web_tools` | 10 |
@@ -24,10 +24,10 @@ To verify every file on your machine, run `python3 verify_manifest.py` from the 
 | path | bytes | sha256 |
 |---|---|---|
 | `00_START_HERE.md` | 6520 | `dbe626d903801a2806ece21ecb36e2376a954ff2df5f2470ad2c30cdcf80bffa` |
-| `CHANGELOG.md` | 1546 | `c78f58c2f8f34e1c5c9e27f227ece613424421c2cde20c022170b546c6db9437` |
+| `CHANGELOG.md` | 1927 | `afee7532f14aa4c6fffb97fd0bdbe1c0d3cef2f401db04684ac3ca745de28096` |
 | `LICENSE` | 11362 | `73c162a8c72b5ed4f6279a8608ac42a195221bdbcb8a886b6651317f2941e126` |
 | `NOTICE` | 1694 | `e832243800a83579eb96d7639b2f28fb0f1bcc072b86810eeac56642d9daf55d` |
-| `README.md` | 15195 | `e3e2b822fa50e42c75ae29c7e933188eda96f3addfafde8d9827a4e6bf4d7e9a` |
+| `README.md` | 15140 | `47b5be4446dc03f9c0d72cd820d2a27be330d2eb536bbf1c732800d1295d3f17` |
 | `SETUP_GUIDE.md` | 63180 | `01c6330c3a8d6609a859467c0750016569dfa46076204f90e13c849327a0af7c` |
 | `VERSION` | 6 | `59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03` |
 | `verify_manifest.py` | 3886 | `5667d80fce4591f27c146b4c474dd61bcb53c84be4270dfb84b950188ea709a5` |
@@ -120,30 +120,20 @@ To verify every file on your machine, run `python3 verify_manifest.py` from the 
 | `03_skills/web-app-building/knowledge/security-hardening.md` | 6937 | `c6db54ab36f8135cdc439ea0afffba1517cae9bb9cccc24d61ee7bd65b2ba5d1` |
 | `03_skills/web-app-building/knowledge/state-management.md` | 6538 | `464a970f548dd5ba9b6c6b791613d5e520e1e8afa598d62ee3f55d6e811f8343` |
 | `03_skills/web-app-building/knowledge/ui-components.md` | 6317 | `f287a15584c88a4c4ed9db42c91c0d9e4349bb68fecfb5ea4dc9fe4ea37fca11` |
-| `03_skills/webgl-constellations/SKILL.md` | 5845 | `aee02d89df24de873247a95c37cad525f7f73dac42721a918fd61cd67fe12d94` |
-| `03_skills/webgl-constellations/references/06-constellations.md` | 8875 | `7bb020e70fe1a4676e50aac2db442e487d6e2888e614efbe283e4e2ffef18efd` |
-| `03_skills/webgl-constellations/references/14-perception-and-living-constellations.md` | 4495 | `8c0336f110051cea75b6d07640c9d6595c7d1bc1dafe6b4e6d1be63d8c095168` |
-| `03_skills/webgl-cosmic-art-direction/SKILL.md` | 10004 | `42b77cf0c0a54c67bcc69976447bc660e13ab17d73368f1085844987627adfa9` |
-| `03_skills/webgl-cosmic-art-direction/references/07-motifs.md` | 10259 | `053e444d7de2477a3982b14fbad9d2ffaee930aa17145615eb3e60191827ff57` |
-| `03_skills/webgl-cosmic-art-direction/references/PLATE_STYLE_SPEC.md` | 6318 | `1b8895aa876b841d25cecd4c60313c24b60d7c5265608278c7765d7fd3698dd8` |
-| `03_skills/webgl-cosmic-art-direction/scripts/calm_plate.py` | 2458 | `04cdb7ce10a0a24de1ae911b074be9ab0df02d4337a8ba67fc8e5820674720d8` |
-| `03_skills/webgl-cosmic-art-direction/scripts/cloud-sprites-from-plate.mjs` | 5934 | `4c17c96572f74cb275aea8ffec523ec66f3b28dad046c1d7f9b4795b45289cf2` |
-| `03_skills/webgl-cosmic-art-direction/scripts/figure_star_probe.py` | 1125 | `1fe5fe05db050bcbcf128168fce6eeca8abf6882b8757158b79e2094ef4b921b` |
-| `03_skills/webgl-cosmic-art-direction/scripts/plate_style_probe.py` | 3806 | `687cb588643069568153796e3e1adec99b5afe5a4058996a25079fe72fafb105` |
-| `03_skills/webgl-craft/SKILL.md` | 7896 | `4c268add7c4143b5e9bdbd5928e3536427133b00798574c690a9f419d4f8e260` |
+| `03_skills/webgl-craft/SKILL.md` | 7222 | `16fa9aa2dc5d3bbd170872663b8fdb234caa2751aeb368b305c1d2942241a76f` |
 | `03_skills/webgl-craft/references/00-how-to-read.md` | 3524 | `5e0d743da64f69f45c52a6c141ae5ccb2ff2fb9d62439229658d0f7d3bd28826` |
-| `03_skills/webgl-craft/references/09-original-single-skill-spec.md` | 14710 | `f32b1ac40fabbfb92019ed497a677bd382d8f0ea3da53918da4780df7ee2f1b4` |
+| `03_skills/webgl-craft/references/09-original-single-skill-spec.md` | 13881 | `1d8ae951cd43617752cca0b6a96cdc7520f752cdb1c399db7fbf5a779a50d359` |
 | `03_skills/webgl-craft/references/10-licence-ledger.md` | 3746 | `6936433f81fdb412cc25c354249d676aab1d08df455fe7434f45abb4745ddc84` |
 | `03_skills/webgl-craft/references/11-mistakes.md` | 4249 | `f6c86a7d4b008000f11d6f5481ce7aae433e762ca4540b960833d5b8c3684b8b` |
 | `03_skills/webgl-craft/references/12-open-conflicts.md` | 2491 | `e09aba59c606773b6120a68b80509951a7418b50741197a92ed29d8757b4c49c` |
-| `03_skills/webgl-handoff-and-porting/SKILL.md` | 9042 | `0f0c0efad8074c107b7a86819f4c0b40564077524b5caeaf5c08863c523ca441` |
+| `03_skills/webgl-handoff-and-porting/SKILL.md` | 8920 | `054090ede70642f4480cff3ae8924169ed50d85d3e994c253c0728fee6955760` |
 | `03_skills/webgl-hardening-and-testing/SKILL.md` | 7075 | `a1a87a799b79b7646d33b7db2be97bb514eeb4e0682e71676c2b909ad0f0b596` |
 | `03_skills/webgl-hardening-and-testing/references/03-hardened-recipe.md` | 10919 | `40075fe00ea4e1b40c8290306f156c1df7a0e9cebbbbf3088c196354810be116` |
 | `03_skills/webgl-hardening-and-testing/references/08-testing-and-measurement.md` | 8572 | `717385a9d0417a97af7784c584121c3f299acdac7b0e61152df9e12e9114ed87` |
 | `03_skills/webgl-hardening-and-testing/references/13-field-lessons.md` | 8132 | `2aa837553e764aa54729a833f0e55cc98b3aa84785ed9a3ea7ff9bc3ae55aa1e` |
-| `03_skills/webgl-interaction/SKILL.md` | 6129 | `9666a0582294908c8289f7f3e4caaf54d7fb4b7d9780ce727a9501540277d7f1` |
+| `03_skills/webgl-interaction/SKILL.md` | 6019 | `551daa688c24e80160bbcf078ca5246de7f9e370fafda1deec5d933bb09d1423` |
 | `03_skills/webgl-interaction/references/04-interaction-recipes.md` | 12486 | `f6d138b1206e4e98d3f80adbc179bf86d2b0a2a6379f2cb1471615755f1ae85d` |
-| `03_skills/webgl-light-and-color/SKILL.md` | 4646 | `1952b04236b4708cb26911bd9b3a9ad7c73bb7958d9c4b998690f42bf782a3e1` |
+| `03_skills/webgl-light-and-color/SKILL.md` | 4464 | `6f087445ce5d8c719b2b8507e9f3e247b452471a1f044ee059c92f77a75cbe73` |
 | `03_skills/webgl-light-and-color/references/05-glow-and-light.md` | 5487 | `d5671d32c6cf6b50395e0300fbaf8f1f351ddcfe05c69a35ea1199bdbd45f727` |
 | `03_skills/webgl-renderer-and-budget/SKILL.md` | 6835 | `f4bba134e5287b87e9f9ddeb8cf143f52b04edb874c6aa657d55c05d7923f410` |
 | `03_skills/webgl-renderer-and-budget/references/01-renderer-decision.md` | 9460 | `3eafe08300c607b91d6a6bcbe0f83b0f9c302fd1f840974dbb2da7b450e899ff` |
@@ -176,7 +166,7 @@ To verify every file on your machine, run `python3 verify_manifest.py` from the 
 | `05_automations/agents/design-generator.md` | 13125 | `7f72b8d5975ef2d2a27ba40483aab202991febbc4cdaa54ac646044b48378b2c` |
 | `05_automations/agents/design-reflector.md` | 20761 | `b0fb9990a66fe270df74cc6316e88004b311017b906ce86c7681b8712f86ceb3` |
 | `05_automations/client-site-first-build/EDITION_NOTES.md` | 7493 | `503da25d8a368052968d4e4a82b457a3fc7bddd956473ba041795846df0017cf` |
-| `05_automations/client-site-first-build/comprehensive_guide.md` | 103795 | `373ec206bc47d3940d9060d2faff914368dfb665d5de257b4b3b30c054917845` |
+| `05_automations/client-site-first-build/comprehensive_guide.md` | 103778 | `23418eb6e90863a4072f69eb9f26526c4b0ab7c8f912e9cb35842e562b629391` |
 | `05_automations/client-site-first-build/personality.json` | 22743 | `2e67159a8dd804872eb0237fc3d8c6e563c72ffbdb8442a0e55d93f27bd2f941` |
 | `05_automations/client-site-first-build/recall_phrases.json` | 17643 | `fd9cb8252c56e07e148343314692b9b9e30456ad6d6f615337ca6a7335eb69a1` |
 | `05_automations/client-site-first-build/setup_instructions.md` | 6933 | `66070d589f44863a1a0ad9bf0426362d58155be96a39ba7c0a6c505e2862abf0` |
@@ -239,7 +229,7 @@ To verify every file on your machine, run `python3 verify_manifest.py` from the 
 | `07_nexus_tools/nexus_refresh.py` | 7492 | `64089014d8257afddee36b0160c3b1ab4bfea4aed66b6cd1cc2b63ea1aa56159` |
 | `07_nexus_tools/configs/scroll-journey.json` | 750 | `629884974ee6a6d329156bdc028217a0a4e89558528b1e9a3814816eaf994733` |
 | `07_nexus_tools/configs/webgl.json` | 1562 | `c6a3500e3f00ee2a0950e02de5fc07b82da7e32d70b6712fc9da98e9bc56dcf4` |
-| `08_claude_md/webdev_workbench_block.md` | 3465 | `cf2f126a9ce532ae4484fc3fb02cd8b9cb1614152f7df2afcb1186077fb31e83` |
+| `08_claude_md/webdev_workbench_block.md` | 3464 | `958659e41ff85484e631a30e5892ac3458cfeff0a844a6894cea4cc1b0345609` |
 | `09_guides/CHOOSING_A_HOST.md` | 11416 | `eaefe013627500a6c22a4c0421b7a3a884eb24d07c0d3ffa451ad8751b4853ec` |
 | `09_guides/DEPLOY_CLOUDFLARE.md` | 43038 | `d390a546d32cc8900b176c89cb858b4768ac764397b6590ab241401201bf28fa` |
 | `09_guides/DEPLOY_VERCEL.md` | 30322 | `0b26dbba4c4663489fdf536b2b010f05c893c86ca5f8c25b62178319f8e5960c` |

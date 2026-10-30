@@ -8,7 +8,11 @@ GitHub release, and `VERSION` holds the current number.
 
 ## Unreleased
 
-Nothing yet.
+- **Removed** the `webgl-constellations` and `webgl-cosmic-art-direction` skills. Both were written
+  for one particular site's look rather than for web work in general. The WebGL craft cluster is now
+  a router plus five skills, and the package carries 18 skills.
+- **Fixed** the README's sequence diagram, which failed to render on GitHub (a semicolon in a note
+  ended the statement early).
 
 ## 1.0.0 (2026-10-30)
 

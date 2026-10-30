@@ -9,8 +9,6 @@ description: Light and colour for WebGL/canvas layers that sit over painted or p
 | You are… | Use |
 |---|---|
 | making stars, sparks or lines glow; fixing banding; matching canvas to SVG | **this skill** |
-| matching a specific painted look (star falloff, filaments, astral clouds) | `webgl-cosmic-art-direction` |
-| contrast and dimming of a figure's elements | `webgl-constellations` |
 
 ## Rules (full detail and sources in `03_skills/webgl-light-and-color/references/05-glow-and-light.md`)
 1. **Glow without bloom.** Bake a radial Gaussian sprite once (Canvas2D at boot, or a 32 px PNG) and draw it on **additive instanced quads**.

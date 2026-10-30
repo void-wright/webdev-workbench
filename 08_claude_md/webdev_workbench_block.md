@@ -12,7 +12,7 @@ resource hub, site maintenance, ace review loops. Treat a recalled lesson as a s
 site decide.
 
 **Where things live**
-- Skills (`~/.claude/skills/`): the webgl-craft cluster (webgl-craft plus seven webgl-* skills), scroll-journey,
+- Skills (`~/.claude/skills/`): the webgl-craft cluster (webgl-craft plus five webgl-* skills), scroll-journey,
   corporate-graphic-design, design-architect-thinking, website-maintenance-thinking, resource-hub-thinking,
   astro-website-page-creation, prototype-website-generation, web-app-building, agent-readiness-frontier,
   aeo-optimization, resource-hub-resource-page-builder, resource-slug-design-canonical; reasoning:

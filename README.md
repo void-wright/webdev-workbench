@@ -14,7 +14,7 @@ AI can read, change, test and deploy, with no database-driven admin screen stand
 ship as fast static HTML, and content can come from a headless content store when the site needs one.
 
 It runs on Claude Code. Setup installs [Voidloom](https://github.com/void-wright/voidloom), a local memory brain for
-AI agents, and loads it with **1,666 memories of web craft**. On top of that sit **20 skills**, **three website
+AI agents, and loads it with **1,666 memories of web craft**. On top of that sit **18 skills**, **three website
 automation harnesses** that grade every build with an independent reviewer, a set of **reasoning aids**, small **web tools**,
 and **plain step-by-step guides** for GitHub, Cloudflare and Vercel.
 
@@ -153,7 +153,7 @@ sequenceDiagram
 | `00_START_HERE.md` | The two-minute overview for the person installing it |
 | `SETUP_GUIDE.md` | The guide Claude follows to install everything, phase by phase (P0 to P8) |
 | `02_memory/` | The web-craft memory pack, its manifest and the recall battery |
-| `03_skills/` | 20 skills (listed below) |
+| `03_skills/` | 18 skills (listed below) |
 | `04_reasoning/` | The four Inner Council voices, the planning-cognition skill and the `/inner-council` command |
 | `05_automations/` | The three website automation harnesses and the three review-loop agents |
 | `06_web_tools/` | Helpers for Cloudflare APIs, safe deploys, build and preview watchers, form checks |
@@ -166,7 +166,7 @@ sequenceDiagram
 
 | Area | Skills |
 |---|---|
-| **WebGL craft** (a router plus seven) | `webgl-craft` (start here), `webgl-renderer-and-budget`, `webgl-hardening-and-testing`, `webgl-interaction`, `webgl-light-and-color`, `webgl-constellations`, `webgl-cosmic-art-direction`, `webgl-handoff-and-porting` |
+| **WebGL craft** (a router plus five) | `webgl-craft` (start here), `webgl-renderer-and-budget`, `webgl-hardening-and-testing`, `webgl-interaction`, `webgl-light-and-color`, `webgl-handoff-and-porting` |
 | **Pages and apps** | `astro-website-page-creation`, `web-app-building`, `prototype-website-generation`, `scroll-journey` |
 | **Search and discovery** | `aeo-optimization` (answer-engine optimization), `agent-readiness-frontier` (agent-readable sites) |
 | **Resource libraries** | `resource-hub-resource-page-builder`, `resource-slug-design-canonical` |

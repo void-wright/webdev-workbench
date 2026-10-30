@@ -1,6 +1,6 @@
 ---
 name: webgl-craft
-description: Router and home base for the WebGL craft cluster. Explains which of the seven WebGL skills to use for renderer selection and budgets, hardening and testing, interaction, light and colour, constellations, cosmic art direction, and handoff and porting. States shared design rules, common mistakes, evidence markers, and licence guidance. Use for browser 3D, canvas, WebGL, WebGPU, shader, particle, glow, starfield, constellation or animated-background work, or when unsure which WebGL skill applies.
+description: Router and home base for the WebGL craft cluster. Explains which of the five WebGL skills to use for renderer selection and budgets, hardening and testing, interaction, light and colour, and handoff and porting. States shared design rules, common mistakes, evidence markers, and licence guidance. Use for browser 3D, canvas, WebGL, WebGPU, shader, particle, glow, starfield, constellation or animated-background work, or when unsure which WebGL skill applies.
 ---
 
 # WebGL craft (the cluster router)
@@ -12,11 +12,9 @@ description: Router and home base for the WebGL craft cluster. Explains which of
 | make a layer production-safe (static design first, boot, pause, reduced motion, context loss, a11y) and **test** it | `webgl-hardening-and-testing` |
 | pointer and touch, springs, curl flow, hit-testing, hover-preview and click-pin, parallax | `webgl-interaction` |
 | glow without bloom, halos, blending, dither, colour from tokens, art on a white page | `webgl-light-and-color` |
-| star/node-link figures: layout, lines, links, dimming math, perception rules, living constellations | `webgl-constellations` |
-| how it should look and move: match painted plates, clouds from the plate, motion metaphors, plate tools | `webgl-cosmic-art-direction` |
 | brief someone else to build it, port a design-tool output, or send a painted banner to a video model | `webgl-handoff-and-porting` |
 
-**A typical new layer uses them in this order:** art direction → renderer and budget → constellations and interaction (if it has a figure) → light and colour → hardening and testing. Bring in handoff and porting whenever another builder is involved.
+**A typical new layer uses them in this order:** renderer and budget → interaction (if people touch it) → light and colour → hardening and testing. Bring in handoff and porting whenever another builder is involved.
 
 ## The shared doctrine (every skill assumes it)
 1. **The fallback IS the design.** The static HTML/SVG/plate page is complete. The canvas only deepens it, and can vanish at any moment without loss.
@@ -54,8 +52,6 @@ Record source URLs, the claim being checked, and the outcome together. A source 
 | `03_skills/webgl-hardening-and-testing/references/03-hardened-recipe.md` | production lifecycle, fallbacks and accessibility |
 | `03_skills/webgl-interaction/references/04-interaction-recipes.md` | pointer behaviour, springs, flow and hit-testing |
 | `03_skills/webgl-light-and-color/references/05-glow-and-light.md` | glow, blending, colour and line treatment |
-| `03_skills/webgl-constellations/references/06-constellations.md` | legible node-link figures and layout |
-| `03_skills/webgl-cosmic-art-direction/references/07-motifs.md` | visual motifs and motion choices |
 | `03_skills/webgl-hardening-and-testing/references/08-testing-and-measurement.md` | checks, measurement methods and evidence limits |
 | `03_skills/webgl-craft/references/12-open-conflicts.md` | disagreements that need an explicit decision or further verification |
 
@@ -81,8 +77,6 @@ Record source URLs, the claim being checked, and the outcome together. A source 
   | `webgl-hardening` | production safety and testing |
   | `webgl-interaction` | pointer, springs, flow, hit-testing |
   | `webgl-light` | glow, blends, dither, colour |
-  | `webgl-constellations` | star and graph figures |
-  | `webgl-art-direction` | the plate look and motion metaphors |
   | `webgl-handoff` | handoffs and porting |
   | `webgl-builds` | worked examples |
   | `webgl-skills` | the cluster's skills |
